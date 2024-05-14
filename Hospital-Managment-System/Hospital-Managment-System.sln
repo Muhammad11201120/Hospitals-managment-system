@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital-Managment-System", "Hospital-Managment-System.csproj", "{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS-DataAccessLayer", "..\HMS-DataAccessLayer\HMS-DataAccessLayer.csproj", "{5B9303DC-C7F6-4834-9EF6-55F0B049E546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9303DC-C7F6-4834-9EF6-55F0B049E546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9303DC-C7F6-4834-9EF6-55F0B049E546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9303DC-C7F6-4834-9EF6-55F0B049E546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9303DC-C7F6-4834-9EF6-55F0B049E546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

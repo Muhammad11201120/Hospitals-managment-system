@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital-Managment-System", "Hospital-Managment-System.csproj", "{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS", "HMS.csproj", "{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS-DataAccessLayer", "..\HMS-DataAccessLayer\HMS-DataAccessLayer.csproj", "{5B9303DC-C7F6-4834-9EF6-55F0B049E546}"
 EndProject

@@ -1,0 +1,10 @@
+D:\OurProject\Test\Test\bin\Debug\Test.exe.config
+D:\OurProject\Test\Test\bin\Debug\Test.exe
+D:\OurProject\Test\Test\bin\Debug\Test.pdb
+D:\OurProject\Test\Test\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Test\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+D:\OurProject\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Test\obj\Debug\Test.csproj.Up2Date
+D:\OurProject\Test\Test\obj\Debug\Test.exe
+D:\OurProject\Test\Test\obj\Debug\Test.pdb

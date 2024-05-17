@@ -1,0 +1,6 @@
+D:\OurProject\Test\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

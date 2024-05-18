@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
+=======
+  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospital-Managment-System\\",
+>>>>>>> origin
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -13,6 +17,7 @@
           "Children": [
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -40,6 +45,9 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+=======
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+>>>>>>> origin
             }
           ]
         }

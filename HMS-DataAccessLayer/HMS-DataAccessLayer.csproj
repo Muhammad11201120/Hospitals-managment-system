@@ -42,10 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="clsContactData.cs" />
     <Compile Include="clsCoutriesData.cs" />
     <Compile Include="clsGlobalData.cs" />
     <Compile Include="clsPeopleData.cs" />
+=======
+    <Compile Include="clsEmployeesData.cs" />
+    <Compile Include="clsGlobalData.cs" />
+    <Compile Include="clsPatientsData.cs" />
+>>>>>>> origin
     <Compile Include="clsUsersData.cs" />
     <Compile Include="cslDataAccessSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

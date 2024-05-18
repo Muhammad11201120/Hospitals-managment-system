@@ -11,19 +11,19 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            if (clsUsersData.Update(1, 1, "test", "1234", true))
+            if (clsPatientsData.Find(2))
             {
                 Console.WriteLine("User Updated succefully");
             }
             else
                 Console.WriteLine("User Updated Failed");
 
-            if (clsUsersData.Delete(2))
-            {
-                Console.WriteLine("User Deleted succefully");
-            }
-            else
-                Console.WriteLine("User Deleted Failed");
+            //if (clsEmployeesData.Find(2))
+            //{
+            //    Console.WriteLine("User Deleted succefully");
+            //}
+            //else
+            //    Console.WriteLine("User Deleted Failed");
         }
     }
 }

@@ -54,6 +54,10 @@
       <Project>{5b9303dc-c7f6-4834-9ef6-55f0b049e546}</Project>
       <Name>HMS-DataAccessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HMS-DataBusinessLayer\HMS-DataBusinessLayer.csproj">
+      <Project>{be723850-f35b-4cf6-bf5d-e1c9e4382160}</Project>
+      <Name>HMS-DataBusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

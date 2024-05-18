@@ -8,3 +8,15 @@ D:\OurProject\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 D:\OurProject\Test\Test\obj\Debug\Test.csproj.Up2Date
 D:\OurProject\Test\Test\obj\Debug\Test.exe
 D:\OurProject\Test\Test\obj\Debug\Test.pdb
+C:\Users\muha1\Desktop\Programming\test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\test\Test\obj\Debug\Test.exe
+C:\Users\muha1\Desktop\Programming\test\Test\obj\Debug\Test.pdb
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\Test.exe.config
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\Test.exe
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\Test.pdb
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\muha1\Desktop\Programming\test\Test\obj\Debug\Test.csproj.Up2Date
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\HMS-DataBusinessLayer.dll
+C:\Users\muha1\Desktop\Programming\test\Test\bin\Debug\HMS-DataBusinessLayer.pdb

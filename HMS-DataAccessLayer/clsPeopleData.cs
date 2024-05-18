@@ -38,19 +38,19 @@ namespace HMS_DataAccessLayer
 				catch (SqlException ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_AddNewPerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show("Error AddNew Person: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Error SP_AddNewPerson: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 
 			return PersonID;
 		}
 
-		public static bool GetPersonByID(SqlParameter[] parameters)
+		public static bool GetPersonByID(ref SqlParameter[] parameters)
 		{
 			bool Found = false;
 
@@ -79,12 +79,12 @@ namespace HMS_DataAccessLayer
 						catch (SqlException ex)
 						{
 							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+							MessageBox.Show($"Error SP_GetPersonByID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 						}
 						catch (Exception ex)
 						{
 							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show("Error Find Person: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+							MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 						}
 					}
 				}
@@ -117,12 +117,12 @@ namespace HMS_DataAccessLayer
 				catch (SqlException ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_UpdatePerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show("Error Update Person: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Error SP_UpdatePerson: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -130,7 +130,7 @@ namespace HMS_DataAccessLayer
 			return Updated;
 		}
 
-		public static bool IsExistPerson(SqlParameter parameter)
+		public static bool IsPersonExist(SqlParameter parameter)
 		{
 			bool Exists = false;
 
@@ -160,12 +160,12 @@ namespace HMS_DataAccessLayer
 				catch (SqlException ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_IsPersonExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error IsExist Peopl:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_IsPersonExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 
@@ -192,16 +192,55 @@ namespace HMS_DataAccessLayer
 				catch (SqlException ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_DeletePerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error Delete Person:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"Error SP_DeletePerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 
 			return Deleted;
+		}
+
+		public static DataTable GetAllPeople()
+		{
+			DataTable dt = new DataTable();
+
+			using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+			using (SqlCommand command = new SqlCommand("SP_GetAllPeople", connection))
+			{
+				command.CommandType = CommandType.StoredProcedure;
+
+				try
+				{
+					connection.Open();
+
+					using (SqlDataReader reader = command.ExecuteReader())
+					{
+						if (reader.HasRows)
+						{
+							dt.Load(reader);
+						}
+					}
+
+				}
+				catch (SqlException ex)
+				{
+					// Sql Exception.
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show($"Error SP_GetAllPeople : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch (Exception ex)
+				{
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show($"Error SP_GetAllPeople : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+
+
+			return dt;
 		}
 
 	}

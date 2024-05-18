@@ -1,14 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clscoutriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clscontactdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -16,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,32 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsCoutriesData.cs",
-              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsCoutriesData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsCoutriesData.cs",
-              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsCoutriesData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsCoutriesData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T05:02:51.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsContactData.cs",
-              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsContactData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsContactData.cs",
-              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsContactData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsContactData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T05:02:30.998Z",
-              "EditorCaption": ""
             }
           ]
         },

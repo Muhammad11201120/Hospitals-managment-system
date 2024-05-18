@@ -1,6 +1,7 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
   "Documents": [
     {
@@ -49,6 +50,21 @@
 >>>>>>> 2905caf (Check)
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
 >>>>>>> refs/remotes/origin/main
+=======
+  "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clspeopledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\hms-dataaccesslayer\\clsusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clscoutriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> refs/remotes/origin/main
     }
   ],
   "DocumentGroupContainers": [
@@ -58,6 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
 <<<<<<< HEAD
           "SelectedChildIndex": 5,
           "Children": [
@@ -69,6 +86,12 @@
             {
               "$type": "Bookmark",
 <<<<<<< HEAD
+=======
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+>>>>>>> refs/remotes/origin/main
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -89,13 +112,17 @@
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
+=======
+>>>>>>> refs/remotes/origin/main
               "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "clsPerson.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataBusinessLayer\\clsPerson.cs",
@@ -226,6 +253,67 @@
 =======
               "WhenOpened": "2024-05-18T11:30:14.833Z"
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
+>>>>>>> refs/remotes/origin/main
+=======
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Test\\Program.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Test\\Program.cs",
+              "RelativeToolTip": "..\\Test\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAqwCEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:56:50.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsCoutriesData.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsCoutriesData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsCoutriesData.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsCoutriesData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsCoutriesData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:53:00.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsUsersData.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsUsersData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsUsersData.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsUsersData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsUsersData.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwHsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:11:13.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsPeopleData.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAKwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:10:21.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1354,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
 >>>>>>> refs/remotes/origin/main
             }
           ]

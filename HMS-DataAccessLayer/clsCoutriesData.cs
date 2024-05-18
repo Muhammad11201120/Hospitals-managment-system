@@ -19,14 +19,15 @@ namespace HMS_DataAccessLayer
 
 				Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
 
+				Connection.Open();
+
 				using (SqlDataReader reader = Command.ExecuteReader())
 				{
 					if (reader.Read())
 					{
 						try
 						{
-							Connection.Open();
-
+							
 							for (int i = 0; i < reader.FieldCount; i++)
 							{
 								parameters[i].Value = reader[parameters[i].ParameterName];

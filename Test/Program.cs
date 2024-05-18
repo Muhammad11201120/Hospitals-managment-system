@@ -25,7 +25,12 @@ namespace Test
             //}
             //else
             //    Console.WriteLine("User Deleted Failed");
-
+            DataTable dt = clsPerson.GetAllPeople();
+            foreach ( DataRow row in dt.Rows )
+            {
+                Console.WriteLine( row[ "FirstName" ] );
+            }
+            Console.ReadLine();
         }
     }
 }

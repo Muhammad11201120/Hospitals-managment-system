@@ -9,13 +9,13 @@
       "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\muha1\\desktop\\programming\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-dataaccesslayer\\clspeopledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-dataaccesslayer\\csldataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\muha1\\desktop\\programming\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,8 +28,18 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Test\\Program.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
+              "RelativeToolTip": "..\\Test\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:30:14.833Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -39,22 +49,11 @@
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsEmployees.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsEmployees.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsEmployees.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T16:27:18.275Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsPeopleData.cs",
-              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T15:31:59.497Z"
             },
             {
               "$type": "Document",
@@ -64,14 +63,32 @@
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsPerson.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAIYAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACcAAACbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T12:12:02.058Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "clsPeopleData.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:31:59.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "cslDataAccessSettings.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
@@ -80,18 +97,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T11:47:17.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Test\\Program.cs",
-              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
-              "RelativeToolTip": "..\\Test\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T11:30:14.833Z"
             }
           ]
         }

@@ -12,39 +12,39 @@ namespace HMS_DataAccessLayer
 		{
 			Nullable<int> PersonID = null;
 
-			using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-			using (SqlCommand Command = new SqlCommand("SP_AddNewPerson", Connection))
+			try
 			{
-				Command.CommandType = System.Data.CommandType.StoredProcedure;
-
-				Command.Parameters.AddRange(parameters);
-
-				// Output parameter
-				SqlParameter outputParameter = new SqlParameter("@NewPersonID", SqlDbType.Int)
+				using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+				using (SqlCommand Command = new SqlCommand("SP_AddNewPerson", Connection))
 				{
-					Direction = ParameterDirection.Output
-				};
-				Command.Parameters.Add(outputParameter);
+					Command.CommandType = System.Data.CommandType.StoredProcedure;
 
-				try
-				{
+					Command.Parameters.AddRange(parameters);
+
+					// Output parameter
+					SqlParameter outputParameter = new SqlParameter("@NewPersonID", SqlDbType.Int)
+					{
+						Direction = ParameterDirection.Output
+					};
+					Command.Parameters.Add(outputParameter);
+
+
 					Connection.Open();
 
 					Command.ExecuteNonQuery();
 
 					PersonID = (int)Command.Parameters["@NewPersonID"].Value;
-
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_AddNewPerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
-				catch (Exception ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show("Error SP_AddNewPerson: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
+			}
+			catch (SqlException ex)
+			{
+				clsGlobalData.WriteExceptionInLogFile(ex);
+				MessageBox.Show($"Error SP_AddNewPerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			catch (Exception ex)
+			{
+				clsGlobalData.WriteExceptionInLogFile(ex);
+				MessageBox.Show("Error SP_AddNewPerson: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
 			return PersonID;

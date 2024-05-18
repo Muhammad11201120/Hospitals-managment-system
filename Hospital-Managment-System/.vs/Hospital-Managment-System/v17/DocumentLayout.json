@@ -1,15 +1,40 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clspeopledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospital-Managment-System\\",
+  "Documents": [
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clsemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-dataaccesslayer\\clsusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-dataaccesslayer\\clspeopledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-dataaccesslayer\\csldataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\muha1\\desktop\\programming\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\ourproject\\test\\hospital-managment-system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 2905caf (Check)
+>>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +48,7 @@
           "Children": [
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -43,6 +69,9 @@
             },
             {
               "$type": "Bookmark",
+=======
+<<<<<<< HEAD
+>>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
               "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
@@ -89,8 +118,50 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+=======
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cslDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\cslDataAccessSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:47:17.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+=======
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\OurProject\\Test\\Hospital-Managment-System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\OurProject\\Test\\Hospital-Managment-System\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:02:52.468Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> 2905caf (Check)
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:30:14.833Z"
+>>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
             }
           ]
         }

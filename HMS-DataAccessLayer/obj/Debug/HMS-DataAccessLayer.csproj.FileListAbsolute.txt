@@ -4,3 +4,9 @@ D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.Asse
 D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 D:\OurProject\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

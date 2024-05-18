@@ -11,14 +11,14 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            //if (clsUsersData.UpdateUser(1,1,"test", "1234", true))
-            //{
-            //    Console.WriteLine("User Updated succefully");
-            //}
-            //else
-            //    Console.WriteLine("User Updated Failed");
+            if (clsUsersData.Update(1, 1, "test", "1234", true))
+            {
+                Console.WriteLine("User Updated succefully");
+            }
+            else
+                Console.WriteLine("User Updated Failed");
 
-            if (clsUsersData.DeleteUser(2))
+            if (clsUsersData.Delete(2))
             {
                 Console.WriteLine("User Deleted succefully");
             }

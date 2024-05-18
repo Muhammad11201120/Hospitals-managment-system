@@ -2,6 +2,9 @@
   "Version": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 72236d2 (a)
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
   "Documents": [
     {
@@ -50,6 +53,7 @@
 >>>>>>> 2905caf (Check)
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
 >>>>>>> refs/remotes/origin/main
+<<<<<<< HEAD
 =======
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
   "Documents": [
@@ -65,6 +69,8 @@
     {
       "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> refs/remotes/origin/main
+=======
+>>>>>>> 72236d2 (a)
     }
   ],
   "DocumentGroupContainers": [
@@ -76,6 +82,9 @@
           "DockedWidth": 200,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 72236d2 (a)
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -86,12 +95,15 @@
             {
               "$type": "Bookmark",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
 >>>>>>> refs/remotes/origin/main
+=======
+>>>>>>> 72236d2 (a)
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -113,16 +125,25 @@
             {
               "$type": "Bookmark",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
 =======
 >>>>>>> refs/remotes/origin/main
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
+>>>>>>> 72236d2 (a)
               "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 72236d2 (a)
               "DocumentIndex": 2,
               "Title": "clsPerson.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataBusinessLayer\\clsPerson.cs",
@@ -254,6 +275,7 @@
               "WhenOpened": "2024-05-18T11:30:14.833Z"
 >>>>>>> 30ad28a43e48d46a0f3cf3b62b50703dde48f10b
 >>>>>>> refs/remotes/origin/main
+<<<<<<< HEAD
 =======
               "DocumentIndex": 3,
               "Title": "Program.cs",
@@ -315,6 +337,8 @@
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
 >>>>>>> refs/remotes/origin/main
+=======
+>>>>>>> 72236d2 (a)
             }
           ]
         }

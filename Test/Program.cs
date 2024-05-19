@@ -15,18 +15,16 @@ namespace Test
         static void Main( string[] args )
         {
 
-			//SqlParameter [] parameters = new SqlParameter[3];
+			SqlParameter parameters = new SqlParameter();
 
-			//parameters[0] = new SqlParameter("EmployeeID", 5);
-			//parameters[1] = new SqlParameter("PersonID", null);
-			//parameters[2] = new SqlParameter("Salary", null);
+			parameters = new SqlParameter("PatientID", 5);
 
-			//if (clsEmployeesData.FindEmpolyee(ref parameters))
-			//{
-			//    Console.WriteLine("done");
-			//}
-			//else
-			//    Console.WriteLine("User Updated Failed");
+			if (clsPatientsData.DeletePatient(parameters))
+			{
+				Console.WriteLine("done");
+			}
+			else
+				Console.WriteLine("User Updated Failed");
 
 			//if (clsEmployeesData.Find(2))
 			//{

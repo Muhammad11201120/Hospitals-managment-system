@@ -94,6 +94,8 @@ namespace HMS_DataAccessLayer
 
                     using (SqlCommand Command = new SqlCommand("SP_DeleteEmpolyee", Connection))
                     {
+                        Command.CommandType = CommandType.StoredProcedure;
+
                         Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
 
                         int RowAffected = Command.ExecuteNonQuery();

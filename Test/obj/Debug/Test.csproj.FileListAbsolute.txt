@@ -32,3 +32,5 @@ C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.csproj.CoreC
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.csproj.Up2Date
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.exe
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.pdb
+D:\OurProject\Test\Test\bin\Debug\HMS-DataBusinessLayer.dll
+D:\OurProject\Test\Test\bin\Debug\HMS-DataBusinessLayer.pdb

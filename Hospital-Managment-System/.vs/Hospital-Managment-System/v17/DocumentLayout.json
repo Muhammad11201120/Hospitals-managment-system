@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
+  "WorkspaceRootPath": "G:\\HospitalProject\\Test\\Hospital-Managment-System\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -37,6 +37,10 @@
           "DockedWidth": 1354,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"

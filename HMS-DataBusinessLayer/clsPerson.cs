@@ -57,12 +57,19 @@ namespace HMS_DataBusinessLayer
 
         public static clsPerson Find( int PersonID )
         {
-            string FirstName = string.Empty, LastName = string.Empty, Address = string.Empty;
+            string FirstName = null, LastName = null, Address = null;
             int CountryID = -1, ContactID = -1;
             short Gendor = 0;
             DateTime DateOfBirth = DateTime.Now;
             SqlParameter[] Parameter = new SqlParameter[] {
-                new SqlParameter ("@PersonID", PersonID)
+                new SqlParameter ("@PersonID", PersonID),
+                new SqlParameter ("@FirstName", FirstName),
+                new SqlParameter ("@LastName", LastName),
+                new SqlParameter ("@DateOfBirth", DateOfBirth),
+                new SqlParameter ("@Gendor", Gendor),
+                new SqlParameter ("@Address", Address),
+                new SqlParameter ("@ContactID", ContactID),
+                new SqlParameter ("@CountryID", CountryID)
             };
             bool isFound = clsPeopleData.GetPersonByID( ref Parameter );
             if ( isFound )

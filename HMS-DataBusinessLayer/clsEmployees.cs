@@ -36,14 +36,14 @@ namespace HMS_DataBusinessLayer
         {
             return clsEmployeesData.GetAllEmpolyee();
         }
-        public static clsEmployees Find( int EmployeeID )
-        {
-            decimal salary = 0;
-            if ( clsEmployeesData.Find( EmployeeID ) )
-            {
+        //public static clsEmployees Find( int EmployeeID )
+        //{
+        //    decimal salary = 0;
+        //    if ( clsEmployeesData.Find( EmployeeID ) )
+        //    {
 
-            }
-        }
+        //    }
+        //}
         private bool _AddNewEmployee()
         {
             int? employeeID = clsEmployeesData.AddNew( base.PersonID, this.Salary );

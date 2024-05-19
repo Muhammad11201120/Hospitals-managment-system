@@ -7,3 +7,12 @@ C:\Users\muha1\Desktop\Programming\test\HMS-DataBusinessLayer\obj\Debug\HMS-Data
 C:\Users\muha1\Desktop\Programming\test\HMS-DataBusinessLayer\obj\Debug\HMS-Data.459C1507.Up2Date
 C:\Users\muha1\Desktop\Programming\test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
 C:\Users\muha1\Desktop\Programming\test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataBusinessLayer.dll
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataBusinessLayer.pdb
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-Data.459C1507.Up2Date
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
+C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb

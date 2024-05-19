@@ -36,20 +36,24 @@ namespace HMS_DataBusinessLayer
         {
             return clsEmployeesData.GetAllEmpolyee();
         }
-        public clsEmployees Find( int EmployeeID )
+        public new clsEmployees Find( int EmployeeID )
         {
             decimal salary = 0;
             clsPerson person = clsPerson.Find( base.PersonID );
-            SqlParameter[] parameters = new SqlParameter[ 10 ];
-            parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
-            parameters[ 1 ] = new SqlParameter( "Salary", salary );
-
-            if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
+            if ( person != null )
             {
-                return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
+                SqlParameter[] parameters = new SqlParameter[ 2 ];
+                parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
+                parameters[ 1 ] = new SqlParameter( "Salary", salary );
+
+                if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
+                {
+                    return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
+                }
+                else
+                    return null;
             }
-            else
-                return null;
+            return null;
         }
         private bool _AddNewEmployee()
         {

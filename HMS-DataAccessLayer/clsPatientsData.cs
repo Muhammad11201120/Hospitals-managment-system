@@ -10,150 +10,6 @@ namespace HMS_DataAccessLayer
 {
     public class clsPatientsData
     {
-        public static int AddNew(int PersonID)
-        {
-            int PatientID = -1;
-
-            try
-            {
-
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"exec SP_AddNewPatient
-                           @PersonID = @personID  ; ";
-
-                    using (SqlCommand Command = new SqlCommand(query, connection))
-                    {
-
-                        Command.Parameters.AddWithValue("@personID", PersonID);
-
-                        object result = Command.ExecuteScalar();
-
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
-                        {
-                            PatientID = insertedID;
-                        }
-
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return PatientID;
-
-        }
-
-        public static bool Update(int PatientID ,int PersonID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    Connection.Open();
-
-                    string query = @"exec SP_UpdatePatient
-                                   @PersonID = @personID  ,
-                                   @PatientID   = @patientID;";
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-
-                        Command.Parameters.AddWithValue("@personID", PersonID);
-                        Command.Parameters.AddWithValue("@patientID", PatientID);
-
-                        RowAffected = Command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Delete(int PatientID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    Connection.Open();
-
-                    string query = @"EXEC  SP_DeletePatient
-		                            @PatientID = @patientID";
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-                        Command.Parameters.AddWithValue("@patientID", PatientID);
-
-                        RowAffected = Command.ExecuteNonQuery();
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Find(int PatientID, ref int PersonID)
-        {
-            bool isFound = false;
-
-            try
-            {
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-
-                    string query = @"EXEC SP_GetPatientByID
-		                           @PatientID = @patientID";
-
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-
-                        Command.Parameters.AddWithValue("@patientID", PatientID);
-
-                        Connection.Open();
-
-                        using (SqlDataReader reader = Command.ExecuteReader())
-                        {
-
-                            if (reader.HasRows)
-                            {
-                                while (reader.Read())
-                                {
-
-                                    isFound = true;
-                                    PersonID = (int)reader["PersonID"];
-                                }
-                            }
-                            else
-                            {
-                                isFound = false;
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-            return isFound;
-        }
 
         public static DataTable GetAllPatients()
         {
@@ -186,6 +42,148 @@ namespace HMS_DataAccessLayer
             }
             return dtPatients;
         }
+
+        public static Nullable<int> AddNewPatient(SqlParameter[] parameters)
+        {
+
+            Nullable<int> PatientID = null;
+
+            try
+            {
+
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_AddNewPatient", connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddRange(parameters);
+
+                        SqlParameter outputParameter = new SqlParameter("@NewPatientID", SqlDbType.Int)
+                        {
+                            Direction = ParameterDirection.Output
+                        };
+                        Command.Parameters.Add(outputParameter);
+
+                        Command.ExecuteNonQuery();
+
+                        PatientID = (int)Command.Parameters["@NewPatientID"].Value;
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+            }
+
+            return PatientID;
+
+        }
+
+        public static bool UpdatePatient(SqlParameter[] parameters)
+        {
+            bool Update = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_UpdatePatient", Connection))
+                    {
+
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddRange(parameters);
+
+                        int rowAfficted = Command.ExecuteNonQuery();
+
+                        if (rowAfficted > 0)
+                            Update = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+            }
+
+            return Update;
+        }
+
+        public static bool DeletePatient(SqlParameter parameter)
+        {
+            bool Deleted = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_DeletePatient", Connection))
+                    {
+                        Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                        int RowAffected = Command.ExecuteNonQuery();
+
+                        if (RowAffected > 0)
+                            Deleted = true;
+
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+            }
+
+            return Deleted;
+        }
+
+        public static bool FindPatient(ref SqlParameter[] parameters)
+        {
+            bool isFound = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_GetPatientByID", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    parameters[i].Value = reader[parameters[i].ParameterName];
+                                }
+
+                                isFound = true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+            }
+            return isFound;
+        }
+
 
     }
 }

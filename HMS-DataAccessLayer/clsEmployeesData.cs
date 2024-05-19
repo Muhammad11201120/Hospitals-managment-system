@@ -10,9 +10,10 @@ namespace HMS_DataAccessLayer
 {
     public class clsEmployeesData
     {
-        public static int AddNew(int PersonID, decimal Salary)
+        public static Nullable<int> AddNewEmpolyee(SqlParameter[] parameters)
         {
-            int EmployeeID = -1;
+
+            Nullable<int> EmpolyeeID = null;
 
             try
             {
@@ -21,23 +22,21 @@ namespace HMS_DataAccessLayer
                 {
                     connection.Open();
 
-                    string query = @"exec SP_AddNewEmployee
-                           @PersonID = @personID ,
-                           @Salary   = @salary     ; ";
-
-                    using (SqlCommand Command = new SqlCommand(query, connection))
+                    using (SqlCommand Command = new SqlCommand("SP_AddNewEmpolyee", connection))
                     {
+                        Command.CommandType = CommandType.StoredProcedure;
 
-                        Command.Parameters.AddWithValue("@salary", Salary);
-                        Command.Parameters.AddWithValue("@personID", PersonID);
+                        Command.Parameters.AddRange(parameters);
 
-                        object result = Command.ExecuteScalar();
-
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        SqlParameter outputParameter = new SqlParameter("@NewEmpolyeeID", SqlDbType.Int)
                         {
-                            EmployeeID = insertedID;
-                        }
+                            Direction = ParameterDirection.Output
+                        };
+                        Command.Parameters.Add(outputParameter);
 
+                        Command.ExecuteNonQuery();
+
+                        EmpolyeeID = (int)Command.Parameters["@NewEmpolyeeID"].Value;
                     }
                 }
             }
@@ -47,13 +46,13 @@ namespace HMS_DataAccessLayer
                 clsGlobalData.WriteExceptionInLogFile(ex);
             }
 
-            return EmployeeID;
+            return EmpolyeeID;
 
         }
 
-        public static bool Update(int EmployeeID,int PersonID, decimal Salary)
+        public static bool UpdateEmpolyee(SqlParameter[] parameters)
         {
-            int RowAffected = -1;
+            bool Update = false;
 
             try
             {
@@ -61,18 +60,17 @@ namespace HMS_DataAccessLayer
                 {
                     Connection.Open();
 
-                    string query = @"exec SP_UpdateEmpolyee
-                                   @PersonID     = @personID  ,
-                                   @EmployeeID   = @employeeID  ,
-                                   @Salary       = @salary;";
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
+                    using (SqlCommand Command = new SqlCommand("SP_UpdateEmpolyee", Connection))
                     {
 
-                        Command.Parameters.AddWithValue("@personID", PersonID);
-                        Command.Parameters.AddWithValue("@employeeID", EmployeeID);
-                        Command.Parameters.AddWithValue("@salary", Salary);
+                        Command.CommandType = CommandType.StoredProcedure;
 
-                        RowAffected = Command.ExecuteNonQuery();
+                        Command.Parameters.AddRange(parameters);
+
+                        int rowAfficted = Command.ExecuteNonQuery();
+
+                        if (rowAfficted > 0)
+                            Update = true;
                     }
                 }
             }
@@ -81,12 +79,12 @@ namespace HMS_DataAccessLayer
                 clsGlobalData.WriteExceptionInLogFile(ex);
             }
 
-            return (RowAffected > 0);
+            return Update;
         }
 
-        public static bool Delete(int EmployeeID)
+        public static bool DeleteEmpolyee(SqlParameter parameter)
         {
-            int RowAffected = -1;
+            bool Deleted = false;
 
             try
             {
@@ -94,13 +92,15 @@ namespace HMS_DataAccessLayer
                 {
                     Connection.Open();
 
-                    string query = @"EXEC  SP_DeleteEmpolyee
-		                            @EmployeeID = @employeeID";
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
+                    using (SqlCommand Command = new SqlCommand("SP_DeleteEmpolyee", Connection))
                     {
-                        Command.Parameters.AddWithValue("@employeeID", EmployeeID);
+                        Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
 
-                        RowAffected = Command.ExecuteNonQuery();
+                        int RowAffected = Command.ExecuteNonQuery();
+
+                        if (RowAffected > 0)
+                            Deleted = true;
+
                     }
                 }
             }
@@ -110,10 +110,10 @@ namespace HMS_DataAccessLayer
                 clsGlobalData.WriteExceptionInLogFile(ex);
             }
 
-            return (RowAffected > 0);
+            return Deleted;
         }
 
-        public static bool Find(int EmployeeID,ref int PersonID,ref decimal Salary)
+        public static bool FindEmpolyee(ref SqlParameter[] parameters)
         {
             bool isFound = false;
 
@@ -121,33 +121,24 @@ namespace HMS_DataAccessLayer
             {
                 using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
+                    Connection.Open();
 
-                    string query = @"EXEC SP_GetEmpolyeeByID
-		                           @EmployeeID = @employeeID";
-
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
+                    using (SqlCommand Command = new SqlCommand("SP_GetEmpolyeeByID", Connection))
                     {
+                        Command.CommandType = CommandType.StoredProcedure;
 
-                        Command.Parameters.AddWithValue("@employeeID", EmployeeID);
-
-                        Connection.Open();
+                        Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
 
                         using (SqlDataReader reader = Command.ExecuteReader())
                         {
-
-                            if (reader.HasRows)
+                            if (reader.Read())
                             {
-                                while (reader.Read())
+                                for (int i = 0; i < reader.FieldCount; i++)
                                 {
-
-                                    isFound = true;
-                                    Salary = (decimal)reader["Salary"];
-                                    PersonID = (int)reader["PersonID"];
+                                    parameters[i].Value = reader[parameters[i].ParameterName];
                                 }
-                            }
-                            else
-                            {
-                                isFound = false;
+
+                                isFound = true;
                             }
                         }
                     }

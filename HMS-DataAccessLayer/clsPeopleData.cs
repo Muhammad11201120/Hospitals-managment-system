@@ -61,32 +61,34 @@ namespace HMS_DataAccessLayer
 
 				Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
 
-				using (SqlDataReader reader = Command.ExecuteReader())
+				try
 				{
-					if (reader.Read())
+					Connection.Open();
+
+					using (SqlDataReader reader = Command.ExecuteReader())
 					{
-						try
+						if (reader.Read())
 						{
-							Connection.Open();
-
-							for (int i = 0; i < reader.FieldCount; i++)
 							{
-								parameters[i].Value = reader[parameters[i].ParameterName];
-							}
+								for (int i = 0; i < reader.FieldCount; i++)
+								{
+									parameters[i].Value = reader[parameters[i].ParameterName];
+								}
 
-							Found = true;
-						}
-						catch (SqlException ex)
-						{
-							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show($"Error SP_GetPersonByID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-						}
-						catch (Exception ex)
-						{
-							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+								Found = true;
+							}
 						}
 					}
+				}
+				catch (SqlException ex)
+				{
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show($"Error SP_GetPersonByID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch (Exception ex)
+				{
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -179,6 +181,8 @@ namespace HMS_DataAccessLayer
 			using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
 			using (SqlCommand Command = new SqlCommand("SP_DeletePerson", Connection))
 			{
+				Command.CommandType = CommandType.StoredProcedure;
+
 				Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
 
 				try

@@ -19,33 +19,34 @@ namespace HMS_DataAccessLayer
 
 				Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
 
-				Connection.Open();
-
-				using (SqlDataReader reader = Command.ExecuteReader())
+				try
 				{
-					if (reader.Read())
-					{
-						try
-						{
-							
-							for (int i = 0; i < reader.FieldCount; i++)
-							{
-								parameters[i].Value = reader[parameters[i].ParameterName];
-							}
+					Connection.Open();
 
-							Found = true;
-						}
-						catch (SqlException ex)
+					using (SqlDataReader reader = Command.ExecuteReader())
+					{
+						if (reader.Read())
 						{
-							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show($"Error SP_GetCountry:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-						}
-						catch (Exception ex)
-						{
-							clsGlobalData.WriteExceptionInLogFile(ex);
-							MessageBox.Show("Error SP_GetCountry: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+							{
+								for (int i = 0; i < reader.FieldCount; i++)
+								{
+									parameters[i].Value = reader[parameters[i].ParameterName];
+								}
+
+								Found = true;
+							}
 						}
 					}
+				}
+				catch (SqlException ex)
+				{
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show($"Error SP_GetCountry:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch (Exception ex)
+				{
+					clsGlobalData.WriteExceptionInLogFile(ex);
+					MessageBox.Show("Error SP_GetCountry: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}

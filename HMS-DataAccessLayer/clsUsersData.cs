@@ -288,6 +288,8 @@ namespace HMS_DataAccessLayer
 
                     using (SqlCommand Command = new SqlCommand("SP_DeleteUser", Connection))
                     {
+                        Command.CommandType = System.Data.CommandType.StoredProcedure;
+
                         Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
 
                         int RowAffected = Command.ExecuteNonQuery();

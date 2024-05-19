@@ -13,13 +13,16 @@ namespace Test
     {
         static void Main( string[] args )
         {
-            SqlParameter[] parameters = new SqlParameter[2]; 
-            parameters[0] = new SqlParameter("CountryID", 2);
-            parameters[1] = new SqlParameter("CountryName", null);
 
-			if (clsCoutriesData.GetCountry(ref parameters))
+            SqlParameter [] parameters = new SqlParameter[3];
+
+            parameters[0] = new SqlParameter("EmployeeID", 5);
+            parameters[1] = new SqlParameter("PersonID", null);
+            parameters[2] = new SqlParameter("Salary", null);
+
+            if (clsEmployeesData.FindEmpolyee(ref parameters))
             {
-                Console.WriteLine("User Updated succefully");
+                Console.WriteLine("done");
             }
             else
                 Console.WriteLine("User Updated Failed");

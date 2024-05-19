@@ -16,3 +16,12 @@ C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-Data.459C1507.Up2Date
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb
+D:\OurProject\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataBusinessLayer.dll
+D:\OurProject\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataBusinessLayer.pdb
+D:\OurProject\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.AssemblyReference.cache
+D:\OurProject\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\HMS-DataBusinessLayer\obj\Debug\HMS-Data.459C1507.Up2Date
+D:\OurProject\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
+D:\OurProject\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb

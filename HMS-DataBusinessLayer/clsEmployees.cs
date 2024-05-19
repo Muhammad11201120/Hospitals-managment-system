@@ -36,22 +36,36 @@ namespace HMS_DataBusinessLayer
         {
             return clsEmployeesData.GetAllEmpolyee();
         }
-        //public static clsEmployees Find( int EmployeeID )
-        //{
-        //    decimal salary = 0;
-        //    if ( clsEmployeesData.Find( EmployeeID ) )
-        //    {
+        public clsEmployees Find( int EmployeeID )
+        {
+            decimal salary = 0;
+            clsPerson person = clsPerson.Find( base.PersonID );
+            SqlParameter[] parameters = new SqlParameter[ 10 ];
+            parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
+            parameters[ 1 ] = new SqlParameter( "Salary", salary );
 
-        //    }
-        //}
+            if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
+            {
+                return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
+            }
+            else
+                return null;
+        }
         private bool _AddNewEmployee()
         {
-            int? employeeID = clsEmployeesData.AddNew( base.PersonID, this.Salary );
+            SqlParameter[] parameters = new SqlParameter[ 2 ];
+            parameters[ 0 ] = new SqlParameter( "PersonID", base.PersonID );
+            parameters[ 1 ] = new SqlParameter( "Salary", this.Salary );
+            int? employeeID = clsEmployeesData.AddNewEmpolyee( parameters );
             return employeeID.HasValue;
         }
         private bool _UpdateEmployee()
         {
-            return clsEmployeesData.Update( this.EmployeeID, base.PersonID, this.Salary );
+            SqlParameter[] parameters = new SqlParameter[ 3 ];
+            parameters[ 0 ] = new SqlParameter( "EmployeeID", this.EmployeeID );
+            parameters[ 1 ] = new SqlParameter( "PersonID", base.PersonID );
+            parameters[ 2 ] = new SqlParameter( "Salary", this.Salary );
+            return clsEmployeesData.UpdateEmpolyee( parameters );
         }
         public new bool Save()
         {

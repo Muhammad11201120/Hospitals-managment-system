@@ -35,11 +35,6 @@ namespace HMS_DataAccessLayer
 					ContactID = (int)Command.Parameters["@NewContactID"].Value;
 
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_AddNewContact:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -80,11 +75,6 @@ namespace HMS_DataAccessLayer
 						}
 					}
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_GetPersonByID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -115,11 +105,6 @@ namespace HMS_DataAccessLayer
 
 					if (rowAfficted > 0)
 						Updated = true;
-				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_UpdateContact:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
@@ -159,11 +144,6 @@ namespace HMS_DataAccessLayer
 
 					Exists = (result == 1);
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_IsContactExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -192,11 +172,6 @@ namespace HMS_DataAccessLayer
 					int rowafficted = Command.ExecuteNonQuery();
 
 					Deleted = (rowafficted > 0);
-				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_DeleteContact:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{

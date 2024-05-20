@@ -51,9 +51,10 @@
     <Compile Include="clsEmployeesData.cs" />
     <Compile Include="clsGlobalData.cs" />
     <Compile Include="clsPatientsData.cs" />
+    <Compile Include="clsPrescriptions.cs" />
     <Compile Include="clsSpecialtiesData.cs" />
     <Compile Include="clsUsersData.cs" />
-    <Compile Include="cslDataAccessSettings.cs" />
+    <Compile Include="clsDataAccessSettings.cs" />
     <Compile Include="HospitalInfoData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

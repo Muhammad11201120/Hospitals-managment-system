@@ -16,28 +16,28 @@ namespace HMS_DataBusinessLayer
             ADD = 0,
             UPDATE = 1
         }
-        public int PersonID { get; set; }
+        public int? PersonID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public short Gendor { get; set; }
+        public short? Gendor { get; set; }
         public string Address { get; set; }
-        public int ContactID { get; set; }
-        public int CountryID { get; set; }
+        public int? ContactID { get; set; }
+        public int? CountryID { get; set; }
         private _enMode _Mode = _enMode.ADD;
         public clsPerson()
         {
-            PersonID = -1;
+            PersonID = null;
             FirstName = string.Empty;
             LastName = string.Empty;
             DateOfBirth = DateTime.Now;
-            Gendor = 0;
+            Gendor = null;
             Address = string.Empty;
-            ContactID = -1;
-            CountryID = -1;
+            ContactID = null;
+            CountryID = null;
             _Mode = _enMode.ADD;
         }
-        public clsPerson( int personID, string firstName, string lastName, DateTime dateOfBirth, short gendor, string address, int contactID, int countryID )
+        public clsPerson( int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
         {
             PersonID = personID;
             FirstName = firstName;
@@ -55,11 +55,11 @@ namespace HMS_DataBusinessLayer
             return clsPeopleData.GetAllPeople();
         }
 
-        public static clsPerson Find( int PersonID )
+        public static clsPerson Find( int? PersonID )
         {
             string FirstName = null, LastName = null, Address = null;
-            int CountryID = -1, ContactID = -1;
-            short Gendor = 0;
+            int? CountryID = null, ContactID = null;
+            short? Gendor = null;
             DateTime DateOfBirth = DateTime.Now;
             SqlParameter[] Parameter = new SqlParameter[] {
                 new SqlParameter ("@PersonID", PersonID),
@@ -80,7 +80,6 @@ namespace HMS_DataBusinessLayer
 
         private bool _AddNewPerson()
         {
-            int? personID = null;
             SqlParameter[] Parameter = new SqlParameter[]
             {
 
@@ -92,7 +91,7 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("@ContactID", this.ContactID),
                 new SqlParameter ("@CountryID", this.CountryID)
             };
-            personID = clsPeopleData.AddNewPerson( Parameter );
+            int? personID = clsPeopleData.AddNewPerson( Parameter );
             return ( personID != null );
         }
 
@@ -111,7 +110,7 @@ namespace HMS_DataBusinessLayer
             };
             return clsPeopleData.UpdatePerson( Parameter );
         }
-        public static bool IsPersonExists( int PersonID )
+        public static bool IsPersonExists( int? PersonID )
         {
             SqlParameter Parameter = new SqlParameter();
             Parameter.ParameterName = "@PersonID";
@@ -119,7 +118,7 @@ namespace HMS_DataBusinessLayer
             return clsPeopleData.IsPersonExist( Parameter );
         }
 
-        public static bool Delete( int PersonID )
+        public static bool Delete( int? PersonID )
         {
             SqlParameter Parameter = new SqlParameter();
             Parameter.ParameterName = "@PersonID";

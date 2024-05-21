@@ -125,6 +125,13 @@ namespace HMS_DataBusinessLayer
             Parameter.Value = PersonID;
             return clsPeopleData.DeletePerson( Parameter );
         }
+        public bool Delete()
+        {
+            SqlParameter Parameter = new SqlParameter();
+            Parameter.ParameterName = "@PersonID";
+            Parameter.Value = this.PersonID;
+            return clsPeopleData.DeletePerson( Parameter );
+        }
         public bool Save()
         {
 

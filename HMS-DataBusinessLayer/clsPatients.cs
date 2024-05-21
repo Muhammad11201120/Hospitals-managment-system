@@ -57,7 +57,67 @@ namespace HMS_DataBusinessLayer
             else
                 return null;
         }
+        private bool _AddNewPatient()
+        {
+            int? patientId = null;
+            SqlParameter[] parameters = new SqlParameter[ 8 ];
+            parameters[ 7 ] = new SqlParameter( "@PersonID", this.PersonID );
+            parameters[ 0 ] = new SqlParameter( "@FirstName", this.FirstName );
+            parameters[ 1 ] = new SqlParameter( "@LastName", this.LastName );
+            parameters[ 2 ] = new SqlParameter( "@DateOfBirth", this.DateOfBirth );
+            parameters[ 3 ] = new SqlParameter( "@Gendor", this.Gendor );
+            parameters[ 4 ] = new SqlParameter( "@Address", this.Address );
+            parameters[ 5 ] = new SqlParameter( "@ContactID", this.ContactID );
+            parameters[ 6 ] = new SqlParameter( "@CountryID", this.CountryID );
 
+            patientId = clsPatientsData.AddNewPatient( parameters );
+            return ( patientId != null );
+        }
+        private bool _UpdatePatient()
+        {
+            SqlParameter[] parameters = new SqlParameter[ 9 ];
+            parameters[ 0 ] = new SqlParameter( "@PatientID", this.PatientID );
+            parameters[ 1 ] = new SqlParameter( "@PersonID", this.PersonID );
+            parameters[ 2 ] = new SqlParameter( "@FirstName", this.FirstName );
+            parameters[ 3 ] = new SqlParameter( "@LastName", this.LastName );
+            parameters[ 4 ] = new SqlParameter( "@DateOfBirth", this.DateOfBirth );
+            parameters[ 5 ] = new SqlParameter( "@Gendor", this.Gendor );
+            parameters[ 6 ] = new SqlParameter( "@Address", this.Address );
+            parameters[ 7 ] = new SqlParameter( "@ContactID", this.ContactID );
+            parameters[ 8 ] = new SqlParameter( "@CountryID", this.CountryID );
+
+            return clsPatientsData.UpdatePatient( parameters );
+        }
+        public bool Delete()
+        {
+            SqlParameter parameter = new SqlParameter( "@PatientID", this.PatientID );
+            if ( clsPatientsData.DeletePatient( parameter ) )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public new bool Save()
+        {
+            switch ( _Mode )
+            {
+                case _enMode.ADD:
+                    if ( _AddNewPatient() )
+                    {
+                        _Mode = _enMode.UPDATE;
+                        return true;
+                    }
+                    else
+                        return false;
+                case _enMode.UPDATE:
+                    return _UpdatePatient();
+
+            }
+            return false;
+        }
     }
 
 }

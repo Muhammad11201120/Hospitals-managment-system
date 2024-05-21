@@ -1,9 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\Hospital-Managment-System\\",
+  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospital-Managment-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\toshiba\\desktop\\project_with_team\\test\\hms-databusinesslayer\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,32 +16,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -47,24 +26,27 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "clsAppointments.cs",
-              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "ToolTip": "C:\\Users\\TOSHIBA\\Desktop\\Project_With_Team\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T02:09:23.985Z",
+              "WhenOpened": "2024-05-21T04:05:00.837Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1354,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDoctor.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T04:04:52.593Z",
+              "EditorCaption": ""
             }
           ]
         }

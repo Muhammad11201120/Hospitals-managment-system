@@ -1,15 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Hospital-Managment-System\\",
+  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospital-Managment-System\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clsemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clspatients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 02bd48445aad1f23d7085c3eda4da4f8a56bf25d
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,6 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -26,11 +34,17 @@
               "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+>>>>>>> 02bd48445aad1f23d7085c3eda4da4f8a56bf25d
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "clsEmployees.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsEmployees.cs",
@@ -66,6 +80,44 @@
               "ViewState": "AQIAAHAAAAAAAAAAAAAAAHgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T19:19:21.229Z"
+=======
+              "DocumentIndex": 1,
+              "Title": "clsUser.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsUser.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsUser.cs",
+              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsUser.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsUser.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T04:15:19.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsAppointments.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T04:05:00.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDoctor.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAEYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T04:04:52.593Z",
+              "EditorCaption": ""
+>>>>>>> 02bd48445aad1f23d7085c3eda4da4f8a56bf25d
             }
           ]
         }

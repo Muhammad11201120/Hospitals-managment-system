@@ -36,11 +36,6 @@ namespace HMS_DataAccessLayer
 					PersonID = (int)Command.Parameters["@NewPersonID"].Value;
 				}
 			}
-			catch (SqlException ex)
-			{
-				clsGlobalData.WriteExceptionInLogFile(ex);
-				MessageBox.Show($"Error SP_AddNewPerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
 			catch (Exception ex)
 			{
 				clsGlobalData.WriteExceptionInLogFile(ex);
@@ -80,11 +75,6 @@ namespace HMS_DataAccessLayer
 						}
 					}
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_GetPersonByID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -115,11 +105,6 @@ namespace HMS_DataAccessLayer
 
 					if (rowAfficted > 0)
 						Updated = true;
-				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_UpdatePerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
@@ -159,11 +144,6 @@ namespace HMS_DataAccessLayer
 
 					Exists = (result == 1);
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_IsPersonExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -192,11 +172,6 @@ namespace HMS_DataAccessLayer
 					int rowafficted = Command.ExecuteNonQuery();
 
 					Deleted = (rowafficted > 0);
-				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_DeletePerson:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{
@@ -229,12 +204,6 @@ namespace HMS_DataAccessLayer
 						}
 					}
 
-				}
-				catch (SqlException ex)
-				{
-					// Sql Exception.
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_GetAllPeople : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{

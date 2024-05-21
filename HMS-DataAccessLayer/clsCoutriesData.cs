@@ -38,11 +38,6 @@ namespace HMS_DataAccessLayer
 						}
 					}
 				}
-				catch (SqlException ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_GetCountry:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
 				catch (Exception ex)
 				{
 					clsGlobalData.WriteExceptionInLogFile(ex);
@@ -75,12 +70,6 @@ namespace HMS_DataAccessLayer
 						}
 					}
 
-				}
-				catch (SqlException ex)
-				{
-					// Sql Exception.
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_GetAllCountries : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 				catch (Exception ex)
 				{

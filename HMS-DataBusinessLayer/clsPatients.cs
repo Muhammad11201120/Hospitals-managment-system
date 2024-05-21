@@ -28,29 +28,37 @@ namespace HMS_DataBusinessLayer
             : base( personID, firstName, lastName, dateOfBirth, gendor, address, contactID, countryID )
         {
             this.PatientID = patientID;
+            this.PersonID = personID;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.DateOfBirth = dateOfBirth;
+            this.Gendor = gendor;
+            this.Address = address;
+            this.ContactID = contactID;
+            this.CountryID = countryID;
             _Mode = _enMode.UPDATE;
         }
         public static DataTable GetAllPatients()
         {
             return clsPatientsData.GetAllPatients();
         }
-        public new clsPatients Find( int? PatientID )
+        public static clsPatients FindPatientByPatientID( int? PatientID )
         {
-            clsPerson person = clsPerson.Find( base.PersonID );
-            if ( person != null )
+
+            int? PersonID = null;
+            SqlParameter[] parameter = new SqlParameter[ 2 ];
+            parameter[ 0 ] = new SqlParameter( "@PatientID", PatientID );
+            parameter[ 1 ] = new SqlParameter( "@PersonID", null );
+            if ( clsPatientsData.FindPatient( ref parameter ) )
             {
-                SqlParameter[] parameter = new SqlParameter[ 1 ];
-                parameter[ 0 ] = new SqlParameter( "PatientID", PatientID );
-                if ( clsPatientsData.FindPatient( ref parameter ) )
-                {
-                    return new clsPatients( PatientID, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.CountryID );
-                }
-                else
-                    return null;
+                clsPerson person = Find( PersonID );
+                return new clsPatients( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.CountryID );
             }
             else
                 return null;
         }
 
     }
+
 }
+

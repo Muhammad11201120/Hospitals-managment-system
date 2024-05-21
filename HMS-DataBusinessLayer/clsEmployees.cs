@@ -30,6 +30,14 @@ namespace HMS_DataBusinessLayer
         {
             EmployeeID = employeeID;
             Salary = salary;
+            this.PersonID = personID;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.DateOfBirth = dateOfBirth;
+            this.Gendor = gendor;
+            this.Address = address;
+            this.ContactID = contactID;
+            this.CountryID = countryID;
             _Mode = _enMode.UPDATE;
         }
         public static DataTable GetAllEmployees()
@@ -38,27 +46,25 @@ namespace HMS_DataBusinessLayer
         }
         public new clsEmployees Find( int? EmployeeID )
         {
-            decimal salary = 0;
-            clsPerson person = clsPerson.Find( base.PersonID );
-            if ( person != null )
+            decimal? salary = null;
+            int? personID = null;
+            SqlParameter[] parameters = new SqlParameter[ 3 ];
+            parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
+            parameters[ 1 ] = new SqlParameter( "Salary", null );
+            parameters[ 2 ] = new SqlParameter( "PersonID", null );
+            if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
             {
-                SqlParameter[] parameters = new SqlParameter[ 2 ];
-                parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
-                parameters[ 1 ] = new SqlParameter( "Salary", salary );
-
-                if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
-                {
-                    return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
-                }
-                else
-                    return null;
+                clsPerson person = Find( personID );
+                return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
             }
-            return null;
+            else
+                return null;
+
         }
         private bool _AddNewEmployee()
         {
             SqlParameter[] parameters = new SqlParameter[ 2 ];
-            parameters[ 0 ] = new SqlParameter( "PersonID", base.PersonID );
+            parameters[ 0 ] = new SqlParameter( "PersonID", this.PersonID );
             parameters[ 1 ] = new SqlParameter( "Salary", this.Salary );
             int? employeeID = clsEmployeesData.AddNewEmpolyee( parameters );
             return employeeID.HasValue;
@@ -67,7 +73,7 @@ namespace HMS_DataBusinessLayer
         {
             SqlParameter[] parameters = new SqlParameter[ 3 ];
             parameters[ 0 ] = new SqlParameter( "EmployeeID", this.EmployeeID );
-            parameters[ 1 ] = new SqlParameter( "PersonID", base.PersonID );
+            parameters[ 1 ] = new SqlParameter( "PersonID", this.PersonID );
             parameters[ 2 ] = new SqlParameter( "Salary", this.Salary );
             return clsEmployeesData.UpdateEmpolyee( parameters );
         }

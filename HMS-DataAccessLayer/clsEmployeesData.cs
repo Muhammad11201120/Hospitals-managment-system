@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
 {
@@ -44,6 +45,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return EmpolyeeID;
@@ -77,6 +79,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return Update;
@@ -110,6 +113,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return Deleted;
@@ -149,6 +153,8 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             return isFound;
         }
@@ -181,6 +187,8 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             return dtEmployees;
         }

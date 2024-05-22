@@ -200,6 +200,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return dtUsers;
         }
@@ -238,6 +239,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return UserID;
@@ -271,6 +273,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return Update;
@@ -304,6 +307,7 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return Deleted;
@@ -343,6 +347,8 @@ namespace HMS_DataAccessLayer
             catch (Exception ex)
             {
                 clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             return isFound;
         }

@@ -1,47 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospital-Managment-System\\",
+  "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Hospital-Managment-System\\",
   "Documents": [
     {
-<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\hms-databusinesslayer\\clsemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\hms-databusinesslayer\\clspatients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clscoutries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clscontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\hms-databusinesslayer\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hospital-managment-system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\test\\hms-databusinesslayer\\clspatients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\hospitalinfodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> refs/remotes/origin/main
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\hms-dataaccesslayer\\clspatientsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clspatientsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clsmedicalrecordsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clsglobaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clsdoctorsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clsprescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\ourproject\\test\\hms-dataaccesslayer\\clspeopledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|d:\\ourproject\\test\\hms-databusinesslayer\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|C:\\Users\\muha1\\Desktop\\Programming\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,26 +38,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsCoutries.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsCoutries.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsCoutries.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsCoutries.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsCoutries.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T02:26:46.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsContact.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsContact.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsContact.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsContact.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsContact.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T02:26:40.887Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
-=======
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
->>>>>>> refs/remotes/origin/main
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Hospital-Managment-System\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -82,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "clsPatientsData.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataAccessLayer\\clsPatientsData.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPatientsData.cs",
@@ -94,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\Test\\Program.cs",
               "RelativeDocumentMoniker": "..\\Test\\Program.cs",
@@ -112,183 +118,49 @@
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsDoctor.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAAAD8AAAAJAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAD8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T07:43:00.688Z"
+              "WhenOpened": "2024-05-21T07:43:00.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "clsEmployees.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsEmployees.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsEmployees.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsEmployees.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsEmployees.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAEwAAABIAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T19:22:50.558Z"
+              "WhenOpened": "2024-05-20T19:22:50.558Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "clsPatients.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsPatients.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsPatients.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsPatients.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPatients.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAGgAAAAAAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAFsAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T19:21:56.818Z"
+              "WhenOpened": "2024-05-20T19:21:56.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "clsPerson.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsPerson.cs",
               "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\test\\HMS-DataBusinessLayer\\clsPerson.cs",
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAAAIUAAAAJAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAAIMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T19:19:21.229Z"
-=======
-              "Title": "HospitalInfoData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\HospitalInfoData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\HospitalInfoData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\HospitalInfoData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\HospitalInfoData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:42:46.257Z",
+              "WhenOpened": "2024-05-20T19:19:21.229Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsPatientsData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPatientsData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPatientsData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPatientsData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPatientsData.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAAAAMEAAAB+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:42:19.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsMedicalRecordsData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsMedicalRecordsData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsMedicalRecordsData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsMedicalRecordsData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsMedicalRecordsData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:42:16.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsGlobalData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsGlobalData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsGlobalData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsGlobalData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsGlobalData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:42:12.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsDoctorsData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsDoctorsData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsDoctorsData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsDoctorsData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsDoctorsData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:42:07.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsPrescriptions.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPrescriptions.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPrescriptions.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPrescriptions.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPrescriptions.cs",
-              "ViewState": "AQIAADQBAAAAAAAAAAAAAD0BAAB+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:41:17.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "clsPeopleData.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPeopleData.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:39:33.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "clsDoctor.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsDoctor.cs",
-              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAC4AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T14:14:36.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "clsUser.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsUser.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsUser.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsUser.cs",
-              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsUser.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T14:14:27.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsPerson.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAAAD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T14:13:32.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "clsAppointments.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "ToolTip": "D:\\OurProject\\Test\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsAppointments.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T14:13:22.229Z"
->>>>>>> refs/remotes/origin/main
             }
           ]
         }

@@ -55,10 +55,10 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", price);
             parameters[3] = new SqlParameter("SpecialtyID", specialtyID);
 
-            if (clsDoctorsData.Find(ref parameters))
-                return new clsDoctor(doctorID, employeeID, price, specialtyID);
-            else
-                return null;
+            //  if (clsDoctorsData.Find(ref parameters))
+            return new clsDoctor(doctorID, employeeID, price, specialtyID);
+           // else
+                //return null;
         }
         private bool _AddNewEmployee()
         {
@@ -67,7 +67,7 @@ namespace HMS_DataBusinessLayer
             parameters[1] = new SqlParameter("Price", this.Price);
             parameters[2] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
-             this.DoctorID = clsDoctorsData.AddNew(parameters);
+             //this.DoctorID = clsDoctorsData.AddNew(parameters);
             return DoctorID.HasValue;
         }
         private bool _UpdateEmployee()
@@ -78,20 +78,22 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", this.Price);
             parameters[3] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
-            return clsDoctorsData.Update(parameters);
+            // return clsDoctorsData.Update(parameters);
+            return false;
         }
         public bool Delete(int ? doctorID)
         {
             SqlParameter parameter = new SqlParameter("DoctorID", doctorID);
 
-            if (clsDoctorsData.Delete(parameter))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //if (clsDoctorsData.Delete(parameter))
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return false;
         }
         public new bool Save()
         {

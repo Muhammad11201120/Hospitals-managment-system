@@ -47,7 +47,9 @@
     <Compile Include="clsDoctor.cs" />
     <Compile Include="clsEmployee.cs" />
     <Compile Include="clsPatient.cs" />
+    <Compile Include="clsPayments.cs" />
     <Compile Include="clsPerson.cs" />
+    <Compile Include="clsSpecialties.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

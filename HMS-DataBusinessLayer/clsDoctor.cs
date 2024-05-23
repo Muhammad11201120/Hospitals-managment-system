@@ -80,9 +80,10 @@ namespace HMS_DataBusinessLayer
 
             return clsDoctorsData.Update(parameters);
         }
-        public bool Delete()
+        public bool Delete(int ? doctorID)
         {
-            SqlParameter parameter = new SqlParameter("DoctorID", this.DoctorID);
+            SqlParameter parameter = new SqlParameter("DoctorID", doctorID);
+
             if (clsDoctorsData.Delete(parameter))
             {
                 return true;

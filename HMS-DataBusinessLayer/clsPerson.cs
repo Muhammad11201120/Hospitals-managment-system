@@ -61,6 +61,7 @@ namespace HMS_DataBusinessLayer
       int? CountryID = null, ContactID = null;
       short? Gendor = null;
       DateTime DateOfBirth = DateTime.Now;
+
       SqlParameter[] Parameter = new SqlParameter[] {
                 new SqlParameter ("@PersonID", PersonID),
                 new SqlParameter ("@FirstName", FirstName),

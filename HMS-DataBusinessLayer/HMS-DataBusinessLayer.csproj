@@ -45,8 +45,8 @@
     <Compile Include="clsContact.cs" />
     <Compile Include="clsCoutries.cs" />
     <Compile Include="clsDoctor.cs" />
-    <Compile Include="clsEmployees.cs" />
-    <Compile Include="clsPatients.cs" />
+    <Compile Include="clsEmployee.cs" />
+    <Compile Include="clsPatient.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

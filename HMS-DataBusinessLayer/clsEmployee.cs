@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HMS_DataBusinessLayer
 {
-    public class clsEmployees : clsPerson
+    public class clsEmployee : clsPerson
     {
         enum _enMode
         {
@@ -19,13 +19,13 @@ namespace HMS_DataBusinessLayer
         public int? EmployeeID { get; set; }
         public decimal? Salary { get; set; }
         _enMode _Mode = _enMode.ADD;
-        public clsEmployees()
+        public clsEmployee()
         {
             EmployeeID = null;
             Salary = null;
             _Mode = _enMode.ADD;
         }
-        public clsEmployees( int? employeeID, decimal? salary, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
+        public clsEmployee( int? employeeID, decimal? salary, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
             : base( personID, firstName, lastName, dateOfBirth, gendor, address, contactID, countryID )
         {
             EmployeeID = employeeID;
@@ -44,7 +44,7 @@ namespace HMS_DataBusinessLayer
         {
             return clsEmployeesData.GetAllEmpolyee();
         }
-        public new clsEmployees Find( int? EmployeeID )
+        public new clsEmployee Find( int? EmployeeID )
         {
             decimal? salary = null;
             int? personID = null;
@@ -55,7 +55,7 @@ namespace HMS_DataBusinessLayer
             if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
             {
                 clsPerson person = Find( personID );
-                return new clsEmployees( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
+                return new clsEmployee( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
             }
             else
                 return null;

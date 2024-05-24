@@ -53,7 +53,7 @@
     <Compile Include="clsEmployeesData.cs" />
     <Compile Include="clsGlobalData.cs" />
     <Compile Include="clsPatientsData.cs" />
-    <Compile Include="clsPrescriptions.cs" />
+    <Compile Include="clsPrescriptionsData.cs" />
     <Compile Include="clsSpecialtiesData.cs" />
     <Compile Include="clsUsersData.cs" />
     <Compile Include="clsDataAccessSettings.cs" />

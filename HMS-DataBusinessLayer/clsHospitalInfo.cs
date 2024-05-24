@@ -11,6 +11,7 @@ namespace HMS_DataBusinessLayer
     public class clsHospitalInfo
     {
         public enum enMode { AddNew = 1, Update = 2 }
+
         public enMode Mode;
 
         public Nullable<int> ID { get; set; }
@@ -19,7 +20,7 @@ namespace HMS_DataBusinessLayer
         public string HospitalLogo { get; set; }
         public string HospitalAddress { get; set; }
 
-        public clsHospitalInfos()
+        public clsHospitalInfo()
         {
             this.ID = default(int);
             this.HospitalName = default(string);

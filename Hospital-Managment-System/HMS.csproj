@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HMS-DataBusinessLayer\HMS-DataBusinessLayer.csproj">
-      <Project>{be723850-f35b-4cf6-bf5d-e1c9e4382160}</Project>
-      <Name>HMS-DataBusinessLayer</Name>
+    <ProjectReference Include="..\HMS-Business\HMS-Business.csproj">
+      <Project>{a1ffa291-299d-4a10-a4d4-e27f3d6f2499}</Project>
+      <Name>HMS-Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

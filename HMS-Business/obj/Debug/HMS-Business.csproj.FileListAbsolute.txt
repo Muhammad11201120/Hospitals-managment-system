@@ -1,0 +1,9 @@
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\bin\Debug\HMS-Business.dll
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\bin\Debug\HMS-Business.pdb
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.dll
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.pdb

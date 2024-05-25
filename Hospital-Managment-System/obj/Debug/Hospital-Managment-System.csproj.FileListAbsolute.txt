@@ -1,9 +1,0 @@
-D:\OurProject\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
-D:\OurProject\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
-D:\OurProject\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.csproj.AssemblyReference.cache
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.csproj.GenerateResource.cache
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.csproj.CoreCompileInputs.cache
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
-D:\OurProject\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb

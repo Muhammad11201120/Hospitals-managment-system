@@ -51,7 +51,6 @@
     <Compile Include="clsPatient.cs" />
     <Compile Include="clsPayments.cs" />
     <Compile Include="clsPerson.cs" />
-    <Compile Include="clsPrescriptions.cs" />
     <Compile Include="clsSpecialties.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

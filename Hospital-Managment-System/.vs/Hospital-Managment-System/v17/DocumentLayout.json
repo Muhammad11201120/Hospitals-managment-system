@@ -46,7 +46,7 @@
               "RelativeDocumentMoniker": "..\\TestClasses\\Program.cs",
               "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system\\TestClasses\\Program.cs",
               "RelativeToolTip": "..\\TestClasses\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T07:07:11.862Z",
               "EditorCaption": ""
@@ -61,8 +61,7 @@
               "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T06:56:41.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:56:41.785Z"
             },
             {
               "$type": "Document",

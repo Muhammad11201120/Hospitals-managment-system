@@ -14,6 +14,11 @@ namespace Test
     {
         static void Main( string[] args )
         {
+            AddNewPeopleAndContact();
+            FindPeopleAndContact();
+            UpdatePeopleAndContact();
+            IsExistsPeopleAndContact();
+            DeletePeopleAndContact();
             Console.ReadKey();
         }
 

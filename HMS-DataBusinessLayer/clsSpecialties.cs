@@ -75,13 +75,13 @@ namespace HMS_DataBusinessLayer
             SqlParameter sp = new SqlParameter( "SpecialityID", SpecialityID );
             return true;
         }
-        public static DataTable GetAllSpecialties()
-        {
-            return clsSpecialityData.GetAllSpecialties();
-        }
-        public static bool DeleteSpeciality( int PaymentID )
-        {
-            return clsSpecialityData.Delete( PaymentID );
-        }
+        //public static DataTable GetAllSpecialties()
+        //{
+        //    return clsSpecialityData.GetAllSpecialties();
+        //}
+        //public static bool DeleteSpeciality( int PaymentID )
+        //{
+        //    return clsSpecialityData.Delete( PaymentID );
+        //}
     }
 }

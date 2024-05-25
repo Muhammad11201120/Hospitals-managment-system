@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HMS-DataBusinessLayer\HMS-DataBusinessLayer.csproj">
+      <Project>{be723850-f35b-4cf6-bf5d-e1c9e4382160}</Project>
+      <Name>HMS-DataBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

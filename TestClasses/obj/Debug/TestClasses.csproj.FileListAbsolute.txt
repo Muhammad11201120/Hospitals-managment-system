@@ -1,0 +1,10 @@
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe.config
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.pdb
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.exe
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.pdb
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClas.E7E22613.Up2Date

@@ -24,15 +24,15 @@ namespace HMS_DataBusinessLayer
             PatientID = null;
             _Mode = _enMode.ADD;
         }
-        public clsPatient( int? patientID, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
-            : base( personID, firstName, lastName, dateOfBirth, gendor, address, contactID, countryID )
+        public clsPatient( int? patientID, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gender, string address, int? contactID, int? countryID )
+            : base( personID, firstName, lastName, dateOfBirth, gender, address, contactID, countryID )
         {
             this.PatientID = patientID;
             this.PersonID = personID;
             this.FirstName = firstName;
             this.LastName = lastName;
             this.DateOfBirth = dateOfBirth;
-            this.Gendor = gendor;
+            this.Gender = gender;
             this.Address = address;
             this.ContactID = contactID;
             this.CountryID = countryID;
@@ -52,7 +52,7 @@ namespace HMS_DataBusinessLayer
             if ( clsPatientsData.FindPatient( ref parameter ) )
             {
                 clsPerson person = Find( PersonID );
-                return new clsPatient( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.CountryID );
+                return new clsPatient( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.CountryID );
             }
             else
                 return null;
@@ -64,7 +64,7 @@ namespace HMS_DataBusinessLayer
             parameters[ 0 ] = new SqlParameter( "FirstName", this.FirstName );
             parameters[ 1 ] = new SqlParameter( "LastName", this.LastName );
             parameters[ 2 ] = new SqlParameter( "DateOfBirth", this.DateOfBirth );
-            parameters[ 3 ] = new SqlParameter( "Gendor", this.Gendor );
+            parameters[ 3 ] = new SqlParameter( "Gendor", this.Gender );
             parameters[ 4 ] = new SqlParameter( "Address", this.Address );
             parameters[ 5 ] = new SqlParameter( "ContactID", this.ContactID );
             parameters[ 6 ] = new SqlParameter( "CountryID", this.CountryID );
@@ -80,7 +80,7 @@ namespace HMS_DataBusinessLayer
             parameters[ 2 ] = new SqlParameter( "FirstName", this.FirstName );
             parameters[ 3 ] = new SqlParameter( "LastName", this.LastName );
             parameters[ 4 ] = new SqlParameter( "DateOfBirth", this.DateOfBirth );
-            parameters[ 5 ] = new SqlParameter( "Gendor", this.Gendor );
+            parameters[ 5 ] = new SqlParameter( "Gendor", this.Gender );
             parameters[ 6 ] = new SqlParameter( "Address", this.Address );
             parameters[ 7 ] = new SqlParameter( "ContactID", this.ContactID );
             parameters[ 8 ] = new SqlParameter( "CountryID", this.CountryID );

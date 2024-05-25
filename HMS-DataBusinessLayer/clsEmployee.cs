@@ -25,8 +25,8 @@ namespace HMS_DataBusinessLayer
             Salary = null;
             _Mode = _enMode.ADD;
         }
-        public clsEmployee( int? employeeID, decimal? salary, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
-            : base( personID, firstName, lastName, dateOfBirth, gendor, address, contactID, countryID )
+        public clsEmployee( int? employeeID, decimal? salary, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gender, string address, int? contactID, int? countryID )
+            : base( personID, firstName, lastName, dateOfBirth, gender, address, contactID, countryID )
         {
             EmployeeID = employeeID;
             Salary = salary;
@@ -34,7 +34,7 @@ namespace HMS_DataBusinessLayer
             this.FirstName = firstName;
             this.LastName = lastName;
             this.DateOfBirth = dateOfBirth;
-            this.Gendor = gendor;
+            this.Gender = gender;
             this.Address = address;
             this.ContactID = contactID;
             this.CountryID = countryID;
@@ -55,7 +55,7 @@ namespace HMS_DataBusinessLayer
             if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
             {
                 clsPerson person = Find( personID );
-                return new clsEmployee( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.ContactID );
+                return new clsEmployee( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.ContactID );
             }
             else
                 return null;

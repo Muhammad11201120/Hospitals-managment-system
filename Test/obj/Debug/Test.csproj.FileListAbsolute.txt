@@ -61,3 +61,7 @@ C:\Hospital Management System With The Team\Test\Test\obj\Debug\Test.csproj.Copy
 C:\Hospital Management System With The Team\Test\Test\obj\Debug\Test.exe
 C:\Hospital Management System With The Team\Test\Test\obj\Debug\Test.pdb
 >>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.exe
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.pdb

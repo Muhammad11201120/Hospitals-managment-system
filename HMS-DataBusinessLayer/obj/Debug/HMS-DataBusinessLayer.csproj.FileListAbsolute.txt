@@ -46,3 +46,7 @@ C:\Hospital Management System With The Team\Test\HMS-DataBusinessLayer\obj\Debug
 C:\Hospital Management System With The Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
 C:\Hospital Management System With The Team\Test\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb
 >>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb

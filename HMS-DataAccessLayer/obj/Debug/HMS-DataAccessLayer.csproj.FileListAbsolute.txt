@@ -31,3 +31,9 @@ C:\Hospital Management System With The Team\Test\HMS-DataAccessLayer\obj\Debug\H
 C:\Hospital Management System With The Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 C:\Hospital Management System With The Team\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
 >>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

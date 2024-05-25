@@ -5,231 +5,216 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
-{
-    public class clsDoctorsData
+{ 
+    public class clsDocotrsData { 
+    public static Nullable<int> AddNewDoctor( SqlParameter[] parameters)
     {
+        Nullable<int> DoctorID = null;
 
-        public static int AddNew(int EmployeeID, decimal Price, int SpecialityID)
+        using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+        using (SqlCommand Command = new SqlCommand("SP_AddNewDoctor", Connection))
         {
-            int DoctorID = -1;
+            Command.CommandType = CommandType.StoredProcedure;
+
+            Command.Parameters.AddRange(parameters);
+
+            // Output parameter
+            SqlParameter outputParameter = new SqlParameter($"@NewDoctorID", SqlDbType.Int)
+            {
+                Direction = ParameterDirection.Output
+            };
+            Command.Parameters.Add(outputParameter);
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Connection.Open();
+
+                Command.ExecuteScalar();
+
+                DoctorID = (int)Command.Parameters[$"@NewDoctorID"].Value;
+
+            }
+            catch (Exception ex)
+            {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show("Error AddNew : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        return DoctorID;
+    }
+       
+        public static bool Find( ref SqlParameter[] parameters)
+    {
+        bool Found = false;
+
+        using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+        using (SqlCommand Command = new SqlCommand("SP_GetDoctorByID", Connection))
+        {
+            Command.CommandType = CommandType.StoredProcedure;
+
+            Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+            try
+            {
+                Connection.Open();
+
+                using (SqlDataReader reader = Command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            parameters[i].Value = reader[parameters[i].ParameterName];
+                        }
+
+                        Found = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        return Found;
+    }
+
+    public static bool UpdateDoctor( SqlParameter[] parameters)
+    {
+        bool Updated = false;
+
+        using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+        using (SqlCommand Command = new SqlCommand("SP_UpdateDoctor", Connection))
+        {
+            Command.CommandType = CommandType.StoredProcedure;
+
+            Command.Parameters.AddRange(parameters);
+
+            try
+            {
+                Connection.Open();
+
+                int rowAfficted = Command.ExecuteNonQuery();
+
+                Updated = (rowAfficted > 0);
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        return Updated;
+    }
+
+    public static bool IsDoctorExists( SqlParameter parameter)
+    {
+        bool Exists = false;
+
+        using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+        using (SqlCommand Command = new SqlCommand("SP_IsDoctorExist", Connection))
+        {
+            Command.CommandType = CommandType.StoredProcedure;
+
+            Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+            SqlParameter returnValue = new SqlParameter
+            {
+                Direction = ParameterDirection.ReturnValue
+            };
+            Command.Parameters.Add(returnValue);
+
+            try
+            {
+                Connection.Open();
+
+                Command.ExecuteScalar();
+                int result = (int)returnValue.Value;
+
+                Exists = (result == 1);
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        return Exists;
+    }
+
+    public static bool DeleteDoctor( SqlParameter parameter)
+    {
+        bool Deleted = false;
+
+        using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+        using (SqlCommand Command = new SqlCommand("SP_DeleteDoctor", Connection))
+        {
+            Command.CommandType = CommandType.StoredProcedure;
+
+            Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+
+            try
+            {
+                Connection.Open();
+
+                int rowAfficted = Command.ExecuteNonQuery();
+
+                Deleted = (rowAfficted > 0);
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        return Deleted;
+    }
+
+        public static DataTable GetAllDoctors()
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand command = new SqlCommand("SP_GetAllDoctors", connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+
+                try
                 {
                     connection.Open();
 
-                    string query = @"EXEC SP_AddNewDoctor
-                             @EmployeeID = @EmployeeID,
-                             @Price = @Price,
-                             @SpecialityID = @SpecialityID;";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        command.Parameters.AddWithValue("@EmployeeID", EmployeeID);
-                        command.Parameters.AddWithValue("@Price", Price);
-                        command.Parameters.AddWithValue("@SpecialityID", SpecialityID);
-
-                        object result = command.ExecuteScalar();
-
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        if (reader.HasRows)
                         {
-                            DoctorID = insertedID;
+                            dt.Load(reader);
                         }
                     }
+
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return DoctorID;
-        }
-
-        public static bool Update(int DoctorID, int EmployeeID, decimal Price, int SpecialityID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                catch (Exception ex)
                 {
-                    connection.Open();
-
-                    string query = @"EXEC SP_UpdateDoctor
-                             @DoctorID = @DoctorID,
-                             @EmployeeID = @EmployeeID,
-                             @Price = @Price,
-                             @SpecialityID = @SpecialityID;";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@DoctorID", DoctorID);
-                        command.Parameters.AddWithValue("@EmployeeID", EmployeeID);
-                        command.Parameters.AddWithValue("@Price", Price);
-                        command.Parameters.AddWithValue("@SpecialityID", SpecialityID);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        // Other methods remain the same...
-
-
-
-        public static bool Delete(int DoctorID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    Connection.Open();
-
-                    string query = @"EXEC  SP_DeleteDoctor
-		                            @DoctorID = @DoctorID";
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-                        Command.Parameters.AddWithValue("@DoctorID", DoctorID);
-
-                        RowAffected = Command.ExecuteNonQuery();
-                    }
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error  : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
 
-            return (RowAffected > 0);
-        }
-
-        public static bool Find(int DoctorID, out int EmployeeID, out decimal Price, out int SpecialityID)
-        {
-            bool isFound = false;
-            EmployeeID = 0;
-            Price = 0;
-            SpecialityID = 0;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_GetDoctorByID
-                                @DoctorID = @DoctorID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@DoctorID", DoctorID);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                while (reader.Read())
-                                {
-                                    isFound = true;
-                                    EmployeeID = (int)reader["EmployeeID"];
-                                    Price = (decimal)reader["Price"];
-                                    SpecialityID = (int) reader["SpecialityID"];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return isFound;
-        }
-
-
-        public static DataTable GetAllDoctor()
-        {
-            DataTable dtDoctor = new DataTable();
-            try
-            {
-
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    Connection.Open();
-
-                    string query = @"exec SP_GetAllDoctor";
-
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-                        using (SqlDataReader reader = Command.ExecuteReader())
-                        {
-
-                            if (reader.HasRows)
-                                dtDoctor.Load(reader);
-                          
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-            return dtDoctor;
-        }
-
-        public static bool IsExist(int DoctorID)
-        {
-            bool isExist = false;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_IsDoctorExist
-                             @DoctorID = @DoctorID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@DoctorID", DoctorID);
-
-                        object result = command.ExecuteScalar();
-
-                        if (result != null && (int)result == 1)
-                        {
-                            isExist = true;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return isExist;
+            return dt;
         }
 
     }
 }
+
 

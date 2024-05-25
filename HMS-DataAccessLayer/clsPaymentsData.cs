@@ -1,161 +1,189 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
 {
-    public  class clsPaymentsData
+    public class clsPaymentsData
     {
-        public static int AddNew(DateTime PaymentDate, string PaymentMethod, decimal AmountPaid, int MedicalRecordID, string AdditionalNotes)
+        public static Nullable<int> AddNewPayment( SqlParameter[] parameters)
         {
-            int PaymentID = -1;
+            Nullable<int> PaymentID = null;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_AddNewPayment", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                // Output parameter
+                SqlParameter outputParameter = new SqlParameter($"@NewPaymentID", SqlDbType.Int)
                 {
-                    connection.Open();
+                    Direction = ParameterDirection.Output
+                };
+                Command.Parameters.Add(outputParameter);
 
-                    string query = @"EXEC SP_AddNewPayment
-                 @PaymentDate = @PaymentDate,
-                 @PaymentMethod = @PaymentMethod,
-                 @AmountPaid = @AmountPaid,
-                 @MedicalRecordID = @MedicalRecordID,
-                 @AdditionalNotes = @AdditionalNotes;";
+                try
+                {
+                    Connection.Open();
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@PaymentDate", PaymentDate);
-                        command.Parameters.AddWithValue("@PaymentMethod", PaymentMethod);
-                        command.Parameters.AddWithValue("@AmountPaid", AmountPaid);
-                        command.Parameters.AddWithValue("@MedicalRecordID", MedicalRecordID);
-                        command.Parameters.AddWithValue("@AdditionalNotes", AdditionalNotes);
+                    Command.ExecuteScalar();
 
-                        object result = command.ExecuteScalar();
+                    PaymentID = (int)Command.Parameters[$"@NewPaymentID"].Value;
 
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
-                        {
-                            PaymentID = insertedID;
-                        }
-                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show("Error AddNew : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
             return PaymentID;
         }
 
-        public static bool Update(int PaymentID, DateTime PaymentDate, string PaymentMethod, decimal AmountPaid, int MedicalRecordID, string AdditionalNotes)
+        public static bool FindPayment(ref SqlParameter[] parameters)
         {
-            int RowAffected = -1;
+            bool Found = false;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetPaymentByID", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
                 {
-                    connection.Open();
+                    Connection.Open();
 
-                    string query = @"EXEC SP_UpdatePayment
-                 @PaymentID = @PaymentID,
-                 @PaymentDate = @PaymentDate,
-                 @PaymentMethod = @PaymentMethod,
-                 @AmountPaid = @AmountPaid,
-                 @MedicalRecordID = @MedicalRecordID,
-                 @AdditionalNotes = @AdditionalNotes;";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = Command.ExecuteReader())
                     {
-                        command.Parameters.AddWithValue("@PaymentID", PaymentID);
-                        command.Parameters.AddWithValue("@PaymentDate", PaymentDate);
-                        command.Parameters.AddWithValue("@PaymentMethod", PaymentMethod);
-                        command.Parameters.AddWithValue("@AmountPaid", AmountPaid);
-                        command.Parameters.AddWithValue("@MedicalRecordID", MedicalRecordID);
-                        command.Parameters.AddWithValue("@AdditionalNotes", AdditionalNotes);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Delete(int PaymentID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_DeletePayment
-                    @PaymentID = @PaymentID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@PaymentID", PaymentID);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool IsPaymentExist(int PaymentID)
-        {
-            bool isExist = false;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_IsPaymentExist 
-                 @PaymentID = @PaymentID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@PaymentID", PaymentID);
-
-                        object result = command.ExecuteScalar();
-
-                        if (result != null && (int)result == 1)
+                        if (reader.Read())
                         {
-                            isExist = true;
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                parameters[i].Value = reader[parameters[i].ParameterName];
+                            }
+
+                            Found = true;
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
-            return isExist;
+            return Found;
         }
+
+        public static bool UpdatePayment( SqlParameter[] parameters)
+        {
+            bool Updated = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_UpdatePayment", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                try
+                {
+                    Connection.Open();
+
+                    int rowAfficted = Command.ExecuteNonQuery();
+
+                    Updated = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+
+            return Updated;
+        }
+
+        public static bool IsPaymentExists( SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsPaymentExist", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
+
+        public static bool DeletePayment( SqlParameter parameter)
+        {
+            bool Deleted = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_DeletePayment", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    int rowAfficted = Command.ExecuteNonQuery();
+
+                    Deleted = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Deleted;
+        }
+
+
 
     }
 }
+

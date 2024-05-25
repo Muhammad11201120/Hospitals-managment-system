@@ -5,232 +5,184 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
 {
     public class HospitalInfoData
     {
-        public static int AddNew(string HospitalName, string HospitalPhone, string HospitalLogo, string HospitalAddress)
+        public static Nullable<int> AddNewHospitalInfo(SqlParameter[] parameters)
         {
-            int HospitalID = -1;
+            Nullable<int> ID = null;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_AddNewHospital", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                // Output parameter
+                SqlParameter outputParameter = new SqlParameter($"@NewHospitalID", SqlDbType.Int)
                 {
-                    connection.Open();
+                    Direction = ParameterDirection.Output
+                };
+                Command.Parameters.Add(outputParameter);
 
-                    string query = @"EXEC SP_AddNewHospital
-                     @HospitalName = @HospitalName,
-                     @HospitalPhone = @HospitalPhone,
-                     @HospitalLogo = @HospitalLogo,
-                     @HospitalAddress = @HospitalAddress;";
+                try
+                {
+                    Connection.Open();
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@HospitalName", HospitalName);
-                        command.Parameters.AddWithValue("@HospitalPhone", HospitalPhone);
-                        command.Parameters.AddWithValue("@HospitalLogo", HospitalLogo);
-                        command.Parameters.AddWithValue("@HospitalAddress", HospitalAddress);
+                    Command.ExecuteScalar();
 
-                        object result = command.ExecuteScalar();
+                    ID = (int)Command.Parameters[$"@NewHospitalID"].Value;
 
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                }
+                catch (Exception ex)
                         {
-                            HospitalID = insertedID;
-                        }
-                    }
+                            clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show("Error  " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
 
-            return HospitalID;
+            return ID;
         }
 
-        public static bool Update(int HospitalID, string HospitalName, string HospitalPhone, string HospitalLogo, string HospitalAddress)
+        public static bool FindHospitalInfo( ref SqlParameter[] parameters)
         {
-            int RowAffected = -1;
+            bool Found = false;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetHospitalByID", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
                 {
-                    connection.Open();
+                    Connection.Open();
 
-                    string query = @"EXEC SP_UpdateHospital
-                     @HospitalID = @HospitalID,
-                     @HospitalName = @HospitalName,
-                     @HospitalPhone = @HospitalPhone,
-                     @HospitalLogo = @HospitalLogo,
-                     @HospitalAddress = @HospitalAddress;";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = Command.ExecuteReader())
                     {
-                        command.Parameters.AddWithValue("@HospitalID", HospitalID);
-                        command.Parameters.AddWithValue("@HospitalName", HospitalName);
-                        command.Parameters.AddWithValue("@HospitalPhone", HospitalPhone);
-                        command.Parameters.AddWithValue("@HospitalLogo", HospitalLogo);
-                        command.Parameters.AddWithValue("@HospitalAddress", HospitalAddress);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Delete(int HospitalID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_DeleteHospital
-                            @HospitalID = @HospitalID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@HospitalID", HospitalID);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Find(int HospitalID, out string HospitalName, out string HospitalPhone, out string HospitalLogo, out string HospitalAddress)
-        {
-            bool isFound = false;
-            HospitalName = "";
-            HospitalPhone = "";
-            HospitalLogo = "";
-            HospitalAddress = "";
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_GetHospitalByID
-                            @HospitalID = @HospitalID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@HospitalID", HospitalID);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
                         {
-                            if (reader.HasRows)
+                            for (int i = 0; i < reader.FieldCount; i++)
                             {
-                                while (reader.Read())
-                                {
-                                    isFound = true;
-                                    HospitalName = reader["HospitalName"].ToString();
-                                    HospitalPhone = reader["HospitalPhone"].ToString();
-                                    HospitalLogo = reader["HospitalLogo"].ToString();
-                                    HospitalAddress = reader["HospitalAddress"].ToString();
-                                }
+                                parameters[i].Value = reader[parameters[i].ParameterName];
                             }
+
+                            Found = true;
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return isFound;
-        }
-
-        public static DataTable GetAllHospitals()
-        {
-            DataTable dtHospitals = new DataTable();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                catch (Exception ex)
                 {
-                    connection.Open();
-
-                    string query = @"EXEC SP_GetAllHospitals ";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                dtHospitals.Load(reader);
-                            }
-                        }
-                    }
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
 
-            return dtHospitals;
+            return Found;
         }
 
-        public static bool IsHospitalExist(int HospitalID)
+        public static bool UpdateHospitalInfo(SqlParameter[] parameters)
         {
-            bool isExist = false;
+            bool Updated = false;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_UpdateHospital", Connection))
             {
-                string query = @"SP_IsHospitalExist 
-                         HospitalID=@HospitalID ";
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                try
                 {
-                    connection.Open();
+                    Connection.Open();
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@HospitalID", HospitalID);
+                    int rowAfficted = Command.ExecuteNonQuery();
 
-                        object resulte = command.ExecuteScalar();
+                    Updated = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-                        if (resulte != null && (int)resulte == 1)
-                        {
-                            isExist = true;
-                        }
+            }
 
-                    }
+            return Updated;
+        }
 
+        public static bool IsHospitalInfoExists( SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsHospitalExist", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-            return isExist;
+
+            return Exists;
         }
+
+        public static bool DeleteHospitalInfo( SqlParameter parameter)
+        {
+            bool Deleted = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_DeleteHospital", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    int rowAfficted = Command.ExecuteNonQuery();
+
+                    Deleted = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Deleted;
+        }
+
+
     }
 }
 

@@ -5,210 +5,187 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
 {
     public class clsAppointmentsData
     {
-        public static int AddNew(int PatientID, int DoctorID, DateTime AppointmentDateTime, string AppointmentStatus, decimal TotalPrice, int UserID)
+        public static Nullable<int> AddNewAppointment( SqlParameter[] parameters)
         {
-            int AppointmentID = -1;
+            Nullable<int> AppointmentID = null;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_AddNewAppointment", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                // Output parameter
+                SqlParameter outputParameter = new SqlParameter($"@NewAppointmentID", SqlDbType.Int)
                 {
-                    connection.Open();
+                    Direction = ParameterDirection.Output
+                };
+                Command.Parameters.Add(outputParameter);
 
-                    string query = @"EXEC SP_AddNewAppointment
-                 @PatientID = @PatientID,
-                 @DoctorID = @DoctorID,
-                 @AppointmentDateTime = @AppointmentDateTime,
-                 @AppointmentStatus = @AppointmentStatus,
-                 @TotalPrice = @TotalPrice,
-                 @UserID = @UserID;";
+                try
+                {
+                    Connection.Open();
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@PatientID", PatientID);
-                        command.Parameters.AddWithValue("@DoctorID", DoctorID);
-                        command.Parameters.AddWithValue("@AppointmentDateTime", AppointmentDateTime);
-                        command.Parameters.AddWithValue("@AppointmentStatus", AppointmentStatus);
-                        command.Parameters.AddWithValue("@TotalPrice", TotalPrice);
-                        command.Parameters.AddWithValue("@UserID", UserID);
+                    Command.ExecuteScalar();
 
-                        object result = command.ExecuteScalar();
+                    AppointmentID = (int)Command.Parameters[$"@NewAppointmentID"].Value;
 
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
-                        {
-                            AppointmentID = insertedID;
-                        }
-                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile (ex);
+                    MessageBox.Show( ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
             return AppointmentID;
         }
 
-        public static bool Update(int AppointmentID, int PatientID, int DoctorID, DateTime AppointmentDateTime, string AppointmentStatus, decimal TotalPrice, int UserID)
+        public static bool FindAppointment( ref SqlParameter[] parameters)
         {
-            int RowAffected = -1;
+            bool Found = false;
 
-            try
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetAppointmentByID", Connection))
             {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
                 {
-                    connection.Open();
+                    Connection.Open();
 
-                    string query = @"EXEC SP_UpdateAppointment
-                 @AppointmentID = @AppointmentID,
-                 @PatientID = @PatientID,
-                 @DoctorID = @DoctorID,
-                 @AppointmentDateTime = @AppointmentDateTime,
-                 @AppointmentStatus = @AppointmentStatus,
-                 @TotalPrice = @TotalPrice,
-                 @UserID = @UserID;";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = Command.ExecuteReader())
                     {
-                        command.Parameters.AddWithValue("@AppointmentID", AppointmentID);
-                        command.Parameters.AddWithValue("@PatientID", PatientID);
-                        command.Parameters.AddWithValue("@DoctorID", DoctorID);
-                        command.Parameters.AddWithValue("@AppointmentDateTime", AppointmentDateTime);
-                        command.Parameters.AddWithValue("@AppointmentStatus", AppointmentStatus);
-                        command.Parameters.AddWithValue("@TotalPrice", TotalPrice);
-                        command.Parameters.AddWithValue("@UserID", UserID);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Delete(int AppointmentID)
-        {
-            int RowAffected = -1;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_DeleteAppointment
-                    @AppointmentID = @AppointmentID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@AppointmentID", AppointmentID);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                // Handle or log the exception here
-            }
-
-            return (RowAffected > 0);
-        }
-
-        public static bool Find(int AppointmentID, out int PatientID, out int DoctorID, out DateTime AppointmentDateTime, out string AppointmentStatus, out decimal TotalPrice, out int UserID)
-        {
-            bool isFound = false;
-            PatientID = 0;
-            DoctorID = 0;
-            AppointmentDateTime = DateTime.MinValue;
-            AppointmentStatus = "";
-            TotalPrice = 0;
-            UserID = 0;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"EXEC SP_GetAppointmentByID
-                    @AppointmentID = @AppointmentID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@AppointmentID", AppointmentID);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
                         {
-                            if (reader.HasRows)
+                            for (int i = 0; i < reader.FieldCount; i++)
                             {
-                                while (reader.Read())
-                                {
-                                    isFound = true;
-                                    PatientID = (int)reader["PatientID"];
-                                    DoctorID = (int)reader["DoctorID"];
-                                    AppointmentDateTime = (DateTime)reader["AppointmentDateTime"];
-                                    AppointmentStatus = reader["AppointmentStatus"].ToString();
-                                    TotalPrice = (decimal)reader["TotalPrice"];
-                                    UserID = (int)reader["UserID"];
-                                }
+                                parameters[i].Value = reader[parameters[i].ParameterName];
                             }
+
+                            Found = true;
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-            }
-
-            return isFound;
-        }
-
-        public static DataTable GetAllAppointments()
-        {
-            DataTable dtAppointments = new DataTable();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                catch (Exception ex)
                 {
-                    connection.Open();
-
-                    string query = @"EXEC SP_GetAllAppointments ";
-
-                   using(SqlCommand command = new SqlCommand(query, connection))
-            {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                dtAppointments.Load(reader);
-                            }
-                        }
-                    }
+                     clsGlobalData.WriteExceptionInLogFile (ex);
+                    MessageBox.Show($" {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+
+            return Found;
+        }
+
+        public static bool UpdateAppointment( SqlParameter[] parameters)
+        {
+            bool Updated = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_UpdateAppointment", Connection))
             {
-                clsGlobalData.WriteExceptionInLogFile(ex);
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddRange(parameters);
+
+                try
+                {
+                    Connection.Open();
+
+                    int rowAfficted = Command.ExecuteNonQuery();
+
+                    Updated = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($" {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
 
-            return dtAppointments;
+            return Updated;
         }
+
+        public static bool IsAppointmentExists( SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsAppointmentExist", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
+
+        public static bool DeleteAppointment( SqlParameter parameter)
+        {
+            bool Deleted = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_DeleteAppointment", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    int rowAfficted = Command.ExecuteNonQuery();
+
+                    Deleted = (rowAfficted > 0);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Deleted;
+        }
+
+
 
 
     }
 }
+
+

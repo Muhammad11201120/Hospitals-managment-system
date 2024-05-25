@@ -34,3 +34,15 @@ C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.exe
 C:\Users\TOSHIBA\Desktop\Project_With_Team\Test\Test\obj\Debug\Test.pdb
 D:\OurProject\Test\Test\bin\Debug\HMS-DataBusinessLayer.dll
 D:\OurProject\Test\Test\bin\Debug\HMS-DataBusinessLayer.pdb
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\Test.exe.config
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\Test.exe
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\Test.pdb
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.dll
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.dll
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.pdb
+G:\HospitalProject\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.pdb
+G:\HospitalProject\Hospitals-managment-system\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+G:\HospitalProject\Hospitals-managment-system\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+G:\HospitalProject\Hospitals-managment-system\Test\obj\Debug\Test.csproj.Up2Date
+G:\HospitalProject\Hospitals-managment-system\Test\obj\Debug\Test.exe
+G:\HospitalProject\Hospitals-managment-system\Test\obj\Debug\Test.pdb

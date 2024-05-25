@@ -42,7 +42,7 @@ namespace HMS_DataBusinessLayer
         }
         public static DataTable GetAllEmployees()
         {
-            return clsDoctorsData.GetAllDoctor();
+            return clsDocotrsData.GetAllDoctors();
         }
         public new clsDoctor Find(int? doctorID)
         {
@@ -55,7 +55,7 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", price);
             parameters[3] = new SqlParameter("SpecialtyID", specialtyID);
 
-            if (clsDoctorsData.Find(ref parameters))
+            if (clsDocotrsData.Find(ref parameters))
                 return new clsDoctor(doctorID, employeeID, price, specialtyID);
             else
                 return null;
@@ -67,7 +67,7 @@ namespace HMS_DataBusinessLayer
             parameters[1] = new SqlParameter("Price", this.Price);
             parameters[2] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
-             this.DoctorID = clsDoctorsData.AddNew(parameters);
+             this.DoctorID = clsDocotrsData.AddNewDoctor(parameters);
             return DoctorID.HasValue;
         }
         private bool _UpdateEmployee()
@@ -78,13 +78,13 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", this.Price);
             parameters[3] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
-            return clsDoctorsData.Update(parameters);
+            return clsDocotrsData.UpdateDoctor(parameters);
         }
         public bool Delete(int ? doctorID)
         {
             SqlParameter parameter = new SqlParameter("DoctorID", doctorID);
 
-            if (clsDoctorsData.Delete(parameter))
+            if (clsDocotrsData.DeleteDoctor(parameter))
             {
                 return true;
             }

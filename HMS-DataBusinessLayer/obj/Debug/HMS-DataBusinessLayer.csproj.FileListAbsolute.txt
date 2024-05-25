@@ -55,3 +55,7 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLa
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.dll
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\bin\Debug\HMS-DataAccessLayer.pdb
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-Data.459C1507.Up2Date
+D:\OurProject\Test\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.AssemblyReference.cache
+D:\OurProject\Test\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system\HMS-DataBusinessLayer\obj\Debug\HMS-DataBusinessLayer.pdb

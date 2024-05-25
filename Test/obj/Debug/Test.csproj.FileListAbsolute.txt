@@ -73,3 +73,15 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.pdb
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.pdb
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.csproj.Up2Date
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\Test.exe.config
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\Test.exe
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\Test.pdb
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+D:\OurProject\Test\Hospitals-managment-system\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Hospitals-managment-system\Test\obj\Debug\Test.csproj.Up2Date
+D:\OurProject\Test\Hospitals-managment-system\Test\obj\Debug\Test.exe
+D:\OurProject\Test\Hospitals-managment-system\Test\obj\Debug\Test.pdb

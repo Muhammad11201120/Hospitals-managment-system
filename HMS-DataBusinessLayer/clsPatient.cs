@@ -17,18 +17,21 @@ namespace HMS_DataBusinessLayer
             UPDATE = 2,
         }
         public int? PatientID { get; set; }
+        public new int? PersonID { get; set; }
         _enMode _Mode = _enMode.ADD;
 
         public clsPatient()
         {
             PatientID = null;
+            PersonID = null;
             _Mode = _enMode.ADD;
         }
-        public clsPatient( int? patientID, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gender, string address, int? contactID, int? countryID )
-            : base( personID, firstName, lastName, dateOfBirth, gender, address, contactID, countryID )
+        public clsPatient( int? patientID, int? personID, string nationalNo, string firstName, string lastName, DateTime dateOfBirth, byte? gender, string address, int? contactID, int? countryID )
+
         {
             this.PatientID = patientID;
             this.PersonID = personID;
+            this.NationalNo = nationalNo;
             this.FirstName = firstName;
             this.LastName = lastName;
             this.DateOfBirth = dateOfBirth;
@@ -45,45 +48,33 @@ namespace HMS_DataBusinessLayer
         public static clsPatient FindPatientByPatientID( int? PatientID )
         {
 
-            int? PersonID = null;
             SqlParameter[] parameter = new SqlParameter[ 2 ];
             parameter[ 0 ] = new SqlParameter( "PatientID", PatientID );
             parameter[ 1 ] = new SqlParameter( "PersonID", null );
-            if ( clsPatientsData.FindPatient( ref parameter ) )
+            bool isFound = clsPatientsData.FindPatient( ref parameter );
+            if ( isFound )
             {
-                clsPerson person = Find( PersonID );
-                return new clsPatient( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.CountryID );
+                clsPerson person = Find( ( int ) parameter[ 1 ].Value );
+                return new clsPatient( ( int ) parameter[ 0 ].Value, person.PersonID, person.NationalNo, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.CountryID );
             }
             else
                 return null;
         }
         private bool _AddNewPatient()
         {
-            SqlParameter[] parameters = new SqlParameter[ 8 ];
-            parameters[ 7 ] = new SqlParameter( "PersonID", this.PersonID );
-            parameters[ 0 ] = new SqlParameter( "FirstName", this.FirstName );
-            parameters[ 1 ] = new SqlParameter( "LastName", this.LastName );
-            parameters[ 2 ] = new SqlParameter( "DateOfBirth", this.DateOfBirth );
-            parameters[ 3 ] = new SqlParameter( "Gendor", this.Gender );
-            parameters[ 4 ] = new SqlParameter( "Address", this.Address );
-            parameters[ 5 ] = new SqlParameter( "ContactID", this.ContactID );
-            parameters[ 6 ] = new SqlParameter( "CountryID", this.CountryID );
+            SqlParameter[] parameters = new SqlParameter[ 1 ];
+            parameters[ 0 ] = new SqlParameter( "PersonID", this.PersonID );
+
 
             this.PatientID = clsPatientsData.AddNewPatient( parameters );
             return ( this.PatientID != null );
         }
         private bool _UpdatePatient()
         {
-            SqlParameter[] parameters = new SqlParameter[ 9 ];
+            SqlParameter[] parameters = new SqlParameter[ 2 ];
             parameters[ 0 ] = new SqlParameter( "PatientID", this.PatientID );
             parameters[ 1 ] = new SqlParameter( "PersonID", this.PersonID );
-            parameters[ 2 ] = new SqlParameter( "FirstName", this.FirstName );
-            parameters[ 3 ] = new SqlParameter( "LastName", this.LastName );
-            parameters[ 4 ] = new SqlParameter( "DateOfBirth", this.DateOfBirth );
-            parameters[ 5 ] = new SqlParameter( "Gendor", this.Gender );
-            parameters[ 6 ] = new SqlParameter( "Address", this.Address );
-            parameters[ 7 ] = new SqlParameter( "ContactID", this.ContactID );
-            parameters[ 8 ] = new SqlParameter( "CountryID", this.CountryID );
+
 
             return clsPatientsData.UpdatePatient( parameters );
         }

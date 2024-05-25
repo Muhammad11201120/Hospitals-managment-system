@@ -18,6 +18,7 @@ namespace HMS_DataBusinessLayer
         }
         public int? EmployeeID { get; set; }
         public decimal? Salary { get; set; }
+        public new int? PersonID { get; set; }
         _enMode _Mode = _enMode.ADD;
         public clsEmployee()
         {
@@ -25,12 +26,13 @@ namespace HMS_DataBusinessLayer
             Salary = null;
             _Mode = _enMode.ADD;
         }
-        public clsEmployee( int? employeeID, decimal? salary, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gender, string address, int? contactID, int? countryID )
-            : base( personID, firstName, lastName, dateOfBirth, gender, address, contactID, countryID )
+        public clsEmployee( int? employeeID, decimal? salary, int? personID, string nationalNo, string firstName, string lastName, DateTime dateOfBirth, byte? gender, string address, int? contactID, int? countryID )
+
         {
             EmployeeID = employeeID;
             Salary = salary;
             this.PersonID = personID;
+            this.NationalNo = nationalNo;
             this.FirstName = firstName;
             this.LastName = lastName;
             this.DateOfBirth = dateOfBirth;
@@ -44,18 +46,21 @@ namespace HMS_DataBusinessLayer
         {
             return clsEmployeesData.GetAllEmpolyee();
         }
-        public new clsEmployee Find( int? EmployeeID )
+
+        public static new clsEmployee Find( int? EmployeeID )
         {
-            decimal? salary = null;
-            int? personID = null;
+
             SqlParameter[] parameters = new SqlParameter[ 3 ];
             parameters[ 0 ] = new SqlParameter( "EmployeeID", EmployeeID );
-            parameters[ 1 ] = new SqlParameter( "Salary", null );
-            parameters[ 2 ] = new SqlParameter( "PersonID", null );
-            if ( clsEmployeesData.FindEmpolyee( ref parameters ) )
+            parameters[ 1 ] = new SqlParameter( "PersonID", null );
+            parameters[ 2 ] = new SqlParameter( "Salary", null );
+
+
+            bool isFound = clsEmployeesData.FindEmpolyee( ref parameters );
+            if ( isFound )
             {
-                clsPerson person = Find( personID );
-                return new clsEmployee( EmployeeID, salary, person.PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.ContactID );
+                clsPerson person = clsPerson.Find( ( int ) parameters[ 1 ].Value );
+                return new clsEmployee( ( int ) parameters[ 0 ].Value, ( decimal ) parameters[ 2 ].Value, person.PersonID, person.NationalNo, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.ContactID );
             }
             else
                 return null;

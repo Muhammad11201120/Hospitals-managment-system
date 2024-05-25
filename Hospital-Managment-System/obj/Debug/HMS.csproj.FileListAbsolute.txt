@@ -12,3 +12,17 @@ D:\OurProject\Test\Hospitals-managment-system\Hospital-Managment-System\obj\Debu
 D:\OurProject\Test\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
 D:\OurProject\Test\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 D:\OurProject\Test\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataBusinessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataBusinessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb

@@ -55,10 +55,17 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", price);
             parameters[3] = new SqlParameter("SpecialtyID", specialtyID);
 
+<<<<<<< HEAD
             if (clsDocotrsData.Find(ref parameters))
                 return new clsDoctor(doctorID, employeeID, price, specialtyID);
             else
                 return null;
+=======
+            //  if (clsDoctorsData.Find(ref parameters))
+            return new clsDoctor(doctorID, employeeID, price, specialtyID);
+           // else
+                //return null;
+>>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
         }
         private bool _AddNewEmployee()
         {
@@ -67,7 +74,11 @@ namespace HMS_DataBusinessLayer
             parameters[1] = new SqlParameter("Price", this.Price);
             parameters[2] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
+<<<<<<< HEAD
              this.DoctorID = clsDocotrsData.AddNewDoctor(parameters);
+=======
+             //this.DoctorID = clsDoctorsData.AddNew(parameters);
+>>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
             return DoctorID.HasValue;
         }
         private bool _UpdateEmployee()
@@ -78,12 +89,18 @@ namespace HMS_DataBusinessLayer
             parameters[2] = new SqlParameter("Price", this.Price);
             parameters[3] = new SqlParameter("SpecialtyID", this.SpecialtyID);
 
+<<<<<<< HEAD
             return clsDocotrsData.UpdateDoctor(parameters);
+=======
+            // return clsDoctorsData.Update(parameters);
+            return false;
+>>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
         }
         public bool Delete(int ? doctorID)
         {
             SqlParameter parameter = new SqlParameter("DoctorID", doctorID);
 
+<<<<<<< HEAD
             if (clsDocotrsData.DeleteDoctor(parameter))
             {
                 return true;
@@ -92,6 +109,17 @@ namespace HMS_DataBusinessLayer
             {
                 return false;
             }
+=======
+            //if (clsDoctorsData.Delete(parameter))
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return false;
+>>>>>>> 2fb63ace2d5e8a08b8c122bb9f45d9ec22066886
         }
         public new bool Save()
         {

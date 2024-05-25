@@ -22,9 +22,9 @@ namespace HMS_BusinessLayer
         public clsUser()
 
         {
-            this.UserID = -1;
-            this.UserName = "";
-            this.Password = "";
+            this.UserID = null;
+            this.UserName = string.Empty;
+            this.Password = string.Empty;
             this.IsActive = true;
             Mode = enMode.AddNew;
         }

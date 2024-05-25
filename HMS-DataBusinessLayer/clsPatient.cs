@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HMS_DataBusinessLayer
 {
-    public class clsPatients : clsPerson
+    public class clsPatient : clsPerson
     {
         enum _enMode
         {
@@ -19,12 +19,12 @@ namespace HMS_DataBusinessLayer
         public int? PatientID { get; set; }
         _enMode _Mode = _enMode.ADD;
 
-        public clsPatients()
+        public clsPatient()
         {
             PatientID = null;
             _Mode = _enMode.ADD;
         }
-        public clsPatients( int? patientID, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
+        public clsPatient( int? patientID, int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
             : base( personID, firstName, lastName, dateOfBirth, gendor, address, contactID, countryID )
         {
             this.PatientID = patientID;
@@ -42,7 +42,7 @@ namespace HMS_DataBusinessLayer
         {
             return clsPatientsData.GetAllPatients();
         }
-        public static clsPatients FindPatientByPatientID( int? PatientID )
+        public static clsPatient FindPatientByPatientID( int? PatientID )
         {
 
             int? PersonID = null;
@@ -52,7 +52,7 @@ namespace HMS_DataBusinessLayer
             if ( clsPatientsData.FindPatient( ref parameter ) )
             {
                 clsPerson person = Find( PersonID );
-                return new clsPatients( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.CountryID );
+                return new clsPatient( PatientID, PersonID, person.FirstName, person.LastName, person.DateOfBirth, person.Gendor, person.Address, person.ContactID, person.CountryID );
             }
             else
                 return null;
@@ -87,9 +87,21 @@ namespace HMS_DataBusinessLayer
 
             return clsPatientsData.UpdatePatient( parameters );
         }
-        public bool Delete()
+        public new bool Delete()
         {
             SqlParameter parameter = new SqlParameter( "PatientID", this.PatientID );
+            if ( clsPatientsData.DeletePatient( parameter ) )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static new bool Delete( int? PatientID )
+        {
+            SqlParameter parameter = new SqlParameter( "PatientID", PatientID );
             if ( clsPatientsData.DeletePatient( parameter ) )
             {
                 return true;

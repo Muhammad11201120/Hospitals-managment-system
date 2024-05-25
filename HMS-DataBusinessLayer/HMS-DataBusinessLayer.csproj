@@ -43,11 +43,16 @@
   <ItemGroup>
     <Compile Include="clsAppointments.cs" />
     <Compile Include="clsContact.cs" />
-    <Compile Include="clsCoutries.cs" />
+    <Compile Include="clsCountries.cs" />
     <Compile Include="clsDoctor.cs" />
-    <Compile Include="clsEmployees.cs" />
-    <Compile Include="clsPatients.cs" />
+    <Compile Include="clsEmployee.cs" />
+    <Compile Include="clsHospitalInfo.cs" />
+    <Compile Include="clsMedicalRecords.cs" />
+    <Compile Include="clsPatient.cs" />
+    <Compile Include="clsPayments.cs" />
     <Compile Include="clsPerson.cs" />
+    <Compile Include="clsPrescriptions.cs" />
+    <Compile Include="clsSpecialties.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

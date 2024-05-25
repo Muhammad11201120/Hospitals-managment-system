@@ -8,6 +8,7 @@ namespace HMS_DataAccessLayer
 {
 	public class clsMedicalRecordsData
 	{
+
 		public static Nullable<int> AddNewMedicalRecord(SqlParameter[] parameters)
 		{
 			Nullable<int> MedicalRecordID = null;
@@ -154,30 +155,74 @@ namespace HMS_DataAccessLayer
 			bool Deleted = false;
 
 			using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-			using (SqlCommand Command = new SqlCommand("SP_DeleteMedicalRecord", Connection))
 			{
-				Command.CommandType = CommandType.StoredProcedure;
-
-				Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
-
-
-				try
+				using (SqlCommand Command = new SqlCommand("SP_DeleteMedicalRecord", Connection))
 				{
-					Connection.Open();
+					Command.CommandType = CommandType.StoredProcedure;
 
-					int rowAfficted = Command.ExecuteNonQuery();
+					Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
 
-					Deleted = (rowAfficted > 0);
+
+					try
+					{
+						Connection.Open();
+
+						int rowAfficted = Command.ExecuteNonQuery();
+
+						Deleted = (rowAfficted > 0);
+					}
+					catch (Exception ex)
+					{
+						clsGlobalData.WriteExceptionInLogFile(ex);
+						MessageBox.Show($"Error SP_DeleteMedicalRecord: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
 				}
-				catch (Exception ex)
-				{
-					clsGlobalData.WriteExceptionInLogFile(ex);
-					MessageBox.Show($"Error SP_DeleteMedicalRecord: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
+
+				return Deleted;
 			}
-
-			return Deleted;
 		}
 
-	}
-}
+         public static bool FindMedicalRecord( ref SqlParameter[] parameters)
+            {
+                bool Found = false;
+
+                try
+                {
+                    using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                    {
+                        Connection.Open();
+                        using (SqlCommand Command = new SqlCommand("SP_FindMedicalRecord", Connection))
+                        {
+                            Command.CommandType = CommandType.StoredProcedure;
+
+                            Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+
+                            using (SqlDataReader reader = Command.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    for (int i = 0; i < reader.FieldCount; i++)
+                                    {
+                                        parameters[i].Value = reader[parameters[i].ParameterName];
+                                    }
+
+                                    Found = true;
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show($"Error SP_DeleteMedicalRecord: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+                return Found;
+            }
+
+
+
+        }
+    }

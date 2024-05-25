@@ -74,8 +74,7 @@
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsSpecialties.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAA0wFYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T06:18:35.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:18:35.11Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsMedicalRecords.cs",
               "ViewState": "AQIAAFoAAAAAAAAAAAA0wH4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T06:18:08.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:18:08.737Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPrescriptions.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAFIAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T06:13:33.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:13:33.215Z"
             },
             {
               "$type": "Document",
@@ -159,7 +156,7 @@
               "RelativeDocumentMoniker": "..\\Test\\Program.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Test\\Program.cs",
               "RelativeToolTip": "..\\Test\\Program.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T05:43:33.876Z",
               "EditorCaption": ""

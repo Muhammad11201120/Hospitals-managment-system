@@ -1,7 +1,21 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{134C35C7-A862-4FAA-9DC7-6206D198F7C8}|..\\Test\\Test.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hms-databusinesslayer\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE723850-F35B-4CF6-BF5D-E1C9E4382160}|..\\HMS-DataBusinessLayer\\HMS-DataBusinessLayer.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hms-databusinesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +52,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDoctor.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsDoctor.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAIA1wEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:05:23.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsPerson.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataBusinessLayer\\clsPerson.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataBusinessLayer\\clsPerson.cs",
+              "RelativeToolTip": "..\\HMS-DataBusinessLayer\\clsPerson.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAGoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:01:06.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:00:36.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Test\\Program.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Test\\Program.cs",
+              "RelativeToolTip": "..\\Test\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T05:43:33.876Z",
+              "EditorCaption": ""
             }
           ]
         },

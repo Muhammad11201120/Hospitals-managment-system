@@ -65,3 +65,11 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Tes
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.exe
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\Test.exe.config
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\Test.exe
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\Test.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\bin\Debug\HMS-DataBusinessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Test\obj\Debug\Test.csproj.Up2Date

@@ -20,7 +20,7 @@ namespace HMS_DataBusinessLayer
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public short? Gendor { get; set; }
+        public short? Gender { get; set; }
         public string Address { get; set; }
         public int? ContactID { get; set; }
         public int? CountryID { get; set; }
@@ -31,19 +31,19 @@ namespace HMS_DataBusinessLayer
             FirstName = string.Empty;
             LastName = string.Empty;
             DateOfBirth = DateTime.Now;
-            Gendor = null;
+            Gender = null;
             Address = string.Empty;
             ContactID = null;
             CountryID = null;
             _Mode = _enMode.ADD;
         }
-        public clsPerson( int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gendor, string address, int? contactID, int? countryID )
+        public clsPerson( int? personID, string firstName, string lastName, DateTime dateOfBirth, short? gender, string address, int? contactID, int? countryID )
         {
             PersonID = personID;
             FirstName = firstName;
             LastName = lastName;
             DateOfBirth = dateOfBirth;
-            Gendor = gendor;
+            Gender = gender;
             Address = address;
             ContactID = contactID;
             CountryID = countryID;
@@ -59,7 +59,7 @@ namespace HMS_DataBusinessLayer
         {
             string FirstName = null, LastName = null, Address = null;
             int? CountryID = null, ContactID = null;
-            short? Gendor = null;
+            short? Gender = null;
             DateTime DateOfBirth = DateTime.Now;
 
             SqlParameter[] Parameter = new SqlParameter[] {
@@ -67,14 +67,14 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("FirstName", FirstName),
                 new SqlParameter ("LastName", LastName),
                 new SqlParameter ("DateOfBirth", DateOfBirth),
-                new SqlParameter ("Gendor", Gendor),
+                new SqlParameter ("Gender", Gender),
                 new SqlParameter ("Address", Address),
                 new SqlParameter ("ContactID", ContactID),
                 new SqlParameter ("CountryID", CountryID)
             };
             bool isFound = clsPeopleData.GetPersonByID( ref Parameter );
             if ( isFound )
-                return new clsPerson( PersonID, FirstName, LastName, DateOfBirth, Gendor, Address, ContactID, CountryID );
+                return new clsPerson( PersonID, FirstName, LastName, DateOfBirth, Gender, Address, ContactID, CountryID );
             else
                 return null;
         }
@@ -87,7 +87,7 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("FirstName",this.FirstName ),
                 new SqlParameter ("LastName", this.LastName),
                 new SqlParameter ("DateOfBirth", this.DateOfBirth),
-                new SqlParameter ("Gendor", this.Gendor),
+                new SqlParameter ("Gendor", this.Gender),
                 new SqlParameter ("Address", this.Address),
                 new SqlParameter ("ContactID", this.ContactID),
                 new SqlParameter ("CountryID", this.CountryID)
@@ -104,7 +104,7 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("FirstName", this.FirstName),
                 new SqlParameter ("LastName", this.LastName),
                 new SqlParameter ("DateOfBirth", this.DateOfBirth),
-                new SqlParameter ("Gendor", this.Gendor),
+                new SqlParameter ("Gendor", this.Gender),
                 new SqlParameter ("Address", this.Address),
                 new SqlParameter ("ContactID", this.ContactID),
                 new SqlParameter ("CountryID", this.CountryID)

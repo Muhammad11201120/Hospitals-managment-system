@@ -66,7 +66,7 @@ namespace HMS_DataAccessLayer
                     using (SqlCommand Command = new SqlCommand("SP_UpdatePrescription", Connection))
                     {
 
-                        Command.CommandType = CommandType.StoredProcedure;
+                        Command.CommandType = System.Data.CommandType.StoredProcedure;
 
                         Command.Parameters.AddRange(parameters);
 

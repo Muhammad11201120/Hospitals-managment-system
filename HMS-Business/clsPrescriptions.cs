@@ -79,6 +79,7 @@ namespace HMS_DataBusinessLayer
         //    parameters[7] = new SqlParameter("SpecialInstructions", this.SpecialInstructions);
 
         //    return clsPrescriptionsData.UpdatePrescription(parameters);
+
         //}
 
         //public bool Save()
@@ -101,44 +102,44 @@ namespace HMS_DataBusinessLayer
         //    return false;
         //}
 
-        //public static clsPrescriptions FindByPrescriptionID(int PrescriptionID)
-        //{
+        public static clsPrescriptions FindByPrescriptionID(int PrescriptionID)
+        {
 
-        //    SqlParameter[] parameters = new SqlParameter[8];
-        //    parameters[0] = new SqlParameter("PrescriptionID", PrescriptionID);
-        //    parameters[1] = new SqlParameter("MedicalRecordID", null);
-        //    parameters[2] = new SqlParameter("MedicationName", null);
-        //    parameters[3] = new SqlParameter("Dosage", null);
-        //    parameters[4] = new SqlParameter("Frequency", null);
-        //    parameters[5] = new SqlParameter("StartDate", null);
-        //    parameters[6] = new SqlParameter("EndDate", null);
-        //    parameters[7] = new SqlParameter("SpecialInstructions", null);
+            SqlParameter[] parameters = new SqlParameter[8];
+            parameters[0] = new SqlParameter("PrescriptionID", PrescriptionID);
+            parameters[1] = new SqlParameter("MedicalRecordID", null);
+            parameters[2] = new SqlParameter("MedicationName", null);
+            parameters[3] = new SqlParameter("Dosage", null);
+            parameters[4] = new SqlParameter("Frequency", null);
+            parameters[5] = new SqlParameter("StartDate", null);
+            parameters[6] = new SqlParameter("EndDate", null);
+            parameters[7] = new SqlParameter("SpecialInstructions", null);
 
-        //    if (clsPrescriptionsData.FindPrescription(ref parameters))
-        //    {
-        //        return new clsPrescriptions((int)parameters[0].Value, (int)parameters[1].Value, 
-        //            (string)parameters[2].Value, (string)parameters[3].Value,
-        //            (string)parameters[4].Value, (DateTime)parameters[5].Value,
-        //            (DateTime)parameters[6].Value, (string)parameters[7].Value);
-        //    }
-        //    else
-        //        return null;
+            if (clsPrescriptionsData.FindPrescription(ref parameters))
+            {
+                return new clsPrescriptions((int)parameters[0].Value, (int)parameters[1].Value,
+                    (string)parameters[2].Value, (string)parameters[3].Value,
+                    (string)parameters[4].Value, (DateTime)parameters[5].Value,
+                    (DateTime)parameters[6].Value, (string)parameters[7].Value);
+            }
+            else
+                return null;
 
-        //}
+        }
 
-        //public static bool IsExist(int PrescriptionID)
-        //{
-        //    SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
+        public static bool IsExist(int PrescriptionID)
+        {
+            SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
 
-        //    return clsPrescriptionsData.IsPrescriptionExists(parameter);
-        //}
+            return clsPrescriptionsData.IsPrescriptionExists(parameter);
+        }
 
-        //public static bool Delete(int PrescriptionID)
-        //{
-        //    SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
+        public static bool Delete(int PrescriptionID)
+        {
+            SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
 
-        //    return clsPrescriptionsData.DeletePrescription(parameter);
-        //}
+            return clsPrescriptionsData.DeletePrescription(parameter);
+        }
 
     }
 

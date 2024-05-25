@@ -43,3 +43,9 @@ D:\OurProject\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-
 D:\OurProject\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\OurProject\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 D:\OurProject\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+D:\OurProject\Test\Hospitals-managment-system-Project\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

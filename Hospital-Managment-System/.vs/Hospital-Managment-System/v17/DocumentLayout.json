@@ -6,9 +6,6 @@
       "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|d:\\ourproject\\test\\hospitals-managment-system-project\\hms-business\\clsprescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|d:\\ourproject\\test\\hospitals-managment-system-project\\hms-business\\clsdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|d:\\ourproject\\test\\hospitals-managment-system-project\\hms-business\\clscontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,16 +27,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsDoctor.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\HMS-Business\\clsDoctor.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsDoctor.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\HMS-Business\\clsDoctor.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsDoctor.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAWAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\TestClasses\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TestClasses\\Program.cs",
+              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\TestClasses\\Program.cs",
+              "RelativeToolTip": "..\\TestClasses\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T22:37:46.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T22:34:04.322Z"
             },
             {
               "$type": "Document",
@@ -49,14 +45,14 @@
               "RelativeDocumentMoniker": "..\\HMS-Business\\clsPrescriptions.cs",
               "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\HMS-Business\\clsPrescriptions.cs",
               "RelativeToolTip": "..\\HMS-Business\\clsPrescriptions.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAAAEQAAAAIAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAIwGYAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T22:36:51.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "clsContact.cs",
               "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\HMS-Business\\clsContact.cs",
               "RelativeDocumentMoniker": "..\\HMS-Business\\clsContact.cs",
@@ -64,21 +60,7 @@
               "RelativeToolTip": "..\\HMS-Business\\clsContact.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T22:36:10.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\TestClasses\\Program.cs",
-              "RelativeDocumentMoniker": "..\\TestClasses\\Program.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\TestClasses\\Program.cs",
-              "RelativeToolTip": "..\\TestClasses\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T22:34:04.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T22:36:10.451Z"
             }
           ]
         }

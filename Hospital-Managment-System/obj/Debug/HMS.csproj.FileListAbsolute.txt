@@ -4,7 +4,6 @@ D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
-D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Form1.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
@@ -13,3 +12,4 @@ D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\HMS-Business.dll
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources

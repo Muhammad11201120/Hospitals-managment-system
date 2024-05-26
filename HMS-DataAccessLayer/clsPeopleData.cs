@@ -154,7 +154,44 @@ namespace HMS_DataAccessLayer
 			return Exists;
 		}
 
-		public static bool DeletePerson(SqlParameter parameter)
+        public static bool IsPersonExistByNationalNO(SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsPeopleExistsByNationalNO", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error SP_IsPeopleExistsByNationalNO:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
+
+        public static bool DeletePerson(SqlParameter parameter)
 		{
 			bool Deleted = false;
 

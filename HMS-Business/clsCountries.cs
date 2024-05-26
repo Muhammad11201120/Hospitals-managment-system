@@ -40,5 +40,26 @@ namespace HMS_DataBusinessLayer
         {
             return clsCoutriesData.GetAllCountries();
         }
+        public static clsCountries Find(int? CountryID)
+        {
+            SqlParameter[] parameter = new SqlParameter[2];
+            parameter[0] = new SqlParameter("CountryID", CountryID);
+            parameter[1] = new SqlParameter("CountryName", null);
+            bool isFond = clsCoutriesData.FindCountry(ref parameter);
+            if (isFond)
+                return new clsCountries((int)parameter[0].Value, (string)parameter[1].Value);
+            return null;
+        }
+
+        public static clsCountries Find(string CountryName)
+        {
+            SqlParameter[] parameter = new SqlParameter[2];
+            parameter[0] = new SqlParameter("CountryName", CountryName);
+            parameter[1] = new SqlParameter("CountryID", null);
+            bool isFond = clsCoutriesData.FindCountryByName(ref parameter);
+            if (isFond)
+                return new clsCountries((int)parameter[1].Value, (string)parameter[0].Value);
+            return null;
+        }
     }
 }

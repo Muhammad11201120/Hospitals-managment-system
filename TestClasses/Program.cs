@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HMS_DataBusinessLayer;
 
 namespace TestClasses
 {
@@ -12,11 +13,17 @@ namespace TestClasses
     {
         static void Main(string[] args)
         {
-            //AddNewPeopleAndContact();
-            //FindPeopleAndContact();
-            //UpdatePeopleAndContact();
-            //IsExistsPeopleAndContact();
-            //DeletePeopleAndContact();
+
+            SqlParameter sp = new SqlParameter();
+            sp.ParameterName = "NationalNO";
+            sp.Value = "N1";
+
+
+            if (clsPerson.IsPersonExists((string)sp.Value))
+                Console.WriteLine("yes");
+            else
+                Console.WriteLine("no");
+
             //Console.ReadKey();
 
         }

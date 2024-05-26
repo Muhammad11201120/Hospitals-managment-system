@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hospital_Managment_System.Empolyee;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Hospital_Managment_System
         public frmMain()
         {
             InitializeComponent();
+        }
+
+        private void addNewEmpolyeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateEmpolyee frmAddUpdateEmpolyee = new frmAddUpdateEmpolyee();
+
+            frmAddUpdateEmpolyee.ShowDialog();
+
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -11,7 +12,7 @@ namespace HMS_DataBusinessLayer
 {
     public class clsPerson
     {
-        enum _enMode
+        public enum enMode
         {
             ADD = 0,
             UPDATE = 1
@@ -25,7 +26,11 @@ namespace HMS_DataBusinessLayer
         public string Address { get; set; }
         public int? ContactID { get; set; }
         public int? CountryID { get; set; }
-        private _enMode _Mode = _enMode.ADD;
+        public clsContact ContactInfo { get; set; }
+        public clsCountries CountryInfo { get; set; }
+
+
+        public enMode Mode = enMode.ADD;
         public clsPerson()
         {
             PersonID = null;
@@ -37,7 +42,9 @@ namespace HMS_DataBusinessLayer
             Address = null;
             ContactID = null;
             CountryID = null;
-            _Mode = _enMode.ADD;
+            ContactInfo = new clsContact();
+            CountryInfo = new clsCountries();
+            Mode = enMode.ADD;
         }
         public clsPerson( int? personID, string nationalNo, string firstName, string lastName, DateTime dateOfBirth, byte? gender, string address, int? contactID, int? countryID )
         {
@@ -50,7 +57,9 @@ namespace HMS_DataBusinessLayer
             Address = address;
             ContactID = contactID;
             CountryID = countryID;
-            _Mode = _enMode.UPDATE;
+            ContactInfo = clsContact.Find(contactID);
+            CountryInfo = clsCountries.Find(countryID);
+            Mode = enMode.UPDATE;
         }
 
         public static DataTable GetAllPeople()
@@ -93,7 +102,7 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("FirstName",this.FirstName ),
                 new SqlParameter ("LastName", this.LastName),
                 new SqlParameter ("DateOfBirth", this.DateOfBirth),
-                new SqlParameter ("Gendor", this.Gender),
+                new SqlParameter ("Gender", this.Gender),
                 new SqlParameter ("Address", this.Address),
                 new SqlParameter ("ContactID", this.ContactID),
                 new SqlParameter ("CountryID", this.CountryID)
@@ -111,7 +120,7 @@ namespace HMS_DataBusinessLayer
                 new SqlParameter ("FirstName", this.FirstName),
                 new SqlParameter ("LastName", this.LastName),
                 new SqlParameter ("DateOfBirth", this.DateOfBirth),
-                new SqlParameter ("Gendor", this.Gender),
+                new SqlParameter ("Gender", this.Gender),
                 new SqlParameter ("Address", this.Address),
                 new SqlParameter ("ContactID", this.ContactID),
                 new SqlParameter ("CountryID", this.CountryID)
@@ -126,6 +135,15 @@ namespace HMS_DataBusinessLayer
             return clsPeopleData.IsPersonExist( Parameter );
         }
 
+        public static bool IsPersonExists(string NationaLNo)
+        {
+            SqlParameter Parameter = new SqlParameter();
+            Parameter.ParameterName = "NationaLNo";
+            Parameter.Value = NationaLNo;
+
+            return clsPeopleData.IsPersonExistByNationalNO(Parameter);
+        }
+
         public static bool Delete( int? PersonID )
         {
             SqlParameter Parameter = new SqlParameter();
@@ -133,28 +151,22 @@ namespace HMS_DataBusinessLayer
             Parameter.Value = PersonID;
             return clsPeopleData.DeletePerson( Parameter );
         }
-        public bool Delete()
-        {
-            SqlParameter Parameter = new SqlParameter();
-            Parameter.ParameterName = "PersonID";
-            Parameter.Value = this.PersonID;
-            return clsPeopleData.DeletePerson( Parameter );
-        }
+
         public bool Save()
         {
 
-            switch ( _Mode )
+            switch ( Mode )
             {
-                case _enMode.ADD:
+                case enMode.ADD:
                     if ( _AddNewPerson() )
                     {
-                        _Mode = _enMode.UPDATE;
+                        Mode = enMode.UPDATE;
                         return true;
                     }
                     else
                         return false;
 
-                case _enMode.UPDATE:
+                case enMode.UPDATE:
                     return _UpdatePerson();
             }
             return false;

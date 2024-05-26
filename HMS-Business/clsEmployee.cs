@@ -18,7 +18,6 @@ namespace HMS_DataBusinessLayer
         }
         public int? EmployeeID { get; set; }
         public decimal? Salary { get; set; }
-        public new int? PersonID { get; set; }
         _enMode _Mode = _enMode.ADD;
         public clsEmployee()
         {
@@ -108,7 +107,10 @@ namespace HMS_DataBusinessLayer
         }
         public new bool Save()
         {
-            bool result = false;
+            base.Mode = (clsPerson.enMode)Mode;
+            if (!base.Save())
+                return false;
+
             switch ( _Mode )
             {
                 case _enMode.ADD:
@@ -123,7 +125,7 @@ namespace HMS_DataBusinessLayer
                     return _UpdateEmployee();
 
             }
-            return result;
+            return false ;
         }
     }
 }

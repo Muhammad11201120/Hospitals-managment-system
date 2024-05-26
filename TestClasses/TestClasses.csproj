@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HMS-DataAccessLayer\HMS-DataAccessLayer.csproj">
-      <Project>{5b9303dc-c7f6-4834-9ef6-55f0b049e546}</Project>
-      <Name>HMS-DataAccessLayer</Name>
+    <ProjectReference Include="..\HMS-Business\HMS-Business.csproj">
+      <Project>{a1ffa291-299d-4a10-a4d4-e27f3d6f2499}</Project>
+      <Name>HMS-Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

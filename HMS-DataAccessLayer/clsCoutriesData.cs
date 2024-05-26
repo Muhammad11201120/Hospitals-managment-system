@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 
@@ -82,5 +83,88 @@ namespace HMS_DataAccessLayer
 			return dt;
 		}
 
-	}
+        
+
+        public static bool FindCountry(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+                    using (SqlCommand Command = new SqlCommand("SP_FindCountry", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    parameters[i].Value = reader[parameters[i].ParameterName];
+                                }
+
+                                Found = true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error  Country: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return Found;
+        }
+
+        public static bool FindCountryByName(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+                    using (SqlCommand Command = new SqlCommand("SP_FindCountryByName", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    parameters[i].Value = reader[parameters[i].ParameterName];
+                                }
+
+                                Found = true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error  Country: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return Found;
+        }
+
+
+    }
 }

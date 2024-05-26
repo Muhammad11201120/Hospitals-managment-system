@@ -22,8 +22,8 @@ namespace HMS_DataAccessLayer
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
                     connection.Open();
-
-                    using (SqlCommand Command = new SqlCommand("SP_AddNewEmpolyee", connection))
+                    
+                    using (SqlCommand Command = new SqlCommand("SP_AddNewEmployee", connection))
                     {
                         Command.CommandType = CommandType.StoredProcedure;
 

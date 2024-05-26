@@ -24,7 +24,7 @@ namespace HMS_DataBusinessLayer
             this.Email = string.Empty;
             this.PhoneNumber = string.Empty;    
         } 
-        private clsContact (int ContactID,string Email,string PhoneNumber)
+        private clsContact (int? ContactID,string Email,string PhoneNumber)
         {
             this.ContactID=ContactID;
             this.Email = Email;
@@ -73,7 +73,7 @@ namespace HMS_DataBusinessLayer
             return false;
         }
 
-        public static clsContact Find(int ContactID)
+        public static clsContact Find(int? ContactID)
         {
             SqlParameter[] parameter = new SqlParameter[3];
             parameter[0] = new SqlParameter("ContactID",ContactID);

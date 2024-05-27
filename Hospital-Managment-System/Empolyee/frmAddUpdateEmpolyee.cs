@@ -15,8 +15,8 @@ namespace Hospital_Managment_System.Empolyee
 {
     public partial class frmAddUpdateEmpolyee : Form
     {
-        
-        enum enMode { AddNew = 1 , Update = 2};
+
+        enum enMode { AddNew = 0, Update = 1 };
         public enum enGendor { Male = 0, Female = 1 };
 
         enMode _Mode = enMode.AddNew;
@@ -60,9 +60,6 @@ namespace Hospital_Managment_System.Empolyee
             {
                 lblTitle.Text = "Update Person";
             }
-
-
-            lblTitle.Text = "Add New Employee";
 
             txtFirstName.Text = "";
             txtLastName.Text = "";
@@ -110,7 +107,7 @@ namespace Hospital_Managment_System.Empolyee
             dtpDateOfBirth.Value = _Empolyee.DateOfBirth;
 
 
-            if (_Empolyee.Gender == 1)
+            if (_Empolyee.Gender == 0)
             {
                 rbMale.Checked = true;
                 rbFemale.Checked = false;
@@ -122,9 +119,6 @@ namespace Hospital_Managment_System.Empolyee
                 rbFemale.Checked = true;
                 pbPersonImage.Image = Resources.Female_512;
             }
-
-
-
         }
         private void frmAddNewEmpolyee_Load(object sender, EventArgs e)
         {

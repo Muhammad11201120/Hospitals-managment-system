@@ -7,3 +7,12 @@ D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\bin\Debug\HMS
 D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
 D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.dll
 D:\OurProject\Test\Hospitals-managment-system-Project\HMS-Business\obj\Debug\HMS-Business.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb

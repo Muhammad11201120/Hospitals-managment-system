@@ -50,6 +50,7 @@ namespace Hospital_Managment_System.Empolyee
                 dataGridView1.Columns[ 9 ].HeaderText = "Salary";
                 dataGridView1.Columns[ 9 ].Width = 110;
             }
+            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
         }
 
         private void frmAllEmployeesList_Load( object sender, EventArgs e )

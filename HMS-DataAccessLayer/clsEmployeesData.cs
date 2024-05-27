@@ -29,7 +29,7 @@ namespace HMS_DataAccessLayer
 
                         Command.Parameters.AddRange(parameters);
 
-                        SqlParameter outputParameter = new SqlParameter("@NewEmpolyeeID", SqlDbType.Int)
+                        SqlParameter outputParameter = new SqlParameter("@NewEmployeeID", SqlDbType.Int)
                         {
                             Direction = ParameterDirection.Output
                         };
@@ -37,7 +37,7 @@ namespace HMS_DataAccessLayer
 
                         Command.ExecuteNonQuery();
 
-                        EmpolyeeID = (int)Command.Parameters["@NewEmpolyeeID"].Value;
+                        EmpolyeeID = (int)Command.Parameters["@NewEmployeeID"].Value;
                     }
                 }
             }
@@ -52,7 +52,7 @@ namespace HMS_DataAccessLayer
 
         }
 
-        public static bool UpdateEmpolyee(SqlParameter[] parameters)
+        public static bool UpdateEmployee(SqlParameter[] parameters)
         {
             bool Update = false;
 
@@ -85,7 +85,7 @@ namespace HMS_DataAccessLayer
             return Update;
         }
 
-        public static bool DeleteEmpolyee(SqlParameter parameter)
+        public static bool DeleteEmployee(SqlParameter parameter)
         {
             bool Deleted = false;
 

@@ -79,12 +79,12 @@ namespace HMS_DataBusinessLayer
             parameters[ 0 ] = new SqlParameter( "EmployeeID", this.EmployeeID );
             parameters[ 1 ] = new SqlParameter( "PersonID", this.PersonID );
             parameters[ 2 ] = new SqlParameter( "Salary", this.Salary );
-            return clsEmployeesData.UpdateEmpolyee( parameters );
+            return clsEmployeesData.UpdateEmployee( parameters );
         }
         public bool DeleteEmployee()
         {
             SqlParameter parameter = new SqlParameter( "EmployeeID", this.EmployeeID );
-            if ( clsEmployeesData.DeleteEmpolyee( parameter ) )
+            if ( clsEmployeesData.DeleteEmployee( parameter ) )
             {
                 return true;
             }
@@ -96,7 +96,7 @@ namespace HMS_DataBusinessLayer
         public static bool DeleteEmployee( int? EmployeeID )
         {
             SqlParameter parameter = new SqlParameter( "EmployeeID", EmployeeID );
-            if ( clsEmployeesData.DeleteEmpolyee( parameter ) )
+            if ( clsEmployeesData.DeleteEmployee( parameter ) )
             {
                 return true;
             }

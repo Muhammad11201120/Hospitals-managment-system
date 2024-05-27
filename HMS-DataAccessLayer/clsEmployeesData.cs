@@ -119,7 +119,7 @@ namespace HMS_DataAccessLayer
             return Deleted;
         }
 
-        public static bool FindEmpolyee(ref SqlParameter[] parameters)
+        public static bool FindEmployee(ref SqlParameter[] parameters)
         {
             bool isFound = false;
 
@@ -159,7 +159,7 @@ namespace HMS_DataAccessLayer
             return isFound;
         }
 
-        public static DataTable GetAllEmpolyee()
+        public static DataTable GetAllEmployee()
         {
             DataTable dtEmployees = new DataTable();
             try

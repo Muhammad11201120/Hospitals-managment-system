@@ -64,7 +64,7 @@ namespace HMS_DataBusinessLayer
 
  
         }
-        private bool _AddNewEmployee()
+        private bool _AddNewDoctor()
         {
             SqlParameter[] parameters = new SqlParameter[3];
             parameters[0] = new SqlParameter("EmployeeID", this.EmployeeID);
@@ -76,7 +76,7 @@ namespace HMS_DataBusinessLayer
 
             return DoctorID.HasValue;
         }
-        private bool _UpdateEmployee()
+        private bool _UpdateDoctor()
         {
             SqlParameter[] parameters = new SqlParameter[4];
             parameters[0] = new SqlParameter("DoctorID", this.DoctorID);
@@ -87,6 +87,26 @@ namespace HMS_DataBusinessLayer
 
             return clsDocotrsData.UpdateDoctor(parameters);
 
+        }
+
+        public bool Save()
+        {
+
+            switch (_Mode)
+            {
+                case _enMode.ADD:
+                    if (_AddNewDoctor())
+                    {
+                        _Mode = _enMode.UPDATE;
+                        return true;
+                    }
+                    else
+                        return false;
+
+                case _enMode.UPDATE:
+                    return _UpdateDoctor();
+            }
+            return false;
         }
         public bool Delete(int? doctorID)
         {

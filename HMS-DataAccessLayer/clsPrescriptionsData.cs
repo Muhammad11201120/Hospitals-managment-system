@@ -195,7 +195,6 @@ namespace HMS_DataAccessLayer
             return Exists;
         }
 
-
         public static DataTable GetAllPrescriptions()
         {
             DataTable dtPrescriptions = new DataTable();

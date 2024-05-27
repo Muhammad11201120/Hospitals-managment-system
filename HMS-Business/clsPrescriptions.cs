@@ -66,41 +66,41 @@ namespace HMS_DataBusinessLayer
             return (this.PrescriptionID != null);
         }
 
-        //private bool _UpdatePrescriptions()
-        //{
-        //    SqlParameter[] parameters = new SqlParameter[8];
-        //    parameters[0] = new SqlParameter("PrescriptionID", this.PrescriptionID);
-        //    parameters[1] = new SqlParameter("MedicalRecordID", this.MedicalRecordID);
-        //    parameters[2] = new SqlParameter("MedicationName", this.MedicationName);
-        //    parameters[3] = new SqlParameter("Dosage", this.Dosage);
-        //    parameters[4] = new SqlParameter("Frequency", this.Frequency);
-        //    parameters[5] = new SqlParameter("StartDate", this.StartDate);
-        //    parameters[6] = new SqlParameter("EndDate", this.EndDate);
-        //    parameters[7] = new SqlParameter("SpecialInstructions", this.SpecialInstructions);
+        private bool _UpdatePrescriptions()
+        {
+            SqlParameter[] parameters = new SqlParameter[8];
+            parameters[0] = new SqlParameter("PrescriptionID", this.PrescriptionID);
+            parameters[1] = new SqlParameter("MedicalRecordID", this.MedicalRecordID);
+            parameters[2] = new SqlParameter("MedicationName", this.MedicationName);
+            parameters[3] = new SqlParameter("Dosage", this.Dosage);
+            parameters[4] = new SqlParameter("Frequency", this.Frequency);
+            parameters[5] = new SqlParameter("StartDate", this.StartDate);
+            parameters[6] = new SqlParameter("EndDate", this.EndDate);
+            parameters[7] = new SqlParameter("SpecialInstructions", this.SpecialInstructions);
 
-        //    return clsPrescriptionsData.UpdatePrescription(parameters);
+            return clsPrescriptionsData.UpdatePrescription(parameters);
 
-        //}
+        }
 
-        //public bool Save()
-        //{
-        //    switch (Mode)
-        //    {
-        //        case enMode.AddNew:
-        //            if (_AddNewPrescriptions())
-        //            {
-        //                this.Mode = enMode.Update;
-        //                return true;
-        //            }
-        //            else
-        //                return false;
+        public bool Save()
+        {
+            switch (Mode)
+            {
+                case enMode.AddNew:
+                    if (_AddNewPrescriptions())
+                    {
+                        this.Mode = enMode.Update;
+                        return true;
+                    }
+                    else
+                        return false;
 
-        //        case enMode.Update:
-        //            return _UpdatePrescriptions();
+                case enMode.Update:
+                    return _UpdatePrescriptions();
 
-        //    }
-        //    return false;
-        //}
+            }
+            return false;
+        }
 
         public static clsPrescriptions FindByPrescriptionID(int PrescriptionID)
         {

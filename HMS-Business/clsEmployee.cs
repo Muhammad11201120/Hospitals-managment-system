@@ -43,7 +43,7 @@ namespace HMS_DataBusinessLayer
         }
         public static DataTable GetAllEmployees()
         {
-            return clsEmployeesData.GetAllEmpolyee();
+            return clsEmployeesData.GetAllEmployee();
         }
 
         public static new clsEmployee Find( int? EmployeeID )
@@ -55,7 +55,7 @@ namespace HMS_DataBusinessLayer
             parameters[ 2 ] = new SqlParameter( "Salary", null );
 
 
-            bool isFound = clsEmployeesData.FindEmpolyee( ref parameters );
+            bool isFound = clsEmployeesData.FindEmployee( ref parameters );
             if ( isFound )
             {
                 clsPerson person = clsPerson.Find( ( int ) parameters[ 1 ].Value );

@@ -18,12 +18,18 @@ namespace Hospital_Managment_System
             InitializeComponent();
         }
 
-        private void addNewEmpolyeeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addNewEmpolyeeToolStripMenuItem_Click( object sender, EventArgs e )
         {
             frmAddUpdateEmpolyee frmAddUpdateEmpolyee = new frmAddUpdateEmpolyee();
 
             frmAddUpdateEmpolyee.ShowDialog();
 
+        }
+
+        private void allEmToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAllEmployeesList frm = new frmAllEmployeesList();
+            frm.ShowDialog();
         }
     }
 }

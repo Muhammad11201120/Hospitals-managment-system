@@ -57,8 +57,8 @@ namespace HMS_DataBusinessLayer
             Address = address;
             ContactID = contactID;
             CountryID = countryID;
-            ContactInfo = clsContact.Find(contactID);
-            CountryInfo = clsCountries.Find(countryID);
+            ContactInfo = clsContact.Find( contactID );
+            CountryInfo = clsCountries.GetCountry( countryID );
             Mode = enMode.UPDATE;
         }
 
@@ -135,13 +135,13 @@ namespace HMS_DataBusinessLayer
             return clsPeopleData.IsPersonExist( Parameter );
         }
 
-        public static bool IsPersonExists(string NationaLNo)
+        public static bool IsPersonExists( string NationaLNo )
         {
             SqlParameter Parameter = new SqlParameter();
             Parameter.ParameterName = "NationaLNo";
             Parameter.Value = NationaLNo;
 
-            return clsPeopleData.IsPersonExistByNationalNO(Parameter);
+            return clsPeopleData.IsPersonExistByNationalNO( Parameter );
         }
 
         public static bool Delete( int? PersonID )

@@ -239,7 +239,7 @@ namespace Hospital_Managment_System.Empolyee
                 return;
             }
 
-            int CountryID = clsCountries.Find( cbCountry.Text ).CountryID;
+            int? CountryID = clsCountries.Find( cbCountry.Text ).CountryID;
 
             _Empolyee.FirstName = txtFirstName.Text;
             _Empolyee.LastName = txtLastName.Text;

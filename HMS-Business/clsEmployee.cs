@@ -39,6 +39,8 @@ namespace HMS_DataBusinessLayer
             this.Address = address;
             this.ContactID = contactID;
             this.CountryID = countryID;
+            this.ContactInfo = clsContact.Find( contactID );
+            this.CountryInfo = clsCountries.GetCountry( countryID );
             _Mode = _enMode.UPDATE;
         }
         public static DataTable GetAllEmployees()

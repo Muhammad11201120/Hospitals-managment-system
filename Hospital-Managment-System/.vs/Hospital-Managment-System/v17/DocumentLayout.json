@@ -1,39 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\",
+  "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\ourproject\\test\\hospitals-managment-system-project\\hospital-managment-system\\empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\empolyee\\frmallemployeeslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\frmallemployeeslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\frmallemployeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\ourproject\\test\\hospitals-managment-system-project\\hospital-managment-system\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\hms-dataaccesslayer\\clsemployeesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\hms-business\\clsemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\frmaddupdateempolyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\TestClasses\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A871F672-0F7B-4A64-97C1-D603352188E0}|..\\TestClasses\\TestClasses.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\testclasses\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsPatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsEmployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\hms-business\\clspatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,44 +50,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsEmployeesData.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsEmployeesData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsEmployeesData.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsEmployeesData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsEmployeesData.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T10:42:37.206Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmAllEmployeesList.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
               "RelativeDocumentMoniker": "Empolyee\\frmAllEmployeesList.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
               "RelativeToolTip": "Empolyee\\frmAllEmployeesList.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAADQAAABGAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAABgAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:01:35.389Z",
+              "WhenOpened": "2024-05-27T10:04:35.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\frmMain.cs",
-              "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\frmMain.cs [Design]",
-              "RelativeToolTip": "frmMain.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmAllEmployeesList.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.Designer.cs",
+              "RelativeDocumentMoniker": "Empolyee\\frmAllEmployeesList.Designer.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.Designer.cs",
+              "RelativeToolTip": "Empolyee\\frmAllEmployeesList.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T10:03:32.501Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-27T11:12:09.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T10:03:32.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmAllEmployeesList.cs [Design]",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs",
               "RelativeDocumentMoniker": "Empolyee\\frmAllEmployeesList.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs [Design]",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAllEmployeesList.cs [Design]",
               "RelativeToolTip": "Empolyee\\frmAllEmployeesList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T09:56:40.121Z",
@@ -88,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "frmAddUpdateEmpolyee.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
               "RelativeDocumentMoniker": "Empolyee\\frmAddUpdateEmpolyee.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
               "RelativeToolTip": "Empolyee\\frmAddUpdateEmpolyee.cs",
               "ViewState": "AQIAAFoAAAAAAAAAAIA1wHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,53 +155,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\frmMain.cs",
-              "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\frmMain.cs",
-              "RelativeToolTip": "frmMain.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAkwBYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T08:47:17.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "frmAddUpdateEmpolyee.cs [Design]",
-              "DocumentMoniker": "D:\\OurProject\\Test\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs",
               "RelativeDocumentMoniker": "Empolyee\\frmAddUpdateEmpolyee.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Empolyee\\frmAddUpdateEmpolyee.cs [Design]",
+              "RelativeToolTip": "Empolyee\\frmAddUpdateEmpolyee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T08:53:35.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\TestClasses\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TestClasses\\Program.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\TestClasses\\Program.cs",
+              "RelativeToolTip": "..\\TestClasses\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T08:47:23.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAIA1wB8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:47:17.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "clsPatient.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsPatient.cs",
+              "RelativeDocumentMoniker": "..\\HMS-Business\\clsPatient.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsPatient.cs",
+              "RelativeToolTip": "..\\HMS-Business\\clsPatient.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAGoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T07:57:26.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "clsEmployee.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsEmployee.cs",
+              "RelativeDocumentMoniker": "..\\HMS-Business\\clsEmployee.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\HMS-Business\\clsEmployee.cs",
+              "RelativeToolTip": "..\\HMS-Business\\clsEmployee.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T07:56:51.146Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1354,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

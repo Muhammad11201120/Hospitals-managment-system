@@ -142,5 +142,43 @@ namespace Hospital_Managment_System.Empolyee
 
             lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
         }
+
+        private void addNewEmployeeToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee();
+            frm.ShowDialog();
+            _LoadData();
+        }
+
+        private void updateToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value );
+            frm.ShowDialog();
+            _LoadData();
+        }
+
+        private void deleteToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            if ( MessageBox.Show( "Are you sure you want to delete Employee [" + dataGridView1.CurrentRow.Cells[ 0 ].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question ) == DialogResult.OK )
+
+            {
+
+                //Perform Delele and refresh
+                if ( clsEmployee.DeleteEmployee( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value ) )
+                {
+                    MessageBox.Show( "Employee Deleted Successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information );
+                    _LoadData();
+                }
+
+                else
+                    MessageBox.Show( "Employee was not deleted because it has data linked to it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
+
+            }
+        }
+
+        private void exitToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            this.Close();
+        }
     }
 }

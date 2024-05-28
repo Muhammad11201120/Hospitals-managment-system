@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace HMS_DataAccessLayer
@@ -12,12 +8,12 @@ namespace HMS_DataAccessLayer
     public class clsSpecialityData
     {
 
-        public static Nullable<int> AddNewSpecialtie( SqlParameter[] parameters)
+        public static Nullable<int> AddNewSpecialtie(SqlParameter[] parameters)
         {
             Nullable<int> SpecialityID = null;
 
-            using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
-            using (SqlCommand Command = new SqlCommand( "SP_AddNewSpeciality",Connection))
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_AddNewSpeciality", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
 
@@ -49,11 +45,48 @@ namespace HMS_DataAccessLayer
             return SpecialityID;
         }
 
-        public static bool FindSpeciality( ref SqlParameter[] parameters)
+        public static bool FindSpecialityByNaem(ref SqlParameter[] parameters)
         {
             bool Found = false;
 
-            using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetSpecialtyByName", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[1].ParameterName}", parameters[1].Value);
+
+                try
+                {
+                    Connection.Open();
+
+                    using (SqlDataReader reader = Command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                parameters[i].Value = reader[parameters[i].ParameterName];
+                            }
+
+                            Found = true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Found;
+        }
+        public static bool FindSpeciality(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             using (SqlCommand Command = new SqlCommand("SP_GetSpecialityByID", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
@@ -87,11 +120,11 @@ namespace HMS_DataAccessLayer
             return Found;
         }
 
-        public static bool UpdateSpeciality( SqlParameter[] parameters)
+        public static bool UpdateSpeciality(SqlParameter[] parameters)
         {
             bool Updated = false;
 
-            using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             using (SqlCommand Command = new SqlCommand("SP_UpdateSpeciality", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
@@ -121,7 +154,7 @@ namespace HMS_DataAccessLayer
         {
             bool Exists = false;
 
-            using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             using (SqlCommand Command = new SqlCommand("SP_IsSpecialityExist", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
@@ -153,11 +186,11 @@ namespace HMS_DataAccessLayer
             return Exists;
         }
 
-        public static bool DeleteSpeciality( SqlParameter parameter)
+        public static bool DeleteSpeciality(SqlParameter parameter)
         {
             bool Deleted = false;
 
-            using (SqlConnection Connection = new SqlConnection(    clsDataAccessSettings.ConnectionString))
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             using (SqlCommand Command = new SqlCommand("SP_DeleteSpeciality", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
@@ -182,7 +215,38 @@ namespace HMS_DataAccessLayer
 
             return Deleted;
         }
+        public static DataTable GetAllSpecialties()
+        {
+            DataTable dt = new DataTable();
 
+            using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand command = new SqlCommand("SP_GetAllSpecialties", connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+
+                try
+                {
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            dt.Load(reader);
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error SP_GetAllSpecialties : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+
+            return dt;
+        }
 
 
     }

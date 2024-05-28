@@ -20,3 +20,15 @@ D:\OurProject\Test\Hospitals-managment-system-Project\TestClasses\obj\Debug\Test
 D:\OurProject\Test\Hospitals-managment-system-Project\TestClasses\obj\Debug\TestClasses.pdb
 D:\OurProject\Test\Hospitals-managment-system-Project\TestClasses\bin\Debug\HMS-Business.dll
 D:\OurProject\Test\Hospitals-managment-system-Project\TestClasses\bin\Debug\HMS-Business.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\TestClasses.exe.config
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\TestClasses.exe
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\TestClasses.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\HMS-Business.dll
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\HMS-Business.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.csproj.CopyComplete
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.exe
+C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.pdb

@@ -94,7 +94,7 @@ namespace HMS_DataAccessLayer
                 using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
                     Connection.Open();
-                    using (SqlCommand Command = new SqlCommand("SP_FindCountry", Connection))
+                    using (SqlCommand Command = new SqlCommand("SP_GetCountry", Connection))
                     {
                         Command.CommandType = CommandType.StoredProcedure;
 

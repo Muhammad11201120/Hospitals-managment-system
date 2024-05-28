@@ -45,7 +45,7 @@ namespace HMS_DataBusinessLayer
         {
             return clsDocotrsData.GetAllDoctors();
         }
-        public  clsDoctor Find(int? doctorID)
+        public static clsDoctor Find(int? doctorID)
         {
             int? employeeID = null, specialtyID = null;
             decimal? price = null;
@@ -58,11 +58,11 @@ namespace HMS_DataBusinessLayer
 
 
             if (clsDocotrsData.Find(ref parameters))
-                return new clsDoctor(doctorID, employeeID, price, specialtyID);
+                return new clsDoctor((int)parameters[0].Value, (int)parameters[1].Value, (decimal)parameters[2].Value, (int)parameters[3].Value);
             else
                 return null;
 
- 
+
         }
         private bool _AddNewDoctor()
         {
@@ -121,6 +121,11 @@ namespace HMS_DataBusinessLayer
                 return false;
             }
 
+        }
+        public static bool isDoctorExistForEmployeeID(int EmployeeID)
+        {
+            SqlParameter sqlParameter = new SqlParameter("EmployeeID", EmployeeID);
+            return clsDocotrsData.isDoctorExistForEmployeeID(sqlParameter);
         }
     }
 }

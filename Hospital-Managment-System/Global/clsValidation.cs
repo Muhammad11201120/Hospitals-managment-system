@@ -18,6 +18,13 @@ namespace Hospital_Managment_System.Global
 
             return regex.IsMatch(emailAddress);
         }
+        public static bool ValidatePositiveDecimalNumbers(string Number)
+        {
+            var pattern = @"^[0-9]*\d(?:\.[0-9]*)?$";
+            var regex = new Regex(pattern);
+
+            return regex.IsMatch(Number);
+        }
 
     }
 }

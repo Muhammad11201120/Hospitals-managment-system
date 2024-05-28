@@ -15,7 +15,8 @@ namespace Hospital_Managment_System.Empolyee
 {
     public partial class frmAddUpdateEmpolyee : Form
     {
-
+        public delegate void HandledEventHandler(object sender, int EmployeeID);
+        public event HandledEventHandler DataBack;
         enum enMode { AddNew = 0, Update = 1 };
         public enum enGendor { Male = 0, Female = 1 };
 
@@ -263,6 +264,7 @@ namespace Hospital_Managment_System.Empolyee
 
                 MessageBox.Show("Data Saved Successfully.",
                     "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataBack?.Invoke(this, _Empolyee.EmployeeID.Value);
             }
             else
             {

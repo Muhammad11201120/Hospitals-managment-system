@@ -1,4 +1,5 @@
 ﻿using Hospital_Managment_System.Empolyee;
+using Hospital_Managment_System.Empolyee.Doctor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,12 @@ namespace Hospital_Managment_System
         {
             frmAllEmployeesList frm = new frmAllEmployeesList();
             frm.ShowDialog();
+        }
+
+        private void addNewDoctorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateDoctor frmAddUpdateDoctor = new frmAddUpdateDoctor();
+            frmAddUpdateDoctor.ShowDialog();
         }
     }
 }

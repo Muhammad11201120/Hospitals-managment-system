@@ -32,3 +32,42 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\HMS-Business.dll
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CopyComplete
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources
+C:\Users\Человек\Desktop\New folder (10)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\HMS-Business.dll
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+C:\datadata\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCard.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CopyComplete
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb

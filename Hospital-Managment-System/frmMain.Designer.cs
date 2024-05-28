@@ -32,6 +32,7 @@
             this.empolyeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewEmpolyeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allEmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,12 +51,13 @@
             // 
             this.empolyeesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewEmpolyeeToolStripMenuItem,
-            this.allEmToolStripMenuItem});
+            this.allEmToolStripMenuItem,
+            this.addNewDoctorToolStripMenuItem});
             this.empolyeesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empolyeesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.human_resources;
             this.empolyeesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.empolyeesToolStripMenuItem.Name = "empolyeesToolStripMenuItem";
-            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(221, 68);
+            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(190, 68);
             this.empolyeesToolStripMenuItem.Text = "Empolyees";
             // 
             // addNewEmpolyeeToolStripMenuItem
@@ -63,20 +65,28 @@
             this.addNewEmpolyeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.salesman;
             this.addNewEmpolyeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewEmpolyeeToolStripMenuItem.Name = "addNewEmpolyeeToolStripMenuItem";
-            this.addNewEmpolyeeToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
+            this.addNewEmpolyeeToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
             this.addNewEmpolyeeToolStripMenuItem.Text = "Add New Empolyee";
             this.addNewEmpolyeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmpolyeeToolStripMenuItem_Click);
             // 
             // allEmToolStripMenuItem
             // 
             this.allEmToolStripMenuItem.Name = "allEmToolStripMenuItem";
-            this.allEmToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
+            this.allEmToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
             this.allEmToolStripMenuItem.Text = "All Employees List";
             this.allEmToolStripMenuItem.Click += new System.EventHandler(this.allEmToolStripMenuItem_Click);
             // 
+            // addNewDoctorToolStripMenuItem
+            // 
+            this.addNewDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor;
+            this.addNewDoctorToolStripMenuItem.Name = "addNewDoctorToolStripMenuItem";
+            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
+            this.addNewDoctorToolStripMenuItem.Text = "Add New Doctor";
+            this.addNewDoctorToolStripMenuItem.Click += new System.EventHandler(this.addNewDoctorToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 692);
             this.Controls.Add(this.menuStrip1);
@@ -100,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem empolyeesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewEmpolyeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allEmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewDoctorToolStripMenuItem;
     }
 }
 

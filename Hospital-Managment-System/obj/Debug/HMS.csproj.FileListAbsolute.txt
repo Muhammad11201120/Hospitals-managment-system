@@ -71,3 +71,6 @@ C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInput
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CopyComplete
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCard.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources

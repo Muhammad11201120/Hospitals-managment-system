@@ -59,7 +59,7 @@ namespace HMS_DataBusinessLayer
             if ( isFound )
             {
                 clsPerson person = clsPerson.Find( ( int ) parameters[ 1 ].Value );
-                return new clsEmployee( ( int ) parameters[ 0 ].Value, ( decimal ) parameters[ 2 ].Value, person.PersonID, person.NationalNo, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.ContactID );
+                return new clsEmployee( ( int ) parameters[ 0 ].Value, ( decimal ) parameters[ 2 ].Value, person.PersonID, person.NationalNo, person.FirstName, person.LastName, person.DateOfBirth, person.Gender, person.Address, person.ContactID, person.CountryID );
             }
             else
                 return null;
@@ -107,8 +107,8 @@ namespace HMS_DataBusinessLayer
         }
         public new bool Save()
         {
-            base.Mode = (clsPerson.enMode)Mode;
-            if (!base.Save())
+            base.Mode = ( clsPerson.enMode ) Mode;
+            if ( !base.Save() )
                 return false;
 
             switch ( _Mode )
@@ -125,7 +125,7 @@ namespace HMS_DataBusinessLayer
                     return _UpdateEmployee();
 
             }
-            return false ;
+            return false;
         }
     }
 }

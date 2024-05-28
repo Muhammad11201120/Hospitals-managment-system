@@ -55,7 +55,7 @@
             this.empolyeesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.human_resources;
             this.empolyeesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.empolyeesToolStripMenuItem.Name = "empolyeesToolStripMenuItem";
-            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(190, 68);
+            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(221, 68);
             this.empolyeesToolStripMenuItem.Text = "Empolyees";
             // 
             // addNewEmpolyeeToolStripMenuItem
@@ -63,20 +63,20 @@
             this.addNewEmpolyeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.salesman;
             this.addNewEmpolyeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewEmpolyeeToolStripMenuItem.Name = "addNewEmpolyeeToolStripMenuItem";
-            this.addNewEmpolyeeToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
+            this.addNewEmpolyeeToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
             this.addNewEmpolyeeToolStripMenuItem.Text = "Add New Empolyee";
             this.addNewEmpolyeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmpolyeeToolStripMenuItem_Click);
             // 
             // allEmToolStripMenuItem
             // 
             this.allEmToolStripMenuItem.Name = "allEmToolStripMenuItem";
-            this.allEmToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
+            this.allEmToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
             this.allEmToolStripMenuItem.Text = "All Employees List";
             this.allEmToolStripMenuItem.Click += new System.EventHandler(this.allEmToolStripMenuItem_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 692);
             this.Controls.Add(this.menuStrip1);

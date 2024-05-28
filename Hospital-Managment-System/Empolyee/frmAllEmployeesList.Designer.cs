@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmsEmployees = new System.Windows.Forms.ContextMenuStrip( this.components );
+            this.showPersonalInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +49,7 @@
             this.lblRecordCount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ( ( System.ComponentModel.ISupportInitialize ) ( this.dataGridView1 ) ).BeginInit();
+            this.cmsEmployees.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -69,12 +79,70 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ContextMenuStrip = this.cmsEmployees;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point( 0, 0 );
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size( 1679, 396 );
             this.dataGridView1.TabIndex = 0;
+            // 
+            // cmsEmployees
+            // 
+            this.cmsEmployees.Items.AddRange( new System.Windows.Forms.ToolStripItem[] {
+            this.showPersonalInfoToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewEmployeeToolStripMenuItem,
+            this.updateToolStripMenuItem,
+            this.deleteToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exitToolStripMenuItem} );
+            this.cmsEmployees.Name = "cmsEmployees";
+            this.cmsEmployees.Size = new System.Drawing.Size( 182, 126 );
+            // 
+            // showPersonalInfoToolStripMenuItem
+            // 
+            this.showPersonalInfoToolStripMenuItem.Name = "showPersonalInfoToolStripMenuItem";
+            this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size( 181, 22 );
+            this.showPersonalInfoToolStripMenuItem.Text = "Show Detalis";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size( 178, 6 );
+            // 
+            // addNewEmployeeToolStripMenuItem
+            // 
+            this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size( 181, 22 );
+            this.addNewEmployeeToolStripMenuItem.Text = "Add New Employee";
+            this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler( this.addNewEmployeeToolStripMenuItem_Click );
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size( 181, 22 );
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler( this.updateToolStripMenuItem_Click );
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size( 181, 22 );
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler( this.deleteToolStripMenuItem_Click );
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size( 178, 6 );
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size( 181, 22 );
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler( this.exitToolStripMenuItem_Click );
             // 
             // btnClose
             // 
@@ -183,6 +251,7 @@
             this.Load += new System.EventHandler( this.frmAllEmployeesList_Load );
             this.panel1.ResumeLayout( false );
             ( ( System.ComponentModel.ISupportInitialize ) ( this.dataGridView1 ) ).EndInit();
+            this.cmsEmployees.ResumeLayout( false );
             this.ResumeLayout( false );
             this.PerformLayout();
 
@@ -200,5 +269,13 @@
         private System.Windows.Forms.TextBox txtFilter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRecordCount;
+        private System.Windows.Forms.ContextMenuStrip cmsEmployees;
+        private System.Windows.Forms.ToolStripMenuItem showPersonalInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem addNewEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

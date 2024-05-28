@@ -199,7 +199,7 @@
             // 
             // showPersonalInfoToolStripMenuItem
             // 
-            this.showPersonalInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_322;
+            this.showPersonalInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_3221;
             this.showPersonalInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.showPersonalInfoToolStripMenuItem.Name = "showPersonalInfoToolStripMenuItem";
             this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size( 197, 38 );
@@ -207,7 +207,7 @@
             // 
             // addNewEmployeeToolStripMenuItem
             // 
-            this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.AddPerson_32;
+            this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.AddPerson_321;
             this.addNewEmployeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
             this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size( 197, 38 );
@@ -216,7 +216,7 @@
             // 
             // updateToolStripMenuItem
             // 
-            this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_32;
+            this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_321;
             this.updateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size( 197, 38 );
@@ -225,7 +225,7 @@
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_2;
+            this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_21;
             this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size( 197, 38 );
@@ -234,7 +234,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.cross_32;
+            this.exitToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.cross_321;
             this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size( 197, 38 );

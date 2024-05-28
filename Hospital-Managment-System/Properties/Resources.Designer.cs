@@ -83,6 +83,16 @@ namespace Hospital_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddPerson_321 {
+            get {
+                object obj = ResourceManager.GetObject("AddPerson 321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Address_32 {
             get {
                 object obj = ResourceManager.GetObject("Address 32", resourceCulture);
@@ -133,9 +143,29 @@ namespace Hospital_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cross_321 {
+            get {
+                object obj = ResourceManager.GetObject("cross 321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_32_2 {
             get {
                 object obj = ResourceManager.GetObject("Delete 32 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delete_32_21 {
+            get {
+                object obj = ResourceManager.GetObject("Delete 32 21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,16 @@ namespace Hospital_Managment_System.Properties {
         internal static System.Drawing.Bitmap edit_32 {
             get {
                 object obj = ResourceManager.GetObject("edit 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_321 {
+            get {
+                object obj = ResourceManager.GetObject("edit 321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +303,29 @@ namespace Hospital_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PersonDetails_3221 {
+            get {
+                object obj = ResourceManager.GetObject("PersonDetails 3221", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PersonLicenseHistory_32 {
             get {
                 object obj = ResourceManager.GetObject("PersonLicenseHistory 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PersonLicenseHistory_321 {
+            get {
+                object obj = ResourceManager.GetObject("PersonLicenseHistory 321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

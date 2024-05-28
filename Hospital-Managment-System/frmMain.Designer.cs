@@ -71,7 +71,7 @@
             // 
             // allEmToolStripMenuItem
             // 
-            this.allEmToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonLicenseHistory_32;
+            this.allEmToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonLicenseHistory_321;
             this.allEmToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.allEmToolStripMenuItem.Name = "allEmToolStripMenuItem";
             this.allEmToolStripMenuItem.Size = new System.Drawing.Size(282, 38);

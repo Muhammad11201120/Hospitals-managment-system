@@ -16,6 +16,7 @@ namespace Hospital_Managment_System.Empolyee
     public partial class frmAddUpdateEmpolyee : Form
     {
         public delegate void HandledEventHandler( object sender, int EmployeeID );
+
         public event HandledEventHandler DataBack;
         enum enMode { AddNew = 0, Update = 1 };
         public enum enGendor { Male = 0, Female = 1 };

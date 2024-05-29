@@ -15,6 +15,8 @@ namespace Hospital_Managment_System.Empolyee.Doctor
 {
     public partial class frmAddUpdateDoctor : Form
     {
+        public delegate void HandledEventHandler(object sender, int EmployeeID);
+        public event HandledEventHandler DataBack;
         public enum enMode { AddNew = 1, Update = 2 }
         private enMode _Mode;
         private int? _DoctorID;
@@ -88,6 +90,7 @@ namespace Hospital_Managment_System.Empolyee.Doctor
             _Doctor.EmployeeID = ctrlEmployeeCardWithFilter1.SelectedEmployeeInfo.EmployeeID;
             if (_Doctor.Save())
             {
+                DataBack?.Invoke(this, _Doctor.DoctorID.Value);
                 _DoctorID = _Doctor.DoctorID.Value;
                 _Mode = enMode.Update;
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);

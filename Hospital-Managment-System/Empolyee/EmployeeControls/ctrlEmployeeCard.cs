@@ -77,13 +77,14 @@ namespace Hospital_Managment_System.Empolyee.EmployeeControls
                 rbGendor.Text = "Female";
             }
         }
-        public void LoadEmployeeInfo(int EmployeeID)
+        public void LoadEmployeeInfo(int? EmployeeID)
         {
             ResetDefaultValues();
             _Employee = clsEmployee.Find(EmployeeID);
             if( _Employee == null ) 
             {
-                MessageBox.Show("No Employee with EmployeeID = " + EmployeeID.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No Employee with EmployeeID = " +
+                    EmployeeID.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             _LoadEmployeeInfo();

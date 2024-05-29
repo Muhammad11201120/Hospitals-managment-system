@@ -1,4 +1,5 @@
 ﻿using HMS_DataBusinessLayer;
+using Hospital_Managment_System.Empolyee.EmployeeControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -179,6 +180,13 @@ namespace Hospital_Managment_System.Empolyee
         private void exitToolStripMenuItem_Click( object sender, EventArgs e )
         {
             this.Close();
+        }
+
+        private void showPersonalInfoToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            //frmFindEmployee frm = new frmFindEmployee( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value );
+            //frm.ShowDialog();
+            MessageBox.Show( "'Not Emplemented Yet..'" );
         }
     }
 }

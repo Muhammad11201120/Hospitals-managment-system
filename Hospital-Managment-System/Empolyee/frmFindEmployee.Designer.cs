@@ -36,7 +36,7 @@
             this.ctrlEmployeeCardWithFilter1.AutoSize = true;
             this.ctrlEmployeeCardWithFilter1.FilterEnabled = true;
             this.ctrlEmployeeCardWithFilter1.Location = new System.Drawing.Point(2, -1);
-            this.ctrlEmployeeCardWithFilter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ctrlEmployeeCardWithFilter1.Margin = new System.Windows.Forms.Padding(4);
             this.ctrlEmployeeCardWithFilter1.Name = "ctrlEmployeeCardWithFilter1";
             this.ctrlEmployeeCardWithFilter1.ShowAddEmployee = true;
             this.ctrlEmployeeCardWithFilter1.Size = new System.Drawing.Size(986, 429);
@@ -52,6 +52,8 @@
             this.Name = "frmFindEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Find Employee";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFindEmployee_FormClosed);
+            this.Load += new System.EventHandler(this.frmFindEmployee_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

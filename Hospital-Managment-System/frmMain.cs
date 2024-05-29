@@ -1,15 +1,9 @@
 ﻿using Hospital_Managment_System.Empolyee;
 using Hospital_Managment_System.Empolyee.Doctor;
 using Hospital_Managment_System.Empolyee.EmployeeControls;
+using Hospital_Managment_System.Empolyee.Users;
 using Hospital_Managment_System.Specialties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System
@@ -66,22 +60,39 @@ namespace Hospital_Managment_System
                 "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error );
         }
 
-        private void toolStripMenuItem5_Click( object sender, EventArgs e )
+        private void toolStripMenuAddNewUser_Click( object sender, EventArgs e )
         {
-            MessageBox.Show( "this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            frmFindEmployee frm = new frmFindEmployee();
+
+            frm.OnEmployeeSelected += OpenAddUpdateUser;
+
+            frm.ShowDialog();
         }
 
-        private void toolStripMenuItem6_Click( object sender, EventArgs e )
+        private void OpenAddUpdateUser(object sender, int? EmpID)
         {
-            MessageBox.Show( "this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            if (EmpID != null)
+            {
+                frmAddUpdateUser frm = new frmAddUpdateUser(EmpID);
+
+                frm.ShowDialog();
+            }
+            else
+                MessageBox.Show("Not found Employee.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void toolStripMenuItem7_Click( object sender, EventArgs e )
+        private void toolStripMenuListUsers_Click( object sender, EventArgs e )
         {
-            MessageBox.Show( "this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            frmListUsers frm = new frmListUsers();
+
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuFindUser_Click( object sender, EventArgs e )
+        {
+            frmFindUser frm = new frmFindUser();
+
+            frm.ShowDialog();
         }
 
         private void findUserToolStripMenuItem_Click( object sender, EventArgs e )

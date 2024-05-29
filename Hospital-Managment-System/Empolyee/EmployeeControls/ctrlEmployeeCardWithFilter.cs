@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using HMS_BusinessLayer;
 using HMS_DataBusinessLayer;
 
 namespace Hospital_Managment_System.Empolyee.EmployeeControls
@@ -113,6 +105,12 @@ namespace Hospital_Managment_System.Empolyee.EmployeeControls
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtFilterValue.Visible = (cbFilterBy.Text != "");
+        }
+
+        private void ctrlEmployeeCardWithFilter_Load(object sender, EventArgs e)
+        {
+            cbFilterBy.SelectedIndex = 0; // select filter by EmployeeID.
+            FilterFocus();
         }
     }
 }

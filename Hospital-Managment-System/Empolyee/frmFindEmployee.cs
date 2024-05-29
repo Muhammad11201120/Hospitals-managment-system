@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee.EmployeeControls
@@ -15,6 +8,20 @@ namespace Hospital_Managment_System.Empolyee.EmployeeControls
         public frmFindEmployee()
         {
             InitializeComponent();
+        }
+
+        public delegate void EmpIDSelected(object sender, int? EmpID);
+        public event EmpIDSelected OnEmployeeSelected;
+
+        private void frmFindEmployee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (OnEmployeeSelected != null)
+                OnEmployeeSelected?.Invoke(this, ctrlEmployeeCardWithFilter1.EmployeeID);
+        }
+
+        private void frmFindEmployee_Load(object sender, EventArgs e)
+        {
+            ctrlEmployeeCardWithFilter1.FilterFocus();
         }
     }
 }

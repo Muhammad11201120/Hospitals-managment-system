@@ -85,3 +85,30 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmFindDoctorInfo.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-Business.dll
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.ctrlFindDoctor.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCard.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.frmFindEmployee.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmFindDoctorInfo.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources

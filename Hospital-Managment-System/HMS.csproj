@@ -94,6 +94,36 @@
     <Compile Include="Empolyee\Doctor\frmFindDoctorInfo.Designer.cs">
       <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empolyee\Users\Controls\ctrlUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\Controls\ctrlUserCard.Designer.cs">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.Designer.cs">
+      <DependentUpon>ctrlUserCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmFindUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmFindUser.Designer.cs">
+      <DependentUpon>frmFindUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmListUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmListUsers.Designer.cs">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +168,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Doctor\frmFindDoctorInfo.resx">
       <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\Controls\ctrlUserCard.resx">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.resx">
+      <DependentUpon>ctrlUserCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\frmFindUser.resx">
+      <DependentUpon>frmFindUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\frmListUsers.resx">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

@@ -112,3 +112,10 @@ D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmFindUser.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources

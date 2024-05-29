@@ -41,12 +41,10 @@
             this.toolStripMenuAddNewUser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuListUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuFindUser = new System.Windows.Forms.ToolStripMenuItem();
-            this.specialtiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allSpecialtiesListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +55,6 @@
             this.toolStripMenuItem1,
             this.empolyeesToolStripMenuItem,
             this.toolStripMenuItem4,
-            this.specialtiesToolStripMenuItem,
             this.uSERSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -110,7 +107,8 @@
             this.empolyeesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewDoctorToolStripMenuItem,
             this.allDoctorsListToolStripMenuItem,
-            this.findDoctorToolStripMenuItem});
+            this.findDoctorToolStripMenuItem,
+            this.findUserToolStripMenuItem});
             this.empolyeesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empolyeesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__2_;
             this.empolyeesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -186,28 +184,9 @@
             this.toolStripMenuFindUser.Text = "Find User (NOT IMPLEMENTED)";
             this.toolStripMenuFindUser.Click += new System.EventHandler(this.toolStripMenuFindUser_Click);
             // 
-            // specialtiesToolStripMenuItem
-            // 
-            this.specialtiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.allSpecialtiesListToolStripMenuItem});
-            this.specialtiesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.specialtiesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
-            this.specialtiesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.specialtiesToolStripMenuItem.Name = "specialtiesToolStripMenuItem";
-            this.specialtiesToolStripMenuItem.Size = new System.Drawing.Size(189, 68);
-            this.specialtiesToolStripMenuItem.Text = "Specialties";
-            // 
-            // allSpecialtiesListToolStripMenuItem
-            // 
-            this.allSpecialtiesListToolStripMenuItem.Name = "allSpecialtiesListToolStripMenuItem";
-            this.allSpecialtiesListToolStripMenuItem.Size = new System.Drawing.Size(315, 34);
-            this.allSpecialtiesListToolStripMenuItem.Text = "All Specialties List";
-            this.allSpecialtiesListToolStripMenuItem.Click += new System.EventHandler(this.allSpecialtiesListToolStripMenuItem_Click);
-            // 
             // uSERSToolStripMenuItem
             // 
             this.uSERSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.findUserToolStripMenuItem,
             this.hospitalSettingsToolStripMenuItem,
             this.signOutToolStripMenuItem});
             this.uSERSToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
@@ -216,15 +195,6 @@
             this.uSERSToolStripMenuItem.Name = "uSERSToolStripMenuItem";
             this.uSERSToolStripMenuItem.Size = new System.Drawing.Size(186, 68);
             this.uSERSToolStripMenuItem.Text = "Settings";
-            // 
-            // findUserToolStripMenuItem
-            // 
-            this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
-            this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
-            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(583, 38);
-            this.findUserToolStripMenuItem.Text = "Specialties (NOT IMPLEMENTED)";
-            this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click);
             // 
             // hospitalSettingsToolStripMenuItem
             // 
@@ -241,6 +211,15 @@
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(583, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
+            // 
+            // findUserToolStripMenuItem
+            // 
+            this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
+            this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
+            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
+            this.findUserToolStripMenuItem.Text = "Specialties ";
+            this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
             // 
             // frmMain
             // 
@@ -272,7 +251,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem findEmployeeUnderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uSERSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allDoctorsListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findDoctorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
@@ -281,8 +259,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuFindUser;
         private System.Windows.Forms.ToolStripMenuItem hospitalSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem specialtiesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allSpecialtiesListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
     }
 }
 

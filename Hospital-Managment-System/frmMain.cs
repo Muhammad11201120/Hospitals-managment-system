@@ -97,8 +97,8 @@ namespace Hospital_Managment_System
 
         private void findUserToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            MessageBox.Show( "this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            frmAllSpecialtiesList frm = new frmAllSpecialtiesList();
+            frm.ShowDialog();
         }
 
         private void toolStripMenuItem2_Click( object sender, EventArgs e )
@@ -117,8 +117,14 @@ namespace Hospital_Managment_System
 
         private void allSpecialtiesListToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            frmAllSpecialtiesList frm = new frmAllSpecialtiesList();
-            frm.ShowDialog();
+           
+        }
+
+        private void findUserToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmAllSpecialtiesList allSpecialtiesList = new frmAllSpecialtiesList();
+
+            allSpecialtiesList.ShowDialog();
         }
     }
 }

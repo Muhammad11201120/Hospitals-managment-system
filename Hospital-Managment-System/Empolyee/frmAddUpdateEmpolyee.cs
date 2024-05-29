@@ -54,21 +54,21 @@ namespace Hospital_Managment_System.Empolyee
 
             if ( _Mode == enMode.AddNew )
             {
-                lblTitle.Text = "Add New Person";
+                lblTitle.Text = "Add New Employee";
                 _Empolyee = new clsEmployee();
             }
             else
             {
-                lblTitle.Text = "Update Person";
+                lblTitle.Text = "Update Employee";
             }
 
-            txtFirstName.Text = "";
-            txtLastName.Text = "";
-            txtNationalNo.Text = "";
-            txtPhone.Text = "";
-            txtEmail.Text = "";
-            txtAddress.Text = "";
-            txtSalary.Text = "";
+            txtFirstName.Text  = string.Empty;
+            txtLastName.Text   = string.Empty;
+            txtNationalNo.Text = string.Empty;
+            txtPhone.Text      = string.Empty;
+            txtEmail.Text      = string.Empty;
+            txtAddress.Text    = string.Empty;
+            txtSalary.Text     = string.Empty;
 
             cbCountry.SelectedIndex = cbCountry.FindString( "Saudi Arabia" );
 
@@ -94,7 +94,7 @@ namespace Hospital_Managment_System.Empolyee
                 return;
             }
 
-
+            lblEmpolyeeID.Text = _Empolyee.EmployeeID.ToString();
             txtFirstName.Text = _Empolyee.FirstName;
             txtLastName.Text = _Empolyee.LastName;
             txtNationalNo.Text = _Empolyee.NationalNo;
@@ -215,7 +215,7 @@ namespace Hospital_Managment_System.Empolyee
 
         private void txtEmail_Validating( object sender, CancelEventArgs e )
         {
-            if ( txtEmail.Text.Trim() == "" )
+            if ( txtEmail.Text.Trim() == string.Empty )
                 return;
 
             if ( !clsValidatoin.ValidateEmail( txtEmail.Text ) )

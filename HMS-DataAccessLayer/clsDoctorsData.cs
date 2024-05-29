@@ -82,6 +82,44 @@ namespace HMS_DataAccessLayer
             return Found;
         }
 
+        public static bool FindByEmployeeID(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetDoctorByEmployeeID", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
+                {
+                    Connection.Open();
+
+                    using (SqlDataReader reader = Command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                parameters[i].Value = reader[parameters[i].ParameterName];
+                            }
+
+                            Found = true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Found;
+        }
+
         public static bool UpdateDoctor(SqlParameter[] parameters)
         {
             bool Updated = false;

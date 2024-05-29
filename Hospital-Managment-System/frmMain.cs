@@ -52,8 +52,9 @@ namespace Hospital_Managment_System
 
         private void findDoctorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            frmFindDoctorInfo doctorInfo = new frmFindDoctorInfo();
+
+            doctorInfo.ShowDialog();
         }
 
         private void allDoctorsListToolStripMenuItem_Click(object sender, EventArgs e)

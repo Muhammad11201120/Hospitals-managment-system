@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctrlFindDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlFindDoctor.Designer.cs">
+      <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empolyee\Doctor\frmAddUpdateDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="Empolyee\frmAllEmployeesList.Designer.cs">
       <DependentUpon>frmAllEmployeesList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empolyee\frmFindDoctorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\frmFindDoctorInfo.Designer.cs">
+      <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,9 @@
     <Compile Include="Global\clsValidation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctrlFindDoctor.resx">
+      <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Doctor\frmAddUpdateDoctor.resx">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\frmAllEmployeesList.resx">
       <DependentUpon>frmAllEmployeesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\frmFindDoctorInfo.resx">
+      <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

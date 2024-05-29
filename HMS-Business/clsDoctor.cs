@@ -62,6 +62,24 @@ namespace HMS_DataBusinessLayer
             else
                 return null;
 
+        }
+
+        public static clsDoctor FindByEmployeeID(int? employeeID)
+        {
+            int? doctorID = null, specialtyID = null;
+            decimal? price = null;
+
+            SqlParameter[] parameters = new SqlParameter[4];
+            parameters[0] = new SqlParameter("EmployeeID", employeeID);
+            parameters[1] = new SqlParameter("DoctorID", doctorID);
+            parameters[2] = new SqlParameter("Price", price);
+            parameters[3] = new SqlParameter("SpecialtyID", specialtyID);
+
+
+            if (clsDocotrsData.FindByEmployeeID(ref parameters))
+                return new clsDoctor((int)parameters[0].Value, (int)parameters[1].Value, (decimal)parameters[2].Value, (int)parameters[3].Value);
+            else
+                return null;
 
         }
         private bool _AddNewDoctor()

@@ -84,3 +84,4 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.frmFindEmployee.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmFindDoctorInfo.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources

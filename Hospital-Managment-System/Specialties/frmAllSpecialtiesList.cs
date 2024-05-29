@@ -30,5 +30,11 @@ namespace Hospital_Managment_System.Specialties
         {
             _LoadData();
         }
+
+        private void btnAddNew_Click( object sender, EventArgs e )
+        {
+            frmAddUpdateSpeciality frm = new frmAddUpdateSpeciality();
+            frm.ShowDialog();
+        }
     }
 }

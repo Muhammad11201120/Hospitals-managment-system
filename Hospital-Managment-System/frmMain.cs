@@ -1,5 +1,6 @@
 ﻿using Hospital_Managment_System.Empolyee;
 using Hospital_Managment_System.Empolyee.Doctor;
+using Hospital_Managment_System.Empolyee.EmployeeControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,8 +42,9 @@ namespace Hospital_Managment_System
 
         private void findEmployeeUnderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("this features is not implemented yet",
-                "Not Implemented",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            frmFindEmployee findEmployee = new frmFindEmployee();
+
+            findEmployee.ShowDialog();
         }
 
         private void empolyeesToolStripMenuItem_Click(object sender, EventArgs e)

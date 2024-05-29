@@ -23,6 +23,8 @@ namespace HMS_DataBusinessLayer
         public int? SpecialtyID { get; set; }
         public decimal? Price { get; set; }
 
+        public clsSpecialties Specialty { get; set; }
+
         _enMode _Mode = _enMode.ADD;
         public clsDoctor()
         {
@@ -39,6 +41,7 @@ namespace HMS_DataBusinessLayer
             EmployeeID = employeeID;
             Price = price;
             SpecialtyID = specialtyID;
+            Specialty = clsSpecialties.Find(specialtyID);
             _Mode = _enMode.UPDATE;
         }
         public static DataTable GetAllEmployees()

@@ -64,7 +64,7 @@ namespace HMS_DataBusinessLayer
             else
                 return null;
         }
-        public static clsSpecialties Find(int SpecialityID)
+        public static clsSpecialties Find(int? SpecialityID)
         {
             SqlParameter[] sp = new SqlParameter[2];
             sp[0] = new SqlParameter("SpecialityID", SpecialityID);

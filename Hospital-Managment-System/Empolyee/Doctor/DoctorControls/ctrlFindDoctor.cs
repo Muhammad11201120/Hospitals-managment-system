@@ -14,7 +14,6 @@ namespace Hospital_Managment_System
     public partial class ctrlFindDoctor : UserControl
     {
         clsDoctor _Doctor;
-
         public ctrlFindDoctor()
         {
             InitializeComponent();
@@ -23,12 +22,14 @@ namespace Hospital_Managment_System
         {
             lblDoctorID.Text = string.Empty;
             lblDoctorPrice.Text = string.Empty;
+            lblSpecialty.Text = string.Empty;   
         }
 
         private void _LoadDoctorInfo()
         {
             lblDoctorID.Text = _Doctor.DoctorID.ToString();
             lblDoctorPrice.Text = _Doctor.Price.ToString();
+            lblSpecialty.Text = _Doctor.Specialty.SpecialityName;
         }
 
 

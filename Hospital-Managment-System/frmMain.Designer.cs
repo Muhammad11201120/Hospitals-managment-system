@@ -80,7 +80,7 @@
             this.toolStripMenuItem2.Image = global::Hospital_Managment_System.Properties.Resources.salesman__1_;
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(561, 38);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(342, 38);
             this.toolStripMenuItem2.Text = "Add New Empolyee";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -89,7 +89,7 @@
             this.toolStripMenuItem3.Image = global::Hospital_Managment_System.Properties.Resources.human_resources__1_;
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(561, 38);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(342, 38);
             this.toolStripMenuItem3.Text = "All Employees List";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -98,8 +98,8 @@
             this.findEmployeeUnderToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.stakeholder_analysis;
             this.findEmployeeUnderToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findEmployeeUnderToolStripMenuItem.Name = "findEmployeeUnderToolStripMenuItem";
-            this.findEmployeeUnderToolStripMenuItem.Size = new System.Drawing.Size(561, 38);
-            this.findEmployeeUnderToolStripMenuItem.Text = "Find Employee (NOT IMPLEMENTED)";
+            this.findEmployeeUnderToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
+            this.findEmployeeUnderToolStripMenuItem.Text = "Find Employee";
             this.findEmployeeUnderToolStripMenuItem.Click += new System.EventHandler(this.findEmployeeUnderToolStripMenuItem_Click);
             // 
             // empolyeesToolStripMenuItem
@@ -140,7 +140,7 @@
             this.findDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findDoctorToolStripMenuItem.Name = "findDoctorToolStripMenuItem";
             this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
-            this.findDoctorToolStripMenuItem.Text = "Find Doctor (NOT IMPLEMENTED)";
+            this.findDoctorToolStripMenuItem.Text = "Find Doctor ";
             this.findDoctorToolStripMenuItem.Click += new System.EventHandler(this.findDoctorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4

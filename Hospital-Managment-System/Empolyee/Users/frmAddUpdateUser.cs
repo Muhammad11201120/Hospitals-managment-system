@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_BusinessLayer;
+using System;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee.Users
@@ -10,7 +11,7 @@ namespace Hospital_Managment_System.Empolyee.Users
 
         private int? _EmpID;
         private int? _UserID;
-
+        private clsUser _UserInfo { get; set; }
 
         public frmAddUpdateUser(int? EmpID)
         {
@@ -29,5 +30,145 @@ namespace Hospital_Managment_System.Empolyee.Users
             _UserID = UserID;
         }
 
+        private void _FillUserInfo()
+        {
+            if (_Mode == enMode.Update)
+            {
+                lblEmpID.Text = _EmpID.ToString();
+                lblUserID.Text = _UserID.ToString();
+                
+                _UserInfo = clsUser.Find((int)_UserID);
+                txtUsername.Text = _UserInfo.UserName;
+                txtPassword.Text = _UserInfo.Password;
+                txtConfirmPassword.Text = _UserInfo.Password;
+                chkIsActive.Checked = _UserInfo.IsActive;
+
+                lblTitle.Text = "Edit User With ID " + _UserID.ToString();
+                Text = "Edit User With ID " + _UserID.ToString();
+            }
+            else
+            {
+                lblEmpID.Text = _EmpID.ToString();
+                Text = "Add New User";
+            }
+        }
+
+        private bool _CheckBeforeSave()
+        {
+            if (string.IsNullOrEmpty(txtUsername.Text)) return false;
+
+            if (string.IsNullOrEmpty(txtPassword.Text)) return false;
+
+            if (string.IsNullOrEmpty(txtConfirmPassword.Text)) return false;
+
+            if (txtPassword.TextLength < 8) return false;
+
+            if (txtConfirmPassword.Text != txtPassword.Text) return false;
+
+            if (_Mode == enMode.Update)
+            {
+                if (_UserInfo.UserName != txtUsername.Text)
+                {
+                    if (clsUser.IsUsernameExists(txtUsername.Text)) return false;
+                }
+            }
+            else
+                if (clsUser.IsUsernameExists(txtUsername.Text)) return false;
+
+            return true;
+        }
+
+        private bool _Save()
+        {
+            if (_Mode == enMode.AddNew)
+                _UserInfo = new clsUser();
+
+            _UserInfo.EmployeeID = (int)_EmpID;
+            _UserInfo.UserName = txtUsername.Text;
+            _UserInfo.Password = txtPassword.Text;
+            _UserInfo.IsActive = chkIsActive.Checked;
+
+            return _UserInfo.Save();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmAddUpdateUser_Load(object sender, EventArgs e)
+        {
+            _FillUserInfo();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (!_CheckBeforeSave())
+            {
+                MessageBox.Show("Enter correct info.", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+
+            if (_Save())
+            {
+                lblUserID.Text = _UserInfo.UserID.ToString();
+                
+                if (_Mode == enMode.AddNew)
+                    MessageBox.Show("Added User successfully.", "Succeeded", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Updated User successfully.", "Succeeded", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                _Mode = enMode.Update;
+            }
+            else
+                MessageBox.Show("Add User is Filed.", "Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void txtPassword_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                errorProvider1.SetError(txtPassword, "this is required.");
+            }
+            else if (txtPassword.TextLength < 8)
+            {
+                errorProvider1.SetError(txtPassword, "Enter at least 8 letters Or numbers.");
+            }
+            else
+                errorProvider1.SetError(txtPassword, "");
+
+        }
+
+        private void txtConfirmPassword_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtConfirmPassword.Text))
+            {
+                errorProvider1.SetError(txtConfirmPassword, "this is required.");
+            }
+            else if (txtConfirmPassword.Text != txtPassword.Text)
+            {
+                errorProvider1.SetError(txtConfirmPassword, "Verify the password.");
+            }
+            else
+                errorProvider1.SetError(txtConfirmPassword, "");
+        }
+
+        private void txtUsername_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUsername.Text))
+            {
+                errorProvider1.SetError(txtUsername, "this is required.");
+            }
+            else if (clsUser.IsUsernameExists(txtUsername.Text))
+            {
+                errorProvider1.SetError(txtUsername, "this username already exists, choose another.");
+            }
+            else
+                errorProvider1.SetError(txtUsername, "");
+
+
+        }
     }
 }

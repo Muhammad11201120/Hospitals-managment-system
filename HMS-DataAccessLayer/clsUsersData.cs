@@ -7,7 +7,7 @@ namespace HMS_DataAccessLayer
 {
     public class clsUsersData
     {
-  
+
         public static DataTable GetAllUsers()
         {
             DataTable dtUsers = new DataTable();
@@ -41,7 +41,7 @@ namespace HMS_DataAccessLayer
             return dtUsers;
         }
 
-        public static Nullable <int> AddNewUser(SqlParameter[] parameters)
+        public static Nullable<int> AddNewUser(SqlParameter[] parameters)
         {
 
             Nullable<int> UserID = null;
@@ -55,7 +55,7 @@ namespace HMS_DataAccessLayer
 
                     using (SqlCommand Command = new SqlCommand("SP_AddNewUser", connection))
                     {
-                        Command.CommandType  = CommandType.StoredProcedure;
+                        Command.CommandType = CommandType.StoredProcedure;
 
                         Command.Parameters.AddRange(parameters);
 
@@ -101,8 +101,8 @@ namespace HMS_DataAccessLayer
 
                         int rowAfficted = Command.ExecuteNonQuery();
 
-                            if (rowAfficted > 0)
-                                Update = true;
+                        if (rowAfficted > 0)
+                            Update = true;
                     }
                 }
             }
@@ -157,7 +157,7 @@ namespace HMS_DataAccessLayer
             {
                 using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-                    Connection.Open ();
+                    Connection.Open();
 
                     using (SqlCommand Command = new SqlCommand("SP_GetUserByID", Connection))
                     {
@@ -168,7 +168,7 @@ namespace HMS_DataAccessLayer
                         using (SqlDataReader reader = Command.ExecuteReader())
                         {
                             if (reader.Read())
-                            {                                 
+                            {
                                 for (int i = 0; i < reader.FieldCount; i++)
                                 {
                                     parameters[i].Value = reader[parameters[i].ParameterName];
@@ -189,6 +189,116 @@ namespace HMS_DataAccessLayer
             return isFound;
         }
 
+        public static bool IsUserExists(SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsUserExists", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error SP_IsUserExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
+
+        public static bool IsUsernameExists(SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsUsernameExists", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error SP_IsUsernameExists:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
+
+        public static bool IsUserExistsByEmployeeID(SqlParameter parameter)
+        {
+            bool Exists = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_IsUserExistsByEmployeeID", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                SqlParameter returnValue = new SqlParameter
+                {
+                    Direction = ParameterDirection.ReturnValue
+                };
+                Command.Parameters.Add(returnValue);
+
+
+                try
+                {
+                    Connection.Open();
+
+                    Command.ExecuteScalar();
+                    int result = (int)returnValue.Value;
+
+                    Exists = (result == 1);
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error SP_IsUserExistsByEmployeeID:" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Exists;
+        }
 
     }
 }

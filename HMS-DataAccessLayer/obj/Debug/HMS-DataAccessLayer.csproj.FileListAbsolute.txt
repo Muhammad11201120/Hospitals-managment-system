@@ -55,3 +55,9 @@ C:\Users\Человек\Desktop\New folder (10)\Test\HMS-DataAccessLayer\obj\Deb
 C:\Users\Человек\Desktop\New folder (10)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Человек\Desktop\New folder (10)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 C:\Users\Человек\Desktop\New folder (10)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

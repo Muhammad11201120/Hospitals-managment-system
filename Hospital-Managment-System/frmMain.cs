@@ -1,4 +1,5 @@
-﻿using Hospital_Managment_System.Empolyee;
+﻿using HMS_BusinessLayer;
+using Hospital_Managment_System.Empolyee;
 using Hospital_Managment_System.Empolyee.Doctor;
 using Hospital_Managment_System.Empolyee.EmployeeControls;
 using Hospital_Managment_System.Empolyee.Users;
@@ -74,9 +75,15 @@ namespace Hospital_Managment_System
         {
             if (EmpID != null)
             {
-                frmAddUpdateUser frm = new frmAddUpdateUser(EmpID);
+                if (!clsUser.IsUserExistsByEmployeeID((int)EmpID))
+                {                
+                    frmAddUpdateUser frm = new frmAddUpdateUser(EmpID);
 
-                frm.ShowDialog();
+                    frm.ShowDialog();
+                }
+                else
+                    MessageBox.Show("this Employee is already User.", "Already Exists", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else
                 MessageBox.Show("Not found Employee.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HMS_DataAccessLayer;
 namespace HMS_BusinessLayer
 {
@@ -13,7 +9,7 @@ namespace HMS_BusinessLayer
         public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode = enMode.AddNew;
 
-        public int? UserID {private set; get; }
+        public int? UserID { private set; get; }
         public int EmployeeID { set; get; }
         public string UserName { set; get; }
         public string Password { set; get; }
@@ -45,13 +41,14 @@ namespace HMS_BusinessLayer
         private bool _AddNewUser()
         {
             SqlParameter[] sp = new SqlParameter[4];
-            sp[0] = new SqlParameter("UserName",this.UserName);
+            sp[0] = new SqlParameter("UserName", this.UserName);
             sp[1] = new SqlParameter("Password", this.Password);
             sp[2] = new SqlParameter("IsActive", this.IsActive);
             sp[3] = new SqlParameter("EmployeeID", this.EmployeeID);
-            this.UserID=clsUsersData.AddNewUser(sp);
-            return (this.UserID !=null);
+            this.UserID = clsUsersData.AddNewUser(sp);
+            return (this.UserID != null);
         }
+
         private bool _UpdateUser()
         {
             SqlParameter[] sp = new SqlParameter[5];
@@ -62,14 +59,15 @@ namespace HMS_BusinessLayer
             sp[4] = new SqlParameter("IsActive", this.IsActive);
             return clsUsersData.UpdateUser(sp);
         }
+
         public static clsUser Find(int UserID)
         {
 
             SqlParameter[] sp = new SqlParameter[5];
-            sp[0] = new SqlParameter("UserID",UserID);
-            sp[1] = new SqlParameter("UserName",null);
-            sp[2] = new SqlParameter("Password",null);
-            sp[3] = new SqlParameter("IsActive",null);
+            sp[0] = new SqlParameter("UserID", UserID);
+            sp[1] = new SqlParameter("UserName", null);
+            sp[2] = new SqlParameter("Password", null);
+            sp[3] = new SqlParameter("IsActive", null);
             sp[4] = new SqlParameter("EmployeeID", null);
             bool IsFound = clsUsersData.FindUser(ref sp);
             if (IsFound)
@@ -110,8 +108,30 @@ namespace HMS_BusinessLayer
 
         public static bool DeleteUser(int UserID)
         {
-            SqlParameter sp = new SqlParameter("userID", UserID);
+            SqlParameter sp = new SqlParameter("UserID", UserID);
+            
             return clsUsersData.DeleteUser(sp);
+        }
+
+        public static bool IsUserExists(int UserID)
+        {
+            SqlParameter sp = new SqlParameter("UserID", UserID);
+            
+            return clsUsersData.IsUserExists(sp);
+        }
+
+        public static bool IsUsernameExists(string username)
+        {
+            SqlParameter sp = new SqlParameter("Username", username);
+
+            return clsUsersData.IsUsernameExists(sp);
+        }
+
+        public static bool IsUserExistsByEmployeeID(int employeeID)
+        {
+            SqlParameter sp = new SqlParameter("EmployeeID", employeeID);
+
+            return clsUsersData.IsUserExistsByEmployeeID(sp);
         }
 
     }

@@ -35,6 +35,50 @@ namespace Hospital_Managment_System.Specialties
         {
             frmAddUpdateSpeciality frm = new frmAddUpdateSpeciality();
             frm.ShowDialog();
+            _LoadData();
         }
+
+        private void addNewSpecialityToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddUpdateSpeciality frm = new frmAddUpdateSpeciality();
+            frm.ShowDialog();
+            _LoadData();
+        }
+
+        private void updateSpecialityToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddUpdateSpeciality frm = new frmAddUpdateSpeciality( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value );
+            frm.ShowDialog();
+            _LoadData();
+        }
+
+        private void deleteSpecialityToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            int id = ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value;
+            if ( MessageBox.Show( "Are you sure you want to delete this Speciality?", "Delete Speciality", MessageBoxButtons.YesNo, MessageBoxIcon.Question ) == DialogResult.Yes )
+            {
+                if ( clsSpecialties.DeleteSpeciality( id ) )
+                {
+                    MessageBox.Show( "Speciality Deleted Successfully", "Speciality Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information );
+                    _LoadData();
+                }
+                else
+                {
+                    MessageBox.Show( "Speciality Not Deleted", "Speciality Not Deleted", MessageBoxButtons.OK, MessageBoxIcon.Exclamation );
+                }
+            }
+        }
+
+        private void closeToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            this.Close();
+        }
+
+        private void btnClose_Click( object sender, EventArgs e )
+        {
+            this.Close();
+        }
+
+
     }
 }

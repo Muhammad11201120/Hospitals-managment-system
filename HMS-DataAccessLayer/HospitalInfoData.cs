@@ -47,7 +47,6 @@ namespace HMS_DataAccessLayer
             return ID;
         }
 
-
         public static bool FindHospitalInfoByID(ref SqlParameter[] parameters)
         {
             bool Found = false;
@@ -186,7 +185,6 @@ namespace HMS_DataAccessLayer
             }
             return dtUsers;
         }
-
 
         public static bool IsHospitalInfoExists(SqlParameter parameter)
         {

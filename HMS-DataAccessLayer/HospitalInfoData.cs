@@ -13,47 +13,85 @@ namespace HMS_DataAccessLayer
     {
         public static Nullable<int> AddNewHospitalInfo(SqlParameter[] parameters)
         {
-            Nullable<int> ID = null;
-
-            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-            using (SqlCommand Command = new SqlCommand("SP_AddNewHospital", Connection))
+            int? ID = null;
+            try
             {
-                Command.CommandType = CommandType.StoredProcedure;
 
-                Command.Parameters.AddRange(parameters);
-
-                // Output parameter
-                SqlParameter outputParameter = new SqlParameter($"@NewHospitalID", SqlDbType.Int)
-                {
-                    Direction = ParameterDirection.Output
-                };
-                Command.Parameters.Add(outputParameter);
-
-                try
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                using (SqlCommand Command = new SqlCommand("SP_AddNewHospital", Connection))
                 {
                     Connection.Open();
 
-                    Command.ExecuteScalar();
+                    Command.CommandType = CommandType.StoredProcedure;
 
-                    ID = (int)Command.Parameters[$"@NewHospitalID"].Value;
+                    Command.Parameters.AddRange(parameters);
 
+                    SqlParameter outputParameter = new SqlParameter("@NewHospitalID", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    Command.Parameters.Add(outputParameter);
+
+                    Command.ExecuteNonQuery();
+
+                    ID = (int)Command.Parameters["@NewHospitalID"].Value;
                 }
-                catch (Exception ex)
-                        {
-                            clsGlobalData.WriteExceptionInLogFile(ex);
-                    MessageBox.Show("Error  " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+               
+                MessageBox.Show("Error  " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return ID;
         }
 
-        public static bool FindHospitalInfo( ref SqlParameter[] parameters)
+
+        public static bool FindHospitalInfoByID(ref SqlParameter[] parameters)
         {
             bool Found = false;
 
             using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             using (SqlCommand Command = new SqlCommand("SP_GetHospitalByID", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
+                {
+                    Connection.Open();
+
+                    using (SqlDataReader reader = Command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                parameters[i].Value = reader[parameters[i].ParameterName];
+                            }
+
+                            Found = true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Found;
+        }
+
+        public static bool FindHospitalInfoByName(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetHospitalByName", Connection))
             {
                 Command.CommandType = CommandType.StoredProcedure;
 
@@ -116,7 +154,41 @@ namespace HMS_DataAccessLayer
             return Updated;
         }
 
-        public static bool IsHospitalInfoExists( SqlParameter parameter)
+        public static DataTable GetAllHospital()
+        {
+            DataTable dtUsers = new DataTable();
+            try
+            {
+
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    string query = @"exec SP_GetAllHospitals";
+
+                    using (SqlCommand Command = new SqlCommand(query, Connection))
+                    {
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+
+                            if (reader.HasRows)
+                                dtUsers.Load(reader);
+                            else
+                                Console.WriteLine("Thers is no rows");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return dtUsers;
+        }
+
+
+        public static bool IsHospitalInfoExists(SqlParameter parameter)
         {
             bool Exists = false;
 
@@ -152,7 +224,7 @@ namespace HMS_DataAccessLayer
             return Exists;
         }
 
-        public static bool DeleteHospitalInfo( SqlParameter parameter)
+        public static bool DeleteHospitalInfo(SqlParameter parameter)
         {
             bool Deleted = false;
 
@@ -181,7 +253,6 @@ namespace HMS_DataAccessLayer
 
             return Deleted;
         }
-
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using HMS_DataAccessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace HMS_DataBusinessLayer
 
         public enMode Mode;
 
-        public Nullable<int> ID { get; set; }
+        public int? ID {  get; set; }
         public string HospitalName { get; set; }
         public string HospitalPhone { get; set; }
         public string HospitalLogo { get; set; }
@@ -31,9 +32,9 @@ namespace HMS_DataBusinessLayer
             this.Mode = enMode.AddNew;
         }
 
-        private clsHospitalInfo(int id, string hospitalname, string hospitalphone, string hospitallogo, string hospitaladdress)
+        private clsHospitalInfo(int ID , string hospitalname, string hospitalphone, string hospitallogo, string hospitaladdress)
         {
-            this.ID = id;
+            this.ID = ID;
             this.HospitalName = hospitalname;
             this.HospitalPhone = hospitalphone;
             this.HospitalLogo = hospitallogo;
@@ -53,7 +54,7 @@ namespace HMS_DataBusinessLayer
 
             this.ID = HospitalInfoData.AddNewHospitalInfo(parameters);
 
-            return (this.ID != null);
+            return (ID != null);
         }
 
         private bool _UpdateHospitalInfos()
@@ -89,7 +90,27 @@ namespace HMS_DataBusinessLayer
             return false;
         }
 
-        public static clsHospitalInfo FindByID(int ID)
+        public static clsHospitalInfo FindByName(string HospitalName)
+        {
+            // parameters
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("HospitalName", HospitalName);
+            parameters[1] = new SqlParameter("ID", null);
+            parameters[2] = new SqlParameter("HospitalPhone", null);
+            parameters[3] = new SqlParameter("HospitalLogo", null);
+            parameters[4] = new SqlParameter("HospitalAddress", null);
+
+            if (HospitalInfoData.FindHospitalInfoByName(ref parameters))
+            {
+                return new clsHospitalInfo((int)parameters[1].Value, (string)parameters[0].Value,
+                    (string)parameters[2].Value, (string)parameters[3].Value, (string)parameters[4].Value);
+            }
+            else
+                return null;
+
+        }
+
+        public static clsHospitalInfo FindByID(int ? ID)
         {
             // parameters
             SqlParameter[] parameters = new SqlParameter[5];
@@ -99,13 +120,27 @@ namespace HMS_DataBusinessLayer
             parameters[3] = new SqlParameter("HospitalLogo", null);
             parameters[4] = new SqlParameter("HospitalAddress", null);
 
-            if (HospitalInfoData.FindHospitalInfo(ref parameters))
+            if (HospitalInfoData.FindHospitalInfoByID(ref parameters))
             {
-                return new clsHospitalInfo((int)parameters[0].Value, (string)parameters[1].Value, (string)parameters[2].Value, (string)parameters[3].Value, (string)parameters[4].Value);
+                return new clsHospitalInfo(
+                                   (int)parameters[0].Value,
+                                   (string)parameters[1].Value,
+                                   (string)parameters[2].Value,
+                                   (string)parameters[3].Value,
+                                   (string)parameters[4].Value);  
             }
+
             else
                 return null;
 
+        }
+
+
+
+
+        public static DataTable GetAllHospital()
+        {
+            return HospitalInfoData.GetAllHospital();
         }
 
         public static bool IsExist(int ID)
@@ -121,6 +156,7 @@ namespace HMS_DataBusinessLayer
 
             return HospitalInfoData.DeleteHospitalInfo(parameter);
         }
+
 
     }
 }

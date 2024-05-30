@@ -124,6 +124,13 @@
     <Compile Include="Empolyee\Users\frmListUsers.Designer.cs">
       <DependentUpon>frmListUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global\clsCurrentHospital.cs" />
+    <Compile Include="Hospital Info\frmHospitalSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hospital Info\frmHospitalSettings.Designer.cs">
+      <DependentUpon>frmHospitalSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Users\frmListUsers.resx">
       <DependentUpon>frmListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hospital Info\frmHospitalSettings.resx">
+      <DependentUpon>frmHospitalSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -359,6 +369,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\doctor %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

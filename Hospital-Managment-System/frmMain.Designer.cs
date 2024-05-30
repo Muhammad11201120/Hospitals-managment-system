@@ -37,6 +37,7 @@
             this.addNewDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allDoctorsListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuAddNewUser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuListUsers = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,6 +144,15 @@
             this.findDoctorToolStripMenuItem.Text = "Find Doctor ";
             this.findDoctorToolStripMenuItem.Click += new System.EventHandler(this.findDoctorToolStripMenuItem_Click);
             // 
+            // findUserToolStripMenuItem
+            // 
+            this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
+            this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
+            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
+            this.findUserToolStripMenuItem.Text = "Specialties ";
+            this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
+            // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -201,25 +210,17 @@
             this.hospitalSettingsToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.hospital;
             this.hospitalSettingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hospitalSettingsToolStripMenuItem.Name = "hospitalSettingsToolStripMenuItem";
-            this.hospitalSettingsToolStripMenuItem.Size = new System.Drawing.Size(583, 38);
-            this.hospitalSettingsToolStripMenuItem.Text = "Hospital Settings (NOT IMPLEMENTED)";
+            this.hospitalSettingsToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
+            this.hospitalSettingsToolStripMenuItem.Text = "Hospital Settings";
+            this.hospitalSettingsToolStripMenuItem.Click += new System.EventHandler(this.hospitalSettingsToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.sign_out_32__2;
             this.signOutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(583, 38);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
-            // 
-            // findUserToolStripMenuItem
-            // 
-            this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
-            this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
-            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
-            this.findUserToolStripMenuItem.Text = "Specialties ";
-            this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
             // 
             // frmMain
             // 
@@ -234,6 +235,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

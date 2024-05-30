@@ -119,3 +119,4 @@ D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
+D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources

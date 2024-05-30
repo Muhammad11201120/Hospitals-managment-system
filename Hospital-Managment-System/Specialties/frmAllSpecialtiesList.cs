@@ -25,6 +25,12 @@ namespace Hospital_Managment_System.Specialties
             dt = clsSpecialties.GetAllSpecialties();
             dv = new DataView( dt );
             dataGridView1.DataSource = dv;
+            if ( dataGridView1.Rows.Count > 0 )
+            {
+                dataGridView1.Columns[ 0 ].HeaderText = "Speciatlity ID";
+                dataGridView1.Columns[ 0 ].Width = 120;
+                dataGridView1.Columns[ 1 ].HeaderText = "Speciatlity Name";
+            }
             lblRecordCount.Text = dv.Count.ToString();
         }
         private void frmAllSpecialtiesList_Load( object sender, EventArgs e )

@@ -33,8 +33,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cmsEmployees = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showPersonalInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,11 +47,6 @@
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblRecordCount = new System.Windows.Forms.Label();
-            this.showPersonalInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.cmsEmployees.SuspendLayout();
@@ -84,6 +84,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1679, 396);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -100,15 +101,60 @@
             this.cmsEmployees.Name = "cmsEmployees";
             this.cmsEmployees.Size = new System.Drawing.Size(198, 206);
             // 
+            // showPersonalInfoToolStripMenuItem
+            // 
+            this.showPersonalInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_3221;
+            this.showPersonalInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showPersonalInfoToolStripMenuItem.Name = "showPersonalInfoToolStripMenuItem";
+            this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.showPersonalInfoToolStripMenuItem.Text = "Show Detalis";
+            this.showPersonalInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonalInfoToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(194, 6);
             // 
+            // addNewEmployeeToolStripMenuItem
+            // 
+            this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.AddPerson_321;
+            this.addNewEmployeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.addNewEmployeeToolStripMenuItem.Text = "Add New Employee";
+            this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_321;
+            this.updateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_21;
+            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(194, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.cross_321;
+            this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // btnClose
             // 
@@ -196,51 +242,6 @@
             this.lblRecordCount.Size = new System.Drawing.Size(16, 18);
             this.lblRecordCount.TabIndex = 124;
             this.lblRecordCount.Text = "0";
-            // 
-            // showPersonalInfoToolStripMenuItem
-            // 
-            this.showPersonalInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_3221;
-            this.showPersonalInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showPersonalInfoToolStripMenuItem.Name = "showPersonalInfoToolStripMenuItem";
-            this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
-            this.showPersonalInfoToolStripMenuItem.Text = "Show Detalis";
-            this.showPersonalInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonalInfoToolStripMenuItem_Click);
-            // 
-            // addNewEmployeeToolStripMenuItem
-            // 
-            this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.AddPerson_321;
-            this.addNewEmployeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
-            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
-            this.addNewEmployeeToolStripMenuItem.Text = "Add New Employee";
-            this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
-            // 
-            // updateToolStripMenuItem
-            // 
-            this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_321;
-            this.updateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
-            this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_21;
-            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.cross_321;
-            this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(197, 38);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // frmAllEmployeesList
             // 

@@ -8,7 +8,7 @@ namespace HMS_DataBusinessLayer
     {
         public enum enMode { AddNew = 1, Update = 2 }
         public enMode Mode;
-        private int? _SpecialityID;
+        private int? _SpecialityID = null;
         public int? SpecialityID { get { return _SpecialityID; } }
         public string SpecialityName { set; get; }
         public clsSpecialties()
@@ -28,7 +28,8 @@ namespace HMS_DataBusinessLayer
         {
             SqlParameter[] sp = new SqlParameter[ 1 ];
             sp[ 0 ] = new SqlParameter( "SpecialityName", this.SpecialityName );
-            return this._SpecialityID != clsSpecialityData.AddNewSpecialtie( sp );
+            this._SpecialityID = clsSpecialityData.AddNewSpecialtie( sp );
+            return ( this._SpecialityID != null );
         }
         private bool _UpdateSpeciality()
         {

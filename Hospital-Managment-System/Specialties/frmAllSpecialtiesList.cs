@@ -25,6 +25,7 @@ namespace Hospital_Managment_System.Specialties
             dt = clsSpecialties.GetAllSpecialties();
             dv = new DataView( dt );
             dataGridView1.DataSource = dv;
+            lblRecordCount.Text = dv.Count.ToString();
         }
         private void frmAllSpecialtiesList_Load( object sender, EventArgs e )
         {

@@ -86,7 +86,6 @@ namespace Hospital_Managment_System.Specialties
             if ( _Specislity.Save() )
             {
                 MessageBox.Show( "Speciality Saved Successfully", "Speciality Saved", MessageBoxButtons.OK, MessageBoxIcon.Information );
-                this.Close();
             }
             else
             {

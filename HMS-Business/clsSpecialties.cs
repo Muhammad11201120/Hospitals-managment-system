@@ -49,7 +49,8 @@ namespace HMS_DataBusinessLayer
                         this.Mode = enMode.Update;
                         return true;
                     }
-                    return false;
+                    else
+                        return false;
                 case enMode.Update:
                     return _UpdateSpeciality();
                 default:

@@ -51,7 +51,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmFindEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Find Employee";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFindEmployee_FormClosed);
             this.Load += new System.EventHandler(this.frmFindEmployee_Load);
             this.ResumeLayout(false);

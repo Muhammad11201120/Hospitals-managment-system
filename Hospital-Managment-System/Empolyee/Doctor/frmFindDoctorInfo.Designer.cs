@@ -33,8 +33,10 @@
             // 
             // ctrlFindDoctor1
             // 
+            this.ctrlFindDoctor1.FilterEnabled = true;
             this.ctrlFindDoctor1.Location = new System.Drawing.Point(-1, 1);
             this.ctrlFindDoctor1.Name = "ctrlFindDoctor1";
+            this.ctrlFindDoctor1.ShowAddDoctor = true;
             this.ctrlFindDoctor1.Size = new System.Drawing.Size(1068, 558);
             this.ctrlFindDoctor1.TabIndex = 0;
             // 
@@ -47,7 +49,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmFindDoctorInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Find Doctor";
             this.ResumeLayout(false);
 
         }

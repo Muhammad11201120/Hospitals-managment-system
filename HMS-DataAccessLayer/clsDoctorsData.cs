@@ -256,9 +256,9 @@ namespace HMS_DataAccessLayer
             DataTable dt = new DataTable();
 
             using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-            using (SqlCommand command = new SqlCommand("SP_GetAllDoctors", connection))
+            using (SqlCommand command = new SqlCommand("select * from Doctor_View", connection))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                command.CommandType = CommandType.Text;
 
                 try
                 {

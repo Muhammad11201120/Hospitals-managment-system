@@ -26,7 +26,6 @@ namespace Hospital_Managment_System.Empolyee
             dt = clsEmployee.GetAllEmployees();
             dv = new DataView( dt );
             dataGridView1.DataSource = dv;
-            cbxIlter.SelectedIndex = 0;
 
             if ( dataGridView1.Rows.Count > 0 )
             {
@@ -56,6 +55,8 @@ namespace Hospital_Managment_System.Empolyee
 
         private void frmAllEmployeesList_Load( object sender, EventArgs e )
         {
+            cbxIlter.SelectedIndex = 0;
+
             _LoadData();
         }
 

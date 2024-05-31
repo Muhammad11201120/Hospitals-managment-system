@@ -122,7 +122,7 @@
             this.addNewDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__3_;
             this.addNewDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewDoctorToolStripMenuItem.Name = "addNewDoctorToolStripMenuItem";
-            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
+            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.addNewDoctorToolStripMenuItem.Text = "Add New Doctor";
             this.addNewDoctorToolStripMenuItem.Click += new System.EventHandler(this.addNewDoctorToolStripMenuItem_Click);
             // 
@@ -131,8 +131,8 @@
             this.allDoctorsListToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor1;
             this.allDoctorsListToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.allDoctorsListToolStripMenuItem.Name = "allDoctorsListToolStripMenuItem";
-            this.allDoctorsListToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
-            this.allDoctorsListToolStripMenuItem.Text = "All Doctors List (NOT IMPLEMENTED)";
+            this.allDoctorsListToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
+            this.allDoctorsListToolStripMenuItem.Text = "All Doctors List ";
             this.allDoctorsListToolStripMenuItem.Click += new System.EventHandler(this.allDoctorsListToolStripMenuItem_Click);
             // 
             // findDoctorToolStripMenuItem
@@ -140,7 +140,7 @@
             this.findDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__1_;
             this.findDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findDoctorToolStripMenuItem.Name = "findDoctorToolStripMenuItem";
-            this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
+            this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.findDoctorToolStripMenuItem.Text = "Find Doctor ";
             this.findDoctorToolStripMenuItem.Click += new System.EventHandler(this.findDoctorToolStripMenuItem_Click);
             // 
@@ -149,7 +149,7 @@
             this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
             this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
-            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(560, 38);
+            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
             this.findUserToolStripMenuItem.Text = "Specialties ";
             this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
             // 

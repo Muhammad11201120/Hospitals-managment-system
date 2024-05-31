@@ -58,6 +58,12 @@
     <Compile Include="Empolyee\Doctor\frmAddUpdateDoctor.Designer.cs">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empolyee\Doctor\frmDoctorsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Doctor\frmDoctorsList.Designer.cs">
+      <DependentUpon>frmDoctorsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empolyee\EmployeeControls\ctrlEmployeeCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Doctor\frmAddUpdateDoctor.resx">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Doctor\frmDoctorsList.resx">
+      <DependentUpon>frmDoctorsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\EmployeeControls\ctrlEmployeeCard.resx">
       <DependentUpon>ctrlEmployeeCard.cs</DependentUpon>

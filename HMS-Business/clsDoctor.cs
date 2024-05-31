@@ -44,7 +44,7 @@ namespace HMS_DataBusinessLayer
             Specialty = clsSpecialties.Find(specialtyID);
             _Mode = _enMode.UPDATE;
         }
-        public static DataTable GetAllEmployees()
+        public static DataTable GetAllDoctors()
         {
             return clsDocotrsData.GetAllDoctors();
         }
@@ -129,7 +129,7 @@ namespace HMS_DataBusinessLayer
             }
             return false;
         }
-        public bool Delete(int? doctorID)
+        public static bool Delete(int? doctorID)
         {
             SqlParameter parameter = new SqlParameter("DoctorID", doctorID);
 

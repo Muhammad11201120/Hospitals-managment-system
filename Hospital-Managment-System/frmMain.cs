@@ -58,8 +58,9 @@ namespace Hospital_Managment_System
 
         private void allDoctorsListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("this features is not implemented yet",
-                "Not Implemented", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            frmDoctorsList doctorsList = new frmDoctorsList();
+
+            doctorsList.ShowDialog();
         }
 
         private void toolStripMenuAddNewUser_Click(object sender, EventArgs e)

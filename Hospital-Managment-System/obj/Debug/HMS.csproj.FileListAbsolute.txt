@@ -129,8 +129,6 @@ C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
-<<<<<<< HEAD
->>>>>>> Users
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
@@ -163,7 +161,6 @@ D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debu
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
-=======
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources
->>>>>>> Users
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmDoctorsList.resources

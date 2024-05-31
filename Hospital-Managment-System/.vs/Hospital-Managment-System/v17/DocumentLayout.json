@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "D:\\Desktop\\Hospitals-managment-system-Project\\Hospital-Managment-System\\",
-=======
   "WorkspaceRootPath": "D:\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\Hospitals-managment-system\\Hospital-Managment-System\\",
->>>>>>> Users
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -13,8 +9,6 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-=======
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -49,12 +43,11 @@
         },
         {
           "DockedWidth": 1354,
->>>>>>> Users
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

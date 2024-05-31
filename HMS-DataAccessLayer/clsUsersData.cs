@@ -300,7 +300,7 @@ namespace HMS_DataAccessLayer
             }
             return dtUsers;
         }
-         
+
         public static DataTable GetUserInfo(SqlParameter parameter)
         {
             DataTable dtUsers = new DataTable();
@@ -335,6 +335,8 @@ namespace HMS_DataAccessLayer
 
             return dtUsers;
         }
+
+
 
     }
 }

@@ -65,7 +65,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(338, 39);
             this.lblTitle.TabIndex = 117;
-            this.lblTitle.Text = "Add New Specialty";
+            this.lblTitle.Text = "Add New Speciality";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose

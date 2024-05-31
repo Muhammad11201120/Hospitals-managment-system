@@ -22,14 +22,15 @@ namespace Hospital_Managment_System.Specialties
 
         private void _LoadData()
         {
+            cbxFilter.SelectedIndex = 0;
             dt = clsSpecialties.GetAllSpecialties();
             dv = new DataView( dt );
             dataGridView1.DataSource = dv;
             if ( dataGridView1.Rows.Count > 0 )
             {
-                dataGridView1.Columns[ 0 ].HeaderText = "Speciatlity ID";
+                dataGridView1.Columns[ 0 ].HeaderText = "Speciality ID";
                 dataGridView1.Columns[ 0 ].Width = 120;
-                dataGridView1.Columns[ 1 ].HeaderText = "Speciatlity Name";
+                dataGridView1.Columns[ 1 ].HeaderText = "Speciality Name";
             }
             lblRecordCount.Text = dv.Count.ToString();
         }
@@ -86,6 +87,30 @@ namespace Hospital_Managment_System.Specialties
             this.Close();
         }
 
+        private void cbxFilter_SelectedIndexChanged( object sender, EventArgs e )
+        {
+            txtFilter.Visible = ( cbxFilter.SelectedIndex != 0 );
+            if ( txtFilter.Visible )
+            {
+                txtFilter.Text = "";
+                txtFilter.Focus();
+            }
+        }
 
+        private void txtFilter_TextChanged( object sender, EventArgs e )
+        {
+            string FilterName = string.Empty;
+            switch ( cbxFilter.Text )
+            {
+                case "Speciality":
+                    FilterName = "SpecialityName";
+                    break;
+                default:
+                    FilterName = "None";
+                    break;
+            }
+            dv.RowFilter = string.Format( "[{0}] LIKE '{1}%'", FilterName, txtFilter.Text.Trim() );
+            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+        }
     }
 }

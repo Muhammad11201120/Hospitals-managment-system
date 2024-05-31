@@ -42,6 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxFilter = new System.Windows.Forms.ComboBox();
+            this.txtFilter = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -168,7 +171,7 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNew.Location = new System.Drawing.Point(12, 139);
+            this.btnAddNew.Location = new System.Drawing.Point(666, 139);
             this.btnAddNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(126, 37);
@@ -177,11 +180,45 @@
             this.btnAddNew.UseVisualStyleBackColor = true;
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 158);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.TabIndex = 129;
+            this.label1.Text = "Filter By : ";
+            // 
+            // cbxFilter
+            // 
+            this.cbxFilter.FormattingEnabled = true;
+            this.cbxFilter.Items.AddRange(new object[] {
+            "None",
+            "Speciality"});
+            this.cbxFilter.Location = new System.Drawing.Point(88, 155);
+            this.cbxFilter.Name = "cbxFilter";
+            this.cbxFilter.Size = new System.Drawing.Size(200, 21);
+            this.cbxFilter.TabIndex = 130;
+            this.cbxFilter.SelectedIndexChanged += new System.EventHandler(this.cbxFilter_SelectedIndexChanged);
+            // 
+            // txtFilter
+            // 
+            this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilter.Location = new System.Drawing.Point(294, 154);
+            this.txtFilter.Name = "txtFilter";
+            this.txtFilter.Size = new System.Drawing.Size(237, 22);
+            this.txtFilter.TabIndex = 131;
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
+            // 
             // frmAllSpecialtiesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 621);
+            this.Controls.Add(this.txtFilter);
+            this.Controls.Add(this.cbxFilter);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblRecordCount);
@@ -215,5 +252,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteSpecialityToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbxFilter;
+        private System.Windows.Forms.TextBox txtFilter;
     }
 }

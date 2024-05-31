@@ -44,6 +44,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblShowUserCard = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,11 +206,25 @@
             this.errorProvider1.BlinkRate = 20;
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblShowUserCard
+            // 
+            this.lblShowUserCard.AutoSize = true;
+            this.lblShowUserCard.Enabled = false;
+            this.lblShowUserCard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowUserCard.Location = new System.Drawing.Point(12, 641);
+            this.lblShowUserCard.Name = "lblShowUserCard";
+            this.lblShowUserCard.Size = new System.Drawing.Size(160, 28);
+            this.lblShowUserCard.TabIndex = 14;
+            this.lblShowUserCard.TabStop = true;
+            this.lblShowUserCard.Text = "Show User Card";
+            this.lblShowUserCard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblShowUserCard_LinkClicked);
+            // 
             // frmAddUpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 695);
+            this.Controls.Add(this.lblShowUserCard);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.chkIsActive);
@@ -224,6 +239,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitle);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "frmAddUpdateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddUpdateUser";
@@ -251,5 +267,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.LinkLabel lblShowUserCard;
     }
 }

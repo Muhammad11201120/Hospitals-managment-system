@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Hospital_Managment_System.Empolyee.Users;
+using System;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System
@@ -17,6 +15,7 @@ namespace Hospital_Managment_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
             Application.Run( new frmMain() );
+            //Application.Run(new frmUserCardWithFilter());
         }
     }
 }

@@ -112,17 +112,23 @@
     <Compile Include="Empolyee\Users\frmAddUpdateUser.Designer.cs">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\frmFindUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Empolyee\Users\frmFindUser.Designer.cs">
-      <DependentUpon>frmFindUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empolyee\Users\frmListUsers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empolyee\Users\frmListUsers.Designer.cs">
       <DependentUpon>frmListUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmUserCardWithFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmUserCardWithFilter.Designer.cs">
+      <DependentUpon>frmUserCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmUserInfoCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empolyee\Users\frmUserInfoCard.Designer.cs">
+      <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\clsCurrentHospital.cs" />
     <Compile Include="Hospital Info\frmHospitalSettings.cs">
@@ -185,11 +191,14 @@
     <EmbeddedResource Include="Empolyee\Users\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\frmFindUser.resx">
-      <DependentUpon>frmFindUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Users\frmListUsers.resx">
       <DependentUpon>frmListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\frmUserCardWithFilter.resx">
+      <DependentUpon>frmUserCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empolyee\Users\frmUserInfoCard.resx">
+      <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hospital Info\frmHospitalSettings.resx">
       <DependentUpon>frmHospitalSettings.cs</DependentUpon>
@@ -372,6 +381,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_ID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

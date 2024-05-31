@@ -45,11 +45,14 @@ namespace Hospital_Managment_System.Empolyee.Users
 
                 lblTitle.Text = "Edit User With ID " + _UserID.ToString();
                 Text = "Edit User With ID " + _UserID.ToString();
+
+                lblShowUserCard.Enabled = true;
             }
             else
             {
                 lblEmpID.Text = _EmpID.ToString();
                 Text = "Add New User";
+                lblShowUserCard.Enabled = false;
             }
         }
 
@@ -120,6 +123,7 @@ namespace Hospital_Managment_System.Empolyee.Users
                     MessageBox.Show("Updated User successfully.", "Succeeded", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 _Mode = enMode.Update;
+                lblShowUserCard.Enabled = true;
             }
             else
                 MessageBox.Show("Add User is Filed.", "Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -169,6 +173,13 @@ namespace Hospital_Managment_System.Empolyee.Users
                 errorProvider1.SetError(txtUsername, "");
 
 
+        }
+
+        private void lblShowUserCard_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmUserInfoCard frm = new frmUserInfoCard((int)_UserID);
+
+            frm.ShowDialog();
         }
     }
 }

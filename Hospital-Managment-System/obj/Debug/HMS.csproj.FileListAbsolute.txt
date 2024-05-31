@@ -120,16 +120,14 @@ D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
 D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
-<<<<<<< HEAD
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmFindUser.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
-=======
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
-D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmFindUser.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
->>>>>>> Users
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources

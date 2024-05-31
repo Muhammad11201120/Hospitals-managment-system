@@ -32,3 +32,15 @@ C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestC
 C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.csproj.CopyComplete
 C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.exe
 C:\Users\Человек\Desktop\New folder (10)\Test\TestClasses\obj\Debug\TestClasses.pdb
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe.config
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.pdb
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\HMS-Business.dll
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.dll
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\HMS-Business.pdb
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\obj\Debug\TestClas.E7E22613.Up2Date
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.exe
+D:\سطح المكتب\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.pdb

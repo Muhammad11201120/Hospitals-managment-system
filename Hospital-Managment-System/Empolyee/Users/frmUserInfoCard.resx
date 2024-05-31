@@ -117,52 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ctrlUserCard1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="button1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="txtUserID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnSearch.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAu
-        BQAAAk1TRnQBSQFMAgEBAgEAAQgBAAEIAQABHgEAAR4BAAT/AQUBAAj/AUIBTQF2BwABdgMAASgDAAF4
-        AwABHgMAAQEBAAEEBQABCAEHGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAOAAwAB/wIA
-        Af8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8OAAEPAf8HAAL/AfAwAAL/BgAD/wHwJAABDwX/AgAG/wUA
-        AQ8D/wHwJAAG/wHwAQ8F/wHwBAABDwT/AfAjAAEPBv8BAAb/BQAF/wHwIwABDwL/BQAC/wHwA/8FAAX/
-        AfAjAAL/BQABDwH/AfACAAL/BQAD/wEPAf8B8CMAAf8B8AUAAQ8B/wMAAv8FAAL/AfABDwH/AfAjAAH/
-        AfAFAAEPAf8DAAEPAf8FAAL/AfABDwH/AfAjAAH/AfAFAAEPAf8DAAL/BQAC/wHwAQ8B/wHwIwAB/wHw
-        BQABDwH/AfACAAL/BQAC/wHwAQ8B/wHwIwAB/wHwBgAC/wEAAQ8C/wUAAv8B8AEPAf8B8CMAAf8B8AYA
-        Bf8B8AUAAv8B8AEPAf8B8CMAAf8B8AYAAQ8E/wEAAf8DAAEPAv8B8AEAAf8B8CMAAf8B8AcAAQ8C/wEA
-        AQ8B/wMAA/8nAAH/AfALAAEPAf8CAAEPAv8B8AMABP8B8B8AAf8B8AsAAQ8B/wIAA/8B8AIAAQ8F/wHw
-        HgAB/wHwCwABDwH/AgAD/wMABv8B8B4AD/8BAAEPAv8B8AMAB/8eAA//AQAD/wMAAQ8C/wEPAf8B8AL/
-        HgAP/wEPA/8DAAEPAv8BAAH/AQ8C/x4AD/8BDwL/AfADAAEPAv8B8AEAA/8eAAH/AfAC/wEPAf8B8AYA
-        AQ8E/wQAAQ8D/wEAA/8eAAH/AfAE/wHwBgABDwP/AfAEAAEPAv8C8AEPAv8eAAH/AfAE/wHwBgABDwP/
-        AfAEAAEPAv8BDwH/AQAC/x4ABP8BDwH/AfAGAAX/BQAH/x4AAQ8B/wHwCQABDwn/AQAH/x4AAQ8O/wEP
-        Bv8B8Ab/AfAfAA3/AfABDwb/AfABDwX/IQAL/wHwAgABDwX/AwAD/yAAAUIBTQE+BwABPgMAASgDAAF4
-        AwABHgMAAQEBAAEBBQAB4AEBFgAD/wEAA/8B4wH/AfABfwHwCAAD/wHDAf8BwAF/AfAIAAHgAQMBwAED
-        Af8BgAF/AfAIAAHAAQEBgAEHAf4BAAF/AfAIAAGAAQMBAAEPAfwBAAF/AfAIAAGDAf8BBAEPAfwBAAF/
-        AfAIAAEPAf4BHwEPAfwBCAF/AfAIAAEfAf4BPwEPAfwBGAF/AfAIAAEfAf4BPwGPAfwBGAF/AfAIAAEf
-        Af4BPwEPAfwBGAF/AfAIAAEfAf4BHwEPAfwBGAF/AfAIAAEfAf8BDgEPAfwBGAF/AfAIAAEfAf8BAAEf
-        AfwBGAF/AfAIAAEfAf8BgAEzAfgBHAF/AfAIAAEfAf8B4AHjAfABPwH/AfAIAAEfAv8B4wHgAX8BAAFw
-        CAABHwL/AeMBwAF+AQABEAgAAR8C/wHjAcAB/AEAARALAAEDAYEB/A0AAgMB+AEhDAABAgEDAfgBMgwA
-        AQIBBwH4ARwJAAEQAYcB/wHgAQ8B+AEMCQABEAEHAf8B4AEfAfgBFgkAARABBwH/AeABHwH4ASMKAAGH
-        Af8BwAEPAfwKAAGHAv8BgAEAAQwKAAGAAgABAgEAAQQBAAEQCAABwAIAAQYBAAEGAQABMAgAAfACAAEf
-        AYABDwHAAfAIAAs=
-</value>
-  </data>
-  <metadata name="btnReset.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ctrlUserCard1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

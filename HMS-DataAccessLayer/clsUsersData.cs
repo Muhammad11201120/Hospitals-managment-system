@@ -8,38 +8,6 @@ namespace HMS_DataAccessLayer
     public class clsUsersData
     {
 
-        public static DataTable GetAllUsers()
-        {
-            DataTable dtUsers = new DataTable();
-            try
-            {
-
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    Connection.Open();
-
-                    string query = @"exec SP_GetAllUsers";
-
-                    using (SqlCommand Command = new SqlCommand(query, Connection))
-                    {
-                        using (SqlDataReader reader = Command.ExecuteReader())
-                        {
-
-                            if (reader.HasRows)
-                                dtUsers.Load(reader);
-                            else
-                                Console.WriteLine("Thers is no rows");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsGlobalData.WriteExceptionInLogFile(ex);
-                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return dtUsers;
-        }
 
         public static Nullable<int> AddNewUser(SqlParameter[] parameters)
         {
@@ -298,6 +266,74 @@ namespace HMS_DataAccessLayer
             }
 
             return Exists;
+        }
+
+        public static DataTable GetAllUsers()
+        {
+            DataTable dtUsers = new DataTable();
+            try
+            {
+
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    string query = @"exec SP_GetAllUsers";
+
+                    using (SqlCommand Command = new SqlCommand(query, Connection))
+                    {
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+
+                            if (reader.HasRows)
+                                dtUsers.Load(reader);
+                            else
+                                Console.WriteLine("Thers is no rows");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return dtUsers;
+        }
+         
+        public static DataTable GetUserInfo(SqlParameter parameter)
+        {
+            DataTable dtUsers = new DataTable();
+
+            try
+            {
+
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_GetUserInfo", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.Add(parameter);
+
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+
+                            if (reader.HasRows)
+                                dtUsers.Load(reader);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetUserInfo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return dtUsers;
         }
 
     }

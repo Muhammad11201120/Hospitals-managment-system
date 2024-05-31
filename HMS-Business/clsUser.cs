@@ -134,5 +134,12 @@ namespace HMS_BusinessLayer
             return clsUsersData.IsUserExistsByEmployeeID(sp);
         }
 
+        public static DataTable GetUserInfo(int userID)
+        {
+            SqlParameter sp = new SqlParameter("UserID", userID);
+
+            return clsUsersData.GetUserInfo(sp);
+        }
+
     }
 }

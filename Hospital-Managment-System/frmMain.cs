@@ -99,7 +99,7 @@ namespace Hospital_Managment_System
 
         private void toolStripMenuFindUser_Click(object sender, EventArgs e)
         {
-            frmFindUser frm = new frmFindUser();
+            frmUserCardWithFilter frm = new frmUserCardWithFilter();
 
             frm.ShowDialog();
         }

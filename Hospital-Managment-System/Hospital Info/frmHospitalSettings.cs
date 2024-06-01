@@ -155,7 +155,7 @@ namespace Hospital_Managment_System
 
             if (_HospitalInfo.Save())
             {
-                clsCurrentHospital.CurrentHospital = _HospitalInfo;
+                clsGlobal.CurrentHospital = _HospitalInfo;
                 _Mode = enMOde.UPDATE;
                 lblTitle.Text = "Update Hopital Informatiom";
                 MessageBox.Show("Data Saved Successfully.",

@@ -45,6 +45,7 @@
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newAppoinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newAppoinToolStripMenuItem,
             this.toolStripMenuItem1,
             this.empolyeesToolStripMenuItem,
             this.toolStripMenuItem4,
@@ -222,6 +224,14 @@
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
             // 
+            // newAppoinToolStripMenuItem
+            // 
+            this.newAppoinToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.newAppoinToolStripMenuItem.Name = "newAppoinToolStripMenuItem";
+            this.newAppoinToolStripMenuItem.Size = new System.Drawing.Size(233, 68);
+            this.newAppoinToolStripMenuItem.Text = "New Appointment";
+            this.newAppoinToolStripMenuItem.Click += new System.EventHandler(this.newAppoinToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -262,6 +272,7 @@
         private System.Windows.Forms.ToolStripMenuItem hospitalSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newAppoinToolStripMenuItem;
     }
 }
 

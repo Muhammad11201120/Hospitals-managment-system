@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointment\frmAddNewAppontment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment\frmAddNewAppontment.Designer.cs">
+      <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empolyee\Doctor\DoctorControls\ctrlFindDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,7 +142,7 @@
     <Compile Include="Empolyee\Users\frmUserInfoCard.Designer.cs">
       <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Global\clsCurrentHospital.cs" />
+    <Compile Include="Global\clsGlobal.cs" />
     <Compile Include="Hospital Info\frmHospitalSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     <Compile Include="Specialties\frmAllSpecialtiesList.Designer.cs">
       <DependentUpon>frmAllSpecialtiesList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Appointment\frmAddNewAppontment.resx">
+      <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empolyee\Doctor\DoctorControls\ctrlFindDoctor.resx">
       <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
     </EmbeddedResource>

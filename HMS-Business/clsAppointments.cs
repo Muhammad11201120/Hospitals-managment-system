@@ -9,9 +9,14 @@ namespace HMS_DataBusinessLayer
 	public class clsAppointments
 	{
 		public enum enMode { AddNew = 1, Update = 2 }
-		public enMode Mode;
 
-		public Nullable<int> AppointmentID { get; set; }
+        public enum enStatus { eNew = 1, eCancel = 2 , eComplete};
+
+        public enMode Mode;
+
+		enStatus status;
+
+        public Nullable<int> AppointmentID { get; set; }
 		public int PatientID { get; set; }
 		public clsPatient PatientInfo
 		{
@@ -21,13 +26,14 @@ namespace HMS_DataBusinessLayer
 			}
 		}
 		public int DoctorID { get; set; }
-		//public clsDoctor DoctorInfo
-		//{
-		//	get
-		//	{
-		//		return clsDoctor.Find(DoctorID);
-		//	}
-		//}
+
+		public clsDoctor DoctorInfo
+		{
+			get
+			{
+				return clsDoctor.Find(DoctorID);
+			}
+		}
 		public DateTime AppointmentDateTime { get; set; }
 		public byte AppointmentStatus { get; set; }
 		public int UserID { get; set; }
@@ -36,6 +42,11 @@ namespace HMS_DataBusinessLayer
 			get
 			{
 				return clsUser.Find(UserID);
+			}
+
+			set
+			{
+
 			}
 		}
 		public decimal TotalPrice { get; set; }
@@ -74,7 +85,7 @@ namespace HMS_DataBusinessLayer
 			parameters[0] = new SqlParameter("PatientID", this.PatientID);
 			parameters[1] = new SqlParameter("DoctorID", this.DoctorID);
 			parameters[2] = new SqlParameter("AppointmentDateTime", this.AppointmentDateTime);
-			parameters[3] = new SqlParameter("AppointmentStatus", this.AppointmentStatus);
+			parameters[3] = new SqlParameter("AppointmentStatus",(byte) enStatus.eNew);
 			parameters[4] = new SqlParameter("UserID", this.UserID);
 			parameters[5] = new SqlParameter("TotalPrice", this.TotalPrice);
 
@@ -118,7 +129,7 @@ namespace HMS_DataBusinessLayer
 			return false;
 		}
 
-		public static clsAppointments FindByAppointmentID(int AppointmentID)
+		public static clsAppointments FindByAppointmentID(int? AppointmentID)
 		{
 			// parameters
 			SqlParameter[] parameters = new SqlParameter[7];

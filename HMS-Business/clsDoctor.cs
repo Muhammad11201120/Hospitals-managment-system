@@ -23,6 +23,13 @@ namespace HMS_DataBusinessLayer
         public int? SpecialtyID { get; set; }
         public decimal? Price { get; set; }
 
+        public clsEmployee EmployeeInfo
+        {
+            get
+            {
+                return clsEmployee.Find(EmployeeID);
+            }
+        }
         public clsSpecialties Specialty { get; set; }
 
         _enMode _Mode = _enMode.ADD;
@@ -147,6 +154,34 @@ namespace HMS_DataBusinessLayer
         {
             SqlParameter sqlParameter = new SqlParameter("EmployeeID", EmployeeID);
             return clsDocotrsData.isDoctorExistForEmployeeID(sqlParameter);
+        }
+
+        public static DataTable GetAllDoctorsBySpeciality(string SpecialityName)
+        {
+            SqlParameter sqlParameter = new SqlParameter("@SpecialtyName", SpecialityName);
+
+            return clsDocotrsData.GetAllDoctorsBySpeciality(sqlParameter);
+        }
+
+        public static clsDoctor FindDoctorByName(string DoctorName)
+        {
+            int? employeeID = null, specialtyID = null,  DoctorID = null;
+            decimal? price = null; 
+
+            SqlParameter[] parameters = new SqlParameter[5];
+
+            parameters[0] = new SqlParameter("DoctorName", DoctorName);
+            parameters[1] = new SqlParameter("DoctorID", DoctorID);
+            parameters[2] = new SqlParameter("EmployeeID", employeeID);
+            parameters[3] = new SqlParameter("Price", price);
+            parameters[4] = new SqlParameter("SpecialtyID", specialtyID);
+
+
+            if (clsDocotrsData.FindDoctorByName(ref parameters))
+                return new clsDoctor((int)parameters[1].Value, (int)parameters[2].Value, (decimal)parameters[3].Value, (int)parameters[4].Value);
+            else
+                return null;
+
         }
     }
 }

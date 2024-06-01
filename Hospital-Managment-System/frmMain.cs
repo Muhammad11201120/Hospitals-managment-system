@@ -1,4 +1,5 @@
 ﻿using HMS_BusinessLayer;
+using Hospital_Managment_System.Appointment;
 using Hospital_Managment_System.Empolyee;
 using Hospital_Managment_System.Empolyee.Doctor;
 using Hospital_Managment_System.Empolyee.EmployeeControls;
@@ -146,6 +147,13 @@ namespace Hospital_Managment_System
         private void frmMain_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void newAppoinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddNewAppontment newAppontment = new frmAddNewAppontment(2);
+
+            newAppontment.ShowDialog();
         }
     }
 

@@ -17,7 +17,7 @@ namespace HMS_DataBusinessLayer
             UPDATE = 2,
         }
         public int? PatientID { get; set; }
-        public new int? PersonID { get; set; }
+
         _enMode _Mode = _enMode.ADD;
 
         public clsPatient()

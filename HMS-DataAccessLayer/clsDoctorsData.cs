@@ -185,6 +185,7 @@ namespace HMS_DataAccessLayer
 
             return Exists;
         }
+
         public static bool isDoctorExistForEmployeeID(SqlParameter parameter)
         {
             bool Exists = false;
@@ -282,6 +283,79 @@ namespace HMS_DataAccessLayer
 
 
             return dt;
+        }
+
+        public static DataTable GetAllDoctorsBySpeciality(SqlParameter parameter)
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand command = new SqlCommand("Sp_GetDoctorBySpecilty", connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue(parameter.ParameterName, parameter.Value);
+
+                try
+                {
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            dt.Load(reader);
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error  : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+
+            return dt;
+        }
+
+        public static bool FindDoctorByName(ref SqlParameter[] parameters)
+        {
+            bool Found = false;
+
+            using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            using (SqlCommand Command = new SqlCommand("SP_GetDoctorByName", Connection))
+            {
+                Command.CommandType = CommandType.StoredProcedure;
+
+                Command.Parameters.AddWithValue($"@{parameters[0].ParameterName}", parameters[0].Value);
+
+                try
+                {
+                    Connection.Open();
+
+                    using (SqlDataReader reader = Command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            for (int i = 1; i <= reader.FieldCount; i++)
+                            {
+                                parameters[i].Value = reader[parameters[i].ParameterName];
+                            }
+
+                            Found = true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    clsGlobalData.WriteExceptionInLogFile(ex);
+                    MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return Found;
         }
 
     }

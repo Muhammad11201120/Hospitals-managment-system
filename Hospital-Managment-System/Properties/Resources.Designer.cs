@@ -373,6 +373,16 @@ namespace Hospital_Managment_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medic {
+            get {
+                object obj = ResourceManager.GetObject("medic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap member_card {
             get {
                 object obj = ResourceManager.GetObject("member-card", resourceCulture);
@@ -616,6 +626,16 @@ namespace Hospital_Managment_System.Properties {
         internal static System.Drawing.Bitmap User_ID {
             get {
                 object obj = ResourceManager.GetObject("User_ID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_ID1 {
+            get {
+                object obj = ResourceManager.GetObject("User_ID1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

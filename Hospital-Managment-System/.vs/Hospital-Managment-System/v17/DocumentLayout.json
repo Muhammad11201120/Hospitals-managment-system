@@ -11,32 +11,8 @@
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\appointment\\frmaddnewappontment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\frmaddnewappontment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\appointment\\frmaddnewappontment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\frmaddnewappontment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\appointment\\ctrlpatientinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\ctrlpatientinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\empolyee\\employeecontrols\\ctrlemployeecardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:empolyee\\employeecontrols\\ctrlemployeecardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\appointment\\ctrlpatientinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\ctrlpatientinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
 >>>>>>> Mo
@@ -48,9 +24,13 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+<<<<<<< HEAD
           "SelectedChildIndex": -1,
 =======
           "SelectedChildIndex": 9,
+>>>>>>> Mo
+=======
+          "SelectedChildIndex": 8,
 >>>>>>> Mo
           "Children": [
             {
@@ -85,28 +65,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T19:12:11.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Login\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Login\\frmLogin.cs",
-              "RelativeToolTip": "Login\\frmLogin.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAIA1wCAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T19:11:46.097Z",
+              "WhenOpened": "2024-06-01T19:57:21.862Z",
               "EditorCaption": ""
             },
             {
@@ -118,8 +85,9 @@
               "ToolTip": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\Login\\frmLogin.cs [Design]",
               "RelativeToolTip": "Login\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T18:49:12.17Z",
+              "WhenOpened": "2024-06-01T19:57:15.492Z",
               "EditorCaption": " [Design]"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -178,6 +146,8 @@
               "ToolTip": "D:\\Desktop\\Hospitals-managment-system-Project\\Hospital-Managment-System\\Appointment\\ctrlPatientInfoWithFilter.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T15:43:51.407Z"
+>>>>>>> Mo
+=======
 >>>>>>> Mo
             }
           ]

@@ -21,8 +21,6 @@ namespace Hospital_Managment_System.Appointment
 
         enMode _Mode = enMode.AddNew;
 
-
-        clsPatient _Patient;
         public frmAddNewAppontment()
         {
             InitializeComponent();
@@ -38,8 +36,7 @@ namespace Hospital_Managment_System.Appointment
 
             _Mode = enMode.Update;
         }
-
-      
+     
         private void _FillSpecialtiesInComoboBox()
         {
             cbSpecialty.Items.Clear();
@@ -48,15 +45,15 @@ namespace Hospital_Managment_System.Appointment
                 cbSpecialty.Items.Add(row["SpecialityName"]);
             }
         }
+
         void _ResetDefaultValues()
         {
             _FillSpecialtiesInComoboBox();
 
             if (_Mode == enMode.AddNew)
             {
-                lblTitle.Text = "Add New Appontment";
+                lblTitle.Text = "Add New Appointment";
                 _Appointment = new clsAppointments();
-                _Patient = new clsPatient();
             }
             else
             {
@@ -65,7 +62,7 @@ namespace Hospital_Managment_System.Appointment
 
             lblAppontmentID.Text = string.Empty; 
             dtpAppontmentDate.Value = DateTime.Now;
-            lblPrice.Text  = string.Empty;
+            lblPrice.Text  = "0";
 
             cbDoctors.Items.Clear ();
 
@@ -74,7 +71,6 @@ namespace Hospital_Managment_System.Appointment
         void _LoadData()
         {
             _Appointment = clsAppointments.FindByAppointmentID(_appointmentID);
-            _Patient = clsPatient.FindPatientByPatientID(_Appointment.PatientID);
 
             if (_Appointment == null)
             {
@@ -84,6 +80,8 @@ namespace Hospital_Managment_System.Appointment
                 this.Close();
                 return;
             }
+
+            ctrlPatientInfoWithFilter1.LoadData(_Appointment.PatientID);
 
             cbSpecialty.SelectedIndex = cbSpecialty.FindString(clsSpecialties.Find(_Appointment.DoctorInfo.SpecialtyID).SpecialityName);
 
@@ -95,9 +93,7 @@ namespace Hospital_Managment_System.Appointment
             dtpAppontmentDate.Value = _Appointment.AppointmentDateTime;
             lblPrice.Text = _Appointment.TotalPrice.ToString();
             lblAppontmentID.Text = _Appointment.AppointmentID.ToString();
-
-            lblPatientID.Text = _Appointment.PatientID.ToString();
-           
+            lblPrice.Text = _Appointment.TotalPrice.ToString();
         }
 
         private void frmAddNewAppontment_Load(object sender, EventArgs e)
@@ -126,19 +122,7 @@ namespace Hospital_Managment_System.Appointment
             }
         }
 
-        private void cbSpecialty_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _FillComboBoxWithDoctora();
-
-
-        }
-
-        private void cbDoctors_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string DoctorName = cbDoctors.SelectedItem.ToString();
-
-            lblPrice.Text = clsDoctor.FindDoctorByName(DoctorName).Price.ToString();
-        }
+      
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -160,9 +144,9 @@ namespace Hospital_Managment_System.Appointment
             if (_Appointment.Save())
             {
                 lblAppontmentID.Text = _Appointment.AppointmentID.ToString();
-                //change form mode to update.
+
                 _Mode = enMode.Update;
-                lblTitle.Text = "Update appointments";
+                lblTitle.Text = "Update Appointment";
 
                 MessageBox.Show("Data Saved Successfully.",
                     "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -173,9 +157,6 @@ namespace Hospital_Managment_System.Appointment
                  " Is not Saved Successfully.",
                  "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
 
 
@@ -199,7 +180,31 @@ namespace Hospital_Managment_System.Appointment
 
         private void ctrlPatientInfoWithFilter1_OnPatientSelected(int obj)
         {
+            _Appointment.PatientID = obj;
+        }
 
+        private void btnDoctorInfoNext_Click(object sender, EventArgs e)
+        {
+            if (ctrlPatientInfoWithFilter1.PatientID == null)
+            {
+                MessageBox.Show("Please select a patient before continue","Error" , MessageBoxButtons.OK,
+                    MessageBoxIcon.Error );
+                return;
+            }
+
+            tcPatientInfo.SelectedIndex = 1;
+        }
+
+        private void cbSpecialty_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            _FillComboBoxWithDoctora();
+        }
+
+        private void cbDoctors_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string DoctorName = cbDoctors.SelectedItem.ToString();
+
+            lblPrice.Text = clsDoctor.FindDoctorByName(DoctorName).Price.ToString();
         }
     }
 }

@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment\ctrlPatient.cs">
+    <Compile Include="Appointment\PatientContril\ctrlPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Appointment\ctrlPatient.Designer.cs">
+    <Compile Include="Appointment\PatientContril\ctrlPatient.Designer.cs">
       <DependentUpon>ctrlPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appointment\ctrlPatientInfoWithFilter.cs">
+    <Compile Include="Appointment\PatientContril\ctrlPatientInfoWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Appointment\ctrlPatientInfoWithFilter.Designer.cs">
+    <Compile Include="Appointment\PatientContril\ctrlPatientInfoWithFilter.Designer.cs">
       <DependentUpon>ctrlPatientInfoWithFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Appointment\frmAddNewAppontment.cs">
@@ -188,10 +188,10 @@
     <Compile Include="Specialties\frmAllSpecialtiesList.Designer.cs">
       <DependentUpon>frmAllSpecialtiesList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Appointment\ctrlPatient.resx">
+    <EmbeddedResource Include="Appointment\PatientContril\ctrlPatient.resx">
       <DependentUpon>ctrlPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Appointment\ctrlPatientInfoWithFilter.resx">
+    <EmbeddedResource Include="Appointment\PatientContril\ctrlPatientInfoWithFilter.resx">
       <DependentUpon>ctrlPatientInfoWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment\frmAddNewAppontment.resx">

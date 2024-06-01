@@ -86,7 +86,7 @@
             this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFilterBy.FormattingEnabled = true;
             this.cbFilterBy.Items.AddRange(new object[] {
-            "Employee ID"});
+            "Patient ID"});
             this.cbFilterBy.Location = new System.Drawing.Point(125, 36);
             this.cbFilterBy.Margin = new System.Windows.Forms.Padding(2);
             this.cbFilterBy.Name = "cbFilterBy";

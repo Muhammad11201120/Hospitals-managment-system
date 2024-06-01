@@ -44,11 +44,12 @@ namespace Hospital_Managment_System.Appointment
        
         private void ResetDefaultValues()
         {
+            lblPatientID.Text = string.Empty;
             lblAddress.Text = string.Empty;
             lblCountry.Text = string.Empty;
             lblDateOfBirth.Text = string.Empty;
             lblEmail.Text = string.Empty;
-            lblEmpolyeeID.Text = string.Empty;
+            lblPatientID.Text = string.Empty;
             lblName.Text = string.Empty;
             lblNationalNo.Text = string.Empty;
             lblPhone.Text = string.Empty;
@@ -56,6 +57,7 @@ namespace Hospital_Managment_System.Appointment
         }
         private void _LoadPatientInfo()
         {
+            lblPatientID.Text = _Patient.PatientID.ToString();
             lblName.Text = _Patient.FirstName + " " + _Patient.LastName;
             lblNationalNo.Text = _Patient.NationalNo;
             lblPhone.Text = _Patient.ContactInfo.PhoneNumber;

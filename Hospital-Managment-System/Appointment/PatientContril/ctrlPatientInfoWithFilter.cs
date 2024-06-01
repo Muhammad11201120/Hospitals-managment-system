@@ -90,7 +90,7 @@ namespace Hospital_Managment_System.Appointment
                 return;
             switch (cbFilterBy.Text)
             {
-                case "Employee ID":
+                case "Patient ID":
                     ctrlPatient1.LoadPatientInfo (int.Parse(txtFilterValue.Text));
                     break;
             }

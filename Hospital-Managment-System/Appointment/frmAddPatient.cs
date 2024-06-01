@@ -21,7 +21,6 @@ namespace Hospital_Managment_System.Appointment
         enMode _Mode = enMode.AddNew;
         public enum enGendor { Male = 0, Female = 1 };
 
-
         clsPatient _Patient;
 
         int? _PatientID;
@@ -66,8 +65,6 @@ namespace Hospital_Managment_System.Appointment
                 lblTitle.Text = "Update Patient";
             }
 
-
-
             txtFirstName.Text = string.Empty;
             txtLastName.Text = string.Empty;
             txtNationalNo.Text = string.Empty;
@@ -96,8 +93,6 @@ namespace Hospital_Managment_System.Appointment
                 this.Close();
                 return;
             }
-
-
 
             lblPatientID.Text = _PatientID.ToString();
             txtFirstName.Text = _Patient.FirstName;
@@ -152,49 +147,6 @@ namespace Hospital_Managment_System.Appointment
             else
                 return false;
 
-        }
-
-        private void btnDoctorInfoNext_Click(object sender, EventArgs e)
-        {
-            if (!_CreateConactInfo() || !this.ValidateChildren())
-            {
-                MessageBox.Show("Error: Data" +
-                    " Is not Saved Successfully.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-
-            int? CountryID = clsCountries.Find(cbCountry.Text).CountryID;
-
-            _Patient.FirstName = txtFirstName.Text;
-            _Patient.LastName = txtLastName.Text;
-            _Patient.NationalNo = txtNationalNo.Text;
-            _Patient.DateOfBirth = dtpDateOfBirth.Value;
-            _Patient.CountryID = CountryID;
-            _Patient.Address = txtAddress.Text;
-
-            if (rbMale.Checked)
-                _Patient.Gender = (byte)enGendor.Male;
-            else
-                _Patient.Gender = (byte)enGendor.Female;
-
-
-            if (_Patient.Save())
-            {
-                lblPatientID.Text = _Patient.PatientID.ToString();
-
-                DataBack?.Invoke(this, _Patient.PatientID.Value);
-
-                MessageBox.Show("Data Saved Successfully.",
-                    "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Error: Data" +
-                 " Is not Saved Successfully.",
-                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void ValidateEmptyTextBox(object sender, CancelEventArgs e)
@@ -257,7 +209,48 @@ namespace Hospital_Managment_System.Appointment
             };
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (!_CreateConactInfo() || !this.ValidateChildren())
+            {
+                MessageBox.Show("Error: Data" +
+                    " Is not Saved Successfully.",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+
+            int? CountryID = clsCountries.Find(cbCountry.Text).CountryID;
+
+            _Patient.FirstName = txtFirstName.Text;
+            _Patient.LastName = txtLastName.Text;
+            _Patient.NationalNo = txtNationalNo.Text;
+            _Patient.DateOfBirth = dtpDateOfBirth.Value;
+            _Patient.CountryID = CountryID;
+            _Patient.Address = txtAddress.Text;
+
+            if (rbMale.Checked)
+                _Patient.Gender = (byte)enGendor.Male;
+            else
+                _Patient.Gender = (byte)enGendor.Female;
+
+
+            if (_Patient.Save())
+            {
+                lblPatientID.Text = _Patient.PatientID.ToString();
+
+                DataBack?.Invoke(this, _Patient.PatientID.Value);
+
+                MessageBox.Show("Data Saved Successfully.",
+                    "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Error: Data" +
+                 " Is not Saved Successfully.",
+                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
 

@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.llEdit = new System.Windows.Forms.LinkLabel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.lblEmpolyeeID = new System.Windows.Forms.Label();
+            this.lblPatientID = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGendor)).BeginInit();
@@ -70,9 +71,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.llEdit);
             this.groupBox1.Controls.Add(this.pictureBox10);
-            this.groupBox1.Controls.Add(this.lblEmpolyeeID);
+            this.groupBox1.Controls.Add(this.lblPatientID);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.lblAddress);
@@ -108,7 +110,8 @@
             // 
             // llEdit
             // 
-            this.llEdit.Location = new System.Drawing.Point(644, 0);
+            this.llEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.llEdit.Location = new System.Drawing.Point(517, 291);
             this.llEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.llEdit.Name = "llEdit";
             this.llEdit.Size = new System.Drawing.Size(197, 28);
@@ -129,22 +132,22 @@
             this.pictureBox10.TabIndex = 124;
             this.pictureBox10.TabStop = false;
             // 
-            // lblEmpolyeeID
+            // lblPatientID
             // 
-            this.lblEmpolyeeID.AutoSize = true;
-            this.lblEmpolyeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpolyeeID.Location = new System.Drawing.Point(212, 25);
-            this.lblEmpolyeeID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblEmpolyeeID.Name = "lblEmpolyeeID";
-            this.lblEmpolyeeID.Size = new System.Drawing.Size(49, 25);
-            this.lblEmpolyeeID.TabIndex = 123;
-            this.lblEmpolyeeID.Text = "N/A";
+            this.lblPatientID.AutoSize = true;
+            this.lblPatientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatientID.Location = new System.Drawing.Point(212, 24);
+            this.lblPatientID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblPatientID.Name = "lblPatientID";
+            this.lblPatientID.Size = new System.Drawing.Size(49, 25);
+            this.lblPatientID.TabIndex = 123;
+            this.lblPatientID.Text = "N/A";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(7, 20);
+            this.label22.Location = new System.Drawing.Point(32, 24);
             this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(119, 25);
@@ -155,7 +158,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(206, 220);
+            this.lblEmail.Location = new System.Drawing.Point(213, 226);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(46, 25);
@@ -166,7 +169,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(206, 293);
+            this.lblAddress.Location = new System.Drawing.Point(213, 293);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(46, 25);
@@ -176,10 +179,10 @@
             // lblCountry
             // 
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.Location = new System.Drawing.Point(518, 289);
+            this.lblCountry.Location = new System.Drawing.Point(637, 224);
             this.lblCountry.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(126, 25);
+            this.lblCountry.Size = new System.Drawing.Size(81, 25);
             this.lblCountry.TabIndex = 118;
             this.lblCountry.Text = "N/A";
             this.lblCountry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,7 +191,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(203, 158);
+            this.lblPhone.Location = new System.Drawing.Point(213, 166);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(46, 25);
@@ -199,7 +202,7 @@
             // 
             this.lblDateOfBirth.AutoSize = true;
             this.lblDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(587, 112);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(643, 94);
             this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
             this.lblDateOfBirth.Size = new System.Drawing.Size(46, 25);
@@ -209,7 +212,7 @@
             // pbGendor
             // 
             this.pbGendor.Image = global::Hospital_Managment_System.Properties.Resources.Man_32;
-            this.pbGendor.Location = new System.Drawing.Point(542, 191);
+            this.pbGendor.Location = new System.Drawing.Point(598, 160);
             this.pbGendor.Margin = new System.Windows.Forms.Padding(4);
             this.pbGendor.Name = "pbGendor";
             this.pbGendor.Size = new System.Drawing.Size(36, 32);
@@ -221,7 +224,7 @@
             // 
             this.rbGendor.AutoSize = true;
             this.rbGendor.Checked = true;
-            this.rbGendor.Location = new System.Drawing.Point(586, 196);
+            this.rbGendor.Location = new System.Drawing.Point(642, 166);
             this.rbGendor.Margin = new System.Windows.Forms.Padding(4);
             this.rbGendor.Name = "rbGendor";
             this.rbGendor.Size = new System.Drawing.Size(55, 21);
@@ -234,7 +237,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(450, 194);
+            this.label5.Location = new System.Drawing.Point(502, 164);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 25);
@@ -244,7 +247,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Hospital_Managment_System.Properties.Resources.Person_32;
-            this.pictureBox8.Location = new System.Drawing.Point(542, 23);
+            this.pictureBox8.Location = new System.Drawing.Point(598, 18);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(36, 32);
@@ -256,7 +259,7 @@
             // 
             this.lblNationalNo.AutoSize = true;
             this.lblNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.Location = new System.Drawing.Point(206, 94);
+            this.lblNationalNo.Location = new System.Drawing.Point(213, 96);
             this.lblNationalNo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNationalNo.Name = "lblNationalNo";
             this.lblNationalNo.Size = new System.Drawing.Size(46, 25);
@@ -267,7 +270,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(589, 28);
+            this.lblName.Location = new System.Drawing.Point(643, 22);
             this.lblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(46, 25);
@@ -288,7 +291,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Hospital_Managment_System.Properties.Resources.Country_32;
-            this.pictureBox6.Location = new System.Drawing.Point(473, 286);
+            this.pictureBox6.Location = new System.Drawing.Point(598, 220);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(36, 32);
@@ -299,7 +302,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Hospital_Managment_System.Properties.Resources.Email_32;
-            this.pictureBox5.Location = new System.Drawing.Point(160, 219);
+            this.pictureBox5.Location = new System.Drawing.Point(160, 222);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(36, 32);
@@ -310,7 +313,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Hospital_Managment_System.Properties.Resources.Calendar_32;
-            this.pictureBox4.Location = new System.Drawing.Point(542, 106);
+            this.pictureBox4.Location = new System.Drawing.Point(598, 90);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 32);
@@ -321,7 +324,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Hospital_Managment_System.Properties.Resources.Count_32;
-            this.pictureBox3.Location = new System.Drawing.Point(160, 89);
+            this.pictureBox3.Location = new System.Drawing.Point(160, 92);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 32);
@@ -332,7 +335,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hospital_Managment_System.Properties.Resources.Phone_32;
-            this.pictureBox2.Location = new System.Drawing.Point(160, 153);
+            this.pictureBox2.Location = new System.Drawing.Point(160, 162);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 32);
@@ -344,7 +347,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(62, 294);
+            this.label12.Location = new System.Drawing.Point(52, 293);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 25);
@@ -355,7 +358,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(88, 219);
+            this.label6.Location = new System.Drawing.Point(79, 226);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 25);
@@ -366,7 +369,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 155);
+            this.label4.Location = new System.Drawing.Point(70, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 25);
@@ -377,7 +380,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(393, 107);
+            this.label3.Location = new System.Drawing.Point(449, 94);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
@@ -388,7 +391,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 91);
+            this.label2.Location = new System.Drawing.Point(20, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 25);
@@ -399,12 +402,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(468, 27);
+            this.label1.Location = new System.Drawing.Point(517, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 87;
             this.label1.Text = "Name:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(488, 224);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 25);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "Country :";
             // 
             // ctrlPatient
             // 
@@ -433,7 +447,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel llEdit;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label lblEmpolyeeID;
+        private System.Windows.Forms.Label lblPatientID;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblAddress;
@@ -458,5 +472,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
     }
 }

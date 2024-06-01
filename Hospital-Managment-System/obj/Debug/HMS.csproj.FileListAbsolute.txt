@@ -166,3 +166,4 @@ D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddNewAppontment.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddNewAppontment.resources

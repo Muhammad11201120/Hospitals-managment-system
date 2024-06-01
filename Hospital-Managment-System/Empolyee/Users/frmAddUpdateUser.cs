@@ -21,12 +21,11 @@ namespace Hospital_Managment_System.Empolyee.Users
             _EmpID = EmpID;
         }
 
-        public frmAddUpdateUser(int? EmpID, int UserID)
+        public frmAddUpdateUser(int UserID)
         {
             InitializeComponent();
 
             _Mode = enMode.Update;
-            _EmpID = EmpID;
             _UserID = UserID;
         }
 
@@ -34,10 +33,10 @@ namespace Hospital_Managment_System.Empolyee.Users
         {
             if (_Mode == enMode.Update)
             {
-                lblEmpID.Text = _EmpID.ToString();
                 lblUserID.Text = _UserID.ToString();
                 
                 _UserInfo = clsUser.Find((int)_UserID);
+                lblEmpID.Text = _UserInfo.EmployeeID.ToString();
                 txtUsername.Text = _UserInfo.UserName;
                 txtPassword.Text = _UserInfo.Password;
                 txtConfirmPassword.Text = _UserInfo.Password;
@@ -70,13 +69,23 @@ namespace Hospital_Managment_System.Empolyee.Users
 
             if (_Mode == enMode.Update)
             {
-                if (_UserInfo.UserName != txtUsername.Text)
+                if (txtUsername.Text != _UserInfo.UserName)
                 {
-                    if (clsUser.IsUsernameExists(txtUsername.Text)) return false;
+                    if (clsUser.IsUsernameExists(txtUsername.Text))
+                    {
+                        errorProvider1.SetError(txtUsername, "this username already exists, choose another.");
+                        return false;
+                    }
                 }
             }
             else
-                if (clsUser.IsUsernameExists(txtUsername.Text)) return false;
+            {
+                if (clsUser.IsUsernameExists(txtUsername.Text))
+                {
+                    errorProvider1.SetError(txtUsername, "this username already exists, choose another.");
+                    return false;
+                }
+            }
 
             return true;
         }
@@ -86,7 +95,7 @@ namespace Hospital_Managment_System.Empolyee.Users
             if (_Mode == enMode.AddNew)
                 _UserInfo = new clsUser();
 
-            _UserInfo.EmployeeID = (int)_EmpID;
+            _UserInfo.EmployeeID = Convert.ToInt32(lblEmpID.Text);
             _UserInfo.UserName = txtUsername.Text;
             _UserInfo.Password = txtPassword.Text;
             _UserInfo.IsActive = chkIsActive.Checked;
@@ -164,10 +173,6 @@ namespace Hospital_Managment_System.Empolyee.Users
             if (string.IsNullOrEmpty(txtUsername.Text))
             {
                 errorProvider1.SetError(txtUsername, "this is required.");
-            }
-            else if (clsUser.IsUsernameExists(txtUsername.Text))
-            {
-                errorProvider1.SetError(txtUsername, "this username already exists, choose another.");
             }
             else
                 errorProvider1.SetError(txtUsername, "");

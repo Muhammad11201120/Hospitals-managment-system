@@ -1,4 +1,6 @@
-﻿using Hospital_Managment_System.Empolyee.Users;
+﻿using Hospital_Managment_System.Empolyee.Doctor;
+using Hospital_Managment_System.Empolyee.EmployeeForms;
+using Hospital_Managment_System.Empolyee.Users;
 using Hospital_Managment_System.Login;
 using System;
 using System.Windows.Forms;
@@ -15,7 +17,7 @@ namespace Hospital_Managment_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
-            Application.Run( new frmLogin() );
+            Application.Run( new frmMain() );
             //Application.Run(new frmUserCardWithFilter());
         }
     }

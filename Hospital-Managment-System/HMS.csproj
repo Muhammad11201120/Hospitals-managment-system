@@ -70,94 +70,106 @@
     <Compile Include="Appointment\frmAddPatient.Designer.cs">
       <DependentUpon>frmAddPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Doctor\DoctorControls\ctrlFindDoctor.cs">
+    <Compile Include="Peploe\Doctor\Controls\ctrlFindDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Empolyee\Doctor\DoctorControls\ctrlFindDoctor.Designer.cs">
+    <Compile Include="Peploe\Doctor\Controls\ctrlFindDoctor.Designer.cs">
       <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmAddUpdateDoctor.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmAddUpdateDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmAddUpdateDoctor.Designer.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmAddUpdateDoctor.Designer.cs">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmDoctorsList.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmDoctorsList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmDoctorsList.Designer.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmDoctorsList.Designer.cs">
       <DependentUpon>frmDoctorsList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\EmployeeControls\ctrlEmployeeCard.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmShowDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peploe\Doctor\Forms\frmShowDoctorDetails.Designer.cs">
+      <DependentUpon>frmShowDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peploe\Employee\Controls\ctrlEmployeeCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Empolyee\EmployeeControls\ctrlEmployeeCard.Designer.cs">
+    <Compile Include="Peploe\Employee\Controls\ctrlEmployeeCard.Designer.cs">
       <DependentUpon>ctrlEmployeeCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\EmployeeControls\ctrlEmployeeCardWithFilter.cs">
+    <Compile Include="Peploe\Employee\Controls\ctrlEmployeeCardWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Empolyee\EmployeeControls\ctrlEmployeeCardWithFilter.Designer.cs">
+    <Compile Include="Peploe\Employee\Controls\ctrlEmployeeCardWithFilter.Designer.cs">
       <DependentUpon>ctrlEmployeeCardWithFilter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\frmFindEmployee.cs">
+    <Compile Include="Peploe\Employee\Forms\frmFindEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\frmFindEmployee.Designer.cs">
+    <Compile Include="Peploe\Employee\Forms\frmFindEmployee.Designer.cs">
       <DependentUpon>frmFindEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\frmAddUpdateEmpolyee.cs">
+    <Compile Include="Peploe\Employee\Forms\frmAddUpdateEmpolyee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\frmAddUpdateEmpolyee.Designer.cs">
+    <Compile Include="Peploe\Employee\Forms\frmAddUpdateEmpolyee.Designer.cs">
       <DependentUpon>frmAddUpdateEmpolyee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\frmAllEmployeesList.cs">
+    <Compile Include="Peploe\Employee\Forms\frmAllEmployeesList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\frmAllEmployeesList.Designer.cs">
+    <Compile Include="Peploe\Employee\Forms\frmAllEmployeesList.Designer.cs">
       <DependentUpon>frmAllEmployeesList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmFindDoctorInfo.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmFindDoctorInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Doctor\frmFindDoctorInfo.Designer.cs">
+    <Compile Include="Peploe\Doctor\Forms\frmFindDoctorInfo.Designer.cs">
       <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\Controls\ctrlUserCard.cs">
+    <Compile Include="Peploe\Employee\Forms\frmShowEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peploe\Employee\Forms\frmShowEmployeeDetails.Designer.cs">
+      <DependentUpon>frmShowEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peploe\Users\Controls\ctrlUserCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\Controls\ctrlUserCard.Designer.cs">
+    <Compile Include="Peploe\Users\Controls\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.cs">
+    <Compile Include="Peploe\Users\Controls\ctrlUserCardWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.Designer.cs">
+    <Compile Include="Peploe\Users\Controls\ctrlUserCardWithFilter.Designer.cs">
       <DependentUpon>ctrlUserCardWithFilter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\frmAddUpdateUser.cs">
+    <Compile Include="Peploe\Users\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\frmAddUpdateUser.Designer.cs">
+    <Compile Include="Peploe\Users\frmAddUpdateUser.Designer.cs">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\frmListUsers.cs">
+    <Compile Include="Peploe\Users\frmListUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\frmListUsers.Designer.cs">
+    <Compile Include="Peploe\Users\frmListUsers.Designer.cs">
       <DependentUpon>frmListUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\frmUserCardWithFilter.cs">
+    <Compile Include="Peploe\Users\frmUserCardWithFilter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\frmUserCardWithFilter.Designer.cs">
+    <Compile Include="Peploe\Users\frmUserCardWithFilter.Designer.cs">
       <DependentUpon>frmUserCardWithFilter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empolyee\Users\frmUserInfoCard.cs">
+    <Compile Include="Peploe\Users\frmUserInfoCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empolyee\Users\frmUserInfoCard.Designer.cs">
+    <Compile Include="Peploe\Users\frmUserInfoCard.Designer.cs">
       <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\clsGlobal.cs" />
@@ -206,49 +218,55 @@
     <EmbeddedResource Include="Appointment\frmAddPatient.resx">
       <DependentUpon>frmAddPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Doctor\DoctorControls\ctrlFindDoctor.resx">
+    <EmbeddedResource Include="Peploe\Doctor\Controls\ctrlFindDoctor.resx">
       <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Doctor\frmAddUpdateDoctor.resx">
+    <EmbeddedResource Include="Peploe\Doctor\Forms\frmAddUpdateDoctor.resx">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Doctor\frmDoctorsList.resx">
+    <EmbeddedResource Include="Peploe\Doctor\Forms\frmDoctorsList.resx">
       <DependentUpon>frmDoctorsList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\EmployeeControls\ctrlEmployeeCard.resx">
+    <EmbeddedResource Include="Peploe\Doctor\Forms\frmShowDoctorDetails.resx">
+      <DependentUpon>frmShowDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peploe\Employee\Controls\ctrlEmployeeCard.resx">
       <DependentUpon>ctrlEmployeeCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\EmployeeControls\ctrlEmployeeCardWithFilter.resx">
+    <EmbeddedResource Include="Peploe\Employee\Controls\ctrlEmployeeCardWithFilter.resx">
       <DependentUpon>ctrlEmployeeCardWithFilter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\frmFindEmployee.resx">
+    <EmbeddedResource Include="Peploe\Employee\Forms\frmFindEmployee.resx">
       <DependentUpon>frmFindEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\frmAddUpdateEmpolyee.resx">
+    <EmbeddedResource Include="Peploe\Employee\Forms\frmAddUpdateEmpolyee.resx">
       <DependentUpon>frmAddUpdateEmpolyee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\frmAllEmployeesList.resx">
+    <EmbeddedResource Include="Peploe\Employee\Forms\frmAllEmployeesList.resx">
       <DependentUpon>frmAllEmployeesList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Doctor\frmFindDoctorInfo.resx">
+    <EmbeddedResource Include="Peploe\Doctor\Forms\frmFindDoctorInfo.resx">
       <DependentUpon>frmFindDoctorInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\Controls\ctrlUserCard.resx">
+    <EmbeddedResource Include="Peploe\Employee\Forms\frmShowEmployeeDetails.resx">
+      <DependentUpon>frmShowEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peploe\Users\Controls\ctrlUserCard.resx">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\Controls\ctrlUserCardWithFilter.resx">
+    <EmbeddedResource Include="Peploe\Users\Controls\ctrlUserCardWithFilter.resx">
       <DependentUpon>ctrlUserCardWithFilter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\frmAddUpdateUser.resx">
+    <EmbeddedResource Include="Peploe\Users\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\frmListUsers.resx">
+    <EmbeddedResource Include="Peploe\Users\frmListUsers.resx">
       <DependentUpon>frmListUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\frmUserCardWithFilter.resx">
+    <EmbeddedResource Include="Peploe\Users\frmUserCardWithFilter.resx">
       <DependentUpon>frmUserCardWithFilter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empolyee\Users\frmUserInfoCard.resx">
+    <EmbeddedResource Include="Peploe\Users\frmUserInfoCard.resx">
       <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hospital Info\frmHospitalSettings.resx">

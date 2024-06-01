@@ -123,7 +123,6 @@ D:\OurProject\Test\Hospitals-managment-system-Project\Hospital-Managment-System\
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
-C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmFindUser.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
@@ -169,3 +168,10 @@ D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debu
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatient.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatientInfoWithFilter.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddPatient.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatient.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatientInfoWithFilter.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddNewAppontment.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddPatient.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmDoctorsList.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources

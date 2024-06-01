@@ -33,9 +33,11 @@ namespace Hospital_Managment_System.Empolyee.Users.Controls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (clsUser.IsUserExists(Convert.ToInt32(txtUserID.Text)))
+            UserID = Convert.ToInt32(txtUserID.Text);
+
+            if (clsUser.IsUserExists(UserID))
             {
-                ctrlUserCard1.LoadUserInfo(Convert.ToInt32(txtUserID.Text));
+                ctrlUserCard1.LoadUserInfo(UserID);
             }
             else
                 MessageBox.Show("this User id is not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Stop);

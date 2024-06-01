@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_BusinessLayer;
+using System;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee.Users
@@ -20,9 +21,9 @@ namespace Hospital_Managment_System.Empolyee.Users
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            if (ctrlUserCardWithFilter1.UserInfo != null) 
-                if (OnSelectUser != null) 
-                    OnSelectUser(this, ctrlUserCardWithFilter1.UserID);
+            if (clsUser.IsUserExists(ctrlUserCardWithFilter1.UserID))
+                if (OnSelectUser != null)
+                    OnSelectUser?.Invoke(this, ctrlUserCardWithFilter1.UserID);
 
             this.Close();
         }

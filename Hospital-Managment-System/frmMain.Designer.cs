@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.newAppoinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,7 +46,6 @@
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newAppoinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,14 @@
             this.menuStrip1.Size = new System.Drawing.Size(1412, 72);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // newAppoinToolStripMenuItem
+            // 
+            this.newAppoinToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.newAppoinToolStripMenuItem.Name = "newAppoinToolStripMenuItem";
+            this.newAppoinToolStripMenuItem.Size = new System.Drawing.Size(233, 68);
+            this.newAppoinToolStripMenuItem.Text = "New Appointment";
+            this.newAppoinToolStripMenuItem.Click += new System.EventHandler(this.newAppoinToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -173,8 +181,8 @@
             this.toolStripMenuAddNewUser.Image = global::Hospital_Managment_System.Properties.Resources.user__4_;
             this.toolStripMenuAddNewUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuAddNewUser.Name = "toolStripMenuAddNewUser";
-            this.toolStripMenuAddNewUser.Size = new System.Drawing.Size(553, 38);
-            this.toolStripMenuAddNewUser.Text = "Add New User (NOT IMPLEMENTED)";
+            this.toolStripMenuAddNewUser.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuAddNewUser.Text = "Add New User ";
             this.toolStripMenuAddNewUser.Click += new System.EventHandler(this.toolStripMenuAddNewUser_Click);
             // 
             // toolStripMenuListUsers
@@ -182,8 +190,8 @@
             this.toolStripMenuListUsers.Image = global::Hospital_Managment_System.Properties.Resources.user__1_;
             this.toolStripMenuListUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuListUsers.Name = "toolStripMenuListUsers";
-            this.toolStripMenuListUsers.Size = new System.Drawing.Size(553, 38);
-            this.toolStripMenuListUsers.Text = "All Users List (NOT IMPLEMENTED)";
+            this.toolStripMenuListUsers.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuListUsers.Text = "All Users List";
             this.toolStripMenuListUsers.Click += new System.EventHandler(this.toolStripMenuListUsers_Click);
             // 
             // toolStripMenuFindUser
@@ -191,8 +199,8 @@
             this.toolStripMenuFindUser.Image = global::Hospital_Managment_System.Properties.Resources.user__2_;
             this.toolStripMenuFindUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuFindUser.Name = "toolStripMenuFindUser";
-            this.toolStripMenuFindUser.Size = new System.Drawing.Size(553, 38);
-            this.toolStripMenuFindUser.Text = "Find User (NOT IMPLEMENTED)";
+            this.toolStripMenuFindUser.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuFindUser.Text = "Find User";
             this.toolStripMenuFindUser.Click += new System.EventHandler(this.toolStripMenuFindUser_Click);
             // 
             // uSERSToolStripMenuItem
@@ -223,14 +231,6 @@
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
-            // 
-            // newAppoinToolStripMenuItem
-            // 
-            this.newAppoinToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.newAppoinToolStripMenuItem.Name = "newAppoinToolStripMenuItem";
-            this.newAppoinToolStripMenuItem.Size = new System.Drawing.Size(233, 68);
-            this.newAppoinToolStripMenuItem.Text = "New Appointment";
-            this.newAppoinToolStripMenuItem.Click += new System.EventHandler(this.newAppoinToolStripMenuItem_Click);
             // 
             // frmMain
             // 

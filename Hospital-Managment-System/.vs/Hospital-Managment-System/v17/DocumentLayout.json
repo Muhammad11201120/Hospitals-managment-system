@@ -1,6 +1,5 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\",
   "Documents": [
     {
@@ -24,10 +23,8 @@
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\ctrlpatientinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
-=======
   "WorkspaceRootPath": "D:\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\Hospitals-managment-system\\Hospital-Managment-System\\",
   "Documents": [],
->>>>>>> Users
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -35,11 +32,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 7,
-=======
           "SelectedChildIndex": -1,
->>>>>>> Users
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,7 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-<<<<<<< HEAD
             },
             {
               "$type": "Bookmark",
@@ -136,7 +129,6 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
-=======
             },
             {
               "$type": "Bookmark",
@@ -161,7 +153,6 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
->>>>>>> Users
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }

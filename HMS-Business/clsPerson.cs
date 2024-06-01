@@ -26,11 +26,26 @@ namespace HMS_DataBusinessLayer
         public string Address { get; set; }
         public int? ContactID { get; set; }
         public int? CountryID { get; set; }
-        public clsContact ContactInfo { get; set; }
-        public clsCountries CountryInfo { get; set; }
-
 
         public enMode Mode = enMode.ADD;
+
+        public clsContact ContactInfo
+        {
+            get
+            {
+                return clsContact.Find(ContactID);
+            }
+        }
+
+        public clsCountries CountryInfo
+        {
+            get
+            {
+                return clsCountries.Find(CountryID);
+            }
+        }
+
+
         public clsPerson()
         {
             PersonID = null;
@@ -42,8 +57,6 @@ namespace HMS_DataBusinessLayer
             Address = null;
             ContactID = null;
             CountryID = null;
-            ContactInfo = new clsContact();
-            CountryInfo = new clsCountries();
             Mode = enMode.ADD;
         }
         public clsPerson( int? personID, string nationalNo, string firstName, string lastName, DateTime dateOfBirth, byte? gender, string address, int? contactID, int? countryID )
@@ -57,8 +70,6 @@ namespace HMS_DataBusinessLayer
             Address = address;
             ContactID = contactID;
             CountryID = countryID;
-            ContactInfo = clsContact.Find( contactID );
-            CountryInfo = clsCountries.GetCountry( countryID );
             Mode = enMode.UPDATE;
         }
 

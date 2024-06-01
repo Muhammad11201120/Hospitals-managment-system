@@ -104,7 +104,7 @@ namespace HMS_DataBusinessLayer
         }
         public new bool Save()
         {
-            base.Mode = ( clsPerson.enMode ) Mode;
+            base.Mode = ( clsPerson.enMode ) _Mode;
             if ( !base.Save() )
                 return false;
 

@@ -22,13 +22,17 @@ namespace HMS_DataBusinessLayer
         {
             this.ContactID =null; 
             this.Email = string.Empty;
-            this.PhoneNumber = string.Empty;    
-        } 
+            this.PhoneNumber = string.Empty;
+
+            Mode = enMode.AddNew;
+        }
         private clsContact (int? ContactID,string Email,string PhoneNumber)
         {
             this.ContactID=ContactID;
             this.Email = Email;
-            this.PhoneNumber = PhoneNumber; 
+            this.PhoneNumber = PhoneNumber;
+
+            Mode = enMode.Update;
         }
 
         private bool _AddNewContact()

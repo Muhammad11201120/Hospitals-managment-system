@@ -21,7 +21,7 @@ namespace Hospital_Managment_System.Empolyee
         enum enMode { AddNew = 0, Update = 1 };
         public enum enGendor { Male = 0, Female = 1 };
 
-        enMode _Mode = enMode.AddNew;
+        enMode _Mode;
         clsEmployee _Empolyee;
         int? _EmployeeID = null;
         public frmAddUpdateEmpolyee()
@@ -84,11 +84,11 @@ namespace Hospital_Managment_System.Empolyee
         }
         void _LoadData()
         {
-            _Empolyee = clsEmployee.Find( _EmployeeID );
+            _Empolyee = clsEmployee.Find(_EmployeeID);
 
             if ( _Empolyee == null )
             {
-                MessageBox.Show( "No Empolyee with ID = " +
+                MessageBox.Show( "No Employee with ID = " +
                     _EmployeeID, "Person Not Found",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation );
                 this.Close();
@@ -133,7 +133,13 @@ namespace Hospital_Managment_System.Empolyee
 
         bool _CreateConactInfo()
         {
-            clsContact contact = new clsContact();
+            clsContact contact;
+
+            if (_Mode == enMode.AddNew)
+                contact = new clsContact();
+            else
+                contact = clsContact.Find(_Empolyee.ContactID);
+
 
             contact.Email = txtEmail.Text;
             contact.PhoneNumber = txtPhone.Text;

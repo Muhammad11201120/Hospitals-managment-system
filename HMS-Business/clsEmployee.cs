@@ -13,8 +13,8 @@ namespace HMS_DataBusinessLayer
     {
         enum _enMode
         {
-            ADD = 1,
-            UPDATE = 2
+            ADD = 0,
+            UPDATE = 1
         }
         public int? EmployeeID { get; set; }
         public decimal? Salary { get; set; }
@@ -39,8 +39,6 @@ namespace HMS_DataBusinessLayer
             this.Address = address;
             this.ContactID = contactID;
             this.CountryID = countryID;
-            this.ContactInfo = clsContact.Find( contactID );
-            this.CountryInfo = clsCountries.GetCountry( countryID );
             _Mode = _enMode.UPDATE;
         }
         public static DataTable GetAllEmployees()
@@ -109,7 +107,7 @@ namespace HMS_DataBusinessLayer
         }
         public new bool Save()
         {
-            base.Mode = ( clsPerson.enMode ) Mode;
+            base.Mode = ( clsPerson.enMode ) _Mode;
             if ( !base.Save() )
                 return false;
 

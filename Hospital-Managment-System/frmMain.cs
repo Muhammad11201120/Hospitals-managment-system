@@ -151,7 +151,7 @@ namespace Hospital_Managment_System
 
         private void newAppoinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddNewAppontment newAppontment = new frmAddNewAppontment(2);
+            frmAddNewAppontment newAppontment = new frmAddNewAppontment(1);
 
             newAppontment.ShowDialog();
         }

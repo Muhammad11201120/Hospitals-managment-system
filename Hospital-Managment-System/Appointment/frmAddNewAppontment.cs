@@ -15,16 +15,14 @@ namespace Hospital_Managment_System.Appointment
 {
     public partial class frmAddNewAppontment : Form
     {
-        clsAppointments appointment;
+        clsAppointments _Appointment;
         int? _appointmentID;
         enum enMode { AddNew = 0, Update = 1 };
-        public enum enGendor { Male = 0, Female = 1 };
 
         enMode _Mode = enMode.AddNew;
 
+
         clsPatient _Patient;
-
-
         public frmAddNewAppontment()
         {
             InitializeComponent();
@@ -41,16 +39,7 @@ namespace Hospital_Managment_System.Appointment
             _Mode = enMode.Update;
         }
 
-        void _FillComboBoxWithCountry()
-        {
-            DataTable dt = clsCountries.GetAllCountries();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                cbCountry.Items.Add(row["CountryName"]);
-            }
-        }
-
+      
         private void _FillSpecialtiesInComoboBox()
         {
             cbSpecialty.Items.Clear();
@@ -62,17 +51,16 @@ namespace Hospital_Managment_System.Appointment
         void _ResetDefaultValues()
         {
             _FillSpecialtiesInComoboBox();
-            _FillComboBoxWithCountry();
 
             if (_Mode == enMode.AddNew)
             {
                 lblTitle.Text = "Add New Appontment";
-                appointment = new clsAppointments();
+                _Appointment = new clsAppointments();
                 _Patient = new clsPatient();
             }
             else
             {
-                lblTitle.Text = "Update Appontment";
+                lblTitle.Text = "Update Appointment";
             }
 
             lblAppontmentID.Text = string.Empty; 
@@ -81,27 +69,14 @@ namespace Hospital_Managment_System.Appointment
 
             cbDoctors.Items.Clear ();
 
-
-            txtFirstName.Text = string.Empty;
-            txtLastName.Text = string.Empty;
-            txtNationalNo.Text = string.Empty;
-            txtPhone.Text = string.Empty;
-            txtEmail.Text = string.Empty;
-            txtAddress.Text = string.Empty;
-
-            cbCountry.SelectedIndex = cbCountry.FindString("Saudi Arabia");
-
-            rbMale.Checked = true;
-            rbFemale.Checked = false;
-
-            dtpDateOfBirth.Value = DateTime.Now;
-
         }
+
         void _LoadData()
         {
-            appointment = clsAppointments.FindByAppointmentID(_appointmentID);
+            _Appointment = clsAppointments.FindByAppointmentID(_appointmentID);
+            _Patient = clsPatient.FindPatientByPatientID(_Appointment.PatientID);
 
-            if (appointment == null)
+            if (_Appointment == null)
             {
                 MessageBox.Show("No appointment with ID = " +
                     _appointmentID, "Patient Not Found",
@@ -110,40 +85,19 @@ namespace Hospital_Managment_System.Appointment
                 return;
             }
 
-            cbSpecialty.SelectedIndex = cbSpecialty.FindString(clsSpecialties.Find(appointment.DoctorInfo.SpecialtyID).SpecialityName);
+            cbSpecialty.SelectedIndex = cbSpecialty.FindString(clsSpecialties.Find(_Appointment.DoctorInfo.SpecialtyID).SpecialityName);
 
-            string FirstName = clsDoctor.Find(appointment.DoctorID).EmployeeInfo.FirstName;
-            string LastName = clsDoctor.Find(appointment.DoctorID).EmployeeInfo.LastName;
+            string FirstName = clsDoctor.Find(_Appointment.DoctorID).EmployeeInfo.FirstName;
+            string LastName = clsDoctor.Find(_Appointment.DoctorID).EmployeeInfo.LastName;
             string FullName = FirstName + " " + LastName;
 
             cbDoctors.SelectedIndex =  cbDoctors.FindString(FullName);
-            dtpAppontmentDate.Value = appointment.AppointmentDateTime;
-            lblPrice.Text = appointment.TotalPrice.ToString();
-            lblAppontmentID.Text = appointment.AppointmentID.ToString();
+            dtpAppontmentDate.Value = _Appointment.AppointmentDateTime;
+            lblPrice.Text = _Appointment.TotalPrice.ToString();
+            lblAppontmentID.Text = _Appointment.AppointmentID.ToString();
 
-            lblPatientID.Text = appointment.PatientID.ToString();
-            txtFirstName.Text = appointment.PatientInfo.FirstName;
-            txtLastName.Text = appointment.PatientInfo.LastName;
-            txtNationalNo.Text = appointment.PatientInfo.NationalNo;
-            txtPhone.Text = appointment.PatientInfo.ContactInfo.PhoneNumber;
-            txtEmail.Text = appointment.PatientInfo.ContactInfo.Email;
-            txtAddress.Text = appointment.PatientInfo.Address;
-
-            cbCountry.SelectedIndex = cbCountry.FindString(appointment.PatientInfo.CountryInfo.CountryName);
-
-            dtpDateOfBirth.Value = appointment.PatientInfo.DateOfBirth;
-
-
-            if (appointment.PatientInfo.Gender == 0)
-            {
-                rbMale.Checked = true;
-                rbFemale.Checked = false;
-            }
-            else
-            {
-                rbMale.Checked = false;
-                rbFemale.Checked = true;
-            }
+            lblPatientID.Text = _Appointment.PatientID.ToString();
+           
         }
 
         private void frmAddNewAppontment_Load(object sender, EventArgs e)
@@ -154,67 +108,7 @@ namespace Hospital_Managment_System.Appointment
                 _LoadData();
         }
 
-        bool _CreateConactInfo()
-        {
-            clsContact contact = new clsContact();
-
-            contact.Email = txtEmail.Text;
-            contact.PhoneNumber = txtPhone.Text;
-
-
-
-            if (contact.Save())
-            {
-                _Patient.ContactID = contact.ContactID;
-                return true;
-            }
-            else
-                return false;
-
-        }
-
-        private void btnDoctorInfoNext_Click(object sender, EventArgs e)
-        {
-            if (!_CreateConactInfo() || !this.ValidateChildren())
-            {
-                MessageBox.Show("Error: Data" +
-                    " Is not Saved Successfully.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-
-            int? CountryID = clsCountries.Find(cbCountry.Text).CountryID;
-
-            _Patient.FirstName = txtFirstName.Text;
-            _Patient.LastName = txtLastName.Text;
-            _Patient.NationalNo = txtNationalNo.Text;
-            _Patient.DateOfBirth = dtpDateOfBirth.Value;
-            _Patient.CountryID = CountryID;
-            _Patient.Address = txtAddress.Text;
-
-            if (rbMale.Checked)
-                _Patient.Gender = (byte)enGendor.Male;
-            else
-                _Patient.Gender = (byte)enGendor.Female;
-
-
-            if (_Patient.Save())
-            {
-                lblPatientID.Text = _Patient.PatientID.ToString();
-                appointment.PatientID = _Patient.PatientID.Value;
-
-                MessageBox.Show("Data Saved Successfully.",
-                    "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Error: Data" +
-                 " Is not Saved Successfully.",
-                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+ 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -257,15 +151,15 @@ namespace Hospital_Managment_System.Appointment
                 return;
             }
 
-            appointment.TotalPrice = decimal.Parse( lblPrice.Text);
-            appointment.AppointmentDateTime = dtpAppontmentDate.Value;
-            appointment.DoctorID = clsDoctor.FindDoctorByName(cbDoctors.SelectedItem.ToString()).DoctorID.Value;
-            appointment.UserID = clsGlobal.CurrnetUser.UserID.Value;
+            _Appointment.TotalPrice = decimal.Parse( lblPrice.Text);
+            _Appointment.AppointmentDateTime = dtpAppontmentDate.Value;
+            _Appointment.DoctorID = clsDoctor.FindDoctorByName(cbDoctors.SelectedItem.ToString()).DoctorID.Value;
+            _Appointment.UserID = clsGlobal.CurrnetUser.UserID.Value;
 
 
-            if (appointment.Save())
+            if (_Appointment.Save())
             {
-                lblAppontmentID.Text = appointment.AppointmentID.ToString();
+                lblAppontmentID.Text = _Appointment.AppointmentID.ToString();
                 //change form mode to update.
                 _Mode = enMode.Update;
                 lblTitle.Text = "Update appointments";
@@ -303,46 +197,9 @@ namespace Hospital_Managment_System.Appointment
 
         }
 
-        private void txtNationalNo_Validating(object sender, CancelEventArgs e)
+        private void ctrlPatientInfoWithFilter1_OnPatientSelected(int obj)
         {
-            if (string.IsNullOrEmpty(txtNationalNo.Text.Trim()))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtNationalNo, "This field is required!");
-                return;
-            }
-            else
-            {
-                errorProvider1.SetError(txtNationalNo, null);
-            }
 
-            if (txtNationalNo.Text.Trim() != _Patient.NationalNo &&
-                clsEmployee.IsPersonExists(txtNationalNo.Text.Trim()))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtNationalNo, "National Number is used for another person!");
-
-            }
-            else
-            {
-                errorProvider1.SetError(txtNationalNo, null);
-            }
-        }
-
-        private void txtEmail_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtEmail.Text.Trim() == string.Empty)
-                return;
-
-            if (!clsValidatoin.ValidateEmail(txtEmail.Text))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtEmail, "Invalid Email Address Format!");
-            }
-            else
-            {
-                errorProvider1.SetError(txtEmail, null);
-            };
         }
     }
 }

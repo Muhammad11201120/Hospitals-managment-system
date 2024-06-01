@@ -110,6 +110,7 @@
             this.btnSave.TabIndex = 162;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox1
             // 
@@ -503,7 +504,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddPatient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddPatient";
             this.Load += new System.EventHandler(this.frmAddPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

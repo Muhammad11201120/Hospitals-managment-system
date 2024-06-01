@@ -13,8 +13,8 @@ namespace HMS_DataBusinessLayer
     {
         enum _enMode
         {
-            ADD = 1,
-            UPDATE = 2,
+            ADD = 0,
+            UPDATE = 1,
         }
         public int? PatientID { get; set; }
 

@@ -44,16 +44,16 @@ namespace Hospital_Managment_System.Appointment
        
         private void ResetDefaultValues()
         {
-            lblPatientID.Text = string.Empty;
-            lblAddress.Text = string.Empty;
-            lblCountry.Text = string.Empty;
-            lblDateOfBirth.Text = string.Empty;
-            lblEmail.Text = string.Empty;
-            lblPatientID.Text = string.Empty;
-            lblName.Text = string.Empty;
-            lblNationalNo.Text = string.Empty;
-            lblPhone.Text = string.Empty;
-            rbGendor.Text = string.Empty;
+            lblPatientID.Text    = "N/A" ;
+            lblAddress.Text      = "N/A" ;
+            lblCountry.Text      = "N/A" ;
+            lblDateOfBirth.Text  = "N/A" ;
+            lblEmail.Text        = "N/A" ;
+            lblPatientID.Text    = "N/A" ;
+            lblName.Text         = "N/A" ;
+            lblNationalNo.Text   = "N/A" ;
+            lblPhone.Text        = "N/A" ;
+            rbGendor.Text = "N/A";
         }
         private void _LoadPatientInfo()
         {
@@ -93,6 +93,13 @@ namespace Hospital_Managment_System.Appointment
 
         private void llEdit_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (_Patient == null)
+            {
+                MessageBox.Show("Please Select a person before contuine", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             frmAddPatient frmAddUpdatePatient = new frmAddPatient(_PatientID);
             frmAddUpdatePatient.ShowDialog();
             LoadPatientInfo(PatientID.Value);

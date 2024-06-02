@@ -66,6 +66,12 @@ namespace Hospital_Managment_System.Appointment
 
             cbDoctors.Items.Clear ();
 
+            cbDoctors.Enabled = false;
+            cbSpecialty.Enabled = false;
+            lblAppontmentID.Enabled = false;
+            lblPrice.Enabled = false;
+            btnSave.Enabled = false;
+
         }
 
         void _LoadData()
@@ -94,6 +100,8 @@ namespace Hospital_Managment_System.Appointment
             lblPrice.Text = _Appointment.TotalPrice.ToString();
             lblAppontmentID.Text = _Appointment.AppointmentID.ToString();
             lblPrice.Text = _Appointment.TotalPrice.ToString();
+
+           
         }
 
         private void frmAddNewAppontment_Load(object sender, EventArgs e)
@@ -193,6 +201,13 @@ namespace Hospital_Managment_System.Appointment
             }
 
             tcPatientInfo.SelectedIndex = 1;
+
+            cbDoctors.Enabled       = true;
+            cbSpecialty.Enabled     = true;
+            lblAppontmentID.Enabled = true;
+            lblPrice.Enabled        = true;
+            btnSave.Enabled         = true;
+
         }
 
         private void cbSpecialty_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -205,6 +220,17 @@ namespace Hospital_Managment_System.Appointment
             string DoctorName = cbDoctors.SelectedItem.ToString();
 
             lblPrice.Text = clsDoctor.FindDoctorByName(DoctorName).Price.ToString();
+        }
+
+        private void tcPatientInfo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ctrlPatientInfoWithFilter1.PatientID == null && tcPatientInfo.SelectedIndex == 1)
+            {
+                MessageBox.Show("Please select a patient before continue", "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+
         }
     }
 }

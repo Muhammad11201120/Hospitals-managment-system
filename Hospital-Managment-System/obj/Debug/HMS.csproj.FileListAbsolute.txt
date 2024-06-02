@@ -203,3 +203,6 @@ C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.S
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
 C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
+D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
+D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
+D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Login.frmLogin.resources

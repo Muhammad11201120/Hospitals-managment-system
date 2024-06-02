@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.llEdit = new System.Windows.Forms.LinkLabel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.lblPatientID = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblDateOfBirth = new System.Windows.Forms.Label();
             this.pbGendor = new System.Windows.Forms.PictureBox();
-            this.rbGendor = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblNationalNo = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.rbGendor = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGendor)).BeginInit();
@@ -71,6 +71,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbGendor);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.llEdit);
             this.groupBox1.Controls.Add(this.pictureBox10);
@@ -82,7 +83,6 @@
             this.groupBox1.Controls.Add(this.lblPhone);
             this.groupBox1.Controls.Add(this.lblDateOfBirth);
             this.groupBox1.Controls.Add(this.pbGendor);
-            this.groupBox1.Controls.Add(this.rbGendor);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.pictureBox8);
             this.groupBox1.Controls.Add(this.lblNationalNo);
@@ -107,6 +107,17 @@
             this.groupBox1.Size = new System.Drawing.Size(776, 341);
             this.groupBox1.TabIndex = 116;
             this.groupBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(488, 224);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 25);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "Country :";
             // 
             // llEdit
             // 
@@ -179,7 +190,7 @@
             // lblCountry
             // 
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.Location = new System.Drawing.Point(637, 224);
+            this.lblCountry.Location = new System.Drawing.Point(643, 224);
             this.lblCountry.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(81, 25);
@@ -202,7 +213,7 @@
             // 
             this.lblDateOfBirth.AutoSize = true;
             this.lblDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(643, 94);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(660, 94);
             this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
             this.lblDateOfBirth.Size = new System.Drawing.Size(46, 25);
@@ -219,19 +230,6 @@
             this.pbGendor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbGendor.TabIndex = 109;
             this.pbGendor.TabStop = false;
-            // 
-            // rbGendor
-            // 
-            this.rbGendor.AutoSize = true;
-            this.rbGendor.Checked = true;
-            this.rbGendor.Location = new System.Drawing.Point(642, 166);
-            this.rbGendor.Margin = new System.Windows.Forms.Padding(4);
-            this.rbGendor.Name = "rbGendor";
-            this.rbGendor.Size = new System.Drawing.Size(55, 21);
-            this.rbGendor.TabIndex = 7;
-            this.rbGendor.TabStop = true;
-            this.rbGendor.Text = "Male";
-            this.rbGendor.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -270,7 +268,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(643, 22);
+            this.lblName.Location = new System.Drawing.Point(660, 22);
             this.lblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(46, 25);
@@ -409,16 +407,16 @@
             this.label1.TabIndex = 87;
             this.label1.Text = "Name:";
             // 
-            // label7
+            // rbGendor
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(488, 224);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 25);
-            this.label7.TabIndex = 126;
-            this.label7.Text = "Country :";
+            this.rbGendor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbGendor.Location = new System.Drawing.Point(643, 160);
+            this.rbGendor.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.rbGendor.Name = "rbGendor";
+            this.rbGendor.Size = new System.Drawing.Size(81, 25);
+            this.rbGendor.TabIndex = 127;
+            this.rbGendor.Text = "N/A";
+            this.rbGendor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ctrlPatient
             // 
@@ -455,7 +453,6 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblDateOfBirth;
         private System.Windows.Forms.PictureBox pbGendor;
-        private System.Windows.Forms.RadioButton rbGendor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblNationalNo;
@@ -473,5 +470,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label rbGendor;
     }
 }

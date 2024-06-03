@@ -19,7 +19,7 @@ Create PROCEDURE [dbo].[SP_GetAllAppointmentsDateByDoctorAndDate]
 	@Day tinyint
 AS
 BEGIN
-select AppointmentDateTime from Appointments where DoctorID=@DoctorID and @Year= Year(AppointmentDateTime) and @Month= Month(AppointmentDateTime) and @Day= Day(AppointmentDateTime)
+select AppointmentDateTime from Appointments  where AppointmentStatus=1 and DoctorID=@DoctorID and @Year= Year(AppointmentDateTime) and @Month= Month(AppointmentDateTime) and @Day= Day(AppointmentDateTime)
 END
 GO
 
@@ -46,7 +46,7 @@ Create PROCEDURE [dbo].[SP_GetAllAppointmentsHourByDoctorAndDate]
 	@Day tinyint
 AS
 BEGIN
-select DATEPART(HOUR,AppointmentDateTime) from Appointments where DoctorID=@DoctorID and @Year= Year(AppointmentDateTime) and @Month= Month(AppointmentDateTime) and @Day= Day(AppointmentDateTime)
+select DATEPART(HOUR,AppointmentDateTime) from  Appointments where AppointmentStatus=1 and DoctorID=@DoctorID and @Year= Year(AppointmentDateTime) and @Month= Month(AppointmentDateTime) and @Day= Day(AppointmentDateTime)
 END
 GO
 

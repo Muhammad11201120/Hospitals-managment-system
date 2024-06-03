@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,8 +43,10 @@ namespace Hospital_Managment_System
             txPhone.Text   = clsGlobal.CurrentHospital.HospitalPhone;
             txAddress.Text = clsGlobal.CurrentHospital.HospitalAddress;
 
-            if (clsGlobal.CurrentHospital.HospitalLogo != null)
-                pbHospitalImage.Load(clsGlobal.CurrentHospital.HospitalLogo);
+            string ImagePath = clsGlobal.CurrentHospital.HospitalLogo;
+
+            if (File.Exists(ImagePath))
+                    pbHospitalImage.Load(ImagePath);
             else
                 pbHospitalImage.ImageLocation = null;
         }
@@ -145,7 +148,7 @@ namespace Hospital_Managment_System
             {
                 _HospitalID = clsGlobal.CurrentHospital.ID;
 
-                clsGlobal.RememberHospitalID(_HospitalID.ToString());
+                clsUtil.RememberHospitalID(_HospitalID.ToString());
 
                 lblTitle.Text = "Update Hospital Informartion";
                 MessageBox.Show("Data Saved Successfully.",

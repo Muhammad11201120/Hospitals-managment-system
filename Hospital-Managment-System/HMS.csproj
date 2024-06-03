@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global\clsUtil.cs" />
+    <Compile Include="Patient\Forms\frmAddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Forms\frmAddPatient.Designer.cs">
+      <DependentUpon>frmAddPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\PatientControl\ctrlPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -63,12 +70,6 @@
     </Compile>
     <Compile Include="Appointment\frmAddNewAppontment.Designer.cs">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Patient\PatientControl\frmAddPatient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Patient\PatientControl\frmAddPatient.Designer.cs">
-      <DependentUpon>frmAddPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Peploe\Doctor\Controls\ctrlFindDoctor.cs">
       <SubType>UserControl</SubType>
@@ -206,6 +207,9 @@
     <Compile Include="Specialties\frmAllSpecialtiesList.Designer.cs">
       <DependentUpon>frmAllSpecialtiesList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Patient\Forms\frmAddPatient.resx">
+      <DependentUpon>frmAddPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientControl\ctrlPatient.resx">
       <DependentUpon>ctrlPatient.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,9 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment\frmAddNewAppontment.resx">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Patient\PatientControl\frmAddPatient.resx">
-      <DependentUpon>frmAddPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Peploe\Doctor\Controls\ctrlFindDoctor.resx">
       <DependentUpon>ctrlFindDoctor.cs</DependentUpon>
@@ -471,6 +472,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

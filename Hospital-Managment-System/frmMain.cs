@@ -149,7 +149,7 @@ namespace Hospital_Managment_System
         {
            string HospitalID = null;
 
-           if (!clsGlobal.GetStoredHospitalID(ref HospitalID))
+           if (!clsUtil.GetStoredHospitalID(ref HospitalID))
            {
                frmAddUpdateHospital updateHospital = new frmAddUpdateHospital();
                updateHospital.ShowDialog();
@@ -167,6 +167,18 @@ namespace Hospital_Managment_System
             frmAddNewAppontment newAppontment = new frmAddNewAppontment();
 
             newAppontment.ShowDialog();
+        }
+
+        private void addNewAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddNewAppontment newAppontment = new frmAddNewAppontment();
+
+            newAppontment.ShowDialog();
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

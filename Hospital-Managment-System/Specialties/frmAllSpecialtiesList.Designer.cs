@@ -54,9 +54,10 @@
             // 
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(104, 65);
+            this.lblTitle.Location = new System.Drawing.Point(-148, 54);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(594, 39);
+            this.lblTitle.Size = new System.Drawing.Size(693, 48);
             this.lblTitle.TabIndex = 117;
             this.lblTitle.Text = "Specialities List";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,9 +65,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(12, 184);
+            this.panel1.Location = new System.Drawing.Point(14, 226);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(780, 378);
+            this.panel1.Size = new System.Drawing.Size(343, 465);
             this.panel1.TabIndex = 118;
             // 
             // dataGridView1
@@ -78,16 +80,18 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(780, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(343, 465);
             this.dataGridView1.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewSpecialityToolStripMenuItem,
             this.updateSpecialityToolStripMenuItem,
@@ -95,38 +99,38 @@
             this.toolStripSeparator1,
             this.closeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(179, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(209, 106);
             // 
             // addNewSpecialityToolStripMenuItem
             // 
             this.addNewSpecialityToolStripMenuItem.Name = "addNewSpecialityToolStripMenuItem";
-            this.addNewSpecialityToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.addNewSpecialityToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.addNewSpecialityToolStripMenuItem.Text = "Add New Speciality";
             this.addNewSpecialityToolStripMenuItem.Click += new System.EventHandler(this.addNewSpecialityToolStripMenuItem_Click);
             // 
             // updateSpecialityToolStripMenuItem
             // 
             this.updateSpecialityToolStripMenuItem.Name = "updateSpecialityToolStripMenuItem";
-            this.updateSpecialityToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.updateSpecialityToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.updateSpecialityToolStripMenuItem.Text = "Update Speciality";
             this.updateSpecialityToolStripMenuItem.Click += new System.EventHandler(this.updateSpecialityToolStripMenuItem_Click);
             // 
             // deleteSpecialityToolStripMenuItem
             // 
             this.deleteSpecialityToolStripMenuItem.Name = "deleteSpecialityToolStripMenuItem";
-            this.deleteSpecialityToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.deleteSpecialityToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.deleteSpecialityToolStripMenuItem.Text = "Delete Speciality";
             this.deleteSpecialityToolStripMenuItem.Click += new System.EventHandler(this.deleteSpecialityToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(205, 6);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -134,9 +138,10 @@
             // 
             this.lblRecordCount.AutoSize = true;
             this.lblRecordCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecordCount.Location = new System.Drawing.Point(94, 579);
+            this.lblRecordCount.Location = new System.Drawing.Point(110, 713);
+            this.lblRecordCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRecordCount.Name = "lblRecordCount";
-            this.lblRecordCount.Size = new System.Drawing.Size(16, 18);
+            this.lblRecordCount.Size = new System.Drawing.Size(20, 24);
             this.lblRecordCount.TabIndex = 126;
             this.lblRecordCount.Text = "0";
             // 
@@ -144,9 +149,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 579);
+            this.label2.Location = new System.Drawing.Point(14, 713);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 125;
             this.label2.Text = "# Records: ";
             // 
@@ -156,10 +162,10 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(663, 570);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClose.Location = new System.Drawing.Point(210, 703);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
+            this.btnClose.Size = new System.Drawing.Size(147, 46);
             this.btnClose.TabIndex = 127;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -171,10 +177,10 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNew.Location = new System.Drawing.Point(666, 139);
-            this.btnAddNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddNew.Location = new System.Drawing.Point(18, 134);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(126, 37);
+            this.btnAddNew.Size = new System.Drawing.Size(339, 46);
             this.btnAddNew.TabIndex = 128;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
@@ -184,9 +190,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 158);
+            this.label1.Location = new System.Drawing.Point(10, 194);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 129;
             this.label1.Text = "Filter By : ";
             // 
@@ -196,26 +203,28 @@
             this.cbxFilter.Items.AddRange(new object[] {
             "None",
             "Speciality"});
-            this.cbxFilter.Location = new System.Drawing.Point(88, 155);
+            this.cbxFilter.Location = new System.Drawing.Point(103, 191);
+            this.cbxFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxFilter.Name = "cbxFilter";
-            this.cbxFilter.Size = new System.Drawing.Size(200, 21);
+            this.cbxFilter.Size = new System.Drawing.Size(94, 24);
             this.cbxFilter.TabIndex = 130;
             this.cbxFilter.SelectedIndexChanged += new System.EventHandler(this.cbxFilter_SelectedIndexChanged);
             // 
             // txtFilter
             // 
             this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilter.Location = new System.Drawing.Point(294, 154);
+            this.txtFilter.Location = new System.Drawing.Point(223, 189);
+            this.txtFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(237, 22);
+            this.txtFilter.Size = new System.Drawing.Size(134, 26);
             this.txtFilter.TabIndex = 131;
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
             // frmAllSpecialtiesList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 621);
+            this.ClientSize = new System.Drawing.Size(380, 764);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.cbxFilter);
             this.Controls.Add(this.label1);
@@ -225,6 +234,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAllSpecialtiesList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAllSpecialtiesList";

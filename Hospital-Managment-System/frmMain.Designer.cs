@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.newAppoinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newAppoinToolStripMenuItem,
+            this.aToolStripMenuItem,
             this.toolStripMenuItem1,
             this.empolyeesToolStripMenuItem,
             this.toolStripMenuItem4,
@@ -64,13 +65,25 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // newAppoinToolStripMenuItem
+            // aToolStripMenuItem
             // 
-            this.newAppoinToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.newAppoinToolStripMenuItem.Name = "newAppoinToolStripMenuItem";
-            this.newAppoinToolStripMenuItem.Size = new System.Drawing.Size(233, 68);
-            this.newAppoinToolStripMenuItem.Text = "New Appointment";
-            this.newAppoinToolStripMenuItem.Click += new System.EventHandler(this.newAppoinToolStripMenuItem_Click);
+            this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewAppointmentToolStripMenuItem});
+            this.aToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.aToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment;
+            this.aToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(250, 68);
+            this.aToolStripMenuItem.Text = "Appointments";
+            // 
+            // addNewAppointmentToolStripMenuItem
+            // 
+            this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment_1_;
+            this.addNewAppointmentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
+            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(358, 34);
+            this.addNewAppointmentToolStripMenuItem.Text = "Add new Appointment";
+            this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -231,6 +244,7 @@
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
+            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -272,7 +286,8 @@
         private System.Windows.Forms.ToolStripMenuItem hospitalSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newAppoinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewAppointmentToolStripMenuItem;
     }
 }
 

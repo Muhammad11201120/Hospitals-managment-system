@@ -57,7 +57,7 @@ namespace HMS_DataBusinessLayer
 			this.PatientID = default(int);
 			this.DoctorID = default(int);
 			this.AppointmentDateTime = default(DateTime);
-			this.AppointmentStatus = default(byte);
+			this.AppointmentStatus = 1;
 			this.UserID = default(int);
 			this.TotalPrice = default(decimal);
 
@@ -170,6 +170,45 @@ namespace HMS_DataBusinessLayer
 
 			return null;
 		}
+		public static bool IsAppointmentExistByDoctorIDAndDate(int DoctorID,short Year,byte Month,byte Day,byte Hour)
+		{
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("DoctorID", DoctorID);
+            parameters[1] = new SqlParameter("Year", Year);
+            parameters[2] = new SqlParameter("Month", Month);
+            parameters[3] = new SqlParameter("Day", Day);
+            parameters[4] = new SqlParameter("Hour", Hour);
+            return clsAppointmentsData.IsAppointmentExistByDoctorIDAndDate(parameters);
+		}
+        public static bool IsAppointmentExistByPatientIDAndDate(int DoctorID, short Year, byte Month, byte Day, byte Hour)
+        {
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("PatientID", DoctorID);
+            parameters[1] = new SqlParameter("Year", Year);
+            parameters[2] = new SqlParameter("Month", Month);
+            parameters[3] = new SqlParameter("Day", Day);
+            parameters[4] = new SqlParameter("Hour", Hour);
+            return clsAppointmentsData.IsAppointmentExistByPatientIDAndDate(parameters);
+        }
+        public static DataTable GetAllAppointmentsDateByDoctorAndDate(int DoctorID, short Year, byte Month, byte Day)
+		{
+            SqlParameter[] parameters = new SqlParameter[4];
+            parameters[0] = new SqlParameter("DoctorID", DoctorID);
+            parameters[1] = new SqlParameter("Year", Year);
+            parameters[2] = new SqlParameter("Month", Month);
+            parameters[3] = new SqlParameter("Day", Day);
+			return clsAppointmentsData.GetAllAppointmentsDateByDoctorAndDate(parameters);
+		}
+		public static DataTable GetAllAppointmentsHourByDoctorAndDate(int DoctorID, short Year, byte Month, byte Day)
+		{
+            SqlParameter[] parameters = new SqlParameter[4];
+            parameters[0] = new SqlParameter("DoctorID", DoctorID);
+            parameters[1] = new SqlParameter("Year", Year);
+            parameters[2] = new SqlParameter("Month", Month);
+            parameters[3] = new SqlParameter("Day", Day);
+            return clsAppointmentsData.GetAllAppointmentsHourByDoctorAndDate(parameters);
 
-	}
+        }
+
+    }
 }

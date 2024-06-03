@@ -49,7 +49,6 @@ namespace HMS_DataAccessLayer
             return UserID;
 
         }
-
         public static bool UpdateUser(SqlParameter[] parameters)
         {
             bool Update = false;
@@ -82,7 +81,6 @@ namespace HMS_DataAccessLayer
 
             return Update;
         }
-
         public static bool DeleteUser(SqlParameter parameter)
         {
             bool Deleted = false;
@@ -116,7 +114,6 @@ namespace HMS_DataAccessLayer
 
             return Deleted;
         }
-
         public static bool FindUser(ref SqlParameter[] parameters)
         {
             bool isFound = false;
@@ -156,7 +153,6 @@ namespace HMS_DataAccessLayer
             }
             return isFound;
         }
-
         public static bool IsUserExists(SqlParameter parameter)
         {
             bool Exists = false;
@@ -193,7 +189,6 @@ namespace HMS_DataAccessLayer
 
             return Exists;
         }
-
         public static bool IsUsernameExists(SqlParameter parameter)
         {
             bool Exists = false;
@@ -230,7 +225,6 @@ namespace HMS_DataAccessLayer
 
             return Exists;
         }
-
         public static bool IsUserExistsByEmployeeID(SqlParameter parameter)
         {
             bool Exists = false;
@@ -267,7 +261,6 @@ namespace HMS_DataAccessLayer
 
             return Exists;
         }
-
         public static DataTable GetAllUsers()
         {
             DataTable dtUsers = new DataTable();
@@ -300,7 +293,6 @@ namespace HMS_DataAccessLayer
             }
             return dtUsers;
         }
-
         public static DataTable GetUserInfo(SqlParameter parameter)
         {
             DataTable dtUsers = new DataTable();

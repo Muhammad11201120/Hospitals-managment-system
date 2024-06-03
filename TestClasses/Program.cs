@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HMS_DataBusinessLayer;
+using System.ComponentModel;
 
 namespace TestClasses
 {
@@ -13,18 +14,17 @@ namespace TestClasses
     {
         static void Main(string[] args)
         {
+            string x = "2024-06-03 2:0";
+            DateTime dt2=DateTime.Parse(x);
+            Console.WriteLine(dt2.ToString());
+            DataTable dt = clsAppointments.GetAllAppointmentsDateByDoctorAndDate(2, 2024, 6, 3);
+            for (int i = 0; i < 10; i++)
+            {
+                break;
+            }
+            Console.WriteLine(dt2);
 
-            SqlParameter sp = new SqlParameter();
-            sp.ParameterName = "NationalNO";
-            sp.Value = "N1";
-
-
-            if (clsPerson.IsPersonExists((string)sp.Value))
-                Console.WriteLine("yes");
-            else
-                Console.WriteLine("no");
-
-            //Console.ReadKey();
+            Console.ReadKey();
 
         }
         //static bool AddNewPeopleAndContact()

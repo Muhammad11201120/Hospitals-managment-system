@@ -206,3 +206,43 @@ C:\datadata\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.E
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
 D:\Desktop\Hospitals-managment-system-Project\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Login.frmLogin.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\HMS-Business.dll
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatient.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatientInfoWithFilter.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddNewAppontment.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddPatient.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.ctrlFindDoctor.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmDoctorsList.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCard.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.frmFindEmployee.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmFindDoctorInfo.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Login.frmLogin.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\HMS.csproj.CopyComplete
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+C:\Users\Человек\Desktop\New folder (9)\Test\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb

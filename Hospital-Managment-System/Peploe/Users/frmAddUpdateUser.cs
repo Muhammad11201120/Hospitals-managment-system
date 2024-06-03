@@ -130,7 +130,7 @@ namespace Hospital_Managment_System.Empolyee.Users
                     MessageBox.Show("Added User successfully.", "Succeeded", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("Updated User successfully.", "Succeeded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+               _UserID=_UserInfo.UserID;
                 _Mode = enMode.Update;
                 lblShowUserCard.Enabled = true;
             }

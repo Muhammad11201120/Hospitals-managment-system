@@ -56,3 +56,15 @@ D:\Desktop\Hospitals-managment-system-Project\TestClasses\obj\Debug\TestClasses.
 D:\Desktop\Hospitals-managment-system-Project\TestClasses\obj\Debug\TestClas.E7E22613.Up2Date
 D:\Desktop\Hospitals-managment-system-Project\TestClasses\obj\Debug\TestClasses.exe
 D:\Desktop\Hospitals-managment-system-Project\TestClasses\obj\Debug\TestClasses.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.exe
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\TestClasses.exe.config
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\TestClasses.exe
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\TestClasses.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-Business.dll
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-Business.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.csproj.CopyComplete

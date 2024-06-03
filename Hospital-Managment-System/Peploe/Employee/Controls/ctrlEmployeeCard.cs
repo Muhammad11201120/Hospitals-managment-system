@@ -66,7 +66,7 @@ namespace Hospital_Managment_System.Empolyee.EmployeeControls
             lblDateOfBirth.Text = _Employee.DateOfBirth.ToString("d");
             _EmployeeID = _Employee.EmployeeID;
             llEdit.Enabled = true;
-            if (_Employee.Gender == 1)
+            if (_Employee.Gender == 0)
             {
                 pbPersonImage.Image = Resources.Male_512;
                 pbGendor.Image = Resources.Male_512;

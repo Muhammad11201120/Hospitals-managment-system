@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment\PatientControl\ctrlPatient.cs">
+    <Compile Include="Patient\PatientControl\ctrlPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Appointment\PatientControl\ctrlPatient.Designer.cs">
+    <Compile Include="Patient\PatientControl\ctrlPatient.Designer.cs">
       <DependentUpon>ctrlPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appointment\PatientControl\ctrlPatientInfoWithFilter.cs">
+    <Compile Include="Patient\PatientControl\ctrlPatientInfoWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Appointment\PatientControl\ctrlPatientInfoWithFilter.Designer.cs">
+    <Compile Include="Patient\PatientControl\ctrlPatientInfoWithFilter.Designer.cs">
       <DependentUpon>ctrlPatientInfoWithFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Appointment\frmAddNewAppontment.cs">
@@ -64,10 +64,10 @@
     <Compile Include="Appointment\frmAddNewAppontment.Designer.cs">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appointment\frmAddPatient.cs">
+    <Compile Include="Patient\PatientControl\frmAddPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Appointment\frmAddPatient.Designer.cs">
+    <Compile Include="Patient\PatientControl\frmAddPatient.Designer.cs">
       <DependentUpon>frmAddPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Peploe\Doctor\Controls\ctrlFindDoctor.cs">
@@ -206,16 +206,16 @@
     <Compile Include="Specialties\frmAllSpecialtiesList.Designer.cs">
       <DependentUpon>frmAllSpecialtiesList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Appointment\PatientControl\ctrlPatient.resx">
+    <EmbeddedResource Include="Patient\PatientControl\ctrlPatient.resx">
       <DependentUpon>ctrlPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Appointment\PatientControl\ctrlPatientInfoWithFilter.resx">
+    <EmbeddedResource Include="Patient\PatientControl\ctrlPatientInfoWithFilter.resx">
       <DependentUpon>ctrlPatientInfoWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment\frmAddNewAppontment.resx">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Appointment\frmAddPatient.resx">
+    <EmbeddedResource Include="Patient\PatientControl\frmAddPatient.resx">
       <DependentUpon>frmAddPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Peploe\Doctor\Controls\ctrlFindDoctor.resx">

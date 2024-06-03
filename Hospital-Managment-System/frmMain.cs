@@ -1,4 +1,5 @@
 ﻿using HMS_BusinessLayer;
+using HMS_DataBusinessLayer;
 using Hospital_Managment_System.Appointment;
 using Hospital_Managment_System.Empolyee;
 using Hospital_Managment_System.Empolyee.Doctor;
@@ -146,7 +147,19 @@ namespace Hospital_Managment_System
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-           
+           string HospitalID = null;
+
+           if (!clsGlobal.GetStoredHospitalID(ref HospitalID))
+           {
+               frmAddUpdateHospital updateHospital = new frmAddUpdateHospital();
+               updateHospital.ShowDialog();
+           }
+           else
+            {
+                int Ho = int.Parse(HospitalID.Trim());
+                clsGlobal.CurrentHospital = clsHospitalInfo.FindByID(Ho);
+
+            }
         }
 
         private void newAppoinToolStripMenuItem_Click(object sender, EventArgs e)

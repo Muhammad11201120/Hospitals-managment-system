@@ -16,48 +16,34 @@ namespace Hospital_Managment_System
 {
     public partial class frmAddUpdateHospital : Form
     {
-        clsHospitalInfo _HospitalInfo;
 
         int? _HospitalID = null;
 
-        enum enMOde { ADD , UPDATE};
-
-        enMOde _Mode = enMOde.ADD;
         public frmAddUpdateHospital()
         {
             InitializeComponent();
-            _Mode = enMOde.ADD;
         }
 
-        public frmAddUpdateHospital(int HospitalID)
-        {
-            InitializeComponent();
-            _HospitalID = HospitalID;
-
-            _Mode = enMOde.UPDATE;
-        }
-
+       
         void _Load()
         {
 
-            _HospitalInfo = clsHospitalInfo.FindByID(_HospitalID);
-
-            if (_HospitalInfo == null)
+            if (clsGlobal.CurrentHospital == null)
             {
                 MessageBox.Show("No Hospital with ID = " +
-                    _HospitalID, "Person Not Found",
+                    _HospitalID, "Hospital Information Not Complete",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
                 return;
             }
 
 
-            txtName.Text   = _HospitalInfo.HospitalName;
-            txPhone.Text   = _HospitalInfo.HospitalPhone;
-            txAddress.Text = _HospitalInfo.HospitalAddress;
+            txtName.Text   = clsGlobal.CurrentHospital.HospitalName;
+            txPhone.Text   = clsGlobal.CurrentHospital.HospitalPhone;
+            txAddress.Text = clsGlobal.CurrentHospital.HospitalAddress;
 
-            if (_HospitalInfo.HospitalLogo != null)
-                pbHospitalImage.Load(_HospitalInfo.HospitalLogo);
+            if (clsGlobal.CurrentHospital.HospitalLogo != null)
+                pbHospitalImage.Load(clsGlobal.CurrentHospital.HospitalLogo);
             else
                 pbHospitalImage.ImageLocation = null;
         }
@@ -65,21 +51,20 @@ namespace Hospital_Managment_System
         void _ResetDefaultValues()
         {
            
-            if (_Mode == enMOde.ADD)
+            if (clsGlobal.CurrentHospital == null)
             {
-                lblTitle.Text = "Add Hopital Informatiom";
-                _HospitalInfo = new clsHospitalInfo();
+                lblTitle.Text = "Add Hospital Information";
             }
             else
             {
-                lblTitle.Text = "Update Hopital Informatiom";
+                lblTitle.Text = "Update Hospital Information";
             }
 
             txtName.Text = string.Empty;
             txPhone.Text   = string.Empty;
             txAddress.Text = string.Empty ;
+            pbHospitalImage.ImageLocation = null;
 
-                pbHospitalImage.ImageLocation = null;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -99,8 +84,11 @@ namespace Hospital_Managment_System
         {
             _ResetDefaultValues();
 
-            if (_Mode == enMOde.UPDATE)
+            if (clsGlobal.CurrentHospital != null)
                 _Load();
+            else
+                clsGlobal.CurrentHospital = new clsHospitalInfo();
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -143,21 +131,23 @@ namespace Hospital_Managment_System
                 return;
             }
 
-            _HospitalInfo.HospitalName = txtName.Text;
-            _HospitalInfo.HospitalAddress = txAddress.Text;
-            _HospitalInfo.HospitalPhone  = txPhone.Text;
+            clsGlobal.CurrentHospital.HospitalName = txtName.Text;
+            clsGlobal.CurrentHospital.HospitalAddress = txAddress.Text;
+            clsGlobal.CurrentHospital.HospitalPhone  = txPhone.Text;
 
             if (pbHospitalImage != null)
-                _HospitalInfo.HospitalLogo = pbHospitalImage.ImageLocation;
+                clsGlobal.CurrentHospital.HospitalLogo = pbHospitalImage.ImageLocation;
             else
-                _HospitalInfo.HospitalLogo = null; 
+                clsGlobal.CurrentHospital.HospitalLogo = null; 
 
 
-            if (_HospitalInfo.Save())
+            if (clsGlobal.CurrentHospital.Save())
             {
-                clsGlobal.CurrentHospital = _HospitalInfo;
-                _Mode = enMOde.UPDATE;
-                lblTitle.Text = "Update Hopital Informatiom";
+                _HospitalID = clsGlobal.CurrentHospital.ID;
+
+                clsGlobal.RememberHospitalID(_HospitalID.ToString());
+
+                lblTitle.Text = "Update Hospital Informartion";
                 MessageBox.Show("Data Saved Successfully.",
                     "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -1,7 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Desktop\\Hospitals-managment-system-Project\\Hospital-Managment-System\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-dataaccesslayer\\clsappointmentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +16,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsAppointmentsData.cs",
+              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
+              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
+              "ViewState": "AQIAAJoBAAAAAAAAAAA0wKwBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T17:49:34.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsAppointments.cs",
+              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
+              "RelativeDocumentMoniker": "..\\HMS-Business\\clsAppointments.cs",
+              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
+              "RelativeToolTip": "..\\HMS-Business\\clsAppointments.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAAA0wCoBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T17:48:06.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"

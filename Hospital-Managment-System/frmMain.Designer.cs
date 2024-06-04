@@ -47,6 +47,8 @@
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.completeAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +70,9 @@
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewAppointmentToolStripMenuItem});
+            this.addNewAppointmentToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.completeAppointmentToolStripMenuItem});
             this.aToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.aToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment;
             this.aToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -81,7 +85,7 @@
             this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment_1_;
             this.addNewAppointmentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
-            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(358, 34);
+            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(370, 34);
             this.addNewAppointmentToolStripMenuItem.Text = "Add new Appointment";
             this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click);
             // 
@@ -246,6 +250,18 @@
             this.signOutToolStripMenuItem.Text = "Sign out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
+            // completeAppointmentToolStripMenuItem
+            // 
+            this.completeAppointmentToolStripMenuItem.Name = "completeAppointmentToolStripMenuItem";
+            this.completeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(370, 34);
+            this.completeAppointmentToolStripMenuItem.Text = "Complete Appointment";
+            this.completeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.completeAppointmentToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(367, 6);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -288,6 +304,8 @@
         private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewAppointmentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem completeAppointmentToolStripMenuItem;
     }
 }
 

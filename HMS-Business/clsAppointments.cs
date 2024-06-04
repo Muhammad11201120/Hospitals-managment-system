@@ -16,7 +16,7 @@ namespace HMS_DataBusinessLayer
             public string AdditionalNotes;
             public DateTime? PaymentDate;
             public string PaymentMethod;
-            public decimal? AmmountPaid;
+            public decimal? AmountPaid;
             public string PayAdditionalNotes;
             public string MedicationName;
             public string Dosage;
@@ -33,7 +33,7 @@ namespace HMS_DataBusinessLayer
             public string AdditionalNotes;
             public DateTime? PaymentDate;
             public string PaymentMethod;
-            public decimal? AmmountPaid;
+            public decimal? AmountPaid;
             public string PayAdditionalNotes;
         }
 
@@ -240,38 +240,38 @@ namespace HMS_DataBusinessLayer
             return clsAppointmentsData.GetAllAppointmentsHourByDoctorAndDate( parameters );
 
         }
-        public static bool SetCompleteAppointmentWithPrescription( stSetCompleteAppointmentWithPrescription setCompleteAppointmentWithPrescription )
+        public static bool SetCompleteAppointmentWithPrescription( stSetCompleteAppointmentWithPrescription AppointmentWithPrescription )
         {
 
             SqlParameter[] parameters = new SqlParameter[ 14 ];
-            parameters[ 0 ] = new SqlParameter( "AppointmentID", setCompleteAppointmentWithPrescription.AppointmentID );
-            parameters[ 1 ] = new SqlParameter( "VisitDescription", setCompleteAppointmentWithPrescription.VisitDescription );
-            parameters[ 2 ] = new SqlParameter( "Diagnosis", setCompleteAppointmentWithPrescription.Diagnosis );
-            parameters[ 3 ] = new SqlParameter( "AdditionalNotes", setCompleteAppointmentWithPrescription.AdditionalNotes );
-            parameters[ 4 ] = new SqlParameter( "PaymentDate", setCompleteAppointmentWithPrescription.PaymentDate );
-            parameters[ 5 ] = new SqlParameter( "PaymentMethod", setCompleteAppointmentWithPrescription.PaymentMethod );
-            parameters[ 6 ] = new SqlParameter( "AmmountPaid", setCompleteAppointmentWithPrescription.AmmountPaid );
-            parameters[ 7 ] = new SqlParameter( "PayAdditionalNotes", setCompleteAppointmentWithPrescription.PayAdditionalNotes );
-            parameters[ 8 ] = new SqlParameter( "MedicationName", setCompleteAppointmentWithPrescription.MedicationName );
-            parameters[ 9 ] = new SqlParameter( "Dosage", setCompleteAppointmentWithPrescription.Dosage );
-            parameters[ 10 ] = new SqlParameter( "Frequency", setCompleteAppointmentWithPrescription.Frequency );
-            parameters[ 11 ] = new SqlParameter( "StartDate", setCompleteAppointmentWithPrescription.StartDate );
-            parameters[ 12 ] = new SqlParameter( "EndDate", setCompleteAppointmentWithPrescription.EndDate );
-            parameters[ 13 ] = new SqlParameter( "SpecialInstructions", setCompleteAppointmentWithPrescription.SpecialInstructions );
+            parameters[ 0 ]  = new SqlParameter( "AppointmentID", AppointmentWithPrescription.AppointmentID );
+            parameters[ 1 ]  = new SqlParameter( "VisitDescription", AppointmentWithPrescription.VisitDescription );
+            parameters[ 2 ]  = new SqlParameter( "Diagnosis", AppointmentWithPrescription.Diagnosis );
+            parameters[ 3 ]  = new SqlParameter( "AdditionalNotes", AppointmentWithPrescription.AdditionalNotes );
+            parameters[ 4 ]  = new SqlParameter( "PaymentDate", AppointmentWithPrescription.PaymentDate );
+            parameters[ 5 ]  = new SqlParameter( "PaymentMethod", AppointmentWithPrescription.PaymentMethod );
+            parameters[ 6 ]  = new SqlParameter( "AmountPaid", AppointmentWithPrescription.AmountPaid );
+            parameters[ 7 ]  = new SqlParameter( "PayAdditionalNotes", AppointmentWithPrescription.PayAdditionalNotes );
+            parameters[ 8 ]  = new SqlParameter( "MedicationName", AppointmentWithPrescription.MedicationName );
+            parameters[ 9 ]  = new SqlParameter( "Dosage", AppointmentWithPrescription.Dosage );
+            parameters[ 10 ] = new SqlParameter( "Frequency", AppointmentWithPrescription.Frequency );
+            parameters[ 11 ] = new SqlParameter( "StartDate", AppointmentWithPrescription.StartDate );
+            parameters[ 12 ] = new SqlParameter( "EndDate", AppointmentWithPrescription.EndDate );
+            parameters[ 13 ] = new SqlParameter( "SpecialInstruction", AppointmentWithPrescription.SpecialInstructions );
 
             return clsAppointmentsData.SetCompleteAppointmentWithPrescription( parameters );
         }
-        public static bool SetCompleteAppointment( stSetCompleteAppointment setCompleteAppointment )
+        public static bool SetCompleteAppointment( stSetCompleteAppointment Appointment )
         {
             SqlParameter[] parameters = new SqlParameter[ 8 ];
-            parameters[ 0 ] = new SqlParameter( "AppointmentID", setCompleteAppointment.AppointmentID );
-            parameters[ 1 ] = new SqlParameter( "VisitDescription", setCompleteAppointment.VisitDescription );
-            parameters[ 2 ] = new SqlParameter( "Diagnosis", setCompleteAppointment.Diagnosis );
-            parameters[ 3 ] = new SqlParameter( "AdditionalNotes", setCompleteAppointment.AdditionalNotes );
-            parameters[ 4 ] = new SqlParameter( "PaymentDate", setCompleteAppointment.PaymentDate );
-            parameters[ 5 ] = new SqlParameter( "PaymentMethod", setCompleteAppointment.PaymentMethod );
-            parameters[ 6 ] = new SqlParameter( "AmmountPaid", setCompleteAppointment.AmmountPaid );
-            parameters[ 7 ] = new SqlParameter( "PayAdditionalNotes", setCompleteAppointment.PayAdditionalNotes );
+            parameters[ 0 ] = new SqlParameter( "AppointmentID", Appointment.AppointmentID );
+            parameters[ 1 ] = new SqlParameter( "VisitDescription", Appointment.VisitDescription );
+            parameters[ 2 ] = new SqlParameter( "Diagnosis", Appointment.Diagnosis );
+            parameters[ 3 ] = new SqlParameter( "AdditionalNotes", Appointment.AdditionalNotes );
+            parameters[ 4 ] = new SqlParameter( "PaymentDate", Appointment.PaymentDate );
+            parameters[ 5 ] = new SqlParameter( "PaymentMethod", Appointment.PaymentMethod );
+            parameters[ 6 ] = new SqlParameter( "AmountPaid", Appointment.AmountPaid );
+            parameters[ 7 ] = new SqlParameter( "PayAdditionalNotes", Appointment.PayAdditionalNotes );
 
             return clsAppointmentsData.SetCompleteAppointment( parameters );
         }
@@ -282,6 +282,7 @@ namespace HMS_DataBusinessLayer
 
             SqlParameter parameter = new SqlParameter
             {
+                ParameterName = "AppointmentID",
                 Value= this.AppointmentID
             };
             return clsAppointmentsData.SetComplete( parameter );
@@ -293,7 +294,8 @@ namespace HMS_DataBusinessLayer
 
             SqlParameter parameter = new SqlParameter
             {
-                Value= this.AppointmentID
+                ParameterName = "AppointmentID",
+                Value = this.AppointmentID
             };
             return clsAppointmentsData.SetComplete( parameter );
         }

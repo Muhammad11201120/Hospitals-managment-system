@@ -1,7 +1,4 @@
-﻿using Hospital_Managment_System.Empolyee.Doctor;
-using Hospital_Managment_System.Empolyee.EmployeeForms;
-using Hospital_Managment_System.Empolyee.Users;
-using Hospital_Managment_System.Login;
+﻿using Hospital_Managment_System.Appointment;
 using System;
 using System.Windows.Forms;
 
@@ -18,7 +15,7 @@ namespace Hospital_Managment_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
             Application.Run( new frmMain() );
-            //Application.Run(new frmUserCardWithFilter());
+            //Application.Run(new frmCompleteAppointment(5));
         }
     }
 }

@@ -1,14 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-dataaccesslayer\\clsappointmentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\Hospitals-managment-system\\Hospital-Managment-System\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -16,33 +9,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsAppointmentsData.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsAppointmentsData.cs",
-              "ViewState": "AQIAAJoBAAAAAAAAAAA0wKwBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:49:34.108Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsAppointments.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsAppointments.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsAppointments.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAAA0wCoBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:48:06.805Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
@@ -50,7 +33,21 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1354,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

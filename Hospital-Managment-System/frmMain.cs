@@ -180,6 +180,11 @@ namespace Hospital_Managment_System
         {
 
         }
+
+        private void completeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 
 }

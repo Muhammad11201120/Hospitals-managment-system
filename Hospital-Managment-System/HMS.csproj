@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointment\frmCompleteAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment\frmCompleteAppointment.Designer.cs">
+      <DependentUpon>frmCompleteAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global\clsUtil.cs" />
     <Compile Include="Patient\Forms\frmAddPatient.cs">
       <SubType>Form</SubType>
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Appointment\frmAddNewAppontment.Designer.cs">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmPay.Designer.cs">
+      <DependentUpon>frmPay.cs</DependentUpon>
     </Compile>
     <Compile Include="Peploe\Doctor\Controls\ctrlFindDoctor.cs">
       <SubType>UserControl</SubType>
@@ -207,6 +219,9 @@
     <Compile Include="Specialties\frmAllSpecialtiesList.Designer.cs">
       <DependentUpon>frmAllSpecialtiesList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Appointment\frmCompleteAppointment.resx">
+      <DependentUpon>frmCompleteAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Patient\Forms\frmAddPatient.resx">
       <DependentUpon>frmAddPatient.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment\frmAddNewAppontment.resx">
       <DependentUpon>frmAddNewAppontment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Peploe\Doctor\Controls\ctrlFindDoctor.resx">
       <DependentUpon>ctrlFindDoctor.cs</DependentUpon>

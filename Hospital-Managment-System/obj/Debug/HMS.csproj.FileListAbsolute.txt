@@ -248,3 +248,45 @@ D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Login.frmLogin.resources
 D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Payment.frmPay.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe.config
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.exe
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\Hospital-Managment-System.pdb
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-Business.dll
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.dll
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-Business.pdb
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\bin\Debug\HMS-DataAccessLayer.pdb
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmCompleteAppointment.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddPatient.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatient.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.ctrlPatientInfoWithFilter.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAddNewAppontment.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Payment.frmPay.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.ctrlFindDoctor.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmAddUpdateDoctor.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.frmDoctorsList.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCard.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.ctrlEmployeeCardWithFilter.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeControls.frmFindEmployee.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmAllEmployeesList.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.frmFindDoctorInfo.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCard.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.Controls.ctrlUserCardWithFilter.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmAddUpdateUser.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmListUsers.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserCardWithFilter.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Users.frmUserInfoCard.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmAddUpdateHospital.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.frmMain.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Login.frmLogin.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Properties.Resources.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAddUpdateSpeciality.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Specialties.frmAllSpecialtiesList.resources
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.GenerateResource.cache
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
+C:\Users\Mo\Desktop\c#\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb

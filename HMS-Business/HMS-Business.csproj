@@ -48,6 +48,7 @@
     <Compile Include="clsEmployee.cs" />
     <Compile Include="clsHospitalInfo.cs" />
     <Compile Include="clsMedicalRecords.cs" />
+    <Compile Include="clsMedication.cs" />
     <Compile Include="clsPatient.cs" />
     <Compile Include="clsPayments.cs" />
     <Compile Include="clsPerson.cs" />

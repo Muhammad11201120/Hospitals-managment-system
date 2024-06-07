@@ -47,6 +47,7 @@
     <Compile Include="clsCoutriesData.cs" />
     <Compile Include="clsDoctorsData.cs" />
     <Compile Include="clsMedicalRecordsData.cs" />
+    <Compile Include="clsMedicationsDataAccess.cs" />
     <Compile Include="clsPaymentsData.cs" />
     <Compile Include="clsPeopleData.cs" />
     <Compile Include="clsEmployeesData.cs" />

@@ -15,7 +15,7 @@ namespace HMS_DataBusinessLayer
 
         public Nullable<int> PrescriptionID { get; set; }
         public int MedicalRecordID { get; set; }
-        public string MedicationName { get; set; }
+        public int? MedicationID { get; set; }
         public string Dosage { get; set; }
         public string Frequency { get; set; }
         public DateTime StartDate { get; set; }
@@ -24,23 +24,23 @@ namespace HMS_DataBusinessLayer
 
         public clsPrescriptions()
         {
-            this.PrescriptionID = default(int);
-            this.MedicalRecordID = default(int);
-            this.MedicationName = default(string);
-            this.Dosage = default(string);
-            this.Frequency = default(string);
-            this.StartDate = default(DateTime);
-            this.EndDate = default(DateTime);
-            this.SpecialInstructions = default(string);
+            this.PrescriptionID = default( int );
+            this.MedicalRecordID = default( int );
+            this.MedicationID = default( int );
+            this.Dosage = default( string );
+            this.Frequency = default( string );
+            this.StartDate = default( DateTime );
+            this.EndDate = default( DateTime );
+            this.SpecialInstructions = default( string );
 
             this.Mode = enMode.AddNew;
         }
 
-        private clsPrescriptions(int prescriptionid, int medicalrecordid, string medicationname, string dosage, string frequency, DateTime startdate, DateTime enddate, string specialinstructions)
+        private clsPrescriptions( int prescriptionid, int medicalrecordid, int medicationID, string dosage, string frequency, DateTime startdate, DateTime enddate, string specialinstructions )
         {
             this.PrescriptionID = prescriptionid;
             this.MedicalRecordID = medicalrecordid;
-            this.MedicationName = medicationname;
+            this.MedicationID = medicationID;
             this.Dosage = dosage;
             this.Frequency = frequency;
             this.StartDate = startdate;
@@ -52,42 +52,42 @@ namespace HMS_DataBusinessLayer
 
         private bool _AddNewPrescriptions()
         {
-            SqlParameter[] parameters = new SqlParameter[7];
-            parameters[0] = new SqlParameter("MedicalRecordID", this.MedicalRecordID);
-            parameters[1] = new SqlParameter("MedicationName", this.MedicationName);
-            parameters[2] = new SqlParameter("Dosage", this.Dosage);
-            parameters[3] = new SqlParameter("Frequency", this.Frequency);
-            parameters[4] = new SqlParameter("StartDate", this.StartDate);
-            parameters[5] = new SqlParameter("EndDate", this.EndDate);
-            parameters[6] = new SqlParameter("SpecialInstructions", this.SpecialInstructions);
+            SqlParameter[] parameters = new SqlParameter[ 7 ];
+            parameters[ 0 ] = new SqlParameter( "MedicalRecordID", this.MedicalRecordID );
+            parameters[ 1 ] = new SqlParameter( "MedicationID", this.MedicationID );
+            parameters[ 2 ] = new SqlParameter( "Dosage", this.Dosage );
+            parameters[ 3 ] = new SqlParameter( "Frequency", this.Frequency );
+            parameters[ 4 ] = new SqlParameter( "StartDate", this.StartDate );
+            parameters[ 5 ] = new SqlParameter( "EndDate", this.EndDate );
+            parameters[ 6 ] = new SqlParameter( "SpecialInstructions", this.SpecialInstructions );
 
-            this.PrescriptionID = clsPatientsData.AddNewPatient(parameters);
+            this.PrescriptionID = clsPatientsData.AddNewPatient( parameters );
 
-            return (this.PrescriptionID != null);
+            return ( this.PrescriptionID != null );
         }
 
         private bool _UpdatePrescriptions()
         {
-            SqlParameter[] parameters = new SqlParameter[8];
-            parameters[0] = new SqlParameter("PrescriptionID", this.PrescriptionID);
-            parameters[1] = new SqlParameter("MedicalRecordID", this.MedicalRecordID);
-            parameters[2] = new SqlParameter("MedicationName", this.MedicationName);
-            parameters[3] = new SqlParameter("Dosage", this.Dosage);
-            parameters[4] = new SqlParameter("Frequency", this.Frequency);
-            parameters[5] = new SqlParameter("StartDate", this.StartDate);
-            parameters[6] = new SqlParameter("EndDate", this.EndDate);
-            parameters[7] = new SqlParameter("SpecialInstructions", this.SpecialInstructions);
+            SqlParameter[] parameters = new SqlParameter[ 8 ];
+            parameters[ 0 ] = new SqlParameter( "PrescriptionID", this.PrescriptionID );
+            parameters[ 1 ] = new SqlParameter( "MedicalRecordID", this.MedicalRecordID );
+            parameters[ 2 ] = new SqlParameter( "MedicationID", this.MedicationID );
+            parameters[ 3 ] = new SqlParameter( "Dosage", this.Dosage );
+            parameters[ 4 ] = new SqlParameter( "Frequency", this.Frequency );
+            parameters[ 5 ] = new SqlParameter( "StartDate", this.StartDate );
+            parameters[ 6 ] = new SqlParameter( "EndDate", this.EndDate );
+            parameters[ 7 ] = new SqlParameter( "SpecialInstructions", this.SpecialInstructions );
 
-            return clsPrescriptionsData.UpdatePrescription(parameters);
+            return clsPrescriptionsData.UpdatePrescription( parameters );
 
         }
 
         public bool Save()
         {
-            switch (Mode)
+            switch ( Mode )
             {
                 case enMode.AddNew:
-                    if (_AddNewPrescriptions())
+                    if ( _AddNewPrescriptions() )
                     {
                         this.Mode = enMode.Update;
                         return true;
@@ -102,43 +102,43 @@ namespace HMS_DataBusinessLayer
             return false;
         }
 
-        public static clsPrescriptions FindByPrescriptionID(int PrescriptionID)
+        public static clsPrescriptions FindByPrescriptionID( int PrescriptionID )
         {
 
-            SqlParameter[] parameters = new SqlParameter[8];
-            parameters[0] = new SqlParameter("PrescriptionID", PrescriptionID);
-            parameters[1] = new SqlParameter("MedicalRecordID", null);
-            parameters[2] = new SqlParameter("MedicationName", null);
-            parameters[3] = new SqlParameter("Dosage", null);
-            parameters[4] = new SqlParameter("Frequency", null);
-            parameters[5] = new SqlParameter("StartDate", null);
-            parameters[6] = new SqlParameter("EndDate", null);
-            parameters[7] = new SqlParameter("SpecialInstructions", null);
+            SqlParameter[] parameters = new SqlParameter[ 8 ];
+            parameters[ 0 ] = new SqlParameter( "PrescriptionID", PrescriptionID );
+            parameters[ 1 ] = new SqlParameter( "MedicalRecordID", null );
+            parameters[ 2 ] = new SqlParameter( "MedicationID", null );
+            parameters[ 3 ] = new SqlParameter( "Dosage", null );
+            parameters[ 4 ] = new SqlParameter( "Frequency", null );
+            parameters[ 5 ] = new SqlParameter( "StartDate", null );
+            parameters[ 6 ] = new SqlParameter( "EndDate", null );
+            parameters[ 7 ] = new SqlParameter( "SpecialInstructions", null );
 
-            if (clsPrescriptionsData.FindPrescription(ref parameters))
+            if ( clsPrescriptionsData.FindPrescription( ref parameters ) )
             {
-                return new clsPrescriptions((int)parameters[0].Value, (int)parameters[1].Value,
-                    (string)parameters[2].Value, (string)parameters[3].Value,
-                    (string)parameters[4].Value, (DateTime)parameters[5].Value,
-                    (DateTime)parameters[6].Value, (string)parameters[7].Value);
+                return new clsPrescriptions( ( int ) parameters[ 0 ].Value, ( int ) parameters[ 1 ].Value,
+                    ( int ) parameters[ 2 ].Value, ( string ) parameters[ 3 ].Value,
+                    ( string ) parameters[ 4 ].Value, ( DateTime ) parameters[ 5 ].Value,
+                    ( DateTime ) parameters[ 6 ].Value, ( string ) parameters[ 7 ].Value );
             }
             else
                 return null;
 
         }
 
-        public static bool IsExist(int PrescriptionID)
+        public static bool IsExist( int PrescriptionID )
         {
-            SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
+            SqlParameter parameter = new SqlParameter( "PrescriptionID", PrescriptionID );
 
-            return clsPrescriptionsData.IsPrescriptionExists(parameter);
+            return clsPrescriptionsData.IsPrescriptionExists( parameter );
         }
 
-        public static bool Delete(int PrescriptionID)
+        public static bool Delete( int PrescriptionID )
         {
-            SqlParameter parameter = new SqlParameter("PrescriptionID", PrescriptionID);
+            SqlParameter parameter = new SqlParameter( "PrescriptionID", PrescriptionID );
 
-            return clsPrescriptionsData.DeletePrescription(parameter);
+            return clsPrescriptionsData.DeletePrescription( parameter );
         }
 
     }

@@ -58,7 +58,7 @@
             this.lblRecordCount.Location = new System.Drawing.Point(133, 703);
             this.lblRecordCount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblRecordCount.Name = "lblRecordCount";
-            this.lblRecordCount.Size = new System.Drawing.Size(16, 18);
+            this.lblRecordCount.Size = new System.Drawing.Size(20, 24);
             this.lblRecordCount.TabIndex = 133;
             this.lblRecordCount.Text = "0";
             // 
@@ -67,7 +67,7 @@
             this.txtFilter.Location = new System.Drawing.Point(250, 150);
             this.txtFilter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(210, 23);
+            this.txtFilter.Size = new System.Drawing.Size(210, 27);
             this.txtFilter.TabIndex = 131;
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             this.txtFilter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilter_KeyPress);
@@ -84,7 +84,7 @@
             this.cbxIlter.Location = new System.Drawing.Point(100, 150);
             this.cbxIlter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbxIlter.Name = "cbxIlter";
-            this.cbxIlter.Size = new System.Drawing.Size(140, 25);
+            this.cbxIlter.Size = new System.Drawing.Size(140, 28);
             this.cbxIlter.TabIndex = 130;
             this.cbxIlter.SelectedIndexChanged += new System.EventHandler(this.cbxIlter_SelectedIndexChanged);
             // 
@@ -95,7 +95,7 @@
             this.label1.Location = new System.Drawing.Point(17, 150);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 129;
             this.label1.Text = "Filter By: ";
             // 
@@ -133,21 +133,21 @@
             this.exitToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.cross_321;
             this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(203, 6);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_21;
             this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -156,7 +156,7 @@
             this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_321;
             this.updateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -165,21 +165,21 @@
             this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.AddPerson_321;
             this.addNewEmployeeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
-            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
             this.addNewEmployeeToolStripMenuItem.Text = "Add New Doctor";
             this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(203, 6);
             // 
             // showPersonalInfoToolStripMenuItem
             // 
             this.showPersonalInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_3221;
             this.showPersonalInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.showPersonalInfoToolStripMenuItem.Name = "showPersonalInfoToolStripMenuItem";
-            this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.showPersonalInfoToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
             this.showPersonalInfoToolStripMenuItem.Text = "Show Detalis";
             this.showPersonalInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonalInfoToolStripMenuItem_Click);
             // 
@@ -195,7 +195,7 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.cmsDoctor.Name = "cmsEmployees";
-            this.cmsDoctor.Size = new System.Drawing.Size(179, 206);
+            this.cmsDoctor.Size = new System.Drawing.Size(207, 206);
             // 
             // label2
             // 
@@ -204,7 +204,7 @@
             this.label2.Location = new System.Drawing.Point(17, 703);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 132;
             this.label2.Text = "# Records: ";
             // 
@@ -225,6 +225,8 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 196);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -252,7 +254,7 @@
             // 
             // frmDoctorsList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 746);
             this.ContextMenuStrip = this.cmsDoctor;

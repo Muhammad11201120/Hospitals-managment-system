@@ -61,3 +61,12 @@ C:\Users\Mo\Desktop\c#\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Bus
 C:\Users\Mo\Desktop\c#\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
 C:\Users\Mo\Desktop\c#\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
 C:\Users\Mo\Desktop\c#\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.dll
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.pdb
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
+D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb

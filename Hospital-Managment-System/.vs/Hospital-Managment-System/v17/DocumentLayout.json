@@ -1,37 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hospital-managment-system\\peploe\\doctor\\forms\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:peploe\\doctor\\forms\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-dataaccesslayer\\clsprescriptionsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsprescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsmedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-dataaccesslayer\\clsmedicationsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-dataaccesslayer\\clsemployeesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\appointment\\frmcompleteappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:appointment\\frmcompleteappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1FFA291-299D-4A10-A4D4-E27F3D6F2499}|..\\HMS-Business\\HMS-Business.csproj|c:\\users\\mo\\desktop\\c#\\hospitals-managment-system\\hms-business\\clsappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -39,128 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmDoctorsList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Doctor\\Forms\\frmDoctorsList.cs",
-              "RelativeDocumentMoniker": "Peploe\\Doctor\\Forms\\frmDoctorsList.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Doctor\\Forms\\frmDoctorsList.cs [Design]",
-              "RelativeToolTip": "Peploe\\Doctor\\Forms\\frmDoctorsList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:18:02.548Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsPrescriptionsData.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsPrescriptionsData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsPrescriptionsData.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsPrescriptionsData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsPrescriptionsData.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:23:07.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsPrescriptions.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsPrescriptions.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsPrescriptions.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsPrescriptions.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsPrescriptions.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAADwv30AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:16:45.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "clsEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsEmployee.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsEmployee.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsEmployee.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsEmployee.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:50:36.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsEmployeesData.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsEmployeesData.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsEmployeesData.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsEmployeesData.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsEmployeesData.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACcAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:47:22.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsMedicationsDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsMedicationsDataAccess.cs",
-              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsMedicationsDataAccess.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsMedicationsDataAccess.cs",
-              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsMedicationsDataAccess.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAADwv6kAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:46:42.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsMedication.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsMedication.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsMedication.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsMedication.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsMedication.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAQwE8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:43:08.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmCompleteAppointment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\Appointment\\frmCompleteAppointment.cs",
-              "RelativeDocumentMoniker": "Appointment\\frmCompleteAppointment.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\Hospital-Managment-System\\Appointment\\frmCompleteAppointment.cs [Design]",
-              "RelativeToolTip": "Appointment\\frmCompleteAppointment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T12:12:53.96Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsAppointments.cs",
-              "DocumentMoniker": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
-              "RelativeDocumentMoniker": "..\\HMS-Business\\clsAppointments.cs",
-              "ToolTip": "C:\\Users\\Mo\\Desktop\\c#\\Hospitals-managment-system\\HMS-Business\\clsAppointments.cs",
-              "RelativeToolTip": "..\\HMS-Business\\clsAppointments.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAIwHoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T11:46:33.381Z"
             }
           ]
         }

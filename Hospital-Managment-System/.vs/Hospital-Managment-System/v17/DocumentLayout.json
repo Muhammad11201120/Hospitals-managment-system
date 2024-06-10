@@ -1,7 +1,11 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9303DC-C7F6-4834-9EF6-55F0B049E546}|..\\HMS-DataAccessLayer\\HMS-DataAccessLayer.csproj|d:\\desktop\\test\\hospitals-managment-system\\hms-dataaccesslayer\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +13,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "D:\\Desktop\\Test\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\HMS-DataAccessLayer\\clsDataAccessSettings.cs",
+              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\HMS-DataAccessLayer\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\HMS-DataAccessLayer\\clsDataAccessSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T22:18:33.83Z",
+              "EditorCaption": ""
             }
           ]
         }

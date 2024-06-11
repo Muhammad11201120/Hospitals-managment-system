@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Configuration;
 
 
 namespace HMS_DataAccessLayer
 {
     static class clsDataAccessSettings
     {
-        public static string ConnectionString = Properties.Settings.Default.ConnectionString;
+        public static string ConnectionString =
+            "Server=.;Database=Hospital;User Id=sa;Password=sa123456;";
     }
 
 

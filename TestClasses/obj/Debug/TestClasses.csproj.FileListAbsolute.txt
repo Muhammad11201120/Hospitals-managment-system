@@ -68,15 +68,3 @@ C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-Da
 C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-Business.pdb
 C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
 C:\Users\Человек\Desktop\New folder (9)\Test\TestClasses\obj\Debug\TestClasses.csproj.CopyComplete
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe.config
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.exe
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\TestClasses.pdb
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-Business.dll
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.dll
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-Business.pdb
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\bin\Debug\HMS-DataAccessLayer.pdb
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClas.E7E22613.Up2Date
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.exe
-D:\Desktop\Test\Hospitals-managment-system\TestClasses\obj\Debug\TestClasses.pdb

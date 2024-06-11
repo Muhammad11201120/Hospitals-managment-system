@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,6 +45,7 @@ namespace Hospital_Managment_System.Global
 
             try
             {
+                // Write the value to the Registry
                 Registry.SetValue(keyPath, ValueName, Value, RegistryValueKind.String);
                 return true;
 
@@ -65,6 +65,7 @@ namespace Hospital_Managment_System.Global
 
             try
             {
+                // Open the registry key in read/write mode with explicit registry view
                 using (RegistryKey key = Registry.CurrentUser.OpenSubKey(keyPath))
                 {
                     if (key != null)
@@ -84,14 +85,6 @@ namespace Hospital_Managment_System.Global
             }
         }
 
-        public static string ComputeHash(string Data)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(Data));
 
-                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-            }
-        }
     }
 }

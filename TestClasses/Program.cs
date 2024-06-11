@@ -7,25 +7,22 @@ using System.Text;
 using System.Threading.Tasks;
 using HMS_DataBusinessLayer;
 using System.ComponentModel;
-using System.Security.Cryptography;
 
 namespace TestClasses
 {
     internal class Program
     {
-        public static string ComputeHash(string Data)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(Data));
-
-                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-            }
-        }
         static void Main(string[] args)
         {
-            
-            Console.WriteLine(ComputeHash("1234"));
+            string x = "2024-06-03 2:0";
+            DateTime dt2=DateTime.Parse(x);
+            Console.WriteLine(dt2.ToString());
+            DataTable dt = clsAppointments.GetAllAppointmentsDateByDoctorAndDate(2, 2024, 6, 3);
+            for (int i = 0; i < 10; i++)
+            {
+                break;
+            }
+            Console.WriteLine(dt2);
 
             Console.ReadKey();
 

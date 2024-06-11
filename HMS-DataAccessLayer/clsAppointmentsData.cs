@@ -427,6 +427,35 @@ namespace HMS_DataAccessLayer
             }
             return updated;
         }
+        public static DataTable GetAllAppointments()
+        {
+            DataTable dtUsers = new DataTable();
+            try
+            {
+
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+                    using (SqlCommand Command = new SqlCommand("SP_GetAllAppointments", Connection))
+                    {
+                        using (SqlDataReader reader = Command.ExecuteReader())
+                        {
+
+                            if (reader.HasRows)
+                                dtUsers.Load(reader);
+                            else
+                                Console.WriteLine("Thers is no rows");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_GetPersonByID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return dtUsers;
+        }
     }
 }
 

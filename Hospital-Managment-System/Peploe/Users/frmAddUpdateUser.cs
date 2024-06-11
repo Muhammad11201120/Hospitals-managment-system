@@ -1,5 +1,4 @@
 ﻿using HMS_BusinessLayer;
-using Hospital_Managment_System.Global;
 using System;
 using System.Windows.Forms;
 

@@ -1,25 +1,16 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "D:\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\Hospitals-managment-system\\Hospital-Managment-System\\",
-  "Documents": [],
-=======
   "WorkspaceRootPath": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\test\\hospitals-managment-system\\hospital-managment-system\\peploe\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:peploe\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\test\\hospitals-managment-system\\hospital-managment-system\\peploe\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:peploe\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\test\\hospitals-managment-system\\hospital-managment-system\\specialties\\frmallspecialtieslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:specialties\\frmallspecialtieslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\test\\hospitals-managment-system\\hospital-managment-system\\specialties\\frmaddupdatespeciality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:specialties\\frmaddupdatespeciality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\test\\hospitals-managment-system\\hospital-managment-system\\global\\clsutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:global\\clsutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
->>>>>>> frm
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -31,78 +22,33 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1354,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
-=======
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmAddUpdateUser.cs [Design]",
+              "Title": "frmAddUpdateUser.cs",
               "DocumentMoniker": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Users\\frmAddUpdateUser.cs",
               "RelativeDocumentMoniker": "Peploe\\Users\\frmAddUpdateUser.cs",
-              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Users\\frmAddUpdateUser.cs [Design]",
-              "RelativeToolTip": "Peploe\\Users\\frmAddUpdateUser.cs [Design]",
+              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Users\\frmAddUpdateUser.cs",
+              "RelativeToolTip": "Peploe\\Users\\frmAddUpdateUser.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAADwv2QAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T13:08:33.005Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-11T13:46:03.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmAllSpecialtiesList.cs [Design]",
-              "DocumentMoniker": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Specialties\\frmAllSpecialtiesList.cs",
-              "RelativeDocumentMoniker": "Specialties\\frmAllSpecialtiesList.cs",
-              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Specialties\\frmAllSpecialtiesList.cs [Design]",
-              "RelativeToolTip": "Specialties\\frmAllSpecialtiesList.cs [Design]",
+              "Title": "clsUtil.cs",
+              "DocumentMoniker": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Global\\clsUtil.cs",
+              "RelativeDocumentMoniker": "Global\\clsUtil.cs",
+              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Global\\clsUtil.cs",
+              "RelativeToolTip": "Global\\clsUtil.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T13:08:00.617Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmAddUpdateSpeciality.cs [Design]",
-              "DocumentMoniker": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Specialties\\frmAddUpdateSpeciality.cs",
-              "RelativeDocumentMoniker": "Specialties\\frmAddUpdateSpeciality.cs",
-              "ToolTip": "D:\\Desktop\\Test\\Hospitals-managment-system\\Hospital-Managment-System\\Specialties\\frmAddUpdateSpeciality.cs [Design]",
-              "RelativeToolTip": "Specialties\\frmAddUpdateSpeciality.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T13:07:57.329Z",
-              "EditorCaption": " [Design]"
->>>>>>> frm
+              "WhenOpened": "2024-06-11T13:45:52.544Z",
+              "EditorCaption": ""
             }
           ]
         }

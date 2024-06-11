@@ -82,3 +82,4 @@ D:\Desktop\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-Dat
 D:\Desktop\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\Desktop\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 D:\Desktop\Test\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+D:\سطح المكتب\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll.config

@@ -70,3 +70,4 @@ D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.c
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb
+D:\سطح المكتب\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll.config

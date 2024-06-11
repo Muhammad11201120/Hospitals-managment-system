@@ -280,5 +280,10 @@ namespace Hospital_Managment_System.Empolyee
                  "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
         }
+
+        private void txtSalary_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }

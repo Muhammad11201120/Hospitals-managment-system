@@ -1,4 +1,5 @@
 ﻿using HMS_BusinessLayer;
+using Hospital_Managment_System.Global;
 using System;
 using System.Windows.Forms;
 
@@ -97,7 +98,7 @@ namespace Hospital_Managment_System.Empolyee.Users
 
             _UserInfo.EmployeeID = Convert.ToInt32(lblEmpID.Text);
             _UserInfo.UserName = txtUsername.Text;
-            _UserInfo.Password = txtPassword.Text;
+            _UserInfo.Password = clsUtil.ComputeHash(txtPassword.Text);
             _UserInfo.IsActive = chkIsActive.Checked;
 
             return _UserInfo.Save();

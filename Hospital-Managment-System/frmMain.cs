@@ -183,7 +183,14 @@ namespace Hospital_Managment_System
 
         private void completeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmCompleteAppointment frmCompleteAppointment = new frmCompleteAppointment(1);
+            frmCompleteAppointment.ShowDialog();
+        }
+
+        private void appointmentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAppointmentList frmAppointmentList = new frmAppointmentList();
+            frmAppointmentList.ShowDialog();
         }
     }
 

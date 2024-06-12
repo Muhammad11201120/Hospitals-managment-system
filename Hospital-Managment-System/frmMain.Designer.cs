@@ -31,6 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.completeAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,8 +49,7 @@
             this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.completeAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.appointmentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,12 +73,13 @@
             this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewAppointmentToolStripMenuItem,
             this.toolStripSeparator1,
-            this.completeAppointmentToolStripMenuItem});
+            this.completeAppointmentToolStripMenuItem,
+            this.appointmentListToolStripMenuItem});
             this.aToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.aToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment;
             this.aToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(250, 68);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(214, 68);
             this.aToolStripMenuItem.Text = "Appointments";
             // 
             // addNewAppointmentToolStripMenuItem
@@ -85,9 +87,21 @@
             this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment_1_;
             this.addNewAppointmentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
-            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(370, 34);
+            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(301, 30);
             this.addNewAppointmentToolStripMenuItem.Text = "Add new Appointment";
             this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(298, 6);
+            // 
+            // completeAppointmentToolStripMenuItem
+            // 
+            this.completeAppointmentToolStripMenuItem.Name = "completeAppointmentToolStripMenuItem";
+            this.completeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(301, 30);
+            this.completeAppointmentToolStripMenuItem.Text = "Complete Appointment";
+            this.completeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.completeAppointmentToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -99,7 +113,7 @@
             this.toolStripMenuItem1.Image = global::Hospital_Managment_System.Properties.Resources.human_resources;
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 68);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(190, 68);
             this.toolStripMenuItem1.Text = "Empolyees";
             // 
             // toolStripMenuItem2
@@ -107,7 +121,7 @@
             this.toolStripMenuItem2.Image = global::Hospital_Managment_System.Properties.Resources.salesman__1_;
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(342, 38);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(282, 38);
             this.toolStripMenuItem2.Text = "Add New Empolyee";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -116,7 +130,7 @@
             this.toolStripMenuItem3.Image = global::Hospital_Managment_System.Properties.Resources.human_resources__1_;
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(342, 38);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(282, 38);
             this.toolStripMenuItem3.Text = "All Employees List";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -125,7 +139,7 @@
             this.findEmployeeUnderToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.stakeholder_analysis;
             this.findEmployeeUnderToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findEmployeeUnderToolStripMenuItem.Name = "findEmployeeUnderToolStripMenuItem";
-            this.findEmployeeUnderToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
+            this.findEmployeeUnderToolStripMenuItem.Size = new System.Drawing.Size(282, 38);
             this.findEmployeeUnderToolStripMenuItem.Text = "Find Employee";
             this.findEmployeeUnderToolStripMenuItem.Click += new System.EventHandler(this.findEmployeeUnderToolStripMenuItem_Click);
             // 
@@ -140,7 +154,7 @@
             this.empolyeesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__2_;
             this.empolyeesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.empolyeesToolStripMenuItem.Name = "empolyeesToolStripMenuItem";
-            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(181, 68);
+            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(157, 68);
             this.empolyeesToolStripMenuItem.Text = "Doctors";
             this.empolyeesToolStripMenuItem.Click += new System.EventHandler(this.empolyeesToolStripMenuItem_Click);
             // 
@@ -149,7 +163,7 @@
             this.addNewDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__3_;
             this.addNewDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewDoctorToolStripMenuItem.Name = "addNewDoctorToolStripMenuItem";
-            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
+            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(249, 38);
             this.addNewDoctorToolStripMenuItem.Text = "Add New Doctor";
             this.addNewDoctorToolStripMenuItem.Click += new System.EventHandler(this.addNewDoctorToolStripMenuItem_Click);
             // 
@@ -158,7 +172,7 @@
             this.allDoctorsListToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor1;
             this.allDoctorsListToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.allDoctorsListToolStripMenuItem.Name = "allDoctorsListToolStripMenuItem";
-            this.allDoctorsListToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
+            this.allDoctorsListToolStripMenuItem.Size = new System.Drawing.Size(249, 38);
             this.allDoctorsListToolStripMenuItem.Text = "All Doctors List ";
             this.allDoctorsListToolStripMenuItem.Click += new System.EventHandler(this.allDoctorsListToolStripMenuItem_Click);
             // 
@@ -167,7 +181,7 @@
             this.findDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__1_;
             this.findDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findDoctorToolStripMenuItem.Name = "findDoctorToolStripMenuItem";
-            this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
+            this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(249, 38);
             this.findDoctorToolStripMenuItem.Text = "Find Doctor ";
             this.findDoctorToolStripMenuItem.Click += new System.EventHandler(this.findDoctorToolStripMenuItem_Click);
             // 
@@ -176,7 +190,7 @@
             this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
             this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
-            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
+            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(249, 38);
             this.findUserToolStripMenuItem.Text = "Specialties ";
             this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
             // 
@@ -190,7 +204,7 @@
             this.toolStripMenuItem4.Image = global::Hospital_Managment_System.Properties.Resources.user__3_;
             this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(159, 68);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(139, 68);
             this.toolStripMenuItem4.Text = "Users";
             // 
             // toolStripMenuAddNewUser
@@ -198,7 +212,7 @@
             this.toolStripMenuAddNewUser.Image = global::Hospital_Managment_System.Properties.Resources.user__4_;
             this.toolStripMenuAddNewUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuAddNewUser.Name = "toolStripMenuAddNewUser";
-            this.toolStripMenuAddNewUser.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuAddNewUser.Size = new System.Drawing.Size(237, 38);
             this.toolStripMenuAddNewUser.Text = "Add New User ";
             this.toolStripMenuAddNewUser.Click += new System.EventHandler(this.toolStripMenuAddNewUser_Click);
             // 
@@ -207,7 +221,7 @@
             this.toolStripMenuListUsers.Image = global::Hospital_Managment_System.Properties.Resources.user__1_;
             this.toolStripMenuListUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuListUsers.Name = "toolStripMenuListUsers";
-            this.toolStripMenuListUsers.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuListUsers.Size = new System.Drawing.Size(237, 38);
             this.toolStripMenuListUsers.Text = "All Users List";
             this.toolStripMenuListUsers.Click += new System.EventHandler(this.toolStripMenuListUsers_Click);
             // 
@@ -216,7 +230,7 @@
             this.toolStripMenuFindUser.Image = global::Hospital_Managment_System.Properties.Resources.user__2_;
             this.toolStripMenuFindUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuFindUser.Name = "toolStripMenuFindUser";
-            this.toolStripMenuFindUser.Size = new System.Drawing.Size(287, 38);
+            this.toolStripMenuFindUser.Size = new System.Drawing.Size(237, 38);
             this.toolStripMenuFindUser.Text = "Find User";
             this.toolStripMenuFindUser.Click += new System.EventHandler(this.toolStripMenuFindUser_Click);
             // 
@@ -229,7 +243,7 @@
             this.uSERSToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.gear__1_;
             this.uSERSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.uSERSToolStripMenuItem.Name = "uSERSToolStripMenuItem";
-            this.uSERSToolStripMenuItem.Size = new System.Drawing.Size(186, 68);
+            this.uSERSToolStripMenuItem.Size = new System.Drawing.Size(160, 68);
             this.uSERSToolStripMenuItem.Text = "Settings";
             // 
             // hospitalSettingsToolStripMenuItem
@@ -237,7 +251,7 @@
             this.hospitalSettingsToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.hospital;
             this.hospitalSettingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hospitalSettingsToolStripMenuItem.Name = "hospitalSettingsToolStripMenuItem";
-            this.hospitalSettingsToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
+            this.hospitalSettingsToolStripMenuItem.Size = new System.Drawing.Size(251, 38);
             this.hospitalSettingsToolStripMenuItem.Text = "Hospital Settings";
             this.hospitalSettingsToolStripMenuItem.Click += new System.EventHandler(this.hospitalSettingsToolStripMenuItem_Click);
             // 
@@ -246,25 +260,20 @@
             this.signOutToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.sign_out_32__2;
             this.signOutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(251, 38);
             this.signOutToolStripMenuItem.Text = "Sign out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
-            // completeAppointmentToolStripMenuItem
+            // appointmentListToolStripMenuItem
             // 
-            this.completeAppointmentToolStripMenuItem.Name = "completeAppointmentToolStripMenuItem";
-            this.completeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(370, 34);
-            this.completeAppointmentToolStripMenuItem.Text = "Complete Appointment";
-            this.completeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.completeAppointmentToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(367, 6);
+            this.appointmentListToolStripMenuItem.Name = "appointmentListToolStripMenuItem";
+            this.appointmentListToolStripMenuItem.Size = new System.Drawing.Size(301, 30);
+            this.appointmentListToolStripMenuItem.Text = "Appointment List";
+            this.appointmentListToolStripMenuItem.Click += new System.EventHandler(this.appointmentListToolStripMenuItem_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1412, 786);
             this.Controls.Add(this.menuStrip1);
@@ -306,6 +315,7 @@
         private System.Windows.Forms.ToolStripMenuItem addNewAppointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem completeAppointmentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appointmentListToolStripMenuItem;
     }
 }
 

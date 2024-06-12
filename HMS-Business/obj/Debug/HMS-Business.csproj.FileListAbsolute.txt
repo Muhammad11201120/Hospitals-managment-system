@@ -70,3 +70,12 @@ D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.c
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
 D:\Desktop\Test\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb
+C:\New folder (6)\Test\HMS-Business\bin\Debug\HMS-Business.dll
+C:\New folder (6)\Test\HMS-Business\bin\Debug\HMS-Business.pdb
+C:\New folder (6)\Test\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+C:\New folder (6)\Test\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.csproj.CopyComplete
+C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.dll
+C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.pdb

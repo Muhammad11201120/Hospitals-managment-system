@@ -196,10 +196,9 @@ namespace HMS_DataBusinessLayer
         }
 
         public static DataTable GetAllAppointments()
-        {
-            //return clsAppointmentsData.GetAllAppointments();
+        { 
 
-            return null;
+            return clsAppointmentsData.GetAllAppointments();
         }
         public static bool IsAppointmentExistByDoctorIDAndDate( int DoctorID, short Year, byte Month, byte Day, byte Hour )
         {

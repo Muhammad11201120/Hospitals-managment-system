@@ -88,3 +88,9 @@ C:\New folder (6)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.
 C:\New folder (6)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\New folder (6)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 C:\New folder (6)\Test\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+G:\HPFROMVS\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+G:\HPFROMVS\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

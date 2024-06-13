@@ -328,6 +328,45 @@ namespace HMS_DataAccessLayer
             return dtUsers;
         }
 
+        public static bool Login(ref SqlParameter[] parameters)
+        {
+            bool isFound = false;
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    Connection.Open();
+
+                    using (SqlCommand Command = new SqlCommand("SP_IsUserExistByUserNameAndPassword", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("@Username", parameters[1].Value);
+                        Command.Parameters.AddWithValue("@Password", parameters[2].Value);
+                        Command.Parameters.Add("@UserID", SqlDbType.Int).Direction = ParameterDirection.Output;
+                        Command.Parameters.Add("@EmployeeID", SqlDbType.Int).Direction = ParameterDirection.Output;
+                        Command.Parameters.Add("@IsActive", SqlDbType.Bit).Direction = ParameterDirection.Output;
+
+                        Command.ExecuteNonQuery();
+
+                        // Now retrieve the output parameters
+                        parameters[0].Value = Command.Parameters["@UserID"].Value;
+                        parameters[4].Value = Command.Parameters["@EmployeeID"].Value;
+                        parameters[3].Value = Command.Parameters["@IsActive"].Value;
+
+                        isFound = true;  // You may need to modify this based on your logic
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsGlobalData.WriteExceptionInLogFile(ex);
+                MessageBox.Show("Error SP_IsUserExistByUserNameAndPassword: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return isFound;
+        }
 
 
     }

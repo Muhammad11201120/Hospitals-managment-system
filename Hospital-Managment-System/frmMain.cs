@@ -67,9 +67,7 @@ namespace Hospital_Managment_System
 
         private void toolStripMenuAddNewUser_Click(object sender, EventArgs e)
         {
-            frmFindEmployee frm = new frmFindEmployee();
-
-            frm.OnEmployeeSelected += OpenAddUpdateUser;
+            frmAddUpdateUser frm = new frmAddUpdateUser();
 
             frm.ShowDialog();
         }
@@ -178,7 +176,7 @@ namespace Hospital_Managment_System
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void completeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)

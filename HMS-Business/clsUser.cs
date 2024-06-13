@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using HMS_Business;
 using HMS_DataAccessLayer;
 namespace HMS_BusinessLayer
 {
@@ -39,10 +40,12 @@ namespace HMS_BusinessLayer
         }
 
         private bool _AddNewUser()
-        {
+        { 
+            string encryptedpassword=EncryptionHelper.Encrypt(this.Password);
+
             SqlParameter[] sp = new SqlParameter[4];
             sp[0] = new SqlParameter("UserName", this.UserName);
-            sp[1] = new SqlParameter("Password", this.Password);
+            sp[1] = new SqlParameter("Password", encryptedpassword);
             sp[2] = new SqlParameter("IsActive", this.IsActive);
             sp[3] = new SqlParameter("EmployeeID", this.EmployeeID);
             this.UserID = clsUsersData.AddNewUser(sp);
@@ -140,6 +143,21 @@ namespace HMS_BusinessLayer
 
             return clsUsersData.GetUserInfo(sp);
         }
+        public static clsUser Login(string Username,string Password)
+        {
+            string encryptedpassword=EncryptionHelper.Encrypt(Password);
 
+            SqlParameter[] sp = new SqlParameter[5];
+            sp[0] = new SqlParameter("UserID", null);
+            sp[1] = new SqlParameter("UserName", Username);
+            sp[2] = new SqlParameter("Password", encryptedpassword);
+            sp[3] = new SqlParameter("IsActive", null);
+            sp[4] = new SqlParameter("EmployeeID", null);
+            bool IsFound = clsUsersData.Login(ref sp);
+            if (IsFound)
+                return new clsUser((int)sp[0].Value, (int)sp[4].Value, (string)sp[1].Value, (string)sp[2].Value, (bool)sp[3].Value);
+            else
+                return null;
+        }
     }
 }

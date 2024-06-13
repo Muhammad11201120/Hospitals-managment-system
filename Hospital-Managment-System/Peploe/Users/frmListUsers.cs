@@ -209,5 +209,27 @@ namespace Hospital_Managment_System.Empolyee.Users
             if (cbFilter.Text == "UserID")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
+
+        private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you want to delete User With ID : "+ (int)dgvListUsers.CurrentRow.Cells[0].Value)==DialogResult.Cancel)
+            {
+                return;
+            }
+
+
+            if (!clsUser.DeleteUser((int)dgvListUsers.CurrentRow.Cells[0].Value))
+            {  MessageBox.Show("User Delete Failed ! : ", "Failed", MessageBoxButtons.OK);
+                return;
+            }
+            
+           Refresh();
+            MessageBox.Show("User Deleted Seccussfully ! : ","Succeed",MessageBoxButtons.OK);
+        }
+
+        private void refreashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Refresh();
+        }
     }
 }

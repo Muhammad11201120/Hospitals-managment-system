@@ -79,3 +79,12 @@ C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInp
 C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.csproj.CopyComplete
 C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.dll
 C:\New folder (6)\Test\HMS-Business\obj\Debug\HMS-Business.pdb
+G:\HPFROMVS\HMS-Business\bin\Debug\HMS-Business.dll
+G:\HPFROMVS\HMS-Business\bin\Debug\HMS-Business.pdb
+G:\HPFROMVS\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+G:\HPFROMVS\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
+G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.dll
+G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.pdb

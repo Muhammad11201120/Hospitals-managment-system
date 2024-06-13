@@ -55,6 +55,8 @@
     <Compile Include="clsPrescriptions.cs" />
     <Compile Include="clsSpecialties.cs" />
     <Compile Include="clsUser.cs" />
+    <Compile Include="clsUtil.cs" />
+    <Compile Include="EncryptionHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

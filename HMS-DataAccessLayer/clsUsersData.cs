@@ -334,28 +334,41 @@ namespace HMS_DataAccessLayer
 
             try
             {
-                using (SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-                    Connection.Open();
+                    connection.Open();
 
-                    using (SqlCommand Command = new SqlCommand("SP_IsUserExistByUserNameAndPassword", Connection))
+                    using (SqlCommand command = new SqlCommand("SP_IsUserExistByUserNameAndPassword", connection))
                     {
-                        Command.CommandType = CommandType.StoredProcedure;
+                        command.CommandType = CommandType.StoredProcedure;
 
-                        Command.Parameters.AddWithValue("@Username", parameters[1].Value);
-                        Command.Parameters.AddWithValue("@Password", parameters[2].Value);
-                        Command.Parameters.Add("@UserID", SqlDbType.Int).Direction = ParameterDirection.Output;
-                        Command.Parameters.Add("@EmployeeID", SqlDbType.Int).Direction = ParameterDirection.Output;
-                        Command.Parameters.Add("@IsActive", SqlDbType.Bit).Direction = ParameterDirection.Output;
+                        command.Parameters.AddWithValue("@Username", parameters[1].Value);
+                        command.Parameters.AddWithValue("@Password", parameters[2].Value);
 
-                        Command.ExecuteNonQuery();
+                        SqlParameter userIdParam = new SqlParameter("@UserID", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                        SqlParameter employeeIdParam = new SqlParameter("@EmployeeID", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                        SqlParameter isActiveParam = new SqlParameter("@IsActive", SqlDbType.Bit) { Direction = ParameterDirection.Output };
+
+                        command.Parameters.Add(userIdParam);
+                        command.Parameters.Add(employeeIdParam);
+                        command.Parameters.Add(isActiveParam);
+
+                        command.ExecuteNonQuery();
 
                         // Now retrieve the output parameters
-                        parameters[0].Value = Command.Parameters["@UserID"].Value;
-                        parameters[4].Value = Command.Parameters["@EmployeeID"].Value;
-                        parameters[3].Value = Command.Parameters["@IsActive"].Value;
-
-                        isFound = true;  // You may need to modify this based on your logic
+                        if (userIdParam.Value != DBNull.Value)
+                        {
+                            parameters[0].Value = userIdParam.Value;
+                            parameters[4].Value = employeeIdParam.Value;
+                            parameters[3].Value = isActiveParam.Value;
+                            isFound = true;
+                        }
+                        else
+                        {
+                            parameters[0].Value = DBNull.Value;
+                            parameters[4].Value = DBNull.Value;
+                            parameters[3].Value = DBNull.Value;
+                        }
                     }
                 }
             }
@@ -367,7 +380,6 @@ namespace HMS_DataAccessLayer
 
             return isFound;
         }
-
 
     }
 }

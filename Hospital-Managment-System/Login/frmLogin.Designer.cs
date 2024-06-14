@@ -169,6 +169,7 @@
             this.chkRememberMe.TabIndex = 5;
             this.chkRememberMe.Text = "Rememmber Me.";
             this.chkRememberMe.UseVisualStyleBackColor = true;
+          
             // 
             // txtPassword
             // 

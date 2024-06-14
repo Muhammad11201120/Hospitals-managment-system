@@ -129,7 +129,7 @@ namespace Hospital_Managment_System.Appointment
             _Appointment.TotalPrice = decimal.Parse(lblPrice.Text);
             _Appointment.DoctorID = clsDoctor.FindDoctorByName(cbDoctors.SelectedItem.ToString()).DoctorID.Value;
             _Appointment.UserID = clsGlobal.CurrnetUser.UserID.Value;
-
+            _Appointment.PatientID = ctrlPatientInfoWithFilter1.PatientID.Value;
 
             if (_Appointment.Save())
             {

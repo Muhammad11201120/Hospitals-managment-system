@@ -94,3 +94,9 @@ G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyRef
 G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
 G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
 G:\HPFROMVS\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.dll
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\bin\Debug\HMS-DataAccessLayer.pdb
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.AssemblyReference.cache
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.dll
+D:\Desktop\Projects\Hospitals-managment-system\HMS-DataAccessLayer\obj\Debug\HMS-DataAccessLayer.pdb

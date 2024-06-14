@@ -88,3 +88,12 @@ G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
 G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
 G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.dll
 G:\HPFROMVS\HMS-Business\obj\Debug\HMS-Business.pdb
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.dll
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-Business.pdb
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.dll
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\bin\Debug\HMS-DataAccessLayer.pdb
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.AssemblyReference.cache
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.csproj.CoreCompileInputs.cache
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Busi.52A19E66.Up2Date
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.dll
+D:\Desktop\Projects\Hospitals-managment-system\HMS-Business\obj\Debug\HMS-Business.pdb

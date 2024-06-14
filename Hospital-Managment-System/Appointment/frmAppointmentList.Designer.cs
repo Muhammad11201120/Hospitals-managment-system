@@ -51,9 +51,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1025, 50);
+            this.lblTitle.Size = new System.Drawing.Size(1196, 62);
             this.lblTitle.TabIndex = 145;
             this.lblTitle.Text = "Appointment List";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,38 +65,44 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAppointment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAppointment.ContextMenuStrip = this.contextMenuStrip1;
-            this.dgvAppointment.Location = new System.Drawing.Point(12, 219);
+            this.dgvAppointment.Location = new System.Drawing.Point(14, 270);
+            this.dgvAppointment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvAppointment.Name = "dgvAppointment";
-            this.dgvAppointment.Size = new System.Drawing.Size(1001, 299);
+            this.dgvAppointment.RowHeadersWidth = 51;
+            this.dgvAppointment.Size = new System.Drawing.Size(1168, 368);
             this.dgvAppointment.TabIndex = 146;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.completeAppointmentToolStripMenuItem,
             this.updateToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(201, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(240, 110);
             // 
             // completeAppointmentToolStripMenuItem
             // 
+            this.completeAppointmentToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment__2_;
             this.completeAppointmentToolStripMenuItem.Name = "completeAppointmentToolStripMenuItem";
-            this.completeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.completeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
             this.completeAppointmentToolStripMenuItem.Text = "Complete Appointment";
             this.completeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.completeAppointmentToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
+            this.updateToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_32;
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_2;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -108,10 +114,10 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(901, 526);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(5);
+            this.btnClose.Location = new System.Drawing.Point(1051, 647);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(110, 39);
+            this.btnClose.Size = new System.Drawing.Size(128, 48);
             this.btnClose.TabIndex = 149;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -121,10 +127,10 @@
             this.lblRecordCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblRecordCount.AutoSize = true;
             this.lblRecordCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecordCount.Location = new System.Drawing.Point(113, 521);
-            this.lblRecordCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRecordCount.Location = new System.Drawing.Point(132, 641);
+            this.lblRecordCount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblRecordCount.Name = "lblRecordCount";
-            this.lblRecordCount.Size = new System.Drawing.Size(16, 18);
+            this.lblRecordCount.Size = new System.Drawing.Size(20, 24);
             this.lblRecordCount.TabIndex = 148;
             this.lblRecordCount.Text = "0";
             // 
@@ -133,10 +139,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 521);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 641);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 147;
             this.label2.Text = "# Records: ";
             // 
@@ -144,11 +150,11 @@
             // 
             this.txtFilterValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterValue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterValue.Location = new System.Drawing.Point(267, 180);
-            this.txtFilterValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtFilterValue.Location = new System.Drawing.Point(312, 222);
+            this.txtFilterValue.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtFilterValue.MaxLength = 20;
             this.txtFilterValue.Name = "txtFilterValue";
-            this.txtFilterValue.Size = new System.Drawing.Size(180, 26);
+            this.txtFilterValue.Size = new System.Drawing.Size(210, 30);
             this.txtFilterValue.TabIndex = 153;
             this.txtFilterValue.Visible = false;
             this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
@@ -169,10 +175,10 @@
             "National No",
             "Patient Phone Number",
             "Doctor Name"});
-            this.cmbFilter.Location = new System.Drawing.Point(89, 180);
-            this.cmbFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cmbFilter.Location = new System.Drawing.Point(104, 222);
+            this.cmbFilter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cmbFilter.Name = "cmbFilter";
-            this.cmbFilter.Size = new System.Drawing.Size(170, 27);
+            this.cmbFilter.Size = new System.Drawing.Size(198, 31);
             this.cmbFilter.TabIndex = 152;
             this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
             // 
@@ -180,18 +186,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 181);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 223);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 151;
             this.label1.Text = "Filter By: ";
             // 
             // frmAppointmentList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 570);
+            this.ClientSize = new System.Drawing.Size(1196, 702);
             this.Controls.Add(this.txtFilterValue);
             this.Controls.Add(this.cmbFilter);
             this.Controls.Add(this.label1);
@@ -200,6 +206,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvAppointment);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAppointmentList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment List";

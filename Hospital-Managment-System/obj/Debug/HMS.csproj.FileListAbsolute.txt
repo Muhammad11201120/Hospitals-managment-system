@@ -461,3 +461,8 @@ D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Deb
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAppointmentList.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmCompleteAppointment.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Payment.frmPay.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.Doctor.DoctorForms.frmShowDoctorDetails.resources
+C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Empolyee.EmployeeForms.frmShowEmployeeDetails.resources

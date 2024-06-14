@@ -23,21 +23,21 @@ namespace Hospital_Managment_System.Login
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click( object sender, EventArgs e )
         {
 
-            if (txtUserName.Text != null && txtPassword.Text != null)
+            if ( txtUserName.Text != null && txtPassword.Text != null )
 
             {
-                clsUser User = clsUser.Login(txtUserName.Text, txtPassword.Text);
+                clsUser User = clsUser.Login( txtUserName.Text, txtPassword.Text );
                 clsGlobal.CurrnetUser = User;
-                if (User == null)
+                if ( User == null )
                 {
                     string SourceName = "Hospital Managment System";
 
 
 
-                    HandleLogErrors(SourceName);
+                    HandleLogErrors( SourceName );
 
 
 
@@ -45,26 +45,26 @@ namespace Hospital_Managment_System.Login
 
                     return;
                 }
-                if (chkRememberMe.Checked == true)
+                if ( chkRememberMe.Checked == true )
                 {
-                    EncryptionHelper.SaveEncryptedPasswordIfNotExists(txtUserName.Text, txtPassword.Text);
+                    EncryptionHelper.SaveEncryptedPasswordIfNotExists( txtUserName.Text, txtPassword.Text );
                 }
                 else
                 {
                     EncryptionHelper.ClearEncryptedPassword();
                 }
 
-                if (!User.IsActive)
+                if ( !User.IsActive )
                 {
                     string SourceName = "Hospital Managment System";
 
-                    if (!EventLog.SourceExists(SourceName))
+                    if ( !EventLog.SourceExists( SourceName ) )
                     {
-                        EventLog.CreateEventSource(SourceName, "Application");
+                        EventLog.CreateEventSource( SourceName, "Application" );
 
                     }
-                    MessageBox.Show("This Account Is UnActive to solve that Contact Your Admin  ", "UnActive Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    EventLog.WriteEntry(SourceName, "The Error is in Login Screen When UnActive User Account Try To Enter The System  ", EventLogEntryType.Error);
+                    MessageBox.Show( "This Account Is UnActive to solve that Contact Your Admin  ", "UnActive Account", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                    EventLog.WriteEntry( SourceName, "The Error is in Login Screen When UnActive User Account Try To Enter The System  ", EventLogEntryType.Error );
                     return;
 
                 }
@@ -72,22 +72,22 @@ namespace Hospital_Managment_System.Login
                 frm.ShowDialog();
             }
         }
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click( object sender, EventArgs e )
         {
             this.Close();
         }
 
-        private void btnCloseTop_Click(object sender, EventArgs e)
+        private void btnCloseTop_Click( object sender, EventArgs e )
         {
             this.Close();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
+        private void frmLogin_Load( object sender, EventArgs e )
         {
             string username; string password;
-            bool IsUserExist = EncryptionHelper.GetUsernameAndPassword(out username, out password);
+            bool IsUserExist = EncryptionHelper.GetUsernameAndPassword( out username, out password );
 
-            if (IsUserExist)
+            if ( IsUserExist )
             {
                 txtUserName.Text = username;
                 txtPassword.Text = password;
@@ -101,9 +101,9 @@ namespace Hospital_Managment_System.Login
             }
         }
 
-        private void chkShowHide_CheckedChanged(object sender, EventArgs e)
+        private void chkShowHide_CheckedChanged( object sender, EventArgs e )
         {
-            if (chkShowHide.Checked)
+            if ( chkShowHide.Checked )
             {
 
                 txtPassword.PasswordChar = '\0';
@@ -117,37 +117,37 @@ namespace Hospital_Managment_System.Login
             }
         }
 
-        private void btnCloseTop_Click_1(object sender, EventArgs e)
+        private void btnCloseTop_Click_1( object sender, EventArgs e )
         {
             this.Close();
         }
 
-        private void HandleLogErrors(string SourceName)
+        private void HandleLogErrors( string SourceName )
         {
             try
             {
-                if (!EventLog.SourceExists(SourceName))
+                if ( !EventLog.SourceExists( SourceName ) )
                 {
-                    if (IsUserAdministrator())
+                    if ( IsUserAdministrator() )
                     {
-                        EventLog.CreateEventSource(SourceName, "Application");
+                        EventLog.CreateEventSource( SourceName, "Application" );
                     }
                     else
                     {
-                        MessageBox.Show("Insufficient permissions to create event source. Please run the application as an administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show( "Insufficient permissions to create event source. Please run the application as an administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
                         return;
                     }
                 }
 
-                EventLog.WriteEntry(SourceName, "The Error is in Login Screen When You Click Login and Could not find the User so it returns null.", EventLogEntryType.Error);
+                EventLog.WriteEntry( SourceName, "The Error is in Login Screen When You Click Login and Could not find the User so it returns null.", EventLogEntryType.Error );
             }
-            catch (SecurityException secEx)
+            catch ( SecurityException secEx )
             {
-                MessageBox.Show("Wrong UserName OR Password Contact Your Admin", "Wrong Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show( "Wrong UserName OR Password Contact Your Admin", "Wrong Login", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show( "An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
 
 
@@ -157,13 +157,18 @@ namespace Hospital_Managment_System.Login
             try
             {
                 WindowsIdentity user = WindowsIdentity.GetCurrent();
-                WindowsPrincipal principal = new WindowsPrincipal(user);
-                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+                WindowsPrincipal principal = new WindowsPrincipal( user );
+                return principal.IsInRole( WindowsBuiltInRole.Administrator );
             }
             catch
             {
                 return false;
             }
+        }
+
+        private void btnClose_Click_1( object sender, EventArgs e )
+        {
+            this.Close();
         }
     }
 }

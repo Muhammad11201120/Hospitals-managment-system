@@ -144,6 +144,7 @@
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // btnLogin
             // 
@@ -169,7 +170,6 @@
             this.chkRememberMe.TabIndex = 5;
             this.chkRememberMe.Text = "Rememmber Me.";
             this.chkRememberMe.UseVisualStyleBackColor = true;
-          
             // 
             // txtPassword
             // 

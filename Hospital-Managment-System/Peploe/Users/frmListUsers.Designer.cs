@@ -34,6 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvListUsers = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblRecordCount = new System.Windows.Forms.Label();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.cbFilter = new System.Windows.Forms.ComboBox();
@@ -41,12 +43,10 @@
             this.btnAddNew = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.cbIsActive = new System.Windows.Forms.ComboBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListUsers)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,10 +58,10 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(693, 585);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnClose.Location = new System.Drawing.Point(808, 720);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(110, 39);
+            this.btnClose.Size = new System.Drawing.Size(128, 48);
             this.btnClose.TabIndex = 143;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -92,8 +92,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvListUsers.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvListUsers.Location = new System.Drawing.Point(9, 182);
-            this.dgvListUsers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgvListUsers.Location = new System.Drawing.Point(10, 224);
+            this.dgvListUsers.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dgvListUsers.Name = "dgvListUsers";
             this.dgvListUsers.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -106,17 +106,35 @@
             this.dgvListUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListUsers.RowHeadersWidth = 51;
             this.dgvListUsers.RowTemplate.Height = 26;
-            this.dgvListUsers.Size = new System.Drawing.Size(795, 391);
+            this.dgvListUsers.Size = new System.Drawing.Size(927, 481);
             this.dgvListUsers.TabIndex = 142;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userInfoToolStripMenuItem,
+            this.editUserToolStripMenuItem,
+            this.deleteUserToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(215, 110);
+            // 
+            // deleteUserToolStripMenuItem
+            // 
+            this.deleteUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.Delete_32_2;
+            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.deleteUserToolStripMenuItem.Text = "Delete User";
+            this.deleteUserToolStripMenuItem.Click += new System.EventHandler(this.deleteUserToolStripMenuItem_Click);
             // 
             // lblRecordCount
             // 
             this.lblRecordCount.AutoSize = true;
             this.lblRecordCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecordCount.Location = new System.Drawing.Point(117, 594);
-            this.lblRecordCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRecordCount.Location = new System.Drawing.Point(136, 731);
+            this.lblRecordCount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblRecordCount.Name = "lblRecordCount";
-            this.lblRecordCount.Size = new System.Drawing.Size(16, 18);
+            this.lblRecordCount.Size = new System.Drawing.Size(20, 24);
             this.lblRecordCount.TabIndex = 141;
             this.lblRecordCount.Text = "0";
             // 
@@ -124,11 +142,11 @@
             // 
             this.txtFilter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilter.Location = new System.Drawing.Point(217, 145);
-            this.txtFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtFilter.Location = new System.Drawing.Point(253, 178);
+            this.txtFilter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtFilter.MaxLength = 20;
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(180, 26);
+            this.txtFilter.Size = new System.Drawing.Size(210, 30);
             this.txtFilter.TabIndex = 139;
             this.txtFilter.Visible = false;
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
@@ -148,10 +166,10 @@
             "Gender",
             "UserName",
             "IsActive"});
-            this.cbFilter.Location = new System.Drawing.Point(88, 145);
-            this.cbFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbFilter.Location = new System.Drawing.Point(103, 178);
+            this.cbFilter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbFilter.Name = "cbFilter";
-            this.cbFilter.Size = new System.Drawing.Size(121, 27);
+            this.cbFilter.Size = new System.Drawing.Size(140, 31);
             this.cbFilter.TabIndex = 138;
             this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
             // 
@@ -159,10 +177,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 146);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(14, 180);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 137;
             this.label1.Text = "Filter By: ";
             // 
@@ -173,10 +191,10 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNew.Location = new System.Drawing.Point(693, 136);
-            this.btnAddNew.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddNew.Location = new System.Drawing.Point(808, 167);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(110, 37);
+            this.btnAddNew.Size = new System.Drawing.Size(128, 46);
             this.btnAddNew.TabIndex = 136;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
@@ -186,10 +204,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 594);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(20, 731);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 140;
             this.label2.Text = "# Records: ";
             // 
@@ -197,29 +215,13 @@
             // 
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(284, 15);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Location = new System.Drawing.Point(331, 18);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(196, 40);
+            this.lblTitle.Size = new System.Drawing.Size(229, 49);
             this.lblTitle.TabIndex = 144;
             this.lblTitle.Text = "Users List";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(573, 136);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(110, 37);
-            this.btnEdit.TabIndex = 145;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // cbGender
             // 
@@ -231,10 +233,10 @@
             "All",
             "Male",
             "Female"});
-            this.cbGender.Location = new System.Drawing.Point(217, 145);
-            this.cbGender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbGender.Location = new System.Drawing.Point(253, 178);
+            this.cbGender.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(121, 27);
+            this.cbGender.Size = new System.Drawing.Size(140, 31);
             this.cbGender.TabIndex = 146;
             this.cbGender.Visible = false;
             this.cbGender.SelectedIndexChanged += new System.EventHandler(this.cbGender_SelectedIndexChanged);
@@ -249,44 +251,37 @@
             "All",
             "Yes",
             "No"});
-            this.cbIsActive.Location = new System.Drawing.Point(217, 145);
-            this.cbIsActive.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbIsActive.Location = new System.Drawing.Point(253, 178);
+            this.cbIsActive.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbIsActive.Name = "cbIsActive";
-            this.cbIsActive.Size = new System.Drawing.Size(121, 27);
+            this.cbIsActive.Size = new System.Drawing.Size(140, 31);
             this.cbIsActive.TabIndex = 147;
             this.cbIsActive.Visible = false;
             this.cbIsActive.SelectedIndexChanged += new System.EventHandler(this.cbIsActive_SelectedIndexChanged);
             // 
-            // contextMenuStrip1
+            // editUserToolStripMenuItem
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteUserToolStripMenuItem,
-            this.refreashToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.editUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.edit_32;
+            this.editUserToolStripMenuItem.Name = "editUserToolStripMenuItem";
+            this.editUserToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.editUserToolStripMenuItem.Text = "Edit User";
+            this.editUserToolStripMenuItem.Click += new System.EventHandler(this.editUserToolStripMenuItem_Click);
             // 
-            // deleteUserToolStripMenuItem
+            // userInfoToolStripMenuItem
             // 
-            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
-            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteUserToolStripMenuItem.Text = "Delete User";
-            this.deleteUserToolStripMenuItem.Click += new System.EventHandler(this.deleteUserToolStripMenuItem_Click);
-            // 
-            // refreashToolStripMenuItem
-            // 
-            this.refreashToolStripMenuItem.Name = "refreashToolStripMenuItem";
-            this.refreashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.refreashToolStripMenuItem.Text = "Refreash";
-            this.refreashToolStripMenuItem.Click += new System.EventHandler(this.refreashToolStripMenuItem_Click);
+            this.userInfoToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.User_ID1;
+            this.userInfoToolStripMenuItem.Name = "userInfoToolStripMenuItem";
+            this.userInfoToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.userInfoToolStripMenuItem.Text = "User Info";
+            this.userInfoToolStripMenuItem.Click += new System.EventHandler(this.userInfoToolStripMenuItem_Click);
             // 
             // frmListUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 629);
+            this.ClientSize = new System.Drawing.Size(947, 774);
             this.Controls.Add(this.cbIsActive);
             this.Controls.Add(this.cbGender);
-            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvListUsers);
@@ -296,7 +291,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "frmListUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "List Users";
@@ -319,11 +314,11 @@
         private System.Windows.Forms.Button btnAddNew;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.ComboBox cbIsActive;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem deleteUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem refreashToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userInfoToolStripMenuItem;
     }
 }

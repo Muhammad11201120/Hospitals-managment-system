@@ -49,6 +49,7 @@ namespace Hospital_Managment_System.Empolyee.Users
                 txtPassword.Text = _UserInfo.Password;
                 txtConfirmPassword.Text = _UserInfo.Password;
                 chkIsActive.Checked = _UserInfo.IsActive;
+                //ctrlEmployeeCardWithFilter1.LoadData(_EmpID.Value);
 
                 lblTitle.Text = "Edit User With ID " + _UserID.ToString();
                 Text = "Edit User With ID " + _UserID.ToString();

@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\muha1\\Desktop\\Programming\\Hospitals-managment-system\\Hospital-Managment-System\\",
   "Documents": [
     {
@@ -13,6 +14,13 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|c:\\users\\muha1\\desktop\\programming\\hospitals-managment-system\\hospital-managment-system\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "D:\\Desktop\\Hospitals-managment-system\\Hospital-Managment-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|d:\\desktop\\hospitals-managment-system\\hospital-managment-system\\peploe\\users\\controls\\ctrlusercardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA8233FE-0062-420A-AFF0-DB7AC3B76A8B}|HMS.csproj|solutionrelative:peploe\\users\\controls\\ctrlusercardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> frm
     }
   ],
   "DocumentGroupContainers": [
@@ -22,6 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 10,
           "Children": [
             {
@@ -102,6 +111,25 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ctrlUserCardWithFilter.cs [Design]",
+              "DocumentMoniker": "D:\\Desktop\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Users\\Controls\\ctrlUserCardWithFilter.cs",
+              "RelativeDocumentMoniker": "Peploe\\Users\\Controls\\ctrlUserCardWithFilter.cs",
+              "ToolTip": "D:\\Desktop\\Hospitals-managment-system\\Hospital-Managment-System\\Peploe\\Users\\Controls\\ctrlUserCardWithFilter.cs [Design]",
+              "RelativeToolTip": "Peploe\\Users\\Controls\\ctrlUserCardWithFilter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T12:22:50.912Z",
+              "EditorCaption": " [Design]"
+>>>>>>> frm
             }
           ]
         }

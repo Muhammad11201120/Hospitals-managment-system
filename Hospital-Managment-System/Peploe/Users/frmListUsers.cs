@@ -231,5 +231,19 @@ namespace Hospital_Managment_System.Empolyee.Users
         {
             Refresh();
         }
+
+        private void editUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser updateUser = new frmAddUpdateUser((int)dgvListUsers.CurrentRow.Cells[0].Value);
+
+            updateUser.ShowDialog();
+        }
+
+        private void userInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUserInfoCard updateUser = new frmUserInfoCard((int)dgvListUsers.CurrentRow.Cells[0].Value);
+
+            updateUser.ShowDialog();
+        }
     }
 }

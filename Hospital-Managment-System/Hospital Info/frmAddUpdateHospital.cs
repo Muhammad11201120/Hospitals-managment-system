@@ -1,22 +1,16 @@
 ﻿using HMS_DataBusinessLayer;
 using Hospital_Managment_System.Global;
-using Hospital_Managment_System.Properties;
+using Hospital_Managment_System.Settings;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Hospital_Managment_System.Empolyee.frmAddUpdateEmpolyee;
 
 namespace Hospital_Managment_System
 {
     public partial class frmAddUpdateHospital : Form
     {
+        public frmSettings frmSettings;
 
         int? _HospitalID = null;
 
@@ -25,7 +19,14 @@ namespace Hospital_Managment_System
             InitializeComponent();
         }
 
-       
+        public frmAddUpdateHospital(frmSettings settings)
+        {
+            InitializeComponent();
+
+            frmSettings = settings;
+        }
+
+
         void _Load()
         {
 
@@ -162,11 +163,5 @@ namespace Hospital_Managment_System
             }
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            frmAddUpdateHospital frmHospitalSettings = new frmAddUpdateHospital();
-
-            frmHospitalSettings.ShowDialog();
-        }
     }
 }

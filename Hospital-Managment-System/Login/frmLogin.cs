@@ -143,7 +143,7 @@ namespace Hospital_Managment_System.Login
             }
             catch ( SecurityException secEx )
             {
-                MessageBox.Show( "Wrong UserName OR Password Contact Your Admin", "Wrong Login", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                MessageBox.Show( $"Wrong UserName OR Password Contact Your Admin {secEx.Message}", "Wrong Login", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
             catch ( Exception ex )
             {

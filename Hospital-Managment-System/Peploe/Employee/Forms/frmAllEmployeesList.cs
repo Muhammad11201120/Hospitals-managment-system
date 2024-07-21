@@ -1,57 +1,54 @@
 ﻿using HMS_DataBusinessLayer;
-using Hospital_Managment_System.Empolyee.EmployeeControls;
 using Hospital_Managment_System.Empolyee.EmployeeForms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee
 {
     public partial class frmAllEmployeesList : Form
     {
+        public frmMain frmMain;
+
         DataTable dt = null;
         DataView dv = null;
-        public frmAllEmployeesList()
+        public frmAllEmployeesList(frmMain main)
         {
             InitializeComponent();
+
+            this.frmMain = main;
         }
 
         private void _LoadData()
         {
             dt = clsEmployee.GetAllEmployees();
             dv = new DataView( dt );
-            dataGridView1.DataSource = dv;
+            dgvEmployeesList.DataSource = dv;
 
-            if ( dataGridView1.Rows.Count > 0 )
+            if ( dgvEmployeesList.Rows.Count > 0 )
             {
-                dataGridView1.Columns[ 0 ].HeaderText = "Employee ID";
-                dataGridView1.Columns[ 0 ].Width = 110;
-                dataGridView1.Columns[ 1 ].HeaderText = "National Number";
-                dataGridView1.Columns[ 1 ].Width = 120;
-                dataGridView1.Columns[ 2 ].HeaderText = "Full Name";
-                dataGridView1.Columns[ 2 ].Width = 180;
-                dataGridView1.Columns[ 3 ].HeaderText = "Date Of Birth";
-                dataGridView1.Columns[ 3 ].Width = 140;
-                dataGridView1.Columns[ 4 ].HeaderText = "Gender";
-                dataGridView1.Columns[ 4 ].Width = 110;
-                dataGridView1.Columns[ 5 ].HeaderText = "Phone Number";
-                dataGridView1.Columns[ 5 ].Width = 110;
-                dataGridView1.Columns[ 6 ].HeaderText = "Email";
-                dataGridView1.Columns[ 6 ].Width = 180;
-                dataGridView1.Columns[ 7 ].HeaderText = "Address";
-                dataGridView1.Columns[ 7 ].Width = 180;
-                dataGridView1.Columns[ 8 ].HeaderText = "Country Name";
-                dataGridView1.Columns[ 8 ].Width = 120;
-                dataGridView1.Columns[ 9 ].HeaderText = "Salary";
-                dataGridView1.Columns[ 9 ].Width = 110;
+                dgvEmployeesList.Columns[ 0 ].HeaderText = "Employee ID";
+                dgvEmployeesList.Columns[ 0 ].Width = 70;
+                dgvEmployeesList.Columns[ 1 ].HeaderText = "National Number";
+                dgvEmployeesList.Columns[ 1 ].Width = 90;
+                dgvEmployeesList.Columns[ 2 ].HeaderText = "Full Name";
+                dgvEmployeesList.Columns[ 2 ].Width = 130;
+                dgvEmployeesList.Columns[ 3 ].HeaderText = "Date Of Birth";
+                dgvEmployeesList.Columns[ 3 ].Width = 140;
+                dgvEmployeesList.Columns[ 4 ].HeaderText = "Gender";
+                dgvEmployeesList.Columns[ 4 ].Width = 60;
+                dgvEmployeesList.Columns[ 5 ].HeaderText = "Phone Number";
+                dgvEmployeesList.Columns[ 5 ].Width = 90;
+                dgvEmployeesList.Columns[ 6 ].HeaderText = "Email";
+                dgvEmployeesList.Columns[ 6 ].Width = 180;
+                dgvEmployeesList.Columns[ 7 ].HeaderText = "Address";
+                dgvEmployeesList.Columns[ 7 ].Width = 180;
+                dgvEmployeesList.Columns[ 8 ].HeaderText = "Country Name";
+                dgvEmployeesList.Columns[ 8 ].Width = 100;
+                dgvEmployeesList.Columns[ 9 ].HeaderText = "Salary";
+                dgvEmployeesList.Columns[ 9 ].Width = 110;
             }
-            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+            lblRecordCount.Text = dgvEmployeesList.Rows.Count.ToString();
         }
 
         private void frmAllEmployeesList_Load( object sender, EventArgs e )
@@ -64,7 +61,10 @@ namespace Hospital_Managment_System.Empolyee
         private void btnAddNew_Click( object sender, EventArgs e )
         {
             frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee();
-            frm.ShowDialog();
+
+            frmMain.OpenChildSubForm(frm);
+
+            _LoadData();
         }
 
         private void btnClose_Click( object sender, EventArgs e )
@@ -133,7 +133,7 @@ namespace Hospital_Managment_System.Empolyee
             if ( txtFilter.Text.Trim() == "" || FilterName == "None" )
             {
                 dv.RowFilter = "";
-                lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+                lblRecordCount.Text = dgvEmployeesList.Rows.Count.ToString();
                 return;
             }
 
@@ -143,31 +143,32 @@ namespace Hospital_Managment_System.Empolyee
             else
                 dv.RowFilter = string.Format( "[{0}] LIKE '{1}%'", FilterName, txtFilter.Text.Trim() );
 
-            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+            lblRecordCount.Text = dgvEmployeesList.Rows.Count.ToString();
         }
 
         private void addNewEmployeeToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee();
-            frm.ShowDialog();
-            _LoadData();
+            btnAddNew.PerformClick();
         }
 
         private void updateToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value );
-            frm.ShowDialog();
+            frmAddUpdateEmpolyee frm = new frmAddUpdateEmpolyee( ( int ) dgvEmployeesList.CurrentRow.Cells[ 0 ].Value );
+            
+            //frm.ShowDialog();
+            frmMain.OpenChildSubForm( frm );
             _LoadData();
         }
 
         private void deleteToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            if ( MessageBox.Show( "Are you sure you want to delete Employee [" + dataGridView1.CurrentRow.Cells[ 0 ].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question ) == DialogResult.OK )
+            if ( MessageBox.Show( "Are you sure you want to delete Employee [" + dgvEmployeesList.CurrentRow.Cells[ 0 ].Value + "]", "Confirm Delete",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK )
 
             {
 
                 //Perform Delele and refresh
-                if ( clsEmployee.DeleteEmployee( ( int ) dataGridView1.CurrentRow.Cells[ 0 ].Value ) )
+                if ( clsEmployee.DeleteEmployee( ( int ) dgvEmployeesList.CurrentRow.Cells[ 0 ].Value ) )
                 {
                     MessageBox.Show( "Employee Deleted Successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information );
                     _LoadData();
@@ -186,8 +187,9 @@ namespace Hospital_Managment_System.Empolyee
 
         private void showPersonalInfoToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            frmShowEmployeeDetails frmShowEmployeeDetails = new frmShowEmployeeDetails((int)dataGridView1.CurrentRow.Cells[0].Value);
-            frmShowEmployeeDetails.ShowDialog();    
+            frmShowEmployeeDetails frmShowEmployeeDetails = new frmShowEmployeeDetails((int)dgvEmployeesList.CurrentRow.Cells[0].Value);
+
+            frmMain.OpenChildSubForm(frmShowEmployeeDetails);
         }
     }
 }

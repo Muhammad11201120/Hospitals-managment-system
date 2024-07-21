@@ -28,285 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.appointmentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.findEmployeeUnderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empolyeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allDoctorsListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuAddNewUser = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuListUsers = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuFindUser = new System.Windows.Forms.ToolStripMenuItem();
-            this.uSERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hospitalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnSignOut = new System.Windows.Forms.Button();
+            this.btnAppointments = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
+            this.btnDoctors = new System.Windows.Forms.Button();
+            this.btnEmployees = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelForms = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panel1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.empolyeesToolStripMenuItem,
-            this.toolStripMenuItem4,
-            this.uSERSToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1412, 72);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.panel1.Controls.Add(this.btnSettings);
+            this.panel1.Controls.Add(this.btnSignOut);
+            this.panel1.Controls.Add(this.btnAppointments);
+            this.panel1.Controls.Add(this.btnUsers);
+            this.panel1.Controls.Add(this.btnDoctors);
+            this.panel1.Controls.Add(this.btnEmployees);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(284, 786);
+            this.panel1.TabIndex = 1;
             // 
-            // aToolStripMenuItem
+            // btnSettings
             // 
-            this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewAppointmentToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.appointmentListToolStripMenuItem});
-            this.aToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.aToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment;
-            this.aToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(250, 68);
-            this.aToolStripMenuItem.Text = "Appointments";
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = global::Hospital_Managment_System.Properties.Resources.gear;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 632);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(284, 77);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // addNewAppointmentToolStripMenuItem
+            // btnSignOut
             // 
-            this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment_1_;
-            this.addNewAppointmentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
-            this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(358, 34);
-            this.addNewAppointmentToolStripMenuItem.Text = "Add new Appointment";
-            this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click);
+            this.btnSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSignOut.FlatAppearance.BorderSize = 0;
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.ForeColor = System.Drawing.Color.White;
+            this.btnSignOut.Image = global::Hospital_Managment_System.Properties.Resources.sign_out_32__2;
+            this.btnSignOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignOut.Location = new System.Drawing.Point(0, 709);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(284, 77);
+            this.btnSignOut.TabIndex = 6;
+            this.btnSignOut.Text = "Sign Out";
+            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
-            // toolStripSeparator1
+            // btnAppointments
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(355, 6);
+            this.btnAppointments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAppointments.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAppointments.FlatAppearance.BorderSize = 0;
+            this.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAppointments.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAppointments.ForeColor = System.Drawing.Color.White;
+            this.btnAppointments.Image = global::Hospital_Managment_System.Properties.Resources.appointment;
+            this.btnAppointments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAppointments.Location = new System.Drawing.Point(0, 404);
+            this.btnAppointments.Name = "btnAppointments";
+            this.btnAppointments.Size = new System.Drawing.Size(284, 77);
+            this.btnAppointments.TabIndex = 5;
+            this.btnAppointments.Text = "Appointments";
+            this.btnAppointments.UseVisualStyleBackColor = true;
+            this.btnAppointments.Click += new System.EventHandler(this.btnAppointments_Click);
             // 
-            // appointmentListToolStripMenuItem
+            // btnUsers
             // 
-            this.appointmentListToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.appointment__2_;
-            this.appointmentListToolStripMenuItem.Name = "appointmentListToolStripMenuItem";
-            this.appointmentListToolStripMenuItem.Size = new System.Drawing.Size(358, 34);
-            this.appointmentListToolStripMenuItem.Text = "Appointment List";
-            this.appointmentListToolStripMenuItem.Click += new System.EventHandler(this.appointmentListToolStripMenuItem_Click);
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Image = global::Hospital_Managment_System.Properties.Resources.user__3_;
+            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsers.Location = new System.Drawing.Point(0, 327);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(284, 77);
+            this.btnUsers.TabIndex = 4;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.UseVisualStyleBackColor = true;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // toolStripMenuItem1
+            // btnDoctors
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.findEmployeeUnderToolStripMenuItem});
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem1.Image = global::Hospital_Managment_System.Properties.Resources.human_resources;
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 68);
-            this.toolStripMenuItem1.Text = "Empolyees";
+            this.btnDoctors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoctors.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDoctors.FlatAppearance.BorderSize = 0;
+            this.btnDoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoctors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoctors.ForeColor = System.Drawing.Color.White;
+            this.btnDoctors.Image = global::Hospital_Managment_System.Properties.Resources.doctor__2_;
+            this.btnDoctors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoctors.Location = new System.Drawing.Point(0, 250);
+            this.btnDoctors.Name = "btnDoctors";
+            this.btnDoctors.Size = new System.Drawing.Size(284, 77);
+            this.btnDoctors.TabIndex = 3;
+            this.btnDoctors.Text = "Doctors";
+            this.btnDoctors.UseVisualStyleBackColor = true;
+            this.btnDoctors.Click += new System.EventHandler(this.btnDoctors_Click);
             // 
-            // toolStripMenuItem2
+            // btnEmployees
             // 
-            this.toolStripMenuItem2.Image = global::Hospital_Managment_System.Properties.Resources.salesman__1_;
-            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(342, 38);
-            this.toolStripMenuItem2.Text = "Add New Empolyee";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmployees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmployees.FlatAppearance.BorderSize = 0;
+            this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployees.ForeColor = System.Drawing.Color.White;
+            this.btnEmployees.Image = global::Hospital_Managment_System.Properties.Resources.human_resources;
+            this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployees.Location = new System.Drawing.Point(0, 173);
+            this.btnEmployees.Name = "btnEmployees";
+            this.btnEmployees.Size = new System.Drawing.Size(284, 77);
+            this.btnEmployees.TabIndex = 1;
+            this.btnEmployees.Text = "Employees";
+            this.btnEmployees.UseVisualStyleBackColor = true;
+            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
             // 
-            // toolStripMenuItem3
+            // panel2
             // 
-            this.toolStripMenuItem3.Image = global::Hospital_Managment_System.Properties.Resources.human_resources__1_;
-            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(342, 38);
-            this.toolStripMenuItem3.Text = "All Employees List";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 131);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(284, 42);
+            this.panel2.TabIndex = 2;
             // 
-            // findEmployeeUnderToolStripMenuItem
+            // pictureBox1
             // 
-            this.findEmployeeUnderToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.stakeholder_analysis;
-            this.findEmployeeUnderToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.findEmployeeUnderToolStripMenuItem.Name = "findEmployeeUnderToolStripMenuItem";
-            this.findEmployeeUnderToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
-            this.findEmployeeUnderToolStripMenuItem.Text = "Find Employee";
-            this.findEmployeeUnderToolStripMenuItem.Click += new System.EventHandler(this.findEmployeeUnderToolStripMenuItem_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 131);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // empolyeesToolStripMenuItem
+            // panelForms
             // 
-            this.empolyeesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewDoctorToolStripMenuItem,
-            this.allDoctorsListToolStripMenuItem,
-            this.findDoctorToolStripMenuItem,
-            this.findUserToolStripMenuItem});
-            this.empolyeesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empolyeesToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__2_;
-            this.empolyeesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.empolyeesToolStripMenuItem.Name = "empolyeesToolStripMenuItem";
-            this.empolyeesToolStripMenuItem.Size = new System.Drawing.Size(181, 68);
-            this.empolyeesToolStripMenuItem.Text = "Doctors";
-            this.empolyeesToolStripMenuItem.Click += new System.EventHandler(this.empolyeesToolStripMenuItem_Click);
-            // 
-            // addNewDoctorToolStripMenuItem
-            // 
-            this.addNewDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__3_;
-            this.addNewDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewDoctorToolStripMenuItem.Name = "addNewDoctorToolStripMenuItem";
-            this.addNewDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
-            this.addNewDoctorToolStripMenuItem.Text = "Add New Doctor";
-            this.addNewDoctorToolStripMenuItem.Click += new System.EventHandler(this.addNewDoctorToolStripMenuItem_Click);
-            // 
-            // allDoctorsListToolStripMenuItem
-            // 
-            this.allDoctorsListToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor1;
-            this.allDoctorsListToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.allDoctorsListToolStripMenuItem.Name = "allDoctorsListToolStripMenuItem";
-            this.allDoctorsListToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
-            this.allDoctorsListToolStripMenuItem.Text = "All Doctors List ";
-            this.allDoctorsListToolStripMenuItem.Click += new System.EventHandler(this.allDoctorsListToolStripMenuItem_Click);
-            // 
-            // findDoctorToolStripMenuItem
-            // 
-            this.findDoctorToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.doctor__1_;
-            this.findDoctorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.findDoctorToolStripMenuItem.Name = "findDoctorToolStripMenuItem";
-            this.findDoctorToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
-            this.findDoctorToolStripMenuItem.Text = "Find Doctor ";
-            this.findDoctorToolStripMenuItem.Click += new System.EventHandler(this.findDoctorToolStripMenuItem_Click);
-            // 
-            // findUserToolStripMenuItem
-            // 
-            this.findUserToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.task_types;
-            this.findUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.findUserToolStripMenuItem.Name = "findUserToolStripMenuItem";
-            this.findUserToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
-            this.findUserToolStripMenuItem.Text = "Specialties ";
-            this.findUserToolStripMenuItem.Click += new System.EventHandler(this.findUserToolStripMenuItem_Click_1);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuAddNewUser,
-            this.toolStripMenuListUsers,
-            this.toolStripMenuFindUser});
-            this.toolStripMenuItem4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem4.Image = global::Hospital_Managment_System.Properties.Resources.user__3_;
-            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(159, 68);
-            this.toolStripMenuItem4.Text = "Users";
-            // 
-            // toolStripMenuAddNewUser
-            // 
-            this.toolStripMenuAddNewUser.Image = global::Hospital_Managment_System.Properties.Resources.user__4_;
-            this.toolStripMenuAddNewUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuAddNewUser.Name = "toolStripMenuAddNewUser";
-            this.toolStripMenuAddNewUser.Size = new System.Drawing.Size(287, 38);
-            this.toolStripMenuAddNewUser.Text = "Add New User ";
-            this.toolStripMenuAddNewUser.Click += new System.EventHandler(this.toolStripMenuAddNewUser_Click);
-            // 
-            // toolStripMenuListUsers
-            // 
-            this.toolStripMenuListUsers.Image = global::Hospital_Managment_System.Properties.Resources.user__1_;
-            this.toolStripMenuListUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuListUsers.Name = "toolStripMenuListUsers";
-            this.toolStripMenuListUsers.Size = new System.Drawing.Size(287, 38);
-            this.toolStripMenuListUsers.Text = "All Users List";
-            this.toolStripMenuListUsers.Click += new System.EventHandler(this.toolStripMenuListUsers_Click);
-            // 
-            // toolStripMenuFindUser
-            // 
-            this.toolStripMenuFindUser.Image = global::Hospital_Managment_System.Properties.Resources.user__2_;
-            this.toolStripMenuFindUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuFindUser.Name = "toolStripMenuFindUser";
-            this.toolStripMenuFindUser.Size = new System.Drawing.Size(287, 38);
-            this.toolStripMenuFindUser.Text = "Find User";
-            this.toolStripMenuFindUser.Click += new System.EventHandler(this.toolStripMenuFindUser_Click);
-            // 
-            // uSERSToolStripMenuItem
-            // 
-            this.uSERSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hospitalSettingsToolStripMenuItem,
-            this.signOutToolStripMenuItem});
-            this.uSERSToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.uSERSToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.gear__1_;
-            this.uSERSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.uSERSToolStripMenuItem.Name = "uSERSToolStripMenuItem";
-            this.uSERSToolStripMenuItem.Size = new System.Drawing.Size(186, 68);
-            this.uSERSToolStripMenuItem.Text = "Settings";
-            // 
-            // hospitalSettingsToolStripMenuItem
-            // 
-            this.hospitalSettingsToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.hospital;
-            this.hospitalSettingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.hospitalSettingsToolStripMenuItem.Name = "hospitalSettingsToolStripMenuItem";
-            this.hospitalSettingsToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
-            this.hospitalSettingsToolStripMenuItem.Text = "Hospital Settings";
-            this.hospitalSettingsToolStripMenuItem.Click += new System.EventHandler(this.hospitalSettingsToolStripMenuItem_Click);
-            // 
-            // signOutToolStripMenuItem
-            // 
-            this.signOutToolStripMenuItem.Image = global::Hospital_Managment_System.Properties.Resources.sign_out_32__2;
-            this.signOutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
-            this.signOutToolStripMenuItem.Text = "Sign out";
-            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
+            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForms.Location = new System.Drawing.Point(284, 0);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(1128, 786);
+            this.panelForms.TabIndex = 2;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1412, 786);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panelForms);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem empolyeesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addNewDoctorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem findEmployeeUnderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uSERSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allDoctorsListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem findDoctorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuAddNewUser;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuListUsers;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuFindUser;
-        private System.Windows.Forms.ToolStripMenuItem hospitalSettingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem findUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addNewAppointmentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem appointmentListToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelForms;
+        private System.Windows.Forms.Button btnEmployees;
+        private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Button btnAppointments;
+        private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.Button btnDoctors;
+        private System.Windows.Forms.Button btnSettings;
     }
 }
 

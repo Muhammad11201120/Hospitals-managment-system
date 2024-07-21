@@ -32,14 +32,14 @@ namespace Hospital_Managment_System.Empolyee.EmployeeForms
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();   
-        }
-
         private void frmShowEmployeeDetails_Load(object sender, EventArgs e)
         {
             _LoadEmployeeInfo();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

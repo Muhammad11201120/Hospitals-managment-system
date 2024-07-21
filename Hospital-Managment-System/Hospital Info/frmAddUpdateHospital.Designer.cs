@@ -59,7 +59,7 @@
             // 
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(-215, 20);
+            this.lblTitle.Location = new System.Drawing.Point(44, 32);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(928, 39);
             this.lblTitle.TabIndex = 116;
@@ -68,7 +68,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(204, 282);
+            this.txtName.Location = new System.Drawing.Point(439, 325);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
@@ -80,7 +80,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(80, 287);
+            this.label8.Location = new System.Drawing.Point(315, 330);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
@@ -93,7 +93,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(120, 521);
+            this.btnClose.Location = new System.Drawing.Point(353, 606);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(126, 37);
@@ -107,7 +107,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(254, 521);
+            this.btnSave.Location = new System.Drawing.Point(487, 606);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(126, 37);
@@ -118,7 +118,7 @@
             // 
             // txPhone
             // 
-            this.txPhone.Location = new System.Drawing.Point(204, 340);
+            this.txPhone.Location = new System.Drawing.Point(439, 383);
             this.txPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txPhone.MaxLength = 50;
             this.txPhone.Name = "txPhone";
@@ -130,7 +130,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 345);
+            this.label1.Location = new System.Drawing.Point(309, 388);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 25);
@@ -139,7 +139,7 @@
             // 
             // txAddress
             // 
-            this.txAddress.Location = new System.Drawing.Point(204, 404);
+            this.txAddress.Location = new System.Drawing.Point(439, 447);
             this.txAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txAddress.MaxLength = 50;
             this.txAddress.Name = "txAddress";
@@ -151,7 +151,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(56, 408);
+            this.label3.Location = new System.Drawing.Point(291, 451);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 25);
@@ -161,7 +161,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Hospital_Managment_System.Properties.Resources.Address_32;
-            this.pictureBox3.Location = new System.Drawing.Point(166, 408);
+            this.pictureBox3.Location = new System.Drawing.Point(401, 451);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(31, 26);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,7 +171,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Hospital_Managment_System.Properties.Resources.Phone_32;
-            this.pictureBox1.Location = new System.Drawing.Point(166, 344);
+            this.pictureBox1.Location = new System.Drawing.Point(401, 387);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +181,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Hospital_Managment_System.Properties.Resources.hospital;
-            this.pictureBox11.Location = new System.Drawing.Point(166, 286);
+            this.pictureBox11.Location = new System.Drawing.Point(401, 329);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(31, 26);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +190,7 @@
             // 
             // pbHospitalImage
             // 
-            this.pbHospitalImage.Location = new System.Drawing.Point(85, 80);
+            this.pbHospitalImage.Location = new System.Drawing.Point(320, 123);
             this.pbHospitalImage.Name = "pbHospitalImage";
             this.pbHospitalImage.Size = new System.Drawing.Size(361, 184);
             this.pbHospitalImage.TabIndex = 131;
@@ -199,7 +199,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(212, 461);
+            this.linkLabel1.Location = new System.Drawing.Point(447, 504);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(92, 29);
             this.linkLabel1.TabIndex = 136;
@@ -210,7 +210,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hospital_Managment_System.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(166, 460);
+            this.pictureBox2.Location = new System.Drawing.Point(401, 503);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -221,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(88, 461);
+            this.label2.Location = new System.Drawing.Point(323, 504);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 25);
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 579);
+            this.ClientSize = new System.Drawing.Size(1066, 695);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);

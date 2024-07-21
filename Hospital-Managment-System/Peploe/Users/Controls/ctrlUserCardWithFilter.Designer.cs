@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(5, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
@@ -71,8 +71,7 @@
             // 
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.ImageIndex = 0;
-            this.btnSearch.ImageList = this.imageList1;
+            this.btnSearch.Image = global::Hospital_Managment_System.Properties.Resources.SearchPerson;
             this.btnSearch.Location = new System.Drawing.Point(399, 10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(47, 44);
@@ -91,8 +90,7 @@
             // 
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.ImageIndex = 1;
-            this.btnReset.ImageList = this.imageList1;
+            this.btnReset.Image = global::Hospital_Managment_System.Properties.Resources.cross_321;
             this.btnReset.Location = new System.Drawing.Point(469, 10);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(47, 44);
@@ -104,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtUserID);

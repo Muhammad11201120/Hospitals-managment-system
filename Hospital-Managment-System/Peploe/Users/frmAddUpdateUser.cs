@@ -15,13 +15,6 @@ namespace Hospital_Managment_System.Empolyee.Users
         int? _OnEmployeeFound;
         private clsUser _UserInfo { get; set; }
 
-        public frmAddUpdateUser(int? EmpID)
-        {
-            InitializeComponent();
-
-            _Mode = enMode.Update;
-            _EmpID = EmpID;
-        }
         public frmAddUpdateUser()
         {
             InitializeComponent();
@@ -29,6 +22,13 @@ namespace Hospital_Managment_System.Empolyee.Users
             _Mode = enMode.AddNew;
            
         }
+        /*public frmAddUpdateUser(int? EmpID)
+        {
+            InitializeComponent();
+
+            _Mode = enMode.AddNew;
+            _EmpID = EmpID;
+        }*/
         public frmAddUpdateUser(int UserID)
         {
             InitializeComponent();
@@ -49,7 +49,7 @@ namespace Hospital_Managment_System.Empolyee.Users
                 txtPassword.Text = _UserInfo.Password;
                 txtConfirmPassword.Text = _UserInfo.Password;
                 chkIsActive.Checked = _UserInfo.IsActive;
-                //ctrlEmployeeCardWithFilter1.LoadData(_EmpID.Value);
+                ctrlEmployeeCardWithFilter1.LoadData(_UserInfo.EmployeeID);
 
                 lblTitle.Text = "Edit User With ID " + _UserID.ToString();
                 Text = "Edit User With ID " + _UserID.ToString();
@@ -142,6 +142,7 @@ namespace Hospital_Managment_System.Empolyee.Users
                 _UserID = _UserInfo.UserID;
                 _Mode = enMode.Update;
                 lblShowUserCard.Enabled = true;
+                this.Close();
             }
             else
                 MessageBox.Show("Add User is Filed.", "Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -199,15 +200,14 @@ namespace Hospital_Managment_System.Empolyee.Users
         private void ctrlEmployeeCardWithFilter1_OnEmployeeSelected(int obj)
         {
             _OnEmployeeFound = obj;
-
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (_OnEmployeeFound == null)
             {
-                MessageBox.Show("You Should Select Employee First !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    ; return;
+                MessageBox.Show("You Should Select Employee First !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             MainTab.SelectedTab = MainTab.TabPages["tabPage2"];
@@ -218,6 +218,11 @@ namespace Hospital_Managment_System.Empolyee.Users
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

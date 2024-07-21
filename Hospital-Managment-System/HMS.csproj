@@ -192,11 +192,11 @@
       <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\clsGlobal.cs" />
-    <Compile Include="Hospital Info\frmHospitalSettings.cs">
+    <Compile Include="Hospital Info\frmAddUpdateHospital.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hospital Info\frmHospitalSettings.Designer.cs">
-      <DependentUpon>frmHospitalSettings.cs</DependentUpon>
+    <Compile Include="Hospital Info\frmAddUpdateHospital.Designer.cs">
+      <DependentUpon>frmAddUpdateHospital.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -213,6 +213,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Specialties\frmAddUpdateSpeciality.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,8 +303,8 @@
     <EmbeddedResource Include="Peploe\Users\frmUserInfoCard.resx">
       <DependentUpon>frmUserInfoCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hospital Info\frmHospitalSettings.resx">
-      <DependentUpon>frmHospitalSettings.cs</DependentUpon>
+    <EmbeddedResource Include="Hospital Info\frmAddUpdateHospital.resx">
+      <DependentUpon>frmAddUpdateHospital.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -316,6 +322,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Settings\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Specialties\frmAddUpdateSpeciality.resx">
       <DependentUpon>frmAddUpdateSpeciality.cs</DependentUpon>
     </EmbeddedResource>
@@ -508,6 +517,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\appointment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

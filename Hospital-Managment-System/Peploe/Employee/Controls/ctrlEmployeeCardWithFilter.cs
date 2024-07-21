@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using HMS_BusinessLayer;
 using HMS_DataBusinessLayer;
 
 namespace Hospital_Managment_System.Empolyee.EmployeeControls
@@ -83,7 +84,7 @@ namespace Hospital_Managment_System.Empolyee.EmployeeControls
                     ctrlEmployeeCard1.LoadEmployeeInfo(int.Parse(txtFilterValue.Text));
                     break;
             }
-            if (OnEmployeeSelected != null && FilterEnabled&&SelectedEmployeeInfo!=null)
+            if (OnEmployeeSelected != null && FilterEnabled && SelectedEmployeeInfo != null)
                 OnEmployeeSelected(ctrlEmployeeCard1.EmployeeID.Value);
         }
         private void btnFind_Click(object sender, EventArgs e)

@@ -461,7 +461,6 @@ D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Deb
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 D:\Desktop\Projects\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
-<<<<<<< HEAD
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAppointmentList.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmCompleteAppointment.resources
 C:\Users\muha1\Desktop\Programming\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Payment.frmPay.resources
@@ -511,4 +510,5 @@ D:\Desktop\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.cs
 D:\Desktop\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\HMS.csproj.Up2Date
 D:\Desktop\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.exe
 D:\Desktop\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital-Managment-System.pdb
->>>>>>> frm
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Appointment.frmAppointmentList.resources
+D:\سطح المكتب\Hospitals-managment-system\Hospital-Managment-System\obj\Debug\Hospital_Managment_System.Settings.frmSettings.resources

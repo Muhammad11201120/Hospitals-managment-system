@@ -8,9 +8,13 @@ namespace Hospital_Managment_System.Empolyee.Users
 {
     public partial class frmListUsers : Form
     {
-        public frmListUsers()
+        public frmMain frmMain;
+
+        public frmListUsers(frmMain main)
         {
             InitializeComponent();
+
+            this.frmMain = main;
         }
 
         private static DataTable dtListUsers = new DataTable();
@@ -95,50 +99,40 @@ namespace Hospital_Managment_System.Empolyee.Users
             lblRecordCount.Text = dgvListUsers.Rows.Count.ToString();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAddNew_Click(object sender, EventArgs e)
         {
-            frmFindEmployee frm = new frmFindEmployee();
+            // old way: find EmpID and send it to (_OpenAddUser) Method.
+            /*frmFindEmployee frm = new frmFindEmployee();
 
             frm.OnEmployeeSelected += _OpenAddUser;
 
-            frm.ShowDialog();
+            //frm.ShowDialog();
+            frmMain.OpenChildSubForm(frm);*/
+
+            frmAddUpdateUser frm = new frmAddUpdateUser();
+
+            //frm.ShowDialog();
+            frmMain.OpenChildSubForm(frm);
+
+            _Referesh();
         }
 
-        private void _OpenAddUser(object sender, int? EmpID)
+        // old way : find Employee ID in (btnAddNew_Click) Method and send EmpID to User Add Screen.
+        /*private void _OpenAddUser(object sender, int? EmpID)
         {
-            if (EmpID != null)
+            /*if (EmpID != null)
             {
                 if (!clsUser.IsUserExistsByEmployeeID((int)EmpID))
                 {
                     frmAddUpdateUser frm = new frmAddUpdateUser(EmpID);
 
-                    frm.ShowDialog();
+                    //frm.ShowDialog();
+                    frmMain.OpenChildSubForm(frm);
                 }
                 else
                     MessageBox.Show("this employee is already User.", "Already User", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            frmUserCardWithFilter frm = new frmUserCardWithFilter();
-
-            frm.OnSelectUser += _OpenEditUser;
-
-            frm.ShowDialog();
-        }
-
-        private void _OpenEditUser(object sender, int UserID)
-        {
-            frmAddUpdateUser frm = new frmAddUpdateUser(UserID);
-
-            frm.ShowDialog();
-        }
+        }*/
 
         private void frmListUsers_Load(object sender, EventArgs e)
         {
@@ -236,14 +230,16 @@ namespace Hospital_Managment_System.Empolyee.Users
         {
             frmAddUpdateUser updateUser = new frmAddUpdateUser((int)dgvListUsers.CurrentRow.Cells[0].Value);
 
-            updateUser.ShowDialog();
+            //updateUser.ShowDialog();
+            frmMain.OpenChildSubForm(updateUser);
         }
 
         private void userInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUserInfoCard updateUser = new frmUserInfoCard((int)dgvListUsers.CurrentRow.Cells[0].Value);
 
-            updateUser.ShowDialog();
+            //updateUser.ShowDialog();
+            frmMain.OpenChildSubForm(updateUser);
         }
     }
 }

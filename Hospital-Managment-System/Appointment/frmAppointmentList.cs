@@ -1,24 +1,23 @@
 ﻿using HMS_DataBusinessLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Appointment
 {
     public partial class frmAppointmentList : Form
     {
+        public frmMain frmMain;
+
         private DataTable _dtAppointments;
-        public frmAppointmentList()
+
+        public frmAppointmentList(frmMain main)
         {
             InitializeComponent();
+
+            this.frmMain = main;
         }
+
         private void _dgvColumnDesign()
         {
             if (dgvAppointment.Columns.Count > 0)
@@ -61,22 +60,30 @@ namespace Hospital_Managment_System.Appointment
                 lblRecordCount.Text = dgvAppointment.Rows.Count.ToString();
             }
         }
+
         private void _LoadData()
         {
             
             dgvAppointment.DataSource= _dtAppointments=clsAppointments.GetAllAppointments();
             _dgvColumnDesign();
         }
+
         private void completeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (dgvAppointment.Rows.Count < 1) return;
+            
             frmCompleteAppointment frmCompleteAppointment = new frmCompleteAppointment((int)dgvAppointment.CurrentRow.Cells[0].Value);
-            frmCompleteAppointment.ShowDialog();
+
+            frmMain.OpenChildSubForm(frmCompleteAppointment);
+
             _LoadData();
         }
+
         private void frmAppointmentList_Load(object sender, EventArgs e)
         {
             _LoadData();
         }
+
         private void _FilterAppointments()
         {
             string query = "";
@@ -151,14 +158,22 @@ namespace Hospital_Managment_System.Appointment
             lblRecordCount.Text = dgvAppointment.Rows.Count.ToString();
 
         }
+
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (dgvAppointment.Rows.Count < 1) return;
+
             frmAddNewAppontment app = new frmAddNewAppontment((int)dgvAppointment.CurrentRow.Cells[0].Value);
-            app.ShowDialog();
+            
+            frmMain.OpenChildSubForm(app);
+            
             _LoadData();
         }
+
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (dgvAppointment.Rows.Count < 1) return;
+
             if (clsAppointments.Delete((int)dgvAppointment.CurrentRow.Cells[0].Value))
             {
                 MessageBox.Show("Deleted successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -167,15 +182,18 @@ namespace Hospital_Managment_System.Appointment
             else
                 MessageBox.Show("The deletion was not successful", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
         private void txtFilter_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (cmbFilter.Text == "Doctor ID"|| cmbFilter.Text == "Appointment ID" || cmbFilter.Text == "Patient ID" || cmbFilter.Text == "National No" || cmbFilter.Text == "Patient Phone Number")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
+
         private void txtFilterValue_TextChanged(object sender, EventArgs e)
         {
             _FilterAppointments();
         }
+
         private void cmbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbFilter.Text != "None")
@@ -188,6 +206,13 @@ namespace Hospital_Managment_System.Appointment
                 txtFilterValue.Visible=false;
                 txtFilterValue.Text = "";
             }
+        }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            frmAddNewAppontment frm = new frmAddNewAppontment();
+
+            frmMain.OpenChildSubForm(frm);
         }
     }
 }

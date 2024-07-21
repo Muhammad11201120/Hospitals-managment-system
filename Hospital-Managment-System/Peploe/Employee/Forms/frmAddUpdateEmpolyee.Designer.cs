@@ -72,6 +72,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -128,39 +129,43 @@
             this.groupBox1.Controls.Add(this.pbPersonImage);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(20, 136);
+            this.groupBox1.Location = new System.Drawing.Point(42, 175);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(975, 449);
+            this.groupBox1.Size = new System.Drawing.Size(1172, 576);
             this.groupBox1.TabIndex = 114;
             this.groupBox1.TabStop = false;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(491, 57);
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(494, 74);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLastName.MaxLength = 50;
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(272, 27);
+            this.txtLastName.Size = new System.Drawing.Size(272, 30);
             this.txtLastName.TabIndex = 116;
             this.txtLastName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Hospital_Managment_System.Properties.Resources.money_32___2;
-            this.pictureBox11.Location = new System.Drawing.Point(145, 313);
+            this.pictureBox11.Location = new System.Drawing.Point(149, 458);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox11.Size = new System.Drawing.Size(31, 30);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 115;
             this.pictureBox11.TabStop = false;
             // 
             // txtSalary
             // 
-            this.txtSalary.Location = new System.Drawing.Point(183, 313);
+            this.txtSalary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalary.Location = new System.Drawing.Point(187, 458);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSalary.MaxLength = 50;
             this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(167, 27);
+            this.txtSalary.Size = new System.Drawing.Size(167, 30);
             this.txtSalary.TabIndex = 113;
             this.txtSalary.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
@@ -168,7 +173,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(51, 314);
+            this.label8.Location = new System.Drawing.Point(55, 459);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 25);
@@ -178,10 +183,12 @@
             // llRemoveImage
             // 
             this.llRemoveImage.AutoSize = true;
+            this.llRemoveImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.llRemoveImage.Enabled = false;
-            this.llRemoveImage.Location = new System.Drawing.Point(843, 318);
+            this.llRemoveImage.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llRemoveImage.Location = new System.Drawing.Point(1030, 389);
             this.llRemoveImage.Name = "llRemoveImage";
-            this.llRemoveImage.Size = new System.Drawing.Size(70, 20);
+            this.llRemoveImage.Size = new System.Drawing.Size(79, 23);
             this.llRemoveImage.TabIndex = 112;
             this.llRemoveImage.TabStop = true;
             this.llRemoveImage.Text = "Remove";
@@ -189,7 +196,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Hospital_Managment_System.Properties.Resources.Woman_32;
-            this.pictureBox9.Location = new System.Drawing.Point(253, 133);
+            this.pictureBox9.Location = new System.Drawing.Point(257, 193);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(31, 26);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +206,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Hospital_Managment_System.Properties.Resources.Man_32;
-            this.pictureBox1.Location = new System.Drawing.Point(145, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(149, 193);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +216,8 @@
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(290, 133);
+            this.rbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbFemale.Location = new System.Drawing.Point(294, 193);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(85, 24);
             this.rbFemale.TabIndex = 8;
@@ -221,7 +229,8 @@
             // 
             this.rbMale.AutoSize = true;
             this.rbMale.Checked = true;
-            this.rbMale.Location = new System.Drawing.Point(187, 133);
+            this.rbMale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbMale.Location = new System.Drawing.Point(191, 193);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(66, 24);
             this.rbMale.TabIndex = 7;
@@ -234,7 +243,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 132);
+            this.label5.Location = new System.Drawing.Point(52, 192);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 25);
@@ -243,9 +252,10 @@
             // 
             // cbCountry
             // 
+            this.cbCountry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountry.FormattingEnabled = true;
-            this.cbCountry.Location = new System.Drawing.Point(596, 170);
+            this.cbCountry.Location = new System.Drawing.Point(709, 258);
             this.cbCountry.Name = "cbCountry";
             this.cbCountry.Size = new System.Drawing.Size(167, 28);
             this.cbCountry.TabIndex = 11;
@@ -253,9 +263,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Hospital_Managment_System.Properties.Resources.Person_32;
-            this.pictureBox8.Location = new System.Drawing.Point(145, 57);
+            this.pictureBox8.Location = new System.Drawing.Point(148, 74);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox8.Size = new System.Drawing.Size(31, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 105;
             this.pictureBox8.TabStop = false;
@@ -264,7 +274,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(611, 27);
+            this.label10.Location = new System.Drawing.Point(614, 44);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(49, 25);
@@ -275,7 +285,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(285, 27);
+            this.label7.Location = new System.Drawing.Point(288, 44);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 25);
@@ -285,10 +295,12 @@
             // llSetImage
             // 
             this.llSetImage.AutoSize = true;
+            this.llSetImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.llSetImage.Enabled = false;
-            this.llSetImage.Location = new System.Drawing.Point(836, 283);
+            this.llSetImage.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llSetImage.Location = new System.Drawing.Point(1023, 354);
             this.llSetImage.Name = "llSetImage";
-            this.llSetImage.Size = new System.Drawing.Size(84, 20);
+            this.llSetImage.Size = new System.Drawing.Size(95, 23);
             this.llSetImage.TabIndex = 13;
             this.llSetImage.TabStop = true;
             this.llSetImage.Text = "Set Image";
@@ -296,7 +308,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Hospital_Managment_System.Properties.Resources.Address_32;
-            this.pictureBox7.Location = new System.Drawing.Point(145, 209);
+            this.pictureBox7.Location = new System.Drawing.Point(149, 325);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +318,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Hospital_Managment_System.Properties.Resources.Country_32;
-            this.pictureBox6.Location = new System.Drawing.Point(558, 173);
+            this.pictureBox6.Location = new System.Drawing.Point(671, 261);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,9 +328,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Hospital_Managment_System.Properties.Resources.Email_32;
-            this.pictureBox5.Location = new System.Drawing.Point(145, 170);
+            this.pictureBox5.Location = new System.Drawing.Point(153, 262);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox5.Size = new System.Drawing.Size(31, 30);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 97;
             this.pictureBox5.TabStop = false;
@@ -326,7 +338,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Hospital_Managment_System.Properties.Resources.Calendar_32;
-            this.pictureBox4.Location = new System.Drawing.Point(558, 98);
+            this.pictureBox4.Location = new System.Drawing.Point(671, 147);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -336,9 +348,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Hospital_Managment_System.Properties.Resources.Count_32;
-            this.pictureBox3.Location = new System.Drawing.Point(145, 96);
+            this.pictureBox3.Location = new System.Drawing.Point(149, 141);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(31, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 95;
             this.pictureBox3.TabStop = false;
@@ -346,9 +358,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hospital_Managment_System.Properties.Resources.Phone_32;
-            this.pictureBox2.Location = new System.Drawing.Point(557, 133);
+            this.pictureBox2.Location = new System.Drawing.Point(670, 202);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(31, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 94;
             this.pictureBox2.TabStop = false;
@@ -358,7 +370,7 @@
             this.dtpDateOfBirth.CustomFormat = "dd/M/yyyy";
             this.dtpDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(596, 96);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(709, 145);
             this.dtpDateOfBirth.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
             this.dtpDateOfBirth.Size = new System.Drawing.Size(167, 27);
@@ -367,16 +379,16 @@
             // 
             // btnClose
             // 
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(503, 389);
+            this.btnClose.Location = new System.Drawing.Point(444, 519);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
+            this.btnClose.Size = new System.Drawing.Size(126, 49);
             this.btnClose.TabIndex = 15;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -384,7 +396,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(461, 173);
+            this.label15.Location = new System.Drawing.Point(574, 261);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(95, 25);
@@ -393,7 +405,9 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(183, 209);
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(187, 325);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAddress.MaxLength = 50;
             this.txtAddress.Multiline = true;
@@ -405,7 +419,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(39, 208);
+            this.label12.Location = new System.Drawing.Point(43, 324);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 25);
@@ -414,11 +428,13 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(183, 170);
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(191, 262);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(167, 27);
+            this.txtEmail.Size = new System.Drawing.Size(167, 30);
             this.txtEmail.TabIndex = 10;
             this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
@@ -426,7 +442,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(66, 169);
+            this.label6.Location = new System.Drawing.Point(74, 261);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 25);
@@ -435,11 +451,13 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(596, 133);
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(709, 202);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPhone.MaxLength = 50;
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(167, 27);
+            this.txtPhone.Size = new System.Drawing.Size(167, 30);
             this.txtPhone.TabIndex = 9;
             this.txtPhone.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
@@ -447,7 +465,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(475, 133);
+            this.label4.Location = new System.Drawing.Point(588, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 25);
@@ -458,7 +476,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(413, 99);
+            this.label3.Location = new System.Drawing.Point(526, 148);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
@@ -467,11 +485,13 @@
             // 
             // txtNationalNo
             // 
-            this.txtNationalNo.Location = new System.Drawing.Point(183, 96);
+            this.txtNationalNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNationalNo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNationalNo.Location = new System.Drawing.Point(187, 141);
             this.txtNationalNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNationalNo.MaxLength = 50;
             this.txtNationalNo.Name = "txtNationalNo";
-            this.txtNationalNo.Size = new System.Drawing.Size(167, 27);
+            this.txtNationalNo.Size = new System.Drawing.Size(167, 30);
             this.txtNationalNo.TabIndex = 5;
             this.txtNationalNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
             // 
@@ -479,7 +499,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 96);
+            this.label2.Location = new System.Drawing.Point(11, 141);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 25);
@@ -490,7 +510,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(63, 59);
+            this.label1.Location = new System.Drawing.Point(66, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 25);
@@ -499,11 +519,13 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(183, 57);
+            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(186, 74);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFirstName.MaxLength = 50;
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(272, 27);
+            this.txtFirstName.Size = new System.Drawing.Size(272, 30);
             this.txtFirstName.TabIndex = 1;
             this.txtFirstName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
@@ -513,23 +535,23 @@
             this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbPersonImage.Image = global::Hospital_Managment_System.Properties.Resources.Female_512;
             this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(786, 96);
+            this.pbPersonImage.Location = new System.Drawing.Point(961, 145);
             this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(169, 167);
+            this.pbPersonImage.Size = new System.Drawing.Size(192, 195);
             this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPersonImage.TabIndex = 85;
             this.pbPersonImage.TabStop = false;
             // 
             // btnSave
             // 
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(637, 389);
+            this.btnSave.Location = new System.Drawing.Point(596, 519);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(126, 37);
+            this.btnSave.Size = new System.Drawing.Size(126, 49);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -539,7 +561,7 @@
             // 
             this.lblEmpolyeeID.AutoSize = true;
             this.lblEmpolyeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpolyeeID.Location = new System.Drawing.Point(202, 95);
+            this.lblEmpolyeeID.Location = new System.Drawing.Point(246, 147);
             this.lblEmpolyeeID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmpolyeeID.Name = "lblEmpolyeeID";
             this.lblEmpolyeeID.Size = new System.Drawing.Size(49, 25);
@@ -550,7 +572,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(5, 95);
+            this.label22.Location = new System.Drawing.Point(49, 147);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(153, 25);
@@ -559,11 +581,11 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(12, 46);
+            this.lblTitle.Location = new System.Drawing.Point(401, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(928, 39);
+            this.lblTitle.Size = new System.Drawing.Size(407, 65);
             this.lblTitle.TabIndex = 115;
             this.lblTitle.Text = "Add New Empolyee";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -571,7 +593,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Hospital_Managment_System.Properties.Resources.PersonDetails_321;
-            this.pictureBox10.Location = new System.Drawing.Point(161, 95);
+            this.pictureBox10.Location = new System.Drawing.Point(205, 147);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(31, 26);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -582,20 +604,33 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btnBack
+            // 
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = global::Hospital_Managment_System.Properties.Resources.left_arrow;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(48, 43);
+            this.btnBack.TabIndex = 126;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmAddUpdateEmpolyee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 610);
+            this.ClientSize = new System.Drawing.Size(1250, 829);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblEmpolyeeID);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.lblTitle);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmAddUpdateEmpolyee";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmAddNewEmpolyee_Load);
             this.groupBox1.ResumeLayout(false);
@@ -663,5 +698,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

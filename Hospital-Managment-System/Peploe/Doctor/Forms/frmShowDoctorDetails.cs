@@ -44,9 +44,9 @@ namespace Hospital_Managment_System.Empolyee.Doctor.DoctorForms
             _LoadDoctorInfo();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
         }
     }
 }

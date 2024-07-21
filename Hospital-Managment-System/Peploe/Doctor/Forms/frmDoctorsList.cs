@@ -1,24 +1,22 @@
 ﻿using HMS_DataBusinessLayer;
 using Hospital_Managment_System.Empolyee.Doctor.DoctorForms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee.Doctor
 {
     public partial class frmDoctorsList : Form
     {
+        public frmMain frmMain;
+
         DataTable dt = null;
         DataView dv = null;
-        public frmDoctorsList()
+        public frmDoctorsList(frmMain main)
         {
             InitializeComponent();
+
+            this.frmMain = main;
         }
 
         private void _LoadData()
@@ -26,24 +24,24 @@ namespace Hospital_Managment_System.Empolyee.Doctor
             dt = clsDoctor.GetAllDoctors();
             dv = new DataView(dt);
 
-            dataGridView1.DataSource = dv;
+            dgvDoctorsList.DataSource = dv;
 
-            if (dataGridView1.Rows.Count > 0)
+            if (dgvDoctorsList.Rows.Count > 0)
             {
-                dataGridView1.Columns[0].HeaderText = "Doctor ID";
-                dataGridView1.Columns[0].Width = 110;
+                dgvDoctorsList.Columns[0].HeaderText = "Doctor ID";
+                dgvDoctorsList.Columns[0].Width = 110;
 
-                dataGridView1.Columns[1].HeaderText = "Full Name";
-                dataGridView1.Columns[1].Width = 220;
+                dgvDoctorsList.Columns[1].HeaderText = "Full Name";
+                dgvDoctorsList.Columns[1].Width = 220;
 
-                dataGridView1.Columns[2].HeaderText = "Speciality Name";
-                dataGridView1.Columns[2].Width = 140;
+                dgvDoctorsList.Columns[2].HeaderText = "Speciality Name";
+                dgvDoctorsList.Columns[2].Width = 140;
 
-                dataGridView1.Columns[3].HeaderText = "Price";
-                dataGridView1.Columns[3].Width = 110;
+                dgvDoctorsList.Columns[3].HeaderText = "Price";
+                dgvDoctorsList.Columns[3].Width = 110;
 
             }
-            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+            lblRecordCount.Text = dgvDoctorsList.Rows.Count.ToString();
         }
 
 
@@ -57,7 +55,9 @@ namespace Hospital_Managment_System.Empolyee.Doctor
         {
             frmAddUpdateDoctor AddUpdateDoctor = new frmAddUpdateDoctor();   
 
-            AddUpdateDoctor.ShowDialog();
+            frmMain.OpenChildSubForm(AddUpdateDoctor);
+
+            _LoadData();
         }
 
         private void btClose_Click(object sender, EventArgs e)
@@ -110,7 +110,7 @@ namespace Hospital_Managment_System.Empolyee.Doctor
             if (txtFilter.Text.Trim() == "" || FilterName == "None")
             {
                 dv.RowFilter = "";
-                lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+                lblRecordCount.Text = dgvDoctorsList.Rows.Count.ToString();
                 return;
             }
 
@@ -120,43 +120,41 @@ namespace Hospital_Managment_System.Empolyee.Doctor
             else
                 dv.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterName, txtFilter.Text.Trim());
 
-            lblRecordCount.Text = dataGridView1.Rows.Count.ToString();
+            lblRecordCount.Text = dgvDoctorsList.Rows.Count.ToString();
         }
 
         private void showPersonalInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmShowDoctorDetails frm = new frmShowDoctorDetails((int)dataGridView1.CurrentRow.Cells[0].Value);
-            frm.ShowDialog();
+            frmShowDoctorDetails frm = new frmShowDoctorDetails((int)dgvDoctorsList.CurrentRow.Cells[0].Value);
+            
+            frmMain.OpenChildSubForm(frm);
         }
 
         private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUpdateDoctor AddUpdateDoctor = new frmAddUpdateDoctor();
-
-            AddUpdateDoctor.ShowDialog();
-            _LoadData();
+            btnAddNew.PerformClick();
         }
 
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUpdateDoctor AddUpdateDoctor = new frmAddUpdateDoctor((int)dataGridView1.CurrentRow.Cells[0].Value);
+            frmAddUpdateDoctor AddUpdateDoctor = new frmAddUpdateDoctor((int)dgvDoctorsList.CurrentRow.Cells[0].Value);
 
-            AddUpdateDoctor.ShowDialog();
+            frmMain.OpenChildSubForm(AddUpdateDoctor);
+
             _LoadData();
-
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to delete Doctor [" +
-                dataGridView1.CurrentRow.Cells[0].Value + "]",
+                dgvDoctorsList.CurrentRow.Cells[0].Value + "]",
                 "Confirm Delete", MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question) == DialogResult.OK)
+                MessageBoxIcon.Warning) == DialogResult.OK)
 
             {
 
                 //Perform Delele and refresh
-                if (clsDoctor.Delete((int)dataGridView1.CurrentRow.Cells[0].Value))
+                if (clsDoctor.Delete((int)dgvDoctorsList.CurrentRow.Cells[0].Value))
                 {
                     MessageBox.Show("Doctor Deleted Successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     _LoadData();

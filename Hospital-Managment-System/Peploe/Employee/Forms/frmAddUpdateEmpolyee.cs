@@ -2,13 +2,8 @@
 using Hospital_Managment_System.Global;
 using Hospital_Managment_System.Properties;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hospital_Managment_System.Empolyee
@@ -183,7 +178,7 @@ namespace Hospital_Managment_System.Empolyee
             TextBox Temp = ( ( TextBox ) sender );
             if ( string.IsNullOrEmpty( Temp.Text.Trim() ) )
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError( Temp, "This field is required!" );
             }
             else
@@ -198,7 +193,7 @@ namespace Hospital_Managment_System.Empolyee
         {
             if ( string.IsNullOrEmpty( txtNationalNo.Text.Trim() ) )
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError( txtNationalNo, "This field is required!" );
                 return;
             }
@@ -210,7 +205,7 @@ namespace Hospital_Managment_System.Empolyee
             if ( txtNationalNo.Text.Trim() != _Empolyee.NationalNo &&
                 clsEmployee.IsPersonExists( txtNationalNo.Text.Trim() ) )
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError( txtNationalNo, "National Number is used for another person!" );
 
             }
@@ -227,7 +222,7 @@ namespace Hospital_Managment_System.Empolyee
 
             if ( !clsValidatoin.ValidateEmail( txtEmail.Text ) )
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError( txtEmail, "Invalid Email Address Format!" );
             }
             else
@@ -279,6 +274,11 @@ namespace Hospital_Managment_System.Empolyee
                  " Is not Saved Successfully.",
                  "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

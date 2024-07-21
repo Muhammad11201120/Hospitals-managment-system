@@ -94,7 +94,8 @@ namespace Hospital_Managment_System.Empolyee.Doctor
                 _DoctorID = _Doctor.DoctorID.Value;
                 _Mode = enMode.Update;
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmAddUpdateDoctor_Load(null, null);
+                //frmAddUpdateDoctor_Load(null, null);
+                this.Close();
             }
             else
                 MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -159,6 +160,11 @@ namespace Hospital_Managment_System.Empolyee.Doctor
             else
                 errorProvider1.SetError(cbSpecialty, null);
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
